@@ -1,0 +1,22 @@
+#pragma once
+
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <vector>
+#include <algorithm>
+#include "Multimedia.h"
+
+using namespace std;
+
+class MMRegister{
+public:
+	vector<Multimedia> Mm;
+	MMRegister();
+	void addMultimedia(Multimedia m);
+	void writeFile();
+	void readFile();
+	void Sort();
+	bool Search(string phrase,string searchType,vector<Multimedia> &hits);
+	void delMedia(Multimedia del);
+};

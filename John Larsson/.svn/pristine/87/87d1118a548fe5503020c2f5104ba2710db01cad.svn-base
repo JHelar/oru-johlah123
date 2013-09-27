@@ -1,0 +1,37 @@
+#include <iostream>
+#include "Multimedia.h"
+#include "Register.h"
+
+using namespace std;
+
+int main(){
+	vector<Multimedia> hits;
+	Multimedia m;
+	MMRegister r;
+	string phrase,searchType;
+	r.readFile();
+	r.Sort();
+	cout<<"File contents:\n";
+	for(int i=0;i<r.Mm.size();i++){
+		cout<<r.Mm[i];
+	}
+	cout<<endl;
+	cout<<"Enter search type (type,name or date): ";
+	getline(cin,searchType,'\n');
+	cout<<"\nEnter search phrase (case sensitive): ";
+	getline(cin,phrase,'\n');
+	if(r.Search(phrase,searchType,hits)){
+		for(int i=0;i<hits.size();i++){
+			cout<<hits[i];
+			r.delMedia(hits[i]);
+		}
+	}
+	cout<<"Deleteing search results....\n\n";
+	cout<<"File contents:\n";
+	for(int i=0;i<r.Mm.size();i++){
+		cout<<r.Mm[i];
+	}
+	r.writeFile();
+	cin.get();
+	return 0;
+}	

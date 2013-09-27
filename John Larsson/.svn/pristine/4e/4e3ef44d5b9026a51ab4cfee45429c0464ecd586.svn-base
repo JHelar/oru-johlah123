@@ -1,0 +1,59 @@
+#include "Multimedia.h"
+
+Multimedia::Multimedia(){
+	type=' ';
+	name="NULL";
+	type="NULL";
+	date="NULL";
+}
+
+Multimedia::Multimedia(string n,string d,string t){
+	this->name=n;
+	this->date=d;
+	this->type=t;
+}
+
+void Multimedia::setMedia(string n, string d, string t){
+	this->name=n;
+	this->date=d;
+	this->type=t;
+}
+
+ostream& operator << (ostream &out, Multimedia &m){
+	out << "(" << m.type << "," << m.name << "," << m.date << ")"<<endl;
+	return out;	
+}
+
+istream& operator >> (istream &in, Multimedia &m){
+	char c;
+	in>>c;
+	getline(in,m.type,',');
+	in>>skipws;
+	getline(in,m.name,',');
+	in>>skipws;
+	getline(in,m.date,')');
+	in>>skipws;
+	return in;
+}
+
+bool operator < (Multimedia &one, Multimedia &another){
+	if(one.type<another.type)
+		return true;
+	else if((one.name<another.name)&&(one.type ==another.type))
+		return true;
+	else if((one.date<another.date)&&(one.type==another.type)&&(one.name==another.name))
+		return true;
+	else 
+		return false;
+}
+
+bool operator == (Multimedia &one, Multimedia &another){
+	if(one.type==another.type){
+		if(one.name==another.name){
+			if(one.date==another.date){
+				return true;
+			}
+		}
+	}
+	return false;
+}
