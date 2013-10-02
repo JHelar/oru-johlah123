@@ -4,7 +4,8 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
-#include <conio.h>
+#include <ctime>
+#include <cstdio>
 
 #include "Multimedia.h"
 #include "Book.h"
@@ -22,8 +23,10 @@ public:
 	~Register(void);
 	void writeFileToRegistry(vector<Multimedia*> *RegistryPointer);
 	void readFileToRegistry(vector<Multimedia*> *RigistryPointer);
-	void sortRegistry(vector<Multimedia*> &RegistryPointer);
-	void sortRegistryFunctionType(vector<Multimedia*>&,int,int);
+	void sortRegistry(vector<Multimedia*> &RegistryPointer);	
+	void sortRegistryFunctionType(vector<Multimedia*>&,int,int);	
 	void sortRegistryFunctionAuthor(vector<Multimedia*>&,int,int);
+	void setRegistry(string type,vector<Multimedia*> *);
+	bool searchRegistry(vector<Multimedia*> RegistryPointer,vector<int> &Hits,string phrase); 
 };
 

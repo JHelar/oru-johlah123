@@ -43,36 +43,3 @@ istream& operator>>(istream &in,Book &book){
 	in>>skipws;
 	return in;
 }
-
-bool operator<(Book &one,Book &another){
-		if(one.author<another.author)
-                return true;
-        else if((one.titel<another.titel)&&(one.author==another.author))
-                return true;
-		else if((one.pages<another.pages)&&(one.author==another.author)&&(one.titel==another.titel))
-                return true;
-        else
-                return false;
-}
-
-bool operator>(Book &one,Book &another){
-		if(one.author>another.author)
-                return true;
-        else if((one.titel>another.titel)&&(one.author==another.author))
-                return true;
-		else if((one.pages>another.pages)&&(one.author==another.author)&&(one.titel==another.titel))
-                return true;
-        else
-                return false;
-}
-
-/*bool sortMedia(Book &one,Book &another){
-	if(one.author<another.author)
-                return true;
-        else if((one->titel<another->titel)&&(one->author==another->author))
-                return true;
-		else if((one->pages<another->pages)&&(one->author==another->author)&&(one->titel==another->titel))
-                return true;
-        else
-                return false;
-}*/

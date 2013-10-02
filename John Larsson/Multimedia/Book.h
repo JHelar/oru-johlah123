@@ -16,18 +16,16 @@ public:
 	Book(void){this->pages=0;}
 	Book(string,string,string,string,string,int);
 	~Book(void);
+
 	void setMultimedia(string,string,string,string,string,int);
 
 	int getPage(){return pages;}
 
 	void print(ostream &out){out<<*this;}
 
-	//friend bool sortMedia(Book &one,Book &another);
+	static bool sortMedia(Book *one,Book *another);
 
 	friend ostream& operator << (ostream &out,Book &book);
 	friend istream& operator >> (istream &in, Book &book);
-
-	friend bool operator < (Book &one, Book &another);
-	friend bool operator > (Book &one, Book &another);
 };
 

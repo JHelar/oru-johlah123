@@ -1,8 +1,16 @@
 #include "Music.h"
 
 
-Music::Music(void)
+Music::Music(string author,string titel,string type,string time,string date,string songTitle,string songTime)
 {
+	this->author=author;
+	this->titel=titel;
+	this->type=type;
+	this->time=time;
+	this->date=date;
+	this->songTitle=songTitle;
+	this->songTime=songTime;
+
 }
 
 
@@ -32,24 +40,12 @@ istream& operator>>(istream &in,Music &mus){
 	return in;
 }
 
-/*bool operator < (Music &one,Music &another){
-	if(one.author<another.author)
-           return true;
-    else if((one.titel<another.titel)&&(one.author==another.author))
-          return true;
-	else if((one.songTitle<another.songTitle)&&(one.author==another.author)&&(one.titel==another.titel))
-          return true;
-    else
-          return false;
-}*/
-
-/*bool Music::sortMedia(Multimedia *one,Multimedia *another){
-	if(one->author<another->author)
-           return true;
-    else if((one->titel<another->titel)&&(one->author==another->author))
-          return true;
-	else if((one->songTitle<another->songTitle)&&(one->author==another->author)&&(one->titel==another->titel))
-          return true;
-    else
-          return false;
-}*/
+void Music::setMultimedia(string author,string titel,string type,string time,string date,string songTitle,string songTime){
+	this->author=author;
+	this->titel=titel;
+	this->type=type;
+	this->time=time;
+	this->date=date;
+	this->songTitle=songTitle;
+	this->songTime=songTime;
+}

@@ -1,8 +1,14 @@
 #include "Movie.h"
 
 
-Movie::Movie(void)
+Movie::Movie(string author,string titel,string type,string time,string date,vector<string> actors)
 {
+	this->author=author;
+	this->titel=titel;
+	this->type=type;
+	this->time=time;
+	this->date=date;
+	this->actors=actors;
 }
 
 
@@ -42,27 +48,11 @@ istream& operator>>(istream &in,Movie &mov){
 	return in;
 }
 
-/*bool operator < (Movie one, Movie another){
-		if(one.author<another.author)
-                return true;
-        else if((one.titel<another.titel)&&(one.author==another.author))
-                return true;
-		else if((one.date<another.date)&&(one.author==another.author)&&(one.titel==another.titel))
-                return true;
-        else
-                return false;
-}*/
-
-bool Movie::sortMedia(Multimedia *one,Multimedia *another){
-	Movie *m1,*m2;
-	m1=dynamic_cast<Movie*>(one);
-	m2=dynamic_cast<Movie*>(another);
-	if(m1->getAuthor()<m2->getAuthor())
-            return true;
-    else if((m1->getTitel()<m2->getTitel())&&(m1->getAuthor()==m2->getAuthor()))
-            return true;
-	else if((m1->getDate()<m2->getDate())&&(m1->getAuthor()==m2->getAuthor())&&(m1->getTitel()==m2->getTitel()))
-            return true;
-    else
-            return false;
+void Movie::setMultimedia(string author,string titel,string type,string time,string date,vector<string> actors){
+	this->author=author;
+	this->titel=titel;
+	this->type=type;
+	this->time=time;
+	this->date=date;
+	this->actors=actors;
 }

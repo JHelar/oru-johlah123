@@ -13,15 +13,14 @@ class Movie:public Multimedia
 private:
 	vector<string> actors;
 public:
-	Movie(void);
+	Movie(void){}
+	Movie(string,string,string,string,string,vector<string>);
 	~Movie(void);
 	
 	void print(ostream &out) {out<<*this;};
-	static bool sortMedia(Multimedia *one,Multimedia *another);
+	void setMultimedia(string,string,string,string,string,vector<string>);
 	
 	friend ostream& operator << (ostream &out,Movie &mov);
 	friend istream& operator >> (istream &in, Movie &mov);
-
-	//friend bool operator < (Movie &one, Movie &another);
 };
 

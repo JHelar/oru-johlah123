@@ -1,8 +1,14 @@
 #include "Game.h"
 
 
-Game::Game(void)
+Game::Game(string author,string titel,string type,string time,string date,string genre)
 {
+	this->author=author;
+	this->titel=titel;
+	this->type=type;
+	this->time=time;
+	this->date=date;
+	this->genre=genre;
 }
 
 
@@ -30,31 +36,12 @@ istream& operator>>(istream &in,Game &gam){
 	return in;
 }
 
-/*bool operator<(Game &one,Game &another){
-	if(one.author<another.author)
-            return true;
-    else if((one.titel<another.titel)&&(one.author==another.author))
-            return true;
-	else if((one.genre<another.genre)&&(one.author==another.author)&&(one.titel==another.titel))
-            return true;
-    else
-            return false;
+void Game::setMultimedia(string author,string titel,string type,string time,string date,string genre){
+	this->author=author;
+	this->titel=titel;
+	this->type=type;
+	this->time=time;
+	this->date=date;
+	this->genre=genre;
 }
 
-bool operator>(Game &one,Game &another){
-	if(one.author>another.author)
-            return true;
-    else if((one.titel>another.titel)&&(one.author==another.author))
-            return true;
-	else if((one.genre>another.genre)&&(one.author==another.author)&&(one.titel==another.titel))
-            return true;
-    else
-            return false;
-}
-
-bool sortMedia(Game &one,Game &another){
-	if(one<another)
-		return true;
-	else if(one>another)
-		return false;
-}*/

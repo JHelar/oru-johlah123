@@ -22,7 +22,6 @@ public:
 	string getTime(){return time;}
 	string getDate(){return date;}
 
-	//virtual bool sortMedia(Multimedia &one,Multimedia &another){return true;}
 	virtual void print(ostream &out) {};	
 	virtual void setMultimedia(string,string,string,string,string);
 };
