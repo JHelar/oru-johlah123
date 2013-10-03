@@ -33,9 +33,14 @@ namespace FemtonPussel
             ToolStripMenuItem file=new ToolStripMenuItem("&File");
             ToolStripMenuItem exit = new ToolStripMenuItem("&Exit",null,new EventHandler(OnExit));
             ToolStripMenuItem newgame = new ToolStripMenuItem("&New Game",null,new EventHandler(OnNewGame));
+            ToolStripMenuItem solve = new ToolStripMenuItem("&Solve", null, new EventHandler(OnSolve));
+
+            solve.ShortcutKeys = Keys.F3;
             newgame.ShortcutKeys = Keys.F2;
             exit.ShortcutKeys = Keys.Control | Keys.X;
+
             file.DropDownItems.Add(newgame);
+            file.DropDownItems.Add(solve);
             file.DropDownItems.Add(exit);
 
             ms.Items.Add(file);
@@ -91,6 +96,16 @@ namespace FemtonPussel
                 randomMove = random.Next(1, 5);
                 RandomGame(randomMove);
             }  
+        }
+
+        void OnSolve(object sender, EventArgs e) 
+        {
+            for (int i = 0; i < 16; i++) 
+            {
+                ButtonList[i].Location = OriginPos[i];
+            }
+            ButtonList[15].BackgroundImage = ButtonImageList[15];
+            MessageBox.Show("CHEATER!");
         }
         void OnExit(object sender, EventArgs e) 
         {
