@@ -57,6 +57,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -70,6 +71,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic16.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

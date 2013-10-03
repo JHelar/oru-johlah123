@@ -18,7 +18,9 @@ namespace FemtonPussel
         private int WIDTH = 265;
         private int HEIGHT = 310;
         private int count=0;
-        private List<Point> OriginPos = new List<Point>();
+        private List<Image> ButtonImageList;
+        private List<Point> OriginPos;
+
         public Form1()
         {
             this.Text = "FemtonSpel";
@@ -38,27 +40,40 @@ namespace FemtonPussel
 
             ms.Items.Add(file);
             MainMenuStrip = ms;
+
+            ButtonImageList = new List<Image>();
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic1);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic2);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic3);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic4);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic5);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic6);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic7);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic8);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic9);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic10);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic11);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic12);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic13);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic14);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic15);
+            ButtonImageList.Add(FemtonPussel.Properties.Resources.Pic16);
+
+            OriginPos = new List<Point>();
             Button button = new Button();
             for (int j = 0; j < 4; j++)
             {
                 for (int i = 0; i < 4; i++)
                 {
                     button = new Button();
-                    if (count == 15)
-                    {
-                        button.Text = null;
-                        button.BackColor = Color.HotPink;
-                    }
-                    else
-                    {
-                        button.Text = Convert.ToString(count + 1);
-                    }
+                    button.BackgroundImage = ButtonImageList[count];
+                    button.Text = null;
                     button.Font = new Font(button.Font.FontFamily, 15);
                     button.Parent = this;
                     button.Location = new Point(5 + i * 61, 27 + j * 61);
                     button.Size = new Size(55, 55);
                     button.Click += new EventHandler(ButtonClicked);
-
+                    
                     OriginPos.Add(button.Location);
                     ButtonList.Add(button);
                     count++;
@@ -68,7 +83,9 @@ namespace FemtonPussel
             CenterToScreen();
         }
         void OnNewGame(object sender, EventArgs e) 
-        { 
+        {
+            ButtonList[15].BackgroundImage = null;
+            ButtonList[15].BackColor = Color.Red;
             for (int i = 0; i < 1000; i++)
             {
                 randomMove = random.Next(1, 5);
@@ -235,6 +252,8 @@ namespace FemtonPussel
                 }
                 else if ((ButtonList[i].Location == OriginPos[i]) && i == 14) 
                 {
+                    ButtonList[15].BackColor = Color.White;
+                    ButtonList[15].BackgroundImage = ButtonImageList[15];
                     MessageBox.Show("YOU WON!");
                 }
             }
