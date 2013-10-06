@@ -20,6 +20,7 @@ namespace Pacman
         SpriteBatch spriteBatch;
 
         Player player = new Player();
+        Enemy enemy = new Enemy();
         Layers layer;
         Collision collision;
 
@@ -33,7 +34,11 @@ namespace Pacman
 
         protected override void Initialize()
         {
-            
+            layer = new Layers();
+            player = new Player();
+            collision = new Collision();
+            enemy = new Enemy();
+            enemy.Init();
             player.Init();
             base.Initialize();
         }
@@ -42,10 +47,8 @@ namespace Pacman
         {
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            layer = new Layers();
-            player = new Player();
-            collision = new Collision();
             player.LoadContent(Content);
+            enemy.LoadContent(Content);
             layer.LoadContent(Content, "PacMap");
             collision.LoadContent(Content, "PacMap");
 
@@ -62,7 +65,7 @@ namespace Pacman
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
            player.Update(gameTime,collision,layer);
-
+           enemy.Update(gameTime, player, collision, layer);
 
             base.Update(gameTime);
         }
@@ -73,6 +76,7 @@ namespace Pacman
 
             spriteBatch.Begin();
             layer.Draw(spriteBatch);
+            enemy.Draw(spriteBatch);
             player.Draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);

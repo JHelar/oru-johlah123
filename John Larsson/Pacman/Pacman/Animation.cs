@@ -26,7 +26,7 @@ namespace Pacman
             set { active = value; }
         }
 
-        public Vector2 CurrenFrame
+        public Vector2 CurrentFrame
         {
             get { return currentFrame; }
             set { currentFrame = value; }
@@ -40,12 +40,12 @@ namespace Pacman
 
         public int FrameWidth 
         {
-            get { return animationImage.Width / 8; }
+            get { return animationImage.Width / (int)amountOfFrames.X; }
         }
 
         public int FrameHeight 
         {
-            get { return animationImage.Height / 2; }
+            get { return animationImage.Height / (int)amountOfFrames.Y; }
         }
 
         public Texture2D AnimationImage 

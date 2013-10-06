@@ -21,6 +21,11 @@ namespace Pacman
         Animation playerAnimation = new Animation();
         Rectangle tempRect,playerTempRect;
 
+        public Vector2 PlayerPosition 
+        {
+            get { return playerPosition; }
+        }
+
         public void Init() 
         {
             playerPosition = new Vector2(270, 460);
@@ -68,11 +73,11 @@ namespace Pacman
                 tempCurrentFrame.Y = 1;
             }
 
-            tempCurrentFrame.X = this.playerAnimation.CurrenFrame.X;
+            tempCurrentFrame.X = this.playerAnimation.CurrentFrame.X;
 
-            playerTempRect = new Rectangle((int)playerPosition.X,(int)playerPosition.Y,(int)layer.TileDimensions.X -1,(int)layer.TileDimensions.Y -1);
+            playerTempRect = new Rectangle((int)playerPosition.X,(int)playerPosition.Y,(int)playerAnimation.FrameWidth -1,(int)playerAnimation.FrameHeight -1);
 
-            this.playerAnimation.CurrenFrame = tempCurrentFrame;
+            this.playerAnimation.CurrentFrame = tempCurrentFrame;
             
             for (int i = 0; i < col.CollisionMap.Count; i++) 
             {
