@@ -19,11 +19,12 @@ namespace Pacman
         float moveSpeed = 100f;
 
         Animation playerAnimation = new Animation();
+        Rectangle tempRect,playerTempRect;
 
         public void Init() 
         {
             playerPosition = new Vector2(270, 460);
-            playerAnimation.Init(playerPosition, new Vector2(8, 1));
+            playerAnimation.Init(playerPosition, new Vector2(8, 2));
             tempCurrentFrame = Vector2.Zero;
         }
 
@@ -45,49 +46,64 @@ namespace Pacman
             {
                 playerPosition.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
                 tempCurrentFrame.Y = 0;
+                
             }
             else if (keyState.IsKeyDown(Keys.Up))
             {
                 playerPosition.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                tempCurrentFrame.Y = 0;
+                tempCurrentFrame.Y = 1;
             }
             else if (keyState.IsKeyDown(Keys.Right))
             {
                 playerPosition.X += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (playerPosition.X >= 560 && playerPosition.Y <= 290 || playerPosition.X >= 560 && playerPosition.Y >= 230)
+                    playerPosition.X = -20;
                 tempCurrentFrame.Y = 0;
             }
             else if (keyState.IsKeyDown(Keys.Left))
             {
                 playerPosition.X -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                tempCurrentFrame.Y = 0;
+                if (playerPosition.X <= 0 && playerPosition.Y <= 290 || playerPosition.X <= 0 && playerPosition.Y >= 230)
+                    playerPosition.X = 560;
+                tempCurrentFrame.Y = 1;
             }
 
             tempCurrentFrame.X = this.playerAnimation.CurrenFrame.X;
 
+            playerTempRect = new Rectangle((int)playerPosition.X,(int)playerPosition.Y,(int)layer.TileDimensions.X -1,(int)layer.TileDimensions.Y -1);
 
             this.playerAnimation.CurrenFrame = tempCurrentFrame;
-       
+            
             for (int i = 0; i < col.CollisionMap.Count; i++) 
             {
-                for (int j = 0; j < col.CollisionMap[i].Count; j++) 
+                for (int j = 0; j < col.CollisionMap[i].Count; j++)
                 {
-                    
-                    if ((playerPosition.X < col.CollisionMap[i][j].X + 20 /*&& playerPosition.Y == col.CollisionMap[i][j].Y*/)||
-                        (playerPosition.X + 20 > col.CollisionMap[i][j].X /*&& playerPosition.Y == col.CollisionMap[i][j].Y*/)||
-                        (playerPosition.Y < col.CollisionMap[i][j].Y + 20 /*&& playerPosition.X == col.CollisionMap[i][j].X*/)||
-                        (playerPosition.Y + 20 > col.CollisionMap[i][j].Y /*&& playerPosition.X == col.CollisionMap[i][j].X*/))
+                    if (col.CollisionMap[i][j].X == 999 && col.CollisionMap[i][j].Y == 999)
                     {
-                        // Kollission
-                        playerPosition = this.playerAnimation.Position;
+                        if(tempCurrentFrame.Y == 0)
+                            tempRect = new Rectangle((int)col.FoodCollisionMap[i][j].X + 13, (int)col.FoodCollisionMap[i][j].Y, (int)layer.TileDimensions.X - 17, (int)layer.TileDimensions.Y - 13);
+                        else if(tempCurrentFrame.Y == 1)
+                            tempRect = new Rectangle((int)col.FoodCollisionMap[i][j].X, (int)col.FoodCollisionMap[i][j].Y, (int)layer.TileDimensions.X - 17, (int)layer.TileDimensions.Y - 13);
+                        if (playerTempRect.Intersects(tempRect)) 
+                        {
+                            layer.TileMap[0][i][j] = new Vector2(2, 0);
+                        }
                     }
                     else 
                     {
-                        //Ingen kollission
-                           
+                        tempRect = new Rectangle((int)col.CollisionMap[i][j].X, (int)col.CollisionMap[i][j].Y, (int)layer.TileDimensions.X -2, (int)layer.TileDimensions.Y -2);
+                        if (playerTempRect.Intersects(tempRect))
+                        {
+                            // Kollission
+                            playerPosition = this.playerAnimation.Position;
+                        }
+                        else
+                        {
+                            //Ingen kollission
+
+                        }
                     }
-                    
-                }
-                
+                }   
             }
             this.playerAnimation.Position = playerPosition;
             this.playerAnimation.Update(gameTime);

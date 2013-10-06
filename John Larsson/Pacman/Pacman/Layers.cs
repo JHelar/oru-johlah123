@@ -34,6 +34,12 @@ namespace Pacman
             get { return tileDimensions; }
         }
 
+        public List<List<List<Vector2>>> TileMap 
+        {
+            get { return tileMap; }
+            set { tileMap = value; }
+        }
+
         public void LoadContent(ContentManager content, string mapID)
         {
             fileManager = new FileManager();

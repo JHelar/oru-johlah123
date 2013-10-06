@@ -17,12 +17,17 @@ namespace Pacman
     {
         FileManager fileManager;
         List<List<string>> attributes, contents;
-        List<Vector2> row;
-        List<List<Vector2>> collisionMap;
+        List<Vector2> row,foodRow;
+        List<List<Vector2>> collisionMap,foodCollisionMap;
 
         public List<List<Vector2>> CollisionMap 
         {
             get { return collisionMap; }
+        }
+
+        public List<List<Vector2>> FoodCollisionMap 
+        {
+            get { return foodCollisionMap; }
         }
 
         public void LoadContent(ContentManager content, string mapID) 
@@ -31,7 +36,9 @@ namespace Pacman
             attributes = new List<List<string>>();
             contents = new List<List<string>>();
             collisionMap = new List<List<Vector2>>();
+            foodCollisionMap = new List<List<Vector2>>();
             row = new List<Vector2>();
+            foodRow = new List<Vector2>();
 
             fileManager.LoadContent("Load/Map/" + mapID + ".cme", attributes, contents, "Collision");
 
@@ -42,13 +49,17 @@ namespace Pacman
                     if (contents[i][j] == "x")
                     {
                         row.Add(new Vector2(j * 20, i * 20));
+                        foodRow.Add(new Vector2(999, 999));
                     }
                     else 
                     {
                         row.Add(new Vector2(999, 999));
+                        foodRow.Add(new Vector2(j * 20, i * 20));
                     }
                 }
+                foodCollisionMap.Add(foodRow);
                 collisionMap.Add(row);
+                foodRow = new List<Vector2>();
                 row = new List<Vector2>();
             }
         }

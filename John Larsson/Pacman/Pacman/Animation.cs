@@ -45,7 +45,7 @@ namespace Pacman
 
         public int FrameHeight 
         {
-            get { return animationImage.Height / 1; }
+            get { return animationImage.Height / 2; }
         }
 
         public Texture2D AnimationImage 
