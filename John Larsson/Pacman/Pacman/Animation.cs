@@ -40,12 +40,12 @@ namespace Pacman
 
         public int FrameWidth 
         {
-            get { return animationImage.Width / (int)amountOfFrames.X; }
+            get { return animationImage.Width / 8; }
         }
 
         public int FrameHeight 
         {
-            get { return animationImage.Height / (int)amountOfFrames.Y; }
+            get { return animationImage.Height / 1; }
         }
 
         public Texture2D AnimationImage 
@@ -56,23 +56,24 @@ namespace Pacman
         public void Init(Vector2 position,Vector2 amountOfFrames)
         {
             active = false;
-            switchFrame = 80;
             this.position = position;
             this.amountOfFrames = amountOfFrames;
         }
 
         public void Update(GameTime gameTime) 
         {
-            if(active)
+            switchFrame = 80;
+            if(this.active)
                 frameCounter += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
-            else
+            else if(!this.active)
                 frameCounter = 0;
-            if (frameCounter >= switchFrame) 
+            if (frameCounter > switchFrame)  
             {
+                frameCounter = 0;
                 currentFrame.X += FrameWidth;
                 if (currentFrame.X >= animationImage.Width)
                     currentFrame.X = 0;
-                frameCounter = 0;
+                
             }
             sourcRect = new Rectangle((int)currentFrame.X, (int)currentFrame.Y * FrameHeight, FrameWidth, FrameHeight);
         }

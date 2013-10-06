@@ -16,29 +16,30 @@ namespace Pacman
         Vector2 playerPosition,tempCurrentFrame;
 
         KeyboardState keyState;
-        float moveSpeed = 500f;
+        float moveSpeed = 100f;
 
         Animation playerAnimation = new Animation();
 
         public void Init() 
         {
-            playerPosition = new Vector2(100, 100);
-            playerAnimation.Init(playerPosition, new Vector2(4, 1));
+            playerPosition = new Vector2(270, 460);
+            playerAnimation.Init(playerPosition, new Vector2(8, 1));
             tempCurrentFrame = Vector2.Zero;
         }
 
         public void LoadContent(ContentManager Content) 
         {
+            this.playerAnimation.Position = new Vector2(270,460);
             playerImage = Content.Load<Texture2D>("PacEatingAnim");
-            playerAnimation.AnimationImage = playerImage;
+            this.playerAnimation.AnimationImage = playerImage;
         }
 
-        public void Update(GameTime gameTime) 
+        public void Update(GameTime gameTime,Collision col, Layers layer) 
         {
             keyState = Keyboard.GetState();
-            playerAnimation.Active = true;
+            this.playerAnimation.Active = true;
 
-            playerPosition = playerAnimation.Position;
+            this.playerPosition = this.playerAnimation.Position;
 
             if (keyState.IsKeyDown(Keys.Down))
             {
@@ -61,16 +62,41 @@ namespace Pacman
                 tempCurrentFrame.Y = 0;
             }
 
-            tempCurrentFrame.X = playerAnimation.CurrenFrame.X;
+            tempCurrentFrame.X = this.playerAnimation.CurrenFrame.X;
 
-            playerAnimation.Position = playerPosition;
-            playerAnimation.CurrenFrame = tempCurrentFrame;
-            playerAnimation.Update(gameTime);
+
+            this.playerAnimation.CurrenFrame = tempCurrentFrame;
+       
+            for (int i = 0; i < col.CollisionMap.Count; i++) 
+            {
+                for (int j = 0; j < col.CollisionMap[i].Count; j++) 
+                {
+                    
+                    if ((playerPosition.X < col.CollisionMap[i][j].X + 20 /*&& playerPosition.Y == col.CollisionMap[i][j].Y*/)||
+                        (playerPosition.X + 20 > col.CollisionMap[i][j].X /*&& playerPosition.Y == col.CollisionMap[i][j].Y*/)||
+                        (playerPosition.Y < col.CollisionMap[i][j].Y + 20 /*&& playerPosition.X == col.CollisionMap[i][j].X*/)||
+                        (playerPosition.Y + 20 > col.CollisionMap[i][j].Y /*&& playerPosition.X == col.CollisionMap[i][j].X*/))
+                    {
+                        // Kollission
+                        playerPosition = this.playerAnimation.Position;
+                    }
+                    else 
+                    {
+                        //Ingen kollission
+                           
+                    }
+                    
+                }
+                
+            }
+            this.playerAnimation.Position = playerPosition;
+            this.playerAnimation.Update(gameTime);
+        
         }
 
         public void Draw(SpriteBatch spriteBatch) 
         {
-            playerAnimation.Draw(spriteBatch);
+            this.playerAnimation.Draw(spriteBatch);
         }
     }
 }

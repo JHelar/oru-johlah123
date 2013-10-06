@@ -20,15 +20,20 @@ namespace Pacman
         SpriteBatch spriteBatch;
 
         Player player = new Player();
+        Layers layer;
+        Collision collision;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferHeight = 615;
+            graphics.PreferredBackBufferWidth = 560;
         }
 
         protected override void Initialize()
         {
-
+            
             player.Init();
             base.Initialize();
         }
@@ -37,7 +42,12 @@ namespace Pacman
         {
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            layer = new Layers();
+            player = new Player();
+            collision = new Collision();
             player.LoadContent(Content);
+            layer.LoadContent(Content, "PacMap");
+            collision.LoadContent(Content, "PacMap");
 
         }
 
@@ -51,7 +61,7 @@ namespace Pacman
 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            player.Update(gameTime);
+           player.Update(gameTime,collision,layer);
 
 
             base.Update(gameTime);
@@ -62,6 +72,7 @@ namespace Pacman
             GraphicsDevice.Clear(Color.White);
 
             spriteBatch.Begin();
+            layer.Draw(spriteBatch);
             player.Draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
