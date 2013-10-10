@@ -20,6 +20,10 @@ namespace Pacman
         List<Vector2> row,foodRow;
         List<List<Vector2>> collisionMap,foodCollisionMap;
 
+        public List<List<string>> Contents
+        {
+            get { return contents; }
+        }
         public List<List<Vector2>> CollisionMap 
         {
             get { return collisionMap; }

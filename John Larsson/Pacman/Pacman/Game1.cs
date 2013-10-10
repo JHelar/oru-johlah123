@@ -23,21 +23,26 @@ namespace Pacman
         Enemy enemy = new Enemy();
         Layers layer;
         Collision collision;
+        HighScore highScore;
+        GameOver gameOver;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            graphics.PreferredBackBufferHeight = 615;
+            graphics.PreferredBackBufferHeight = 655;
             graphics.PreferredBackBufferWidth = 560;
         }
 
         protected override void Initialize()
         {
+            gameOver = new GameOver();
             layer = new Layers();
             player = new Player();
             collision = new Collision();
             enemy = new Enemy();
+            highScore = new HighScore();
+            highScore.Init();
             enemy.Init();
             player.Init();
             base.Initialize();
@@ -51,6 +56,7 @@ namespace Pacman
             enemy.LoadContent(Content);
             layer.LoadContent(Content, "PacMap");
             collision.LoadContent(Content, "PacMap");
+            highScore.LoadScore("PacScore",Content);
 
         }
 
@@ -64,18 +70,22 @@ namespace Pacman
 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-           player.Update(gameTime,collision,layer);
-           enemy.Update(gameTime, player, collision, layer);
+           player.Update(gameTime,collision,layer,highScore);
+           enemy.Update(player,collision,layer,gameTime);
 
+           if (gameOver.CheckIfFoodEaten(layer))
+               highScore.CurrScore = 99999;
+           else if (gameOver.CheckEnemyPlayerCollision(player, enemy, layer))
+               highScore.CurrScore = 99999;
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.White);
-
             spriteBatch.Begin();
             layer.Draw(spriteBatch);
+            highScore.DrawGameScore(spriteBatch);
             enemy.Draw(spriteBatch);
             player.Draw(spriteBatch);
             spriteBatch.End();

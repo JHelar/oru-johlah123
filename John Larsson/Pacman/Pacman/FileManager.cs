@@ -9,7 +9,7 @@ namespace Pacman
 {
     public class FileManager
     {
-        enum LoadType { Attributes, Contents };
+        enum LoadType { Attributes, Contents, Name, Score };
 
         LoadType type;
 
@@ -110,6 +110,41 @@ namespace Pacman
                             attributes.Add(tempAttributes);
                         }
                     }
+                }
+            }
+        }
+
+        public void LoadScore(string fileName, List<int> score, List<string> playerName) 
+        {
+            using (StreamReader reader = new StreamReader(fileName)) 
+            {
+                while (!reader.EndOfStream)
+                {
+                    string line = reader.ReadLine();
+                    string[] lineArray = line.Split('=');
+
+                    foreach (string li in lineArray) 
+                    {
+                        string newLine = li.Trim('[', ' ', ']');
+                        if (newLine != String.Empty)
+                        {
+                            if (type == LoadType.Name)
+                                playerName.Add(newLine);
+                            else
+                                score.Add(Convert.ToInt32(newLine));
+                        }
+                    }
+                }
+            }
+        }
+
+        public void WriteScore(string fileName,List<int> score, List<string> playerName) 
+        {
+            using (StreamWriter writer = new StreamWriter(fileName)) 
+            {
+                for (int i = 0; i < playerName.Count; i++) 
+                {
+                    writer.WriteLine(playerName[i]+"=["+score[i]+"]");
                 }
             }
         }

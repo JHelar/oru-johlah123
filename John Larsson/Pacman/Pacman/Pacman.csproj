@@ -96,6 +96,8 @@
     <Compile Include="Collision.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="FileManager.cs" />
+    <Compile Include="GameOver.cs" />
+    <Compile Include="HighScore.cs" />
     <Compile Include="Layers.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Player.cs" />

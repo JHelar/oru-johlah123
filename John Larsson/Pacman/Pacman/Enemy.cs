@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -13,134 +14,277 @@ namespace Pacman
 {
     public class Enemy
     {
-        enum EnemyState
-        {
-            Normal, Run, Right, Left, Up, Down
-        };
-
-        EnemyState enemyState;
-        Texture2D EnemyImage;
-        Vector2 tempCurrentFrame,enemyPosition;
-
-        float moveSpeed;
-        bool active;
+        Texture2D enemyImage;
+        Vector2 position,goalPosition,distanceToGoal,tempCurrentFrame;
+        Rectangle enemyRect;
 
         Animation enemyAnimation = new Animation();
-        Rectangle tempRect, enemyTempRect, tempRect2, tempRect3, tempRect4;
 
-        public bool Active 
+        enum EnemyCurrentDirection
         {
-            get { return active; }
-            set { active = value; }
+            Up, Down, Left, Right
+        };
+
+        public Vector2 EnemyPosition 
+        {
+            get { return position; }
         }
+
+        EnemyCurrentDirection enemyDirection;
+        bool goDown;
+        bool goRight;
+        bool goalReached;
+        bool moveMade;
+        bool reCalculate;
+
+        float moveSpeed = 150f;
 
         public void Init() 
         {
-            enemyState = EnemyState.Right;
-            moveSpeed = 100f;
-            enemyPosition = new Vector2(220, 220);
+            position = new Vector2(220, 260);
+            enemyAnimation.Init(position,new Vector2(1,1));
             tempCurrentFrame = Vector2.Zero;
-            enemyAnimation.Init(enemyPosition, new Vector2(1, 1));
-            active = true;
-
+            goalReached = true;
         }
 
-        public void LoadContent(ContentManager Content) 
+        public void LoadContent(ContentManager content) 
         {
-            enemyAnimation.Position = new Vector2(560, 550);
-            EnemyImage = Content.Load<Texture2D>("PacEnemyAnim");
-            enemyAnimation.AnimationImage = EnemyImage;
+            enemyImage = content.Load<Texture2D>("PacEnemyAnim");
+            enemyAnimation.Position = position;
+            enemyAnimation.AnimationImage = enemyImage;
         }
 
-        public void Update(GameTime gameTime, Player player, Collision col, Layers layer) 
+        public void Update(Player player,Collision col,Layers layer,GameTime gameTime) 
         {
             enemyAnimation.Active = true;
-            if (active) 
+            
+            if (position == goalPosition)
+                goalReached = true;
+            if (goalReached)
             {
-                if (enemyPosition.X < player.PlayerPosition.X) 
+                goalPosition = player.PlayerPosition;
+                distanceToGoal = new Vector2(goalPosition.X - position.X, goalPosition.Y - position.Y);
+                if (distanceToGoal.X > 0)
                 {
-                    enemyState = EnemyState.Right;
-                }
-                else if (enemyPosition.X > player.PlayerPosition.X) 
-                {
-                    enemyState = EnemyState.Left;
-                }
-                else if (enemyPosition.Y < player.PlayerPosition.Y) 
-                {
-                    enemyState = EnemyState.Down;
-                }
-                else if (enemyPosition.Y > player.PlayerPosition.Y) 
-                {
-                    enemyState = EnemyState.Up;
-                }
-                if (enemyState == EnemyState.Right) 
-                {
-                    enemyPosition.X += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    tempCurrentFrame.X = 0;
-                }
-                else if (enemyState == EnemyState.Left) 
-                {
-                    enemyPosition.X -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    tempCurrentFrame.X = 0;
-                }
-                else if (enemyState == EnemyState.Down) 
-                {
-                    enemyPosition.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    tempCurrentFrame.X = 0;
-                }
-                else if (enemyState == EnemyState.Up) 
-                {
-                    enemyPosition.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    tempCurrentFrame.X = 0;
-                }
-                tempCurrentFrame.Y = enemyAnimation.CurrentFrame.Y;
-                enemyAnimation.CurrentFrame = tempCurrentFrame;
+                    goRight = true;
+                    enemyDirection = EnemyCurrentDirection.Right;
+                    if (distanceToGoal.Y > 0)
+                        goDown = true;
+                    else
+                        goDown = false;
 
-                enemyTempRect = new Rectangle((int)enemyPosition.X, (int)enemyPosition.Y, (int)enemyAnimation.FrameWidth,(int)enemyAnimation.FrameHeight);
+                }
+                if (distanceToGoal.X < 0)
+                {
+                    goRight = false;
+                    enemyDirection = EnemyCurrentDirection.Left;
+                    if (distanceToGoal.Y > 0)
+                        goDown = true;
+                    else
+                        goDown = false;
+                }
+                goalReached = false;
+
+            }
+            #region Enemy movement and collision
+            moveMade = false;
+            reCalculate = false;
+            moveMade = false;
+            if (enemyDirection == EnemyCurrentDirection.Right && !moveMade)
+            {
+                position.X += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                goalPosition.X += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                enemyRect = new Rectangle((int)position.X, (int)position.Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y);
                 for (int i = 0; i < col.CollisionMap.Count; i++)
                 {
                     for (int j = 0; j < col.CollisionMap[i].Count; j++)
                     {
-                        if (col.CollisionMap[i][j].X == 999 && col.CollisionMap[i][j].Y == 999)
+                        if (enemyRect.Intersects(new Rectangle((int)col.CollisionMap[i][j].X, (int)col.CollisionMap[i][j].Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y)))
                         {
-                            
-                        }
-                        else
-                        {
-                            tempRect = new Rectangle((int)col.CollisionMap[i][j].X, (int)col.CollisionMap[i][j].Y, (int)layer.TileDimensions.X - 2, (int)layer.TileDimensions.Y - 2);
-                            if (enemyTempRect.Intersects(tempRect))
+                            position = enemyAnimation.Position;
+                            if (goDown)
                             {
-                                // Kollission
-                                enemyPosition = enemyAnimation.Position;
-
-                                if (col.CollisionMap[i][j+1].X == 999 && enemyState != EnemyState.Right) 
+                                enemyDirection = EnemyCurrentDirection.Down;
+                                if (col.Contents[i + 1][j - 1] == "x")
                                 {
-                                    enemyState = EnemyState.Right;
-                                }
-                                else if (col.CollisionMap[i+1][j].X == 999 && enemyState != EnemyState.Down) 
-                                {
-                                    enemyState = EnemyState.Down;
-                                }
-                                else if (col.CollisionMap[i-1][j].X == 999 && enemyState != EnemyState.Up) 
-                                {
-                                    enemyState = EnemyState.Up;
-                                }
-                                else if (col.CollisionMap[i][j-1].X == 999 && enemyState != EnemyState.Left) 
-                                {
-                                    enemyState = EnemyState.Left;
+                                    reCalculate = true;
                                 }
                             }
-                            else
+                            else if (!goDown)
                             {
-                                //Ingen kollission
-
+                                if (col.Contents[i - 1][j - 1] == "o")
+                                {
+                                    enemyDirection = EnemyCurrentDirection.Up;
+                                }
+                                else 
+                                {
+                                    reCalculate = true;
+                                }
                             }
                         }
                     }
                 }
-                enemyAnimation.Position = enemyPosition;
-                enemyAnimation.Update(gameTime);
+                moveMade = true;
             }
+            if (enemyDirection == EnemyCurrentDirection.Left && !moveMade)
+            {
+                position.X -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                enemyRect = new Rectangle((int)position.X, (int)position.Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y);
+                for (int i = 0; i < col.CollisionMap.Count; i++)
+                {
+                    for (int j = 0; j < col.CollisionMap[i].Count; j++)
+                    {
+                        if (enemyRect.Intersects(new Rectangle((int)col.CollisionMap[i][j].X, (int)col.CollisionMap[i][j].Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y)))
+                        {
+                            position = enemyAnimation.Position;
+                            if (goDown)
+                            {
+
+                                if (col.Contents[i + 1][j + 1] == "o")
+                                {
+                                    enemyDirection = EnemyCurrentDirection.Down;
+                                }
+                                else 
+                                {
+                                    reCalculate = true;
+                                }
+                            }
+                            else if (!goDown)
+                            {
+                                if (col.Contents[i - 1][j + 1] == "o")
+                                {
+                                    enemyDirection = EnemyCurrentDirection.Up;
+                                }
+                                else
+                                {
+                                    reCalculate = true;
+                                }
+                            }
+                        }
+                    }
+                }
+                moveMade = true;
+            }
+            if (enemyDirection == EnemyCurrentDirection.Down && !moveMade)
+            {
+                position.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                enemyRect = new Rectangle((int)position.X, (int)position.Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y);
+                for (int i = 0; i < col.CollisionMap.Count; i++)
+                {
+                    for (int j = 0; j < col.CollisionMap[i].Count; j++)
+                    {
+                        if (enemyRect.Intersects(new Rectangle((int)col.CollisionMap[i][j].X, (int)col.CollisionMap[i][j].Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y)))
+                        {
+                            position = enemyAnimation.Position;
+                            if (goRight)
+                            {
+                                if (col.Contents[i - 1][j + 1] == "o")
+                                {
+                                    enemyDirection = EnemyCurrentDirection.Right;
+                                }
+                                else
+                                {
+                                    reCalculate = true;
+                                }
+                            }
+                            else if (!goRight)
+                            {
+                                if (col.Contents[i - 1][j - 1] == "o")
+                                {
+                                    enemyDirection = EnemyCurrentDirection.Left;
+                                }
+                                else
+                                {
+                                    reCalculate = true;
+                                }
+                            }
+                        }
+                    }
+                }
+                moveMade = true;
+            }
+            if (enemyDirection == EnemyCurrentDirection.Up && !moveMade)
+            {
+                position.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                enemyRect = new Rectangle((int)position.X, (int)position.Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y);
+                for (int i = 0; i < col.CollisionMap.Count; i++)
+                {
+                    for (int j = 0; j < col.CollisionMap[i].Count; j++)
+                    {
+                        if (enemyRect.Intersects(new Rectangle((int)col.CollisionMap[i][j].X, (int)col.CollisionMap[i][j].Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y)))
+                        {
+                            position = enemyAnimation.Position;
+                            if (goRight)
+                            {
+                                if (col.Contents[i + 1][j + 1] == "o")
+                                {
+                                    enemyDirection = EnemyCurrentDirection.Right;
+                                }
+                                else
+                                {
+                                    reCalculate = true;
+                                }
+                            }
+                            else if (!goRight)
+                            {
+                                enemyDirection = EnemyCurrentDirection.Left;
+                                if (col.Contents[i + 1][j - 1] == "o")
+                                {
+                                    enemyDirection = EnemyCurrentDirection.Left;
+                                }
+                                else
+                                {
+                                    reCalculate = true;
+                                }
+                            }
+
+                        }
+                    }
+                }
+                moveMade = true;
+            }
+            #endregion
+            if (reCalculate) 
+            {
+                distanceToGoal = new Vector2(goalPosition.X - position.X, goalPosition.Y - position.Y);
+                if (distanceToGoal.X > 0 && distanceToGoal.X <= 0)
+                {
+                    goRight = true;
+                    enemyDirection = EnemyCurrentDirection.Right;
+                    if (distanceToGoal.Y > 0)
+                        goDown = true;
+                    else
+                        goDown = false;
+
+                }
+                if (distanceToGoal.X < 0 && distanceToGoal.X >= 0)
+                {
+                    goRight = false;
+                    enemyDirection = EnemyCurrentDirection.Left;
+                    if (distanceToGoal.Y > 0)
+                        goDown = true;
+                    else
+                        goDown = false;
+                }
+                else 
+                {
+                    if (distanceToGoal.Y > 0)
+                    {
+                        enemyDirection = EnemyCurrentDirection.Up;
+                        goDown = false;
+                        goRight = true;
+                    }
+                    else
+                    {
+                        enemyDirection = EnemyCurrentDirection.Down;
+                        goDown = true;
+                        goRight = false;
+                    }
+                }
+            }
+            enemyAnimation.CurrentFrame = tempCurrentFrame;
+            enemyAnimation.Position = position;
+            enemyAnimation.Update(gameTime);
         }
 
         public void Draw(SpriteBatch spriteBatch) 

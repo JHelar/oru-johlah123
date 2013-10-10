@@ -19,6 +19,7 @@ namespace Pacman
         float moveSpeed = 100f;
 
         Animation playerAnimation = new Animation();
+
         Rectangle tempRect,playerTempRect;
 
         public Vector2 PlayerPosition 
@@ -28,19 +29,19 @@ namespace Pacman
 
         public void Init() 
         {
-            playerPosition = new Vector2(270, 460);
+            playerPosition = new Vector2(270, 500);
             playerAnimation.Init(playerPosition, new Vector2(8, 2));
             tempCurrentFrame = Vector2.Zero;
         }
 
         public void LoadContent(ContentManager Content) 
         {
-            this.playerAnimation.Position = new Vector2(270,460);
+            this.playerAnimation.Position = new Vector2(270,500);
             playerImage = Content.Load<Texture2D>("PacEatingAnim");
             this.playerAnimation.AnimationImage = playerImage;
         }
 
-        public void Update(GameTime gameTime,Collision col, Layers layer) 
+        public void Update(GameTime gameTime,Collision col, Layers layer,HighScore highScore) 
         {
             keyState = Keyboard.GetState();
             this.playerAnimation.Active = true;
@@ -91,7 +92,12 @@ namespace Pacman
                             tempRect = new Rectangle((int)col.FoodCollisionMap[i][j].X, (int)col.FoodCollisionMap[i][j].Y, (int)layer.TileDimensions.X - 17, (int)layer.TileDimensions.Y - 13);
                         if (playerTempRect.Intersects(tempRect)) 
                         {
+                            if (layer.TileMap[0][i][j].X == 1 && layer.TileMap[0][i][j].Y == 0)
+                            {
+                                highScore.CurrScore += 10;
+                            }
                             layer.TileMap[0][i][j] = new Vector2(2, 0);
+                            
                         }
                     }
                     else 
