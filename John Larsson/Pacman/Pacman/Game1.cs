@@ -19,44 +19,49 @@ namespace Pacman
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        Player player = new Player();
-        Enemy enemy = new Enemy();
-        Layers layer;
-        Collision collision;
-        HighScore highScore;
-        GameOver gameOver;
+        //Player player = new Player();
+        //Enemy enemy = new Enemy();
+        //Layers layer;
+        //Collision collision;
+        //HighScore highScore;
+        //GameOver gameOver;
 
         public Game1()
         {
+            
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            graphics.PreferredBackBufferHeight = 655;
-            graphics.PreferredBackBufferWidth = 560;
         }
 
         protected override void Initialize()
         {
-            gameOver = new GameOver();
-            layer = new Layers();
-            player = new Player();
-            collision = new Collision();
-            enemy = new Enemy();
-            highScore = new HighScore();
-            highScore.Init();
-            enemy.Init();
-            player.Init();
+            ScreenManager.Instance.Init();
+            ScreenManager.Instance.Dimensions = new Vector2(560, 655);
+            graphics.PreferredBackBufferHeight = (int)ScreenManager.Instance.Dimensions.Y;
+            graphics.PreferredBackBufferWidth = (int)ScreenManager.Instance.Dimensions.X;
+            graphics.ApplyChanges();
+
+            //gameOver = new GameOver();
+            //layer = new Layers();
+            //player = new Player();
+            //collision = new Collision();
+            //enemy = new Enemy();
+            //highScore = new HighScore();
+            //highScore.Init();
+            //enemy.Init();
+            //player.Init();
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
-
+            ScreenManager.Instance.LoadContent(Content);
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            player.LoadContent(Content);
-            enemy.LoadContent(Content);
-            layer.LoadContent(Content, "PacMap");
-            collision.LoadContent(Content, "PacMap");
-            highScore.LoadScore("PacScore",Content);
+            //player.LoadContent(Content);
+            //enemy.LoadContent(Content);
+            //layer.LoadContent(Content, "PacMap");
+            //collision.LoadContent(Content, "PacMap");
+            //highScore.LoadScore("PacScore",Content);
 
         }
 
@@ -67,16 +72,16 @@ namespace Pacman
 
         protected override void Update(GameTime gameTime)
         {
-
+            ScreenManager.Instance.Update(gameTime);
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-           player.Update(gameTime,collision,layer,highScore);
-           enemy.Update(player,collision,layer,gameTime);
+           //player.Update(gameTime,collision,layer,highScore);
+           //enemy.Update(player,collision,layer,gameTime);
 
-           if (gameOver.CheckIfFoodEaten(layer))
-               highScore.CurrScore = 99999;
-           else if (gameOver.CheckEnemyPlayerCollision(player, enemy, layer))
-               highScore.CurrScore = 99999;
+           //if (gameOver.CheckIfFoodEaten(layer))
+           //    highScore.CurrScore = 99999;
+           //else if (gameOver.CheckEnemyPlayerCollision(player, enemy, layer))
+           //    highScore.CurrScore = 99999;
             base.Update(gameTime);
         }
 
@@ -84,10 +89,11 @@ namespace Pacman
         {
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
-            layer.Draw(spriteBatch);
-            highScore.DrawGameScore(spriteBatch);
-            enemy.Draw(spriteBatch);
-            player.Draw(spriteBatch);
+            ScreenManager.Instance.Draw(spriteBatch);
+            //layer.Draw(spriteBatch);
+            //highScore.DrawGameScore(spriteBatch);
+            //enemy.Draw(spriteBatch);
+            //player.Draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
         }
