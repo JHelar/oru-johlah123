@@ -73,7 +73,7 @@ namespace Pacman
         protected override void Update(GameTime gameTime)
         {
             ScreenManager.Instance.Update(gameTime);
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
            //player.Update(gameTime,collision,layer,highScore);
            //enemy.Update(player,collision,layer,gameTime);
@@ -87,7 +87,7 @@ namespace Pacman
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.White);
+            GraphicsDevice.Clear(Color.Black);
             spriteBatch.Begin();
             ScreenManager.Instance.Draw(spriteBatch);
             //layer.Draw(spriteBatch);

@@ -10,41 +10,34 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Pacman
 {
-    public class TitelScreen : GameScreen
+    public class MainMenu : GameScreen
     {
         KeyboardState keyState;
         SpriteFont font;
 
-        FadeAnimation fade;
-        Texture2D image;
+        MenuManager menu;
 
         public override void LoadContent(ContentManager Content)
         {
             base.LoadContent(Content);
-            fade = new FadeAnimation();
-            image = content.Load<Texture2D>("TitelScreen/PacTitel");
-            fade.LoadContent(content, image, "", Vector2.Zero);
-            fade.Scale = 1.0f;
-            fade.Active = false;
-            fade.FadeSpeed = 1.0f;
+            menu = new MenuManager();
+            menu.LoadContent(content, "PacMenu");
         }
 
         public override void UnloadContent()
         {
             base.UnloadContent();
+            menu.UnloadContent();
         }
 
         public override void Update(GameTime gameTime)
         {
-            fade.Update(gameTime);
-            keyState = Keyboard.GetState();
-            if (keyState.IsKeyDown(Keys.Enter))
-                ScreenManager.Instance.AddScreen(new MainMenu());
+            menu.Update(gameTime);
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            fade.Draw(spriteBatch);
+            menu.Draw(spriteBatch);
         }
     }
 }

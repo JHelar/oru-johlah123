@@ -41,6 +41,13 @@ namespace Pacman
             this.playerAnimation.AnimationImage = playerImage;
         }
 
+        /// <summary>
+        /// Spelar förflyttande, anti-kollission, HighScore räkning.
+        /// </summary>
+        /// <param name="gameTime"></param>
+        /// <param name="col"></param>
+        /// <param name="layer"></param>
+        /// <param name="highScore"></param>
         public void Update(GameTime gameTime,Collision col, Layers layer,HighScore highScore) 
         {
             keyState = Keyboard.GetState();
@@ -111,7 +118,6 @@ namespace Pacman
                         else
                         {
                             //Ingen kollission
-
                         }
                     }
                 }   

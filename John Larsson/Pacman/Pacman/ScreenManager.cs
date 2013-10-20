@@ -48,6 +48,12 @@ namespace Pacman
 
         Vector2 dimensions;
 
+        bool transition;
+
+        FadeAnimation fade;
+
+        Texture2D fadeTexture;
+
         #endregion
 
         #region Properties
@@ -70,35 +76,77 @@ namespace Pacman
 
         #endregion
 
-        #region Huvud metoder
+        #region Huvudmetoder
 
         public void AddScreen(GameScreen screen) 
         {
+            transition = true;
             newScreen = screen;
-            screenStack.Push(screen);
-            currentScreen.UnloadContent();
-            currentScreen = newScreen;
-            currentScreen.LoadContent(content);
+            fade.Active = true;
+            fade.Alpha = 0.0f;
+            fade.ActivateValue = 1.0f;    
         }
 
+        public void AddScreen(GameScreen screen, float alpha) 
+        {
+            transition = true;
+            newScreen = screen;
+            fade.Active = true;
+            fade.ActivateValue = 1.0f;
+            if (alpha != 1.0f)
+                fade.Alpha = 1.0f - alpha;
+            else
+                fade.Alpha = alpha;
+            fade.Increase = true;
+        }
         public void Init() 
         {
             currentScreen = new SplashScreen();
+            fade = new FadeAnimation();
         }
         public void LoadContent(ContentManager Content) 
         {
             content = new ContentManager(Content.ServiceProvider, "Content");
             currentScreen.LoadContent(content);
+
+            fadeTexture = content.Load<Texture2D>("ScreenFade");
+            fade.LoadContent(content, fadeTexture, "", Vector2.Zero);
+            fade.Scale = dimensions.Y;
         }
         public void Update(GameTime gameTime) 
         {
-            currentScreen.Update(gameTime);
+            if (!transition)
+                currentScreen.Update(gameTime);
+            else
+                Transition(gameTime);
         }
         public void Draw(SpriteBatch spriteBatch) 
         {
             currentScreen.Draw(spriteBatch);
+            if(transition)
+                fade.Draw(spriteBatch);
         }
 
+        #endregion
+
+        #region Privata metoder
+
+        private void Transition(GameTime gameTime) 
+        {
+            fade.Update(gameTime);
+            if (fade.Alpha == 1.0f && fade.Timer.TotalSeconds == 1.0f) 
+            {
+                screenStack.Push(newScreen);
+                currentScreen.UnloadContent();
+                currentScreen = newScreen;
+                currentScreen.LoadContent(content);
+            }
+            else if (fade.Alpha == 0.0f) 
+            {
+                transition = false;
+                fade.Active = false;
+            }
+        }
         #endregion
     }
 }
