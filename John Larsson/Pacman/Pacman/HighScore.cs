@@ -53,7 +53,7 @@ namespace Pacman
 
         public void LoadScore(string mapID, ContentManager content) 
         {
-            PacFont = content.Load<SpriteFont>("PacFont");
+            PacFont = content.Load<SpriteFont>("PacGameFont");
             filemanager = new FileManager();
             //filemanager.LoadScore("Load/Score/" + mapID + ".cme", score, playerName);
         }

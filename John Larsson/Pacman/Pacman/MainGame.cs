@@ -44,6 +44,13 @@ namespace Pacman
             enemy.Update(player,collision,layer,gameTime);
         }
 
+        public override void UnloadContent()
+        {
+            base.UnloadContent();
+            player.UnloadContent();
+
+        }
+
         public override void Draw(SpriteBatch spriteBatch)
         {
             layer.Draw(spriteBatch);

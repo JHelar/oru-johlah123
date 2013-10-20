@@ -41,6 +41,16 @@ namespace Pacman
             this.playerAnimation.AnimationImage = playerImage;
         }
 
+        public void UnloadContent() 
+        {
+            playerImage = null;
+            playerPosition = tempCurrentFrame = Vector2.Zero;
+            moveSpeed = 0.0f;
+            playerAnimation = null;
+            playerTempRect = Rectangle.Empty;
+            tempRect = Rectangle.Empty;
+        }
+
         /// <summary>
         /// Spelar förflyttande, anti-kollission, HighScore räkning.
         /// </summary>
@@ -58,13 +68,10 @@ namespace Pacman
             if (keyState.IsKeyDown(Keys.Down))
             {
                 playerPosition.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                tempCurrentFrame.Y = 0;
-                
             }
             else if (keyState.IsKeyDown(Keys.Up))
             {
                 playerPosition.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                tempCurrentFrame.Y = 1;
             }
             else if (keyState.IsKeyDown(Keys.Right))
             {
