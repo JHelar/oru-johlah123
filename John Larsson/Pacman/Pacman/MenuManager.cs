@@ -29,6 +29,7 @@ namespace Pacman
         SpriteFont font;
 
         int axis,itemNumber;
+        string align;
         #endregion
         #region Privata metoder
         private void SetMenuItems() 
@@ -126,6 +127,9 @@ namespace Pacman
                             break;
                         case "Animation":
                             animationTypes.Add(contents[i][j]);
+                            break;
+                        case "Align":
+                            align = contents[i][j];
                             break;
                     }
                 }
