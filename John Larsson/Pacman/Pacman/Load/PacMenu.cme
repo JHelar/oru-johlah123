@@ -3,10 +3,10 @@
 Load=[Axis][Position][Font][Animation]
 [2][200 200][PacFont][Fade]
 
-Load=[Item]
-[New Game]
-[High Score]
-[Credits]
-[Exit]
+Load=[Item][LinkType][LinkID]
+[New Game][NewGame][MainGame]
+[High Score][Screen][SplashScreen]
+[Credits][Screen][SplashScreen]
+[Exit][Screen][SplashScreen]
 
 EndLoad=[PacMenu]

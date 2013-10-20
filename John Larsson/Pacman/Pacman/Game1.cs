@@ -19,12 +19,7 @@ namespace Pacman
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        //Player player = new Player();
-        //Enemy enemy = new Enemy();
-        //Layers layer;
-        //Collision collision;
-        //HighScore highScore;
-        //GameOver gameOver;
+        
 
         public Game1()
         {
@@ -41,15 +36,7 @@ namespace Pacman
             graphics.PreferredBackBufferWidth = (int)ScreenManager.Instance.Dimensions.X;
             graphics.ApplyChanges();
 
-            //gameOver = new GameOver();
-            //layer = new Layers();
-            //player = new Player();
-            //collision = new Collision();
-            //enemy = new Enemy();
-            //highScore = new HighScore();
-            //highScore.Init();
-            //enemy.Init();
-            //player.Init();
+            
             base.Initialize();
         }
 
@@ -57,11 +44,6 @@ namespace Pacman
         {
             ScreenManager.Instance.LoadContent(Content);
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            //player.LoadContent(Content);
-            //enemy.LoadContent(Content);
-            //layer.LoadContent(Content, "PacMap");
-            //collision.LoadContent(Content, "PacMap");
-            //highScore.LoadScore("PacScore",Content);
 
         }
 
@@ -73,10 +55,9 @@ namespace Pacman
         protected override void Update(GameTime gameTime)
         {
             ScreenManager.Instance.Update(gameTime);
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-           //player.Update(gameTime,collision,layer,highScore);
-           //enemy.Update(player,collision,layer,gameTime);
+           
 
            //if (gameOver.CheckIfFoodEaten(layer))
            //    highScore.CurrScore = 99999;
@@ -90,10 +71,6 @@ namespace Pacman
             GraphicsDevice.Clear(Color.Black);
             spriteBatch.Begin();
             ScreenManager.Instance.Draw(spriteBatch);
-            //layer.Draw(spriteBatch);
-            //highScore.DrawGameScore(spriteBatch);
-            //enemy.Draw(spriteBatch);
-            //player.Draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
         }

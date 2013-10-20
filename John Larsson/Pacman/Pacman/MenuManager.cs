@@ -13,7 +13,7 @@ namespace Pacman
     public class MenuManager
     {
         #region Variabler
-        List<string> menuItems, animationTypes;
+        List<string> menuItems, animationTypes, linkType,linkID;
         List<Texture2D> menuImages;
         List<List<ScreenAnimation>> screenAnimation;
         List<List<string>> attributes, contents;
@@ -81,7 +81,6 @@ namespace Pacman
         }
 
         #endregion
-
         #region Huvudmetoder
         public void LoadContent(ContentManager content,string id) 
         {
@@ -93,6 +92,8 @@ namespace Pacman
             animationTypes = new List<string>();
             attributes = new List<List<string>>();
             contents = new List<List<string>>();
+            linkType = new List<string>();
+            linkID = new List<string>();
             itemNumber = 0;
             position = Vector2.Zero;
             fileManager = new FileManager();
@@ -131,6 +132,12 @@ namespace Pacman
                         case "Align":
                             align = contents[i][j];
                             break;
+                        case "LinkType":
+                            linkType.Add(contents[i][j]);
+                            break;
+                        case "LinkID":
+                            linkID.Add(contents[i][j]);
+                            break;
                     }
                 }
             }
@@ -166,6 +173,14 @@ namespace Pacman
                     itemNumber++;
                 else if (keyState.IsKeyDown(Keys.Up) && !oldKeyState.IsKeyDown(Keys.Up) || keyState.IsKeyDown(Keys.W) && !oldKeyState.IsKeyDown(Keys.W))
                     itemNumber--;
+            }
+            if (keyState.IsKeyDown(Keys.Enter) || keyState.IsKeyDown(Keys.Z)) 
+            {
+                if (linkType[itemNumber] == "NewGame") 
+                {
+                    Type newClass = Type.GetType("Pacman."+linkID[itemNumber]);
+                    ScreenManager.Instance.AddScreen((GameScreen)Activator.CreateInstance(newClass));
+                }
             }
             if (itemNumber < 0)
                 itemNumber = 0;
