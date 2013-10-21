@@ -42,6 +42,7 @@ namespace Pacman
         {
             player.Update(gameTime,collision,layer,highScore);
             enemy.Update(player,collision,layer,gameTime);
+
         }
 
         public override void UnloadContent()

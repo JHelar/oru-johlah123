@@ -30,7 +30,7 @@ namespace Pacman
         public void Init() 
         {
             playerPosition = new Vector2(270, 500);
-            playerAnimation.Init(playerPosition, new Vector2(8, 2));
+            playerAnimation.Init(playerPosition, new Vector2(8, 4));
             tempCurrentFrame = Vector2.Zero;
         }
 
@@ -68,10 +68,12 @@ namespace Pacman
             if (keyState.IsKeyDown(Keys.Down))
             {
                 playerPosition.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                tempCurrentFrame.Y = 3;
             }
             else if (keyState.IsKeyDown(Keys.Up))
             {
                 playerPosition.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                tempCurrentFrame.Y = 4;
             }
             else if (keyState.IsKeyDown(Keys.Right))
             {
