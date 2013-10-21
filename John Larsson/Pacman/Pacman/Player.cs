@@ -73,7 +73,7 @@ namespace Pacman
             else if (keyState.IsKeyDown(Keys.Up))
             {
                 playerPosition.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                tempCurrentFrame.Y = 4;
+                tempCurrentFrame.Y = 2;
             }
             else if (keyState.IsKeyDown(Keys.Right))
             {
@@ -102,9 +102,9 @@ namespace Pacman
                 {
                     if (col.CollisionMap[i][j].X == 999 && col.CollisionMap[i][j].Y == 999)
                     {
-                        if(tempCurrentFrame.Y == 0)
+                        if(tempCurrentFrame.Y == 0 || tempCurrentFrame.Y == 3)
                             tempRect = new Rectangle((int)col.FoodCollisionMap[i][j].X + 13, (int)col.FoodCollisionMap[i][j].Y, (int)layer.TileDimensions.X - 17, (int)layer.TileDimensions.Y - 13);
-                        else if(tempCurrentFrame.Y == 1)
+                        else if(tempCurrentFrame.Y == 1 || tempCurrentFrame.Y == 2)
                             tempRect = new Rectangle((int)col.FoodCollisionMap[i][j].X, (int)col.FoodCollisionMap[i][j].Y, (int)layer.TileDimensions.X - 17, (int)layer.TileDimensions.Y - 13);
                         if (playerTempRect.Intersects(tempRect)) 
                         {
