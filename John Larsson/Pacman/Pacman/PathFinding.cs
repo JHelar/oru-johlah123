@@ -20,6 +20,7 @@ namespace Pacman
         Queue<Vector2> path;
         int gValue;
         int goalFound;
+        int nodeCount;
         #endregion
 
         public Queue<Vector2> Path 
@@ -37,28 +38,36 @@ namespace Pacman
             currentSearchNode = new Node();
             goalNode = new Node();
             gValue = 10;
+            nodeCount = 0;
             for (int i = 0; i < col.FoodCollisionMap.Count; i++)
             {
                 for (int j = 0; j < col.FoodCollisionMap[i].Count; j++)
                 {
+                    tempNode = new Node();
                     if (col.FoodCollisionMap[i][j].X != 999)
                     {
-                        tempNode = new Node();
                         tempDistance = new Vector2((goalPosition.X - col.FoodCollisionMap[i][j].X) / 20, (goalPosition.Y - col.FoodCollisionMap[i][j].Y) / 20);
                         if (tempDistance.X < 0)
                             tempDistance.X = tempDistance.X * -1;
                         if (tempDistance.Y < 0)
                             tempDistance.Y = tempDistance.Y * -1;
+                        tempNode.NodeID = nodeCount;
                         tempNode.MapPosition = col.FoodCollisionMap[i][j];
-                        tempNode.NodeValue = ((int)tempDistance.X + (int)tempDistance.Y) * 10;
-                        tempNode.NodePosition = new Vector2((float)i, (float)j);
+                        tempNode.HValue = ((int)tempDistance.X + (int)tempDistance.Y);
+                        tempNode.Position.X = j;
+                        tempNode.Position.Y = i;
+                        tempNode.Wall = false;
                     }
                     else
                     {
+                        tempNode.NodeID = nodeCount;
                         tempNode.MapPosition = col.FoodCollisionMap[i][j];
-                        tempNode.NodePosition = new Vector2((float)i, (float)j);
-                        tempNode.NodeValue = 999;
+                        tempNode.Position.X = j;
+                        tempNode.Position.Y = i;
+                        tempNode.HValue = 999;
+                        tempNode.Wall = true;
                     }
+                    nodeCount++;
                     nodeRow.Add(tempNode);
                 }
                 nodes.Add(nodeRow);
@@ -86,7 +95,7 @@ namespace Pacman
                 {
                     if (tempRect.Intersects(new Rectangle((int)col.FoodCollisionMap[i][j].X, (int)col.FoodCollisionMap[i][j].Y, 20, 20)))
                     {
-                        PositionInGrid = new Vector2((float)i, (float)j);
+                        PositionInGrid = new Vector2((float)j, (float)i);
                         loopBreak = true;
                         break;
                     }
@@ -125,7 +134,7 @@ namespace Pacman
                 {
                     if (tempRect.Intersects(new Rectangle((int)col.FoodCollisionMap[i][j].X, (int)col.FoodCollisionMap[i][j].Y, 20, 20)))
                     {
-                        PositionInGrid = new Vector2((float)i, (float)j);
+                        PositionInGrid = new Vector2((float)j, (float)i);
                         loopBreak = true;
                         break;
                     }
@@ -155,9 +164,11 @@ namespace Pacman
         private void startPathing()
         {
             goalFound = 0;
-            openList.Add(currentSearchNode);
-            while (goalFound != 200)
+            closedList.Add(currentSearchNode);
+            checkAdjacent();
+            while (goalFound != 100)
             {
+                
                 findLowest();
                 openList.Remove(currentSearchNode);
                 closedList.Add(currentSearchNode);
@@ -166,59 +177,103 @@ namespace Pacman
             }
         }
         /// <summary>
-        /// Tittar på närliggande noder
+        /// Tittar på närliggande noderw 
         /// </summary>
         private void checkAdjacent() 
         {
             //Noden Över
-            if (nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y].NodeValue != 999 && !closedList.Contains(nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y])) 
+            if (!nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X].Wall) 
             {
-                if (!openList.Contains(nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y]))
+                if (!closedList.Contains(nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X]))
                 {
-                    openList.Add(nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y]);
-                    nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y].Parent = currentSearchNode.NodePosition;
-                    nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y].ParentGValue = currentSearchNode.GValue;
-                    nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y].GValue = nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y].ParentGValue + gValue;
-                    setFValue(nodes[(int)currentSearchNode.NodePosition.X - 1][(int)currentSearchNode.NodePosition.Y]);
+                    if (!openList.Contains(nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X]))
+                    {
+                        openList.Add(nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X]);
+                        nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X].Parent = currentSearchNode;
+                        nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X].GValue = nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X].Parent.GValue + gValue;
+                        setFValue(nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X]);
+                    }
+                    else 
+                    {
+                        if (currentSearchNode.GValue + gValue < nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X].GValue) 
+                        {
+                            nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X].Parent = currentSearchNode;
+                            nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X].GValue = nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X].Parent.GValue + gValue;
+                            setFValue(nodes[(int)currentSearchNode.NodePosition.Y - 1][(int)currentSearchNode.NodePosition.X]);
+                        }
+                    }
                 }
             }
 
             //Noden under
-            if (nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y].NodeValue != 999 && !closedList.Contains(nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y]))
+            if (!nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X].Wall)
             {
-                if (!openList.Contains(nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y]))
+                if (!closedList.Contains(nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X]))
                 {
-                    openList.Add(nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y]);
-                    nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y].Parent = currentSearchNode.NodePosition;
-                    nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y].ParentGValue = currentSearchNode.GValue;
-                    nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y].GValue = nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y].ParentGValue + gValue;
-                    setFValue(nodes[(int)currentSearchNode.NodePosition.X + 1][(int)currentSearchNode.NodePosition.Y]);
+                    if (!openList.Contains(nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X]))
+                    {
+                        openList.Add(nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X]);
+                        nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X].Parent = currentSearchNode;
+                        nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X].GValue = nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X].Parent.GValue + gValue;
+                        setFValue(nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X]);
+                    }
+                    else 
+                    {
+                        if (currentSearchNode.GValue + gValue < nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X].GValue) 
+                        {
+                            nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X].Parent = currentSearchNode;
+                            nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X].GValue = nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X].Parent.GValue + gValue;
+                            setFValue(nodes[(int)currentSearchNode.NodePosition.Y + 1][(int)currentSearchNode.NodePosition.X]);
+                        }
+                    }
                 }
             }
 
             //Noden till Höger
-            if (nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1].NodeValue != 999 && !closedList.Contains(nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1]))
+            if (!nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1].Wall)
             {
-                if (!openList.Contains(nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1]))
+                if (!closedList.Contains(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1]))
                 {
-                    openList.Add(nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1]);
-                    nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1].Parent = currentSearchNode.NodePosition;
-                    nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1].ParentGValue = currentSearchNode.GValue;
-                    nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1].GValue = nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1].ParentGValue + gValue;
-                    setFValue(nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y + 1]);
+                    if (!openList.Contains(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1]))
+                    {
+                        openList.Add(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1]);
+                        nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1].Parent = currentSearchNode;
+                        nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1].GValue = nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1].Parent.GValue + gValue;
+                        setFValue(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1]);
+                    }
+                    else 
+                    {
+                        if (currentSearchNode.GValue + gValue < nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1].GValue) 
+                        {
+                            nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1].Parent = currentSearchNode;
+                            nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1].GValue = nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1].Parent.GValue + gValue;
+                            setFValue(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X + 1]);
+                        }
+                    }
                 }
             }
 
             //Noden till Vänster
-            if (nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1].NodeValue != 999 && !closedList.Contains(nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1]))
+            if (!nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1].Wall)
             {
-                if (!openList.Contains(nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1]))
+                if (!closedList.Contains(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1]))
                 {
-                    openList.Add(nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1]);
-                    nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1].Parent = currentSearchNode.NodePosition;
-                    nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1].ParentGValue = currentSearchNode.GValue;
-                    nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1].GValue = nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1].ParentGValue + gValue;
-                    setFValue(nodes[(int)currentSearchNode.NodePosition.X][(int)currentSearchNode.NodePosition.Y - 1]);
+                    if (!openList.Contains(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1]))
+                    {
+                        openList.Add(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1]);
+                        nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1].Parent = currentSearchNode;
+                        nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1].GValue = nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1].Parent.GValue + gValue;
+                        setFValue(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1]);
+                    }
+                    else 
+                    {
+                        if (currentSearchNode.GValue + gValue < nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1].GValue) 
+                        {
+                            nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1].Parent = currentSearchNode;
+                            nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1].GValue = nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1].Parent.GValue + gValue;
+                            setFValue(nodes[(int)currentSearchNode.NodePosition.Y][(int)currentSearchNode.NodePosition.X - 1]);
+                        }
+                    }
                 }
             }
         }
@@ -227,7 +282,7 @@ namespace Pacman
         /// </summary>
         private void setFValue(Node node) 
         {
-            node.FValue = node.GValue + node.NodeValue;
+            node.FValue = node.GValue + node.HValue;
         }
         /// <summary>
         /// Letar efter noden med minsta fValue

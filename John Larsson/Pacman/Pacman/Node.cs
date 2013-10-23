@@ -11,21 +11,23 @@ namespace Pacman
 {
     public class Node
     {
-        Vector2 parent;
-        Vector2 nodePosition,mapPosition;
-        int nodeDistanceValue,fValue,gValue,parentGValue;
+        Node parent;
+        GridPosition position;
+        Vector2 mapPosition;
+        int hValue,fValue,gValue,nodeID;
+        bool wall;
 
         #region Properties
-
-        public int ParentGValue 
-        {
-            get { return parentGValue; }
-            set { parentGValue = value; }
-        }
-        public Vector2 Parent
+        
+        public Node Parent
         {
             get { return parent; }
-            set { parent = value; }
+            set
+            {
+                if (parent == null)
+                    parent = new Node();
+                parent = value; 
+            }
         }
 
         public Vector2 MapPosition 
@@ -34,16 +36,21 @@ namespace Pacman
             set { mapPosition = value; }
         }
 
-        public Vector2 NodePosition 
+        public GridPosition Position 
         {
-            get { return nodePosition; }
-            set { nodePosition = value; }
+            get { return position; }
+            set { position = value; }
         }
 
-        public int NodeValue 
+        public int NodeID 
         {
-            get { return nodeDistanceValue; }
-            set { nodeDistanceValue = value; }
+            get { return nodeID; }
+            set { nodeID = value; }
+        }
+        public int HValue 
+        {
+            get { return hValue; }
+            set { hValue = value; }
         }
 
         public int FValue 
@@ -57,6 +64,27 @@ namespace Pacman
             get { return gValue; }
             set { gValue = value; }
         }
+
+        public bool Wall 
+        {
+            get { return wall; }
+            set { wall = value; }
+        }
         #endregion
+    }
+
+    class GridPosition 
+    {
+        int x, y;
+        public int X 
+        {
+            get { return x; }
+            set { x = value; }
+        }
+        public int Y 
+        {
+            get { return Y; }
+            set { y = value; }
+        }
     }
 }
