@@ -29,13 +29,13 @@ namespace Pacman
             highScore = new HighScore();
             gameOver = new GameOver();
             highScore.Init();
-            enemy.Init();
             player.Init();
             player.LoadContent(Content);
             enemy.LoadContent(Content);
             layer.LoadContent(Content, "PacMap");
             collision.LoadContent(Content, "PacMap");
             highScore.LoadScore("PacScore",Content);
+            enemy.Init(collision, player);
         }
 
         public override void Update(GameTime gameTime)

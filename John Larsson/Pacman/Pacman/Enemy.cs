@@ -21,7 +21,7 @@ namespace Pacman
         PathFinding pathFinding;
         Animation enemyAnimation = new Animation();
 
-        float moveSpeed = 20f;
+        float moveSpeed = 1f;
         bool newPath;
         Vector2 velocity;
 
@@ -35,7 +35,7 @@ namespace Pacman
             get { return Vector2.Distance(position, paths.Peek()); }
         }
   
-        public void Init() 
+        public void Init(Collision col,Player player) 
         {
             newPath = true;
             velocity = Vector2.Zero;
@@ -43,6 +43,7 @@ namespace Pacman
             position = new Vector2(220, 260);
             enemyAnimation.Init(position,new Vector2(1,1));
             tempCurrentFrame = Vector2.Zero;
+            pathFinding.Init(col, player.PlayerPosition, position);
         }
 
         public void setPath(Queue<Vector2> paths) 
@@ -61,11 +62,13 @@ namespace Pacman
 
         public void Update(Player player,Collision col,Layers layer,GameTime gameTime) 
         {
-            position = enemyAnimation.Position;
             enemyAnimation.Active = true;
+            position = enemyAnimation.Position;
             if (newPath)
             {
-                pathFinding.FindPath(player.PlayerPosition, position, col);
+                pathFinding = new PathFinding();
+                pathFinding.Init(col, player.PlayerPosition, position);
+                pathFinding.PathFinder();
                 setPath(pathFinding.Path);
                 newPath = false;
             }
@@ -73,24 +76,27 @@ namespace Pacman
             {
                 if (distanceToDestination < moveSpeed)
                 {
-                    position = paths.Peek(); paths.Dequeue();
+                    position = paths.Peek();
+                    paths.Dequeue();
                 }
                 else
                 {
                     Vector2 direction = paths.Peek() - position;
                     direction.Normalize();
-                    if(direction.X > 0)
-                        position.X += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    else if(direction.X < 0)
-                        position.X -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    else if(direction.Y > 0)
-                        position.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    else if(direction.Y < 0)
-                        position.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                    if (direction.X > 0)
+                        position.X += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 40;
+                    else if (direction.X < 0)
+                        position.X -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 40;
+                    else if (direction.Y > 0)
+                        position.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 40;
+                    else if (direction.Y < 0)
+                        position.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 40;
                 }
             }
             else
+            {
                 newPath = true;
+            }
             enemyAnimation.CurrentFrame = tempCurrentFrame;
             enemyAnimation.Position = position;
             enemyAnimation.Update(gameTime);

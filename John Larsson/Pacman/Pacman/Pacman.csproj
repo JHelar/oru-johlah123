@@ -93,7 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animation.cs" />
-    <Compile Include="Astar.cs" />
     <Compile Include="Collision.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="FadeAnimation.cs" />
@@ -106,7 +105,6 @@
     <Compile Include="MainMenu.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="MenuManager.cs" />
-    <Compile Include="Node.cs" />
     <Compile Include="PathFinding.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
