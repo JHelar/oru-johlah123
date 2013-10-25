@@ -5,7 +5,7 @@ Load=[Axis][Position][Font][Animation]
 
 Load=[Item][LinkType][LinkID]
 [New Game][NewGame][MainGame]
-[High Score][Screen][SplashScreen]
+[High Score][HighScore][HighScoreScreen]
 [Credits][Screen][SplashScreen]
 [Exit][Screen][SplashScreen]
 

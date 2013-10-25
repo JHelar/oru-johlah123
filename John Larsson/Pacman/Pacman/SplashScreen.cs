@@ -66,7 +66,6 @@ namespace Pacman
 
         public override void Update(GameTime gameTime)
         {
-            keyState = Keyboard.GetState();
             
             fade[imageNumber].Update(gameTime);
 

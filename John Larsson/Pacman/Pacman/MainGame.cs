@@ -28,7 +28,7 @@ namespace Pacman
             collision = new Collision();
             highScore = new HighScore();
             gameOver = new GameOver();
-            highScore.Init();
+            highScore.Init(Content);
             player.Init();
             player.LoadContent(Content);
             enemy.LoadContent(Content);
