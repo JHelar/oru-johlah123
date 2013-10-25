@@ -50,7 +50,10 @@ namespace Pacman
         {
             foreach (Vector2 path in paths)
                 this.paths.Enqueue(path);
-            this.position = this.paths.Dequeue();
+            if (paths.Count > 0)
+                this.position = this.paths.Dequeue();
+            else
+                newPath = true;
         }
 
         public void LoadContent(ContentManager content) 
@@ -66,9 +69,9 @@ namespace Pacman
             position = enemyAnimation.Position;
             if (newPath)
             {
-                pathFinding = new PathFinding();
-                pathFinding.Init(col, player.PlayerPosition, position);
+                pathFinding.ClearPath(col, player.PlayerPosition, position);
                 pathFinding.PathFinder();
+                paths.Clear();
                 setPath(pathFinding.Path);
                 newPath = false;
             }
@@ -84,13 +87,13 @@ namespace Pacman
                     Vector2 direction = paths.Peek() - position;
                     direction.Normalize();
                     if (direction.X > 0)
-                        position.X += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 40;
+                        position.X += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 100;
                     else if (direction.X < 0)
-                        position.X -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 40;
+                        position.X -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 100;
                     else if (direction.Y > 0)
-                        position.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 40;
+                        position.Y += moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 100;
                     else if (direction.Y < 0)
-                        position.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 40;
+                        position.Y -= moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds * 100;
                 }
             }
             else

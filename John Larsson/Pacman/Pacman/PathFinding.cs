@@ -74,10 +74,23 @@ namespace Pacman
 
         public void ClearPath(Collision col, Vector2 goalPosition, Vector2 startPosition) 
         {
-            openList.Clear();
-            closedList.Clear();
-            gridPathList.Clear();
-            mapPathQueue.Clear();
+            openList = new List<Position>();
+            closedList = new List<Position>();
+            mapPathQueue = new Queue<Vector2>();
+            map = new Node[rows, collumns];
+            resetMap();
+            this.startPosition = new Position((int)startPosition.Y / 20, ((int)startPosition.X / 20));
+            this.goalPosition = new Position((int)goalPosition.Y / 20, ((int)goalPosition.X / 20));
+            for (int i = 2; i < col.FoodCollisionMap.Count; i++)
+            {
+                for (int j = 0; j < col.FoodCollisionMap[i].Count; j++)
+                {
+                    if (col.FoodCollisionMap[i][j].X == 999)
+                    {
+                        map[i, j].wall = true;
+                    }
+                }
+            }
         }
 
         private void resetMap()
@@ -295,6 +308,7 @@ namespace Pacman
 
         private void createMapPath()
         {
+            mapPathQueue = new Queue<Vector2>();
             for (int i = 0; i < gridPathList.Count; i++)
             {
                 mapPathQueue.Enqueue(new Vector2(gridPathList[i].y * 20, gridPathList[i].x * 20));
