@@ -60,7 +60,7 @@ namespace Pacman
                     {
                         case "Fade":
                             tempAnimation.Add(new FadeAnimation());
-                            tempAnimation[tempAnimation.Count - 1].LoadContent(content, menuImages[i], menuItems[i], pos);
+                            tempAnimation[tempAnimation.Count - 1].LoadContent(content, menuImages[i], menuItems[i], pos,"PacFont");
                             break;
                     }
                 }

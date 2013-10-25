@@ -23,7 +23,7 @@ namespace Pacman
             keyState = new KeyboardState();
             textFade = new FadeAnimation();
 
-            textFade.LoadContent(Content,null,"Press Enter to go back to Main Menu",new Vector2(80,540));
+            textFade.LoadContent(Content,null,"Press Enter to go back to Main Menu",new Vector2(80,540),"PacGameFont");
             textFade.Active = true;
 
             highScore.Init(Content);

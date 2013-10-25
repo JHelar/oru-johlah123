@@ -52,7 +52,7 @@ namespace Pacman
             for (int i = 0; i < fade.Count; i++) 
             {
                 fade[i].FadeSpeed = 0.5f;
-                fade[i].LoadContent(content, images[i], "", Vector2.Zero);
+                fade[i].LoadContent(content, images[i], "", Vector2.Zero,null);
                 fade[i].Scale = 1.0f;
                 fade[i].Active = true;
             }

@@ -101,7 +101,7 @@ namespace Pacman
         }
         public void Init() 
         {
-            currentScreen = new SplashScreen();
+            currentScreen = new MainMenu();
             fade = new FadeAnimation();
         }
         public void LoadContent(ContentManager Content) 
@@ -110,7 +110,7 @@ namespace Pacman
             currentScreen.LoadContent(content);
 
             fadeTexture = content.Load<Texture2D>("ScreenFade");
-            fade.LoadContent(content, fadeTexture, "", Vector2.Zero);
+            fade.LoadContent(content, fadeTexture, "", Vector2.Zero,null);
             fade.Scale = dimensions.Y;
         }
         public void Update(GameTime gameTime) 

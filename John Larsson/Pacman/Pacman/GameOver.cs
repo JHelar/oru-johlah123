@@ -10,7 +10,14 @@ namespace Pacman
 {
     public class GameOver
     {
-        public bool CheckEnemyPlayerCollision(Player player, Enemy enemy, Layers layer)
+        public bool CheckGameState(Player player, Enemy enemy, Layers layer) 
+        {
+            if(CheckEnemyPlayerCollision(player,enemy,layer) || CheckIfFoodEaten(layer))
+                return true;
+            return false;
+        }
+
+        private bool CheckEnemyPlayerCollision(Player player, Enemy enemy, Layers layer)
         {
             if (new Rectangle((int)player.PlayerPosition.X, (int)player.PlayerPosition.Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y).Intersects(new Rectangle((int)enemy.EnemyPosition.X, (int)enemy.EnemyPosition.Y, (int)layer.TileDimensions.X, (int)layer.TileDimensions.Y)))
             {
@@ -20,7 +27,7 @@ namespace Pacman
                 return false;
         }
 
-        public bool CheckIfFoodEaten(Layers layer) 
+        private bool CheckIfFoodEaten(Layers layer) 
         {
             for (int k = 0; k < layer.TileMap.Count; k++) 
             {

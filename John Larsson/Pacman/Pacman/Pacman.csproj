@@ -101,6 +101,7 @@
     <Compile Include="GameScreen.cs" />
     <Compile Include="HighScore.cs" />
     <Compile Include="HighScoreScreen.cs" />
+    <Compile Include="GameOverScreen.cs" />
     <Compile Include="Layers.cs" />
     <Compile Include="MainGame.cs" />
     <Compile Include="MainMenu.cs" />
@@ -133,9 +134,7 @@
     <None Include="Load\PacMenu.cme">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Load\PacScore.cme">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Load\PacScore.cme" />
     <None Include="Load\SplashScreen.cme">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

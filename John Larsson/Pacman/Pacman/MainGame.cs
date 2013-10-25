@@ -34,15 +34,21 @@ namespace Pacman
             enemy.LoadContent(Content);
             layer.LoadContent(Content, "PacMap");
             collision.LoadContent(Content, "PacMap");
-            highScore.LoadScore("PacScore",Content);
             enemy.Init(collision, player);
         }
 
         public override void Update(GameTime gameTime)
         {
-            player.Update(gameTime,collision,layer,highScore);
-            enemy.Update(player,collision,layer,gameTime);
-
+            if(!gameOver.CheckGameState(player,enemy,layer))
+            {
+                player.Update(gameTime,collision,layer,highScore);
+                enemy.Update(player,collision,layer,gameTime);
+            }
+            else
+            {
+                highScore.addScore(highScore.CurrScore);
+                ScreenManager.Instance.AddScreen(new GameOverScreen(highScore));
+            }
         }
 
         public override void UnloadContent()

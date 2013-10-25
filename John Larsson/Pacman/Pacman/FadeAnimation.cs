@@ -69,9 +69,9 @@ namespace Pacman
         #endregion
 
         #region Huvudmetoder
-        public override void LoadContent(ContentManager Content, Texture2D image, string text, Vector2 position)
+        public override void LoadContent(ContentManager Content, Texture2D image, string text, Vector2 position,string fontID)
         {
-            base.LoadContent(Content, image, text, position);
+            base.LoadContent(Content, image, text, position,fontID);
             increase = false;
             fadeSpeed = 1.0f;
             defaultTime = new TimeSpan(0, 0, 1);

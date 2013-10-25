@@ -38,7 +38,7 @@ namespace Pacman
         {
             set { scale = value; } 
         }
-        public virtual void LoadContent(ContentManager Content, Texture2D image, string text, Vector2 position) 
+        public virtual void LoadContent(ContentManager Content, Texture2D image, string text, Vector2 position,string fontID) 
         {
             content = new ContentManager(Content.ServiceProvider, "Content");
             this.image = image;
@@ -46,7 +46,7 @@ namespace Pacman
             this.position = position;
             if (text != String.Empty)
             {
-                font = content.Load<SpriteFont>("PacFont");
+                font = content.Load<SpriteFont>(fontID);
                 color = new Color(255, 255, 255);
             }
             if (image != null)

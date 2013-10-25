@@ -25,8 +25,8 @@ namespace Pacman
             fade = new FadeAnimation();
             textFade = new FadeAnimation();
             image = content.Load<Texture2D>("TitelScreen/PacTitel");
-            fade.LoadContent(content, image, "", Vector2.Zero);
-            textFade.LoadContent(content, null, "Press Enter to Start", new Vector2(80, 540));
+            fade.LoadContent(content, image, "", Vector2.Zero,null);
+            textFade.LoadContent(content, null, "Press Enter to Start", new Vector2(80, 540),"PacFont");
             fade.Scale = 1.0f;
             textFade.Active = true;
             fade.Active = false;
