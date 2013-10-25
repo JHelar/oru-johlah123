@@ -19,8 +19,6 @@ namespace Pacman
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        
-
         public Game1()
         {
             
@@ -57,12 +55,6 @@ namespace Pacman
             ScreenManager.Instance.Update(gameTime);
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-           
-
-           //if (gameOver.CheckIfFoodEaten(layer))
-           //    highScore.CurrScore = 99999;
-           //else if (gameOver.CheckEnemyPlayerCollision(player, enemy, layer))
-           //    highScore.CurrScore = 99999;
             base.Update(gameTime);
         }
 

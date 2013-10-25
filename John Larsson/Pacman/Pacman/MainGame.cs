@@ -13,7 +13,8 @@ namespace Pacman
     public class MainGame : GameScreen
     {
         Player player;
-        Enemy enemy;
+        List<Enemy> enemy;
+        Enemy tempEnemy;
         Layers layer;
         Collision collision;
         HighScore highScore;
@@ -23,7 +24,7 @@ namespace Pacman
         {
             base.LoadContent(Content);
             player = new Player();
-            enemy = new Enemy();
+            enemy = new List<Enemy>();
             layer = new Layers();
             collision = new Collision();
             highScore = new HighScore();
@@ -31,18 +32,25 @@ namespace Pacman
             highScore.Init(Content);
             player.Init();
             player.LoadContent(Content);
-            enemy.LoadContent(Content);
             layer.LoadContent(Content, "PacMap");
             collision.LoadContent(Content, "PacMap");
-            enemy.Init(collision, player);
+            for(int i = 0; i < 3; i++)
+            {
+                tempEnemy = new Enemy();
+                tempEnemy.Init(collision,player,new Vector2(240 +20 *i,300));
+                tempEnemy.LoadContent(Content);
+                enemy.Add(tempEnemy);
+            }
+            
         }
 
         public override void Update(GameTime gameTime)
         {
-            if(!gameOver.CheckGameState(player,enemy,layer))
+            if(!gameOver.CheckGameState(player,enemy[0],layer))
             {
                 player.Update(gameTime,collision,layer,highScore);
-                enemy.Update(player,collision,layer,gameTime);
+                for (int i = 0; i < 3; i++ )
+                    enemy[i].Update(player, collision, layer, gameTime);
             }
             else
             {
@@ -62,7 +70,8 @@ namespace Pacman
         {
             layer.Draw(spriteBatch);
             highScore.DrawGameScore(spriteBatch);
-            enemy.Draw(spriteBatch);
+            for (int i = 0; i < 3; i++ )
+                enemy[i].Draw(spriteBatch);
             player.Draw(spriteBatch);
         }
     }

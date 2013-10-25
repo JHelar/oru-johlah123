@@ -67,8 +67,8 @@ namespace Pacman
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.DrawString(font, "GAME OVER!", new Vector2(100, 10), Color.White);
-            spriteBatch.DrawString(font, "You scored: " + Convert.ToString(highScore.CurrScore) + " points!", new Vector2(100, 20), Color.White);
+            spriteBatch.DrawString(font, "GAME OVER!", new Vector2(230, 10), Color.White);
+            spriteBatch.DrawString(font, "You scored: " + Convert.ToString(highScore.CurrScore) + " points!", new Vector2(120 - (Convert.ToString(highScore.CurrScore).Length / 2 * 10), 20), Color.White);
             spriteBatch.DrawString(font, "Enter your Name: ", new Vector2(10, 30), Color.White);
             spriteBatch.DrawString(font, inputText, new Vector2(140, 30), Color.White);
         }

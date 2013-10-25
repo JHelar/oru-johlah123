@@ -101,7 +101,7 @@ namespace Pacman
         }
         public void Init() 
         {
-            currentScreen = new MainMenu();
+            currentScreen = new SplashScreen();
             fade = new FadeAnimation();
         }
         public void LoadContent(ContentManager Content) 

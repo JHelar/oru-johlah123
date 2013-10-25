@@ -35,15 +35,15 @@ namespace Pacman
             get { return Vector2.Distance(position, paths.Peek()); }
         }
   
-        public void Init(Collision col,Player player) 
+        public void Init(Collision col,Player player,Vector2 position) 
         {
             newPath = true;
             velocity = Vector2.Zero;
             pathFinding = new PathFinding();
-            position = new Vector2(220, 260);
-            enemyAnimation.Init(position,new Vector2(1,1));
+            this.position = position;
+            enemyAnimation.Init(this.position,new Vector2(1,1));
             tempCurrentFrame = Vector2.Zero;
-            pathFinding.Init(col, player.PlayerPosition, position);
+            pathFinding.Init(col, player.PlayerPosition, this.position);
         }
 
         public void setPath(Queue<Vector2> paths) 
