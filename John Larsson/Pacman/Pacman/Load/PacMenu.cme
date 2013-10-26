@@ -7,6 +7,6 @@ Load=[Item][LinkType][LinkID]
 [New Game][NewGame][MainGame]
 [High Score][HighScore][HighScoreScreen]
 [Credits][Screen][SplashScreen]
-[Exit][Screen][SplashScreen]
+[Exit][Exit][ExitScreen]
 
 EndLoad=[PacMenu]

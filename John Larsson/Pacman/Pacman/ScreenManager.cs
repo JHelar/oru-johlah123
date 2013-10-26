@@ -101,7 +101,7 @@ namespace Pacman
         }
         public void Init() 
         {
-            currentScreen = new SplashScreen();
+            currentScreen = new MainMenu();
             fade = new FadeAnimation();
         }
         public void LoadContent(ContentManager Content) 
@@ -113,13 +113,30 @@ namespace Pacman
             fade.LoadContent(content, fadeTexture, "", Vector2.Zero,null);
             fade.Scale = dimensions.Y;
         }
-        public void Update(GameTime gameTime) 
+
+        public bool Update(GameTime gameTime) 
         {
+            bool exit = false;
             if (!transition)
+            {
                 currentScreen.Update(gameTime);
+                exit = currentScreen.Exit();
+            }
             else
+            {
                 Transition(gameTime);
+            }
+            return exit;
         }
+
+        public void UnloadContent() 
+        {
+            fade.UnloadContent();
+            screenStack.Clear();
+            currentScreen.UnloadContent();
+            content.Unload();
+        }
+
         public void Draw(SpriteBatch spriteBatch) 
         {
             currentScreen.Draw(spriteBatch);

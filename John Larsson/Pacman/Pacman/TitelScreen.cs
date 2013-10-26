@@ -41,6 +41,9 @@ namespace Pacman
         public override void UnloadContent()
         {
             base.UnloadContent();
+            fade.UnloadContent();
+            textFade.UnloadContent();
+            image = null;
         }
 
         public override void Update(GameTime gameTime)

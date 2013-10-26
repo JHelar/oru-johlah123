@@ -34,6 +34,12 @@ namespace Pacman
 
         }
 
+        public override void UnloadContent()
+        {
+            base.UnloadContent();
+            highScore.UnloadContent();
+        }
+
         public override void Update(GameTime gameTime)
         {
             oldKeyState = keyState;
@@ -51,6 +57,7 @@ namespace Pacman
                     else if (key == Keys.Enter)
                     {
                         highScore.addPlayer(inputText);
+                        highScore.CurrName = inputText;
                         highScore.saveScore();
                         ScreenManager.Instance.AddScreen(new MainMenu());
                     }
@@ -58,8 +65,14 @@ namespace Pacman
                     {
                         if (key == Keys.Space)
                             inputText = inputText.Insert(inputText.Length, " ");
+                        else if (key == Keys.OemPeriod)
+                            inputText = inputText.Insert(inputText.Length, ".");
+                        else if (key == Keys.OemComma)
+                            inputText = inputText.Insert(inputText.Length, ",");
                         else
+                        {
                             inputText += key.ToString();
+                        }
                     }
                 }
             }

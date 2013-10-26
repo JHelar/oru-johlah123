@@ -59,9 +59,7 @@ namespace Pacman
 
         public virtual void UnloadContent() 
         {
-            content.Unload();
             text = String.Empty;
-            position = Vector2.Zero;
             sourceRect = Rectangle.Empty;
             image = null;
                 

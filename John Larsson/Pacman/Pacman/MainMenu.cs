@@ -12,9 +12,6 @@ namespace Pacman
 {
     public class MainMenu : GameScreen
     {
-        KeyboardState keyState;
-        SpriteFont font;
-
         MenuManager menu;
 
         public override void LoadContent(ContentManager Content)

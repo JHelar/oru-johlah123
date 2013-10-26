@@ -12,7 +12,6 @@ namespace Pacman
     {
         List<int> score;
         List<string> playerName;
-        List<List<string>> attributes, contents;
         int currScore;
         string currName;
 
@@ -47,10 +46,14 @@ namespace Pacman
         {
             score = new List<int>();
             playerName = new List<string>();
-            contents = new List<List<string>>();
-            attributes = new List<List<string>>();
             filemanager = new FileManager();
             PacFont = content.Load<SpriteFont>("PacGameFont");
+        }
+
+        public void UnloadContent() 
+        {
+            score.Clear();
+            playerName.Clear();
         }
 
         public void addScore(int score)
@@ -65,19 +68,14 @@ namespace Pacman
 
         public void LoadScore(string mapID, ContentManager content) 
         {
-            filemanager.LoadContent("Load/" + mapID + ".cme",attributes,contents,"Score");
-            for (int i = 0; i < contents.Count; i++) 
-            {
-                playerName.Add(contents[i][0]);
-                score.Add(Convert.ToInt32(contents[i][1]));
-                       
-            }
+            filemanager.ReadScore("Load/PacScore.xml", score, playerName);
+
         }
 
         public void saveScore() 
         {
             score.Add(currScore);
-            filemanager.WriteScore("Load/PacScore.cme", score, playerName);
+            filemanager.WriteScore("Load/PacScore.xml", currScore, currName);
         }
 
         public void Draw(SpriteBatch spriteBatch) 

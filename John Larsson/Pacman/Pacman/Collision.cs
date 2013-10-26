@@ -67,5 +67,15 @@ namespace Pacman
                 row = new List<Vector2>();
             }
         }
+
+        public void UnloadContent() 
+        {
+            attributes.Clear();
+            contents.Clear();
+            row.Clear();
+            foodRow.Clear();
+            collisionMap.Clear();
+            foodCollisionMap.Clear();
+        }
     }
 }

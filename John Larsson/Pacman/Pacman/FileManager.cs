@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 
 using System.IO;
 
@@ -114,19 +115,45 @@ namespace Pacman
             }
         }
 
-        public void WriteScore(string fileName,List<int> score, List<string> playerName) 
+        public void ReadScore(string fileName, List<int> score, List<string> playerName) 
         {
-            using (StreamWriter writer = new StreamWriter(fileName)) 
+            using (XmlReader reader = XmlReader.Create(fileName)) 
             {
-                writer.WriteLine("Load=[Score]\n");
-                writer.WriteLine("Load=[Name][Score]\n");
-                for (int i = 0; i < playerName.Count; i++) 
+                while (reader.Read()) 
                 {
-                    writer.WriteLine("["+playerName[i]+"]["+Convert.ToString(score[i])+"]\n");
+                    if (reader.IsStartElement()) 
+                    {
+                        switch (reader.Name) 
+                        {
+                            case "PacScore":
+                                break;
+                            case "Player":
+                                if (reader.Read())
+                                    playerName.Add(reader.Value.Trim());
+                                break;
+                            case "Score":
+                                if (reader.Read())
+                                    score.Add(Convert.ToInt32(reader.Value.Trim()));
+                                break;
+                        }
+                    }
                 }
-                writer.WriteLine("EndLoad=[Score]");
-                writer.Close();
             }
+        }
+
+        public void WriteScore(string fileName,int playerScore, string playerName) 
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(fileName);
+            XmlNode PacScore = doc.CreateElement("PacScore");
+            XmlNode Player = doc.CreateElement("Player");
+            XmlNode Score = doc.CreateElement("Score");
+            Player.InnerText = playerName;
+            Score.InnerText = playerScore.ToString();
+            PacScore.AppendChild(Player);
+            PacScore.AppendChild(Score);
+            doc.DocumentElement.AppendChild(PacScore);
+            doc.Save(fileName);
         }
     }
 }

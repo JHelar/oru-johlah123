@@ -60,6 +60,13 @@ namespace Pacman
             this.amountOfFrames = amountOfFrames;
         }
 
+        public void UnloadContent() 
+        {
+            position = amountOfFrames = currentFrame = Vector2.Zero;
+            animationImage = null;
+            sourcRect = Rectangle.Empty;
+        }
+
         public void Update(GameTime gameTime) 
         {
             switchFrame = 80;

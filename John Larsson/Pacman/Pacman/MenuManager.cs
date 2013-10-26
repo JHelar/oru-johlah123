@@ -186,6 +186,11 @@ namespace Pacman
                     Type newClass = Type.GetType("Pacman." + linkID[itemNumber]);
                     ScreenManager.Instance.AddScreen((GameScreen)Activator.CreateInstance(newClass));
                 }
+                else if (linkType[itemNumber] == "Exit") 
+                {
+                    Type newClass = Type.GetType("Pacman." + linkID[itemNumber]);
+                    ScreenManager.Instance.AddScreen((GameScreen)Activator.CreateInstance(newClass));
+                }
             }
             if (itemNumber < 0)
                 itemNumber = 0;

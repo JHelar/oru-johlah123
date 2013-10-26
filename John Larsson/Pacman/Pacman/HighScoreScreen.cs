@@ -33,6 +33,8 @@ namespace Pacman
         public override void UnloadContent()
         {
             base.UnloadContent();
+            highScore.UnloadContent();
+            textFade.UnloadContent();
         }
 
         public override void Update(GameTime gameTime)

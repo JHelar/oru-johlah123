@@ -19,11 +19,19 @@ namespace Pacman
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        bool exit;
+
         public Game1()
         {
-            
+
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+        }
+
+        public Game1(bool exit) 
+        {
+            this.UnloadContent();
         }
 
         protected override void Initialize()
@@ -33,8 +41,6 @@ namespace Pacman
             graphics.PreferredBackBufferHeight = (int)ScreenManager.Instance.Dimensions.Y;
             graphics.PreferredBackBufferWidth = (int)ScreenManager.Instance.Dimensions.X;
             graphics.ApplyChanges();
-
-            
             base.Initialize();
         }
 
@@ -47,14 +53,20 @@ namespace Pacman
 
         protected override void UnloadContent()
         {
-  
+            
+            this.Exit();
         }
 
         protected override void Update(GameTime gameTime)
         {
-            ScreenManager.Instance.Update(gameTime);
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+            bool exit = false;
+            if (!exit)
+                exit = ScreenManager.Instance.Update(gameTime);
+            if (exit)
+            {
+                ScreenManager.Instance.UnloadContent();
                 this.Exit();
+            }
             base.Update(gameTime);
         }
 

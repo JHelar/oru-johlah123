@@ -87,9 +87,8 @@ namespace Pacman
             }
         }
 
-        public void UnloadContent(ContentManager content)
+        public void UnloadContent()
         {
-            content.Unload();
             tileMap.Clear();
             layer.Clear();
             tile.Clear();

@@ -95,6 +95,7 @@
     <Compile Include="Animation.cs" />
     <Compile Include="Collision.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="ExitScreen.cs" />
     <Compile Include="FadeAnimation.cs" />
     <Compile Include="FileManager.cs" />
     <Compile Include="GameOver.cs" />
@@ -120,6 +121,7 @@
   <ItemGroup>
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
+    <Content Include="Load\PacScore.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PacmanContent\PacmanContent.contentproj">
@@ -134,7 +136,6 @@
     <None Include="Load\PacMenu.cme">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Load\PacScore.cme" />
     <None Include="Load\SplashScreen.cme">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

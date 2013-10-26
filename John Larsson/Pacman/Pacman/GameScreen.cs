@@ -19,6 +19,7 @@ namespace Pacman
         {
             content.Unload();
         }
+
         public virtual void LoadContent(ContentManager Content) 
         {
             content = new ContentManager(Content.ServiceProvider, "Content");
@@ -26,7 +27,9 @@ namespace Pacman
             contents = new List<List<string>>();
         }
         public virtual void Update(GameTime gameTime) { }
+
         public virtual void Draw(SpriteBatch spriteBatch) { }
 
+        public virtual bool Exit() { return false; }
     }
 }

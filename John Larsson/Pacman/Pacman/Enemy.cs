@@ -46,6 +46,16 @@ namespace Pacman
             pathFinding.Init(col, player.PlayerPosition, this.position);
         }
 
+        public void UnloadContent() 
+        {
+            enemyImage = null;
+            position = Vector2.Zero;
+            tempCurrentFrame = Vector2.Zero;
+            paths.Clear();
+            pathFinding = null;
+            enemyAnimation.UnloadContent();
+        }
+
         public void setPath(Queue<Vector2> paths) 
         {
             foreach (Vector2 path in paths)
