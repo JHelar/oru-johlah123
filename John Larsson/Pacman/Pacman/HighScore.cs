@@ -69,7 +69,6 @@ namespace Pacman
         public void LoadScore(string mapID, ContentManager content) 
         {
             filemanager.ReadScore("Load/PacScore.xml", score, playerName);
-
         }
 
         public void saveScore() 
@@ -82,7 +81,7 @@ namespace Pacman
         {
             for (int i = 0; i < playerName.Count; i++) 
             {
-                spriteBatch.DrawString(PacFont,Convert.ToString(i+1)+"."+playerName[i]+":"+Convert.ToString(score[i]), new Vector2((float)40, (float)i * 12 + 40), Color.White);
+                spriteBatch.DrawString(PacFont,Convert.ToString(i+1)+". "+playerName[i]+":"+Convert.ToString(score[i]), new Vector2((float)40, (float)i * 12 + 40), Color.White);
             }
         }
 

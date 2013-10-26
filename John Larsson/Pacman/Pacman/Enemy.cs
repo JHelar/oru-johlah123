@@ -25,6 +25,8 @@ namespace Pacman
         bool newPath;
         Vector2 velocity;
 
+        int reCalculate, reCalculateValue;
+
         public Vector2 EnemyPosition 
         {
             get { return position; }
@@ -35,8 +37,10 @@ namespace Pacman
             get { return Vector2.Distance(position, paths.Peek()); }
         }
   
-        public void Init(Collision col,Player player,Vector2 position) 
+        public void Init(Collision col,Player player,Vector2 position,int reCalculate) 
         {
+            this.reCalculate = reCalculate;
+            reCalculateValue = 0;
             newPath = true;
             velocity = Vector2.Zero;
             pathFinding = new PathFinding();
@@ -63,6 +67,7 @@ namespace Pacman
             if (paths.Count > 0)
                 this.position = this.paths.Dequeue();
             else
+                reCalculateValue++;
                 newPath = true;
         }
 
@@ -108,7 +113,13 @@ namespace Pacman
             }
             else
             {
-                newPath = true;
+                if (reCalculateValue >= reCalculate)
+                {
+                    reCalculateValue = 0;
+                    newPath = true;
+                }
+                else
+                    reCalculateValue++;
             }
             enemyAnimation.CurrentFrame = tempCurrentFrame;
             enemyAnimation.Position = position;

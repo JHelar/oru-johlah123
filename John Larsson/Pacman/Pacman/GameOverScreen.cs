@@ -12,8 +12,9 @@ namespace Pacman
 {
     class GameOverScreen : GameScreen
     {
-        SpriteFont font;
+        SpriteFont font,bigFont;
         String inputText;
+        FadeAnimation textFade;
 
         HighScore highScore;
 
@@ -27,10 +28,14 @@ namespace Pacman
         public override void LoadContent(ContentManager Content)
         {
             base.LoadContent(Content);
+            textFade = new FadeAnimation();
             keyState = new KeyboardState();
             oldKeyState = new KeyboardState();
             font = Content.Load<SpriteFont>("PacGameFont");
+            bigFont = Content.Load<SpriteFont>("PacFont");
             inputText = " ";
+            textFade.LoadContent(Content, null, "Press Enter to go back to Main Menu", new Vector2(80, 540), "PacGameFont");
+            textFade.Active = true;
 
         }
 
@@ -56,10 +61,13 @@ namespace Pacman
                         inputText = inputText.Remove(inputText.Length - 1, 1);
                     else if (key == Keys.Enter)
                     {
-                        highScore.addPlayer(inputText);
-                        highScore.CurrName = inputText;
-                        highScore.saveScore();
-                        ScreenManager.Instance.AddScreen(new MainMenu());
+                        if (inputText != " ")
+                        {
+                            highScore.addPlayer(inputText);
+                            highScore.CurrName = inputText;
+                            highScore.saveScore();
+                            ScreenManager.Instance.AddScreen(new MainMenu());
+                        }
                     }
                     else
                     {
@@ -76,14 +84,16 @@ namespace Pacman
                     }
                 }
             }
+            textFade.Update(gameTime);
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.DrawString(font, "GAME OVER!", new Vector2(230, 10), Color.White);
-            spriteBatch.DrawString(font, "You scored: " + Convert.ToString(highScore.CurrScore) + " points!", new Vector2(120 - (Convert.ToString(highScore.CurrScore).Length / 2 * 10), 20), Color.White);
-            spriteBatch.DrawString(font, "Enter your Name: ", new Vector2(10, 30), Color.White);
-            spriteBatch.DrawString(font, inputText, new Vector2(140, 30), Color.White);
+            spriteBatch.DrawString(bigFont, "GAME OVER!", new Vector2(200, 10), Color.White);
+            spriteBatch.DrawString(font, "You scored: " + Convert.ToString(highScore.CurrScore) + " points!", new Vector2(120 - (Convert.ToString(highScore.CurrScore).Length / 2 * 10), 56), Color.White);
+            spriteBatch.DrawString(font, "Enter your Name: ", new Vector2(30, 66), Color.White);
+            spriteBatch.DrawString(font, inputText, new Vector2(170, 66), Color.White);
+            textFade.Draw(spriteBatch);
         }
     }
 }

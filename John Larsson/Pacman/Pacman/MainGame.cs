@@ -34,10 +34,10 @@ namespace Pacman
             player.LoadContent(Content);
             layer.LoadContent(Content, "PacMap");
             collision.LoadContent(Content, "PacMap");
-            for(int i = 0; i < 2; i++)
+            for(int i = 0; i < 3; i++)
             {
                 tempEnemy = new Enemy();
-                tempEnemy.Init(collision,player,new Vector2(240 +20 *i,300));
+                tempEnemy.Init(collision,player,new Vector2(240 +20 *i,300),i*20 + 0);
                 tempEnemy.LoadContent(Content);
                 enemy.Add(tempEnemy);
             }
@@ -46,10 +46,10 @@ namespace Pacman
 
         public override void Update(GameTime gameTime)
         {
-            if(!gameOver.CheckGameState(player,enemy[0],layer))
+            if (!gameOver.CheckGameState(player, enemy[0], layer) || gameOver.CheckGameState(player, enemy[1], layer) || gameOver.CheckGameState(player, enemy[2], layer))
             {
                 player.Update(gameTime,collision,layer,highScore);
-                for (int i = 0; i < 2; i++ )
+                for (int i = 0; i < 3; i++ )
                     enemy[i].Update(player, collision, layer, gameTime);
             }
             else
@@ -76,7 +76,7 @@ namespace Pacman
         {
             layer.Draw(spriteBatch);
             highScore.DrawGameScore(spriteBatch);
-            for (int i = 0; i < 2; i++ )
+            for (int i = 0; i < 3; i++ )
                 enemy[i].Draw(spriteBatch);
             player.Draw(spriteBatch);
         }
