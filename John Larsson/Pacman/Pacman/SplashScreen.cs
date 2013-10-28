@@ -10,8 +10,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Pacman
 {
+    /// <summary>
+    /// A splash screen that is shown before the title screen
+    /// </summary>
     public class SplashScreen : GameScreen
     {
+        #region Variables
         KeyboardState keyState;
         SpriteFont font;
         List<FadeAnimation> fade;
@@ -20,7 +24,13 @@ namespace Pacman
         FileManager fileManager;
 
         int imageNumber;
-
+        #endregion
+        #region Public mathods
+        /// <summary>
+        /// Loads the Splash screen images that will be transistioned between which are given from the text file.
+        /// Loads them into their fade animation.
+        /// </summary>
+        /// <param name="Content"></param>
         public override void LoadContent(ContentManager Content) 
         {
             base.LoadContent(Content);
@@ -43,8 +53,7 @@ namespace Pacman
                         case "Image":
                             images.Add(content.Load<Texture2D>(contents[i][j]));
                             fade.Add(new FadeAnimation());
-                            break;
-                        
+                            break; 
                     }
                 }
             }
@@ -57,13 +66,18 @@ namespace Pacman
                 fade[i].Active = true;
             }
         }
-
+        /// <summary>
+        /// Unloads the content, called when a new screen has been added
+        /// </summary>
         public override void UnloadContent()
         {
             base.UnloadContent();
             fileManager = null;
         }
-
+        /// <summary>
+        /// Fades in and out the images until the last screen has been shown then transtition to the Titelscreen
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
             
@@ -74,7 +88,10 @@ namespace Pacman
             if (imageNumber == fade.Count)
                 ScreenManager.Instance.AddScreen(new TitelScreen(), fade[imageNumber -1].Alpha);
         }
-
+        /// <summary>
+        /// Draw the splash screen images
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public override void Draw(SpriteBatch spriteBatch)
         {
             if (imageNumber == fade.Count)
@@ -82,5 +99,6 @@ namespace Pacman
             else
                 fade[imageNumber].Draw(spriteBatch);
         }
+        #endregion
     }
 }

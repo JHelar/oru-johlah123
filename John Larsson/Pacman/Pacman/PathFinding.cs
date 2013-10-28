@@ -9,8 +9,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Pacman
 {
+    /// <summary>
+    /// A* Pathfinding implemented and variable changes, taken from another source. 
+    /// </summary>
     public class PathFinding
     {
+        #region Variables
         List<Position> openList;
         List<Position> closedList;
         List<Position> gridPathList;
@@ -22,7 +26,8 @@ namespace Pacman
         public Node[,] map;
         public Position startPosition;
         public Position goalPosition;
-
+        #endregion
+        #region Properties and enumerators
         public Queue<Vector2> Path
         {
             get { return mapPathQueue; }
@@ -47,7 +52,51 @@ namespace Pacman
             West = 7,
             East = 8
         }
+        #endregion
+        #region Structs
+        public struct Node
+        {
+            public NodeState State;
 
+            public bool wall;
+
+            public Position Parent;
+
+            public int fValue { get { return gValue + hValue; } private set { ; } }
+
+            public int gValue;
+
+            public int hValue;
+
+            public void Init()
+            {
+                wall = false;
+                Parent.x = -1;
+                Parent.y = -1;
+                gValue = 0;
+                hValue = 0;
+            }
+        }
+
+        public struct Position
+        {
+            public int x;
+            public int y;
+
+            public Position(int x, int y)
+            {
+                this.x = x;
+                this.y = y;
+            }
+        }
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Sets the maps rows and collumns, sets the goal and startposition and which nodes have a wall
+        /// </summary>
+        /// <param name="col"></param>
+        /// <param name="goalPosition"></param>
+        /// <param name="startPosition"></param>
         public void Init(Collision col, Vector2 goalPosition, Vector2 startPosition)
         {
             rows = col.FoodCollisionMap.Count;
@@ -71,7 +120,12 @@ namespace Pacman
                 }
             }
         }
-
+        /// <summary>
+        /// Clears the path
+        /// </summary>
+        /// <param name="col"></param>
+        /// <param name="goalPosition"></param>
+        /// <param name="startPosition"></param>
         public void ClearPath(Collision col, Vector2 goalPosition, Vector2 startPosition) 
         {
             openList = new List<Position>();
@@ -92,43 +146,6 @@ namespace Pacman
                 }
             }
         }
-
-        private void resetMap()
-        {
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < collumns; j++)
-                {
-                    map[i, j].State = NodeState.NotVisited;
-                    map[i, j].wall = false;
-                    map[i, j].Parent = new Position(-1, -1); ;
-                    map[i, j].gValue = 0;
-                    map[i, j].hValue = 0;
-                }
-            }
-        }
-        private int setHvalue(Position n)
-        {
-            int manhattan = Math.Abs(n.x - goalPosition.x) + Math.Abs(n.y - goalPosition.y);
-            return 10 * manhattan;
-        }
-
-        private Position findLowestF()
-        {
-            int min = int.MaxValue;
-            Position minPos = new Position(-1, -1);
-
-            foreach (var p in openList)
-            {
-                if (min > map[p.x, p.y].fValue)
-                {
-                    min = map[p.x, p.y].fValue;
-                    minPos = p;
-                }
-            }
-            return minPos;
-        }
-
         public void PathFinder()
         {
             startPathFinding();
@@ -144,7 +161,57 @@ namespace Pacman
                 }
             }
         }
+        #endregion
+        #region Private methods
+        /// <summary>
+        /// resets the nodes in the map
+        /// </summary>
+        private void resetMap()
+        {
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < collumns; j++)
+                {
+                    map[i, j].State = NodeState.NotVisited;
+                    map[i, j].wall = false;
+                    map[i, j].Parent = new Position(-1, -1); ;
+                    map[i, j].gValue = 0;
+                    map[i, j].hValue = 0;
+                }
+            }
+        }
+        /// <summary>
+        /// Sets the H value of a node position
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        private int setHvalue(Position n)
+        {
+            int manhattan = Math.Abs(n.x - goalPosition.x) + Math.Abs(n.y - goalPosition.y);
+            return 10 * manhattan;
+        }
+        /// <summary>
+        /// Finds the lowest F value in the openList and sets it as the current search node
+        /// </summary>
+        /// <returns></returns>
+        private Position findLowestF()
+        {
+            int min = int.MaxValue;
+            Position minPos = new Position(-1, -1);
 
+            foreach (var p in openList)
+            {
+                if (min > map[p.x, p.y].fValue)
+                {
+                    min = map[p.x, p.y].fValue;
+                    minPos = p;
+                }
+            }
+            return minPos;
+        }
+        /// <summary>
+        /// Starts the pathfinding by seting the startposition as the start node 
+        /// </summary>
         private void startPathFinding()
         {
             openList.Clear();
@@ -152,7 +219,10 @@ namespace Pacman
             openList.Add(startPosition);
             map[startPosition.x, startPosition.y].State = NodeState.Open;
         }
-
+        /// <summary>
+        /// Searches the horizontal and vertical directions and see if they are not walls, and checks if the current search node is the goal node
+        /// </summary>
+        /// <returns></returns>
         public bool PathFindStep()
         {
             if (openList.Count == 0) return false;
@@ -176,7 +246,11 @@ namespace Pacman
 
             return true;
         }
-
+        /// <summary>
+        /// Checks the horizontal and vertical nodes around the current search node to see if they are walls and or allready on the openlist, or if they are on the closed list.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <param name="d"></param>
         private void visitNode(Position p, Direction d)
         {
             int dr = 0;
@@ -243,7 +317,12 @@ namespace Pacman
                 }
             }
         }
-
+        /// <summary>
+        /// The parent direction
+        /// </summary>
+        /// <param name="r"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public Direction ParentDirection(int r, int c)
         {
             Direction d = Direction.None;
@@ -266,12 +345,20 @@ namespace Pacman
 
             return d;
         }
-
+        /// <summary>
+        /// Returns the G value of the movement cost horizontaly and vertically
+        /// </summary>
+        /// <param name="dr"></param>
+        /// <param name="dc"></param>
+        /// <returns></returns>
         private int PathFindCostG(int dr, int dc)
         {
             return 10;
         }
-
+        /// <summary>
+        /// If we found our goal node set the path to it
+        /// </summary>
+        /// <returns></returns>
         public bool calculatePath()
         {
             Boolean pathExist = true;
@@ -299,13 +386,19 @@ namespace Pacman
             createMapPath();
             return pathExist;
         }
-
+        /// <summary>
+        /// Sets the H cost of the node
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         private int PathFindCostH(Position n)
         {
             int manhattan = Math.Abs(n.x - goalPosition.x) + Math.Abs(n.y - goalPosition.y);
             return 10 * manhattan;
         }
-
+        /// <summary>
+        /// creates a queue of real map waypoint coordinates for the enemy to walk to
+        /// </summary>
         private void createMapPath()
         {
             mapPathQueue = new Queue<Vector2>();
@@ -314,41 +407,6 @@ namespace Pacman
                 mapPathQueue.Enqueue(new Vector2(gridPathList[i].y * 20, gridPathList[i].x * 20));
             }
         }
-
-        public struct Node
-        {
-            public NodeState State;
-
-            public bool wall;
-
-            public Position Parent;
-
-            public int fValue { get { return gValue + hValue; } private set { ; } }
-
-            public int gValue;
-
-            public int hValue;
-
-            public void Init()
-            {
-                wall = false;
-                Parent.x = -1;
-                Parent.y = -1;
-                gValue = 0;
-                hValue = 0;
-            }
-        }
-
-        public struct Position
-        {
-            public int x;
-            public int y;
-
-            public Position(int x, int y)
-            {
-                this.x = x;
-                this.y = y;
-            }
-        }
+        #endregion
     }
 }

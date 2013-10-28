@@ -10,8 +10,12 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 namespace Pacman
 {
+    /// <summary>
+    /// The player class
+    /// </summary>
     public class Player
     {
+        #region Variables
         Texture2D playerImage;
         Vector2 playerPosition,tempCurrentFrame;
 
@@ -22,25 +26,35 @@ namespace Pacman
 
         Rectangle tempRect,playerTempRect;
 
+        #endregion
         public Vector2 PlayerPosition 
         {
             get { return playerPosition; }
         }
-
+        #region Public methods
+        /// <summary>
+        /// Sets the start position of the player.
+        /// Sets the amount of frames the player animation have.
+        /// </summary>
         public void Init() 
         {
             playerPosition = new Vector2(270, 500);
             playerAnimation.Init(playerPosition, new Vector2(8, 4));
             tempCurrentFrame = Vector2.Zero;
         }
-
+        /// <summary>
+        /// Loads in the animation image and the position of the animation.
+        /// </summary>
+        /// <param name="Content"></param>
         public void LoadContent(ContentManager Content) 
         {
             this.playerAnimation.Position = new Vector2(270,500);
             playerImage = Content.Load<Texture2D>("PacEatingAnim");
             this.playerAnimation.AnimationImage = playerImage;
         }
-
+        /// <summary>
+        /// Unloads the variables, called when a new screen has been added
+        /// </summary>
         public void UnloadContent() 
         {
             playerImage = null;
@@ -52,7 +66,8 @@ namespace Pacman
         }
 
         /// <summary>
-        /// Spelar förflyttande, anti-kollission, HighScore räkning.
+        /// Moves the player depending on player input direction, checks collision with walls and food. Increases the highscore by 10 for eatch food eaten.
+        /// Sets what animation direction that should be drawn.
         /// </summary>
         /// <param name="gameTime"></param>
         /// <param name="col"></param>
@@ -135,10 +150,14 @@ namespace Pacman
             this.playerAnimation.Update(gameTime);
         
         }
-
+        /// <summary>
+        /// Draws the player animation
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public void Draw(SpriteBatch spriteBatch) 
         {
             this.playerAnimation.Draw(spriteBatch);
         }
+        #endregion
     }
 }

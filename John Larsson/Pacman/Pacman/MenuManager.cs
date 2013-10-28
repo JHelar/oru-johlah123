@@ -10,9 +10,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Pacman
 {
+    /// <summary>
+    /// A menu manager that is as dynamic as possible
+    /// </summary>
     public class MenuManager
     {
-        #region Variabler
+        #region Variables
         List<string> menuItems, animationTypes, linkType,linkID;
         List<Texture2D> menuImages;
         List<List<ScreenAnimation>> screenAnimation;
@@ -31,7 +34,10 @@ namespace Pacman
         int axis,itemNumber;
         string align;
         #endregion
-        #region Privata metoder
+        #region Private methods
+        /// <summary>
+        /// Sets the menu items and a null item
+        /// </summary>
         private void SetMenuItems() 
         {
             for (int i = 0; i < menuItems.Count; i++) 
@@ -40,13 +46,10 @@ namespace Pacman
                     menuImages.Add(null);
 
             }
-            for (int i = 0; i < menuImages.Count; i++) 
-            {
-                if (menuItems.Count == i)
-                    menuItems.Add(null);
-            }
         }
-
+        /// <summary>
+        /// Checks to see what animation to use for the current element (only one animation in this game so far) sets the position and loads the animation and sets the axis for the elements.
+        /// </summary>
         private void SetAnimations() 
         {
             Vector2 pos = position;
@@ -81,7 +84,12 @@ namespace Pacman
         }
 
         #endregion
-        #region Huvudmetoder
+        #region Public methods
+        /// <summary>
+        /// initializes and loads in the attributes and contents from the menu text file to the manager.
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="id"></param>
         public void LoadContent(ContentManager content,string id) 
         {
             this.content = new ContentManager(content.ServiceProvider, "Content");
@@ -145,7 +153,9 @@ namespace Pacman
             SetMenuItems();
             SetAnimations();
         }
-
+        /// <summary>
+        /// Clears all the lists and unloads the current contentmanager, called when a new screen has been added
+        /// </summary>
         public void UnloadContent()
         {
             fileManager = null;
@@ -156,7 +166,11 @@ namespace Pacman
             menuImages.Clear();
             menuItems.Clear();
         }
-
+        /// <summary>
+        /// Gets user input for the menu, and Activates a new instance for a new screen depending on what the user wanted.
+        /// And transitions to that specific screen.
+        /// </summary>
+        /// <param name="gameTime"></param>
         public void Update(GameTime gameTime) 
         {
             keyState = Keyboard.GetState();
@@ -209,7 +223,10 @@ namespace Pacman
                 }
             }
         }
-
+        /// <summary>
+        /// Draws the screen animations
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public void Draw(SpriteBatch spriteBatch) 
         {
             for (int i = 0; i < screenAnimation.Count; i++)

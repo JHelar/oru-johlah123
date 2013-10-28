@@ -10,15 +10,24 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Pacman
 {
+    /// <summary>
+    /// Titel screen, shown after the splash screen before the main menu screen
+    /// </summary>
     public class TitelScreen : GameScreen
     {
+        #region Variables
         KeyboardState keyState;
 
         Animation animation;
         FadeAnimation fade,textFade;
         Texture2D image;
         Vector2 animationPosition;
-
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Loads the text fade and screen fade animation. Loads in a computer contoled character animation.
+        /// </summary>
+        /// <param name="Content"></param>
         public override void LoadContent(ContentManager Content)
         {
             base.LoadContent(Content);
@@ -37,7 +46,9 @@ namespace Pacman
             animation.AnimationImage = content.Load<Texture2D>("TitelScreen/TitelPacAnim");
             animation.Active = true;
         }
-
+        /// <summary>
+        /// Unloads the content and fade animations.
+        /// </summary>
         public override void UnloadContent()
         {
             base.UnloadContent();
@@ -45,7 +56,11 @@ namespace Pacman
             textFade.UnloadContent();
             image = null;
         }
-
+        /// <summary>
+        /// Updates the fade animations and the character animation and it's position.
+        /// And checks if the user has pressed the Enter key transitions to the main menu screen.
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
             animationPosition = animation.Position;
@@ -60,12 +75,16 @@ namespace Pacman
             if (keyState.IsKeyDown(Keys.Enter))
                 ScreenManager.Instance.AddScreen(new MainMenu());
         }
-
+        /// <summary>
+        /// Draws the fade animations and the character animations.
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public override void Draw(SpriteBatch spriteBatch)
         {
             fade.Draw(spriteBatch);
             textFade.Draw(spriteBatch);
             animation.Draw(spriteBatch);
         }
+        #endregion
     }
 }

@@ -9,8 +9,12 @@ using Microsoft.Xna.Framework.Content;
 
 namespace Pacman
 {
+    /// <summary>
+    /// A base class for every screens animation
+    /// </summary>
     public class ScreenAnimation
     {
+        #region Protected Variables
         protected Texture2D image;
         protected string text;
         protected SpriteFont font;
@@ -21,7 +25,8 @@ namespace Pacman
         protected float rotation, scale, axis;
         protected Vector2 origin, position;
         protected float alpha;
-
+        #endregion
+        #region Properties
         public virtual float Alpha 
         {
             get { return alpha; }
@@ -38,6 +43,16 @@ namespace Pacman
         {
             set { scale = value; } 
         }
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Loads in an image if it's given or a string of text if it is given with the font given
+        /// </summary>
+        /// <param name="Content"></param>
+        /// <param name="image"></param>
+        /// <param name="text"></param>
+        /// <param name="position"></param>
+        /// <param name="fontID"></param>
         public virtual void LoadContent(ContentManager Content, Texture2D image, string text, Vector2 position,string fontID) 
         {
             content = new ContentManager(Content.ServiceProvider, "Content");
@@ -56,7 +71,9 @@ namespace Pacman
             scale = alpha = 1.0f;
             active = false;
         }
-
+        /// <summary>
+        /// Virtual function that unloads the variables, called when a new screen has been added
+        /// </summary>
         public virtual void UnloadContent() 
         {
             text = String.Empty;
@@ -64,12 +81,19 @@ namespace Pacman
             image = null;
                 
         }
-
+        /// <summary>
+        /// Virtual update method
+        /// </summary>
+        /// <param name="gameTime"></param>
         public virtual void Update(GameTime gameTime) 
         {
-            
-        }
 
+
+        }
+        /// <summary>
+        ///  Draws the string and or image
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public void Draw(SpriteBatch spriteBatch) 
         {
             if (image != null) 
@@ -85,6 +109,6 @@ namespace Pacman
                 spriteBatch.DrawString(font, text, position + origin, color * alpha, rotation, origin, scale, SpriteEffects.None, 0.0f);
             }
         }
-
+        #endregion
     }
 }

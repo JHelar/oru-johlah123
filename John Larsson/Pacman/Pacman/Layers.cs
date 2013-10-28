@@ -9,8 +9,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Pacman
 {
+    /// <summary>
+    /// A dynamic tilemap reader
+    /// </summary>
     public class Layers
     {
+        #region Variables
         List<List<List<Vector2>>> tileMap;
         List<List<Vector2>> layer;
         List<Vector2> tile;
@@ -23,7 +27,8 @@ namespace Pacman
         int layerNumber;
 
         List<List<string>> attributes, contents;
-
+        #endregion
+        #region Properties
         public int LayerNumber
         {
             set{ layerNumber = value; }
@@ -39,7 +44,14 @@ namespace Pacman
             get { return tileMap; }
             set { tileMap = value; }
         }
-
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Loads the tile map from the tilemap text file, adds the single tiles to a layer in which then is added to the tile map. 
+        /// This adds the abillity to read in multiple maps into a single variable. 
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="mapID"></param>
         public void LoadContent(ContentManager content, string mapID)
         {
             fileManager = new FileManager();
@@ -86,7 +98,9 @@ namespace Pacman
                 }
             }
         }
-
+        /// <summary>
+        /// Clears the lists, called when a new screen has been added
+        /// </summary>
         public void UnloadContent()
         {
             tileMap.Clear();
@@ -96,7 +110,10 @@ namespace Pacman
             contents.Clear();
             fileManager = null;
         }
-
+        /// <summary>
+        /// Draws out the map tiles to the screen
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public void Draw(SpriteBatch spriteBatch)
         {
             for (int k = 0; k < tileMap.Count; k++)
@@ -113,5 +130,6 @@ namespace Pacman
                 }
             }
         }
+        #endregion
     }
 }

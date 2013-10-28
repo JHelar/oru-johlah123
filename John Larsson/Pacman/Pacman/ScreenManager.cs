@@ -9,23 +9,26 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Pacman
 {
+    /// <summary>
+    /// Screen manager that takes care of loading,unloading,updating and drawing of all the screens
+    /// </summary>
     public class ScreenManager
     {
         #region Variabler
 
         /// <summary>
-        /// Det nuvarande spelfönstret
+        /// The current screen
         /// </summary>
         GameScreen currentScreen;
 
         /// <summary>
-        /// Det nya spelfönstret som kommer att ersätta det nuvarande
+        /// The new screen that will replace the old one
         /// </summary>
         
         GameScreen newScreen;
         
         /// <summary>
-        /// Skapar en egen ContrentManager utöver huvud managern
+        /// creates a new contentmanager
         /// </summary>
         
         ContentManager content;
@@ -37,14 +40,10 @@ namespace Pacman
         private static ScreenManager instance;
 
         /// <summary>
-        /// Överlappning av olika fönster
+        /// A stack of all the screens
         /// </summary>
         
         Stack<GameScreen> screenStack = new Stack<GameScreen>();
-
-        /// <summary>
-        /// Fönstrens höjd och bredd
-        /// </summary>
 
         Vector2 dimensions;
 
@@ -55,7 +54,6 @@ namespace Pacman
         Texture2D fadeTexture;
 
         #endregion
-
         #region Properties
 
         public static ScreenManager Instance 
@@ -75,9 +73,11 @@ namespace Pacman
         }
 
         #endregion
-
-        #region Huvudmetoder
-
+        #region Public methods
+        /// <summary>
+        /// Sets transision to a new screen. Adds a screen to newScreen
+        /// </summary>
+        /// <param name="screen"></param>
         public void AddScreen(GameScreen screen) 
         {
             transition = true;
@@ -86,7 +86,12 @@ namespace Pacman
             fade.Alpha = 0.0f;
             fade.ActivateValue = 1.0f;    
         }
-
+        /// <summary>
+        /// Overloaded version, changes the alpha so it will fade back instead of just switching a screen back instantly, 
+        /// usable when you want a smooth transition between screens.
+        /// </summary>
+        /// <param name="screen"></param>
+        /// <param name="alpha"></param>
         public void AddScreen(GameScreen screen, float alpha) 
         {
             transition = true;
@@ -99,11 +104,19 @@ namespace Pacman
                 fade.Alpha = alpha;
             fade.Increase = true;
         }
+        /// <summary>
+        /// When the game starts the splash screen will show and a new fade animation will be initialized
+        /// </summary>
         public void Init() 
         {
-            currentScreen = new MainMenu();
+            currentScreen = new SplashScreen();
             fade = new FadeAnimation();
         }
+        /// <summary>
+        /// Loads in the contentmanager and fade transistion animation.
+        /// Calls the loadcontent function of the current screen.
+        /// </summary>
+        /// <param name="Content"></param>
         public void LoadContent(ContentManager Content) 
         {
             content = new ContentManager(Content.ServiceProvider, "Content");
@@ -113,7 +126,11 @@ namespace Pacman
             fade.LoadContent(content, fadeTexture, "", Vector2.Zero,null);
             fade.Scale = dimensions.Y;
         }
-
+        /// <summary>
+        /// calls the update function of the current screen, check and return the value from the exit function of the current screen.
+        /// </summary>
+        /// <param name="gameTime"></param>
+        /// <returns></returns>
         public bool Update(GameTime gameTime) 
         {
             bool exit = false;
@@ -128,7 +145,9 @@ namespace Pacman
             }
             return exit;
         }
-
+        /// <summary>
+        /// Calls the unloadcontent functions for the current screen and clears the screen stack, unloads the fade animation.
+        /// </summary>
         public void UnloadContent() 
         {
             fade.UnloadContent();
@@ -136,7 +155,10 @@ namespace Pacman
             currentScreen.UnloadContent();
             content.Unload();
         }
-
+        /// <summary>
+        /// Calls the drawfunction of the current screen. and calls the draw function if we are transitioning between screens
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public void Draw(SpriteBatch spriteBatch) 
         {
             currentScreen.Draw(spriteBatch);
@@ -145,9 +167,11 @@ namespace Pacman
         }
 
         #endregion
-
-        #region Privata metoder
-
+        #region Private methods
+        /// <summary>
+        /// Updates the fade animation, transition and switches between the old and new screen. 
+        /// </summary>
+        /// <param name="gameTime"></param>
         private void Transition(GameTime gameTime) 
         {
             fade.Update(gameTime);

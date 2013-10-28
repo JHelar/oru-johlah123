@@ -10,8 +10,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Pacman
 {
+    /// <summary>
+    /// The main game screen
+    /// </summary>
     public class MainGame : GameScreen
     {
+        #region Variables
         Player player;
         List<Enemy> enemy;
         Enemy tempEnemy;
@@ -19,7 +23,12 @@ namespace Pacman
         Collision collision;
         HighScore highScore;
         GameOver gameOver;
-
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Loads and initializes all the variables, adds three enemies with different "smart levels"
+        /// </summary>
+        /// <param name="Content"></param>
         public override void LoadContent(ContentManager Content)
         {
             base.LoadContent(Content);
@@ -43,7 +52,10 @@ namespace Pacman
             }
             
         }
-
+        /// <summary>
+        /// Updates the enemy and player, checks if the gameover criteria is met, if it is then add the score to the highscore and transition to the gameover screen
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
             if (!gameOver.CheckGameState(player, enemy[0], layer) || gameOver.CheckGameState(player, enemy[1], layer) || gameOver.CheckGameState(player, enemy[2], layer))
@@ -58,7 +70,9 @@ namespace Pacman
                 ScreenManager.Instance.AddScreen(new GameOverScreen(highScore));
             }
         }
-
+        /// <summary>
+        /// Unloads everything, called when a new screen is added
+        /// </summary>
         public override void UnloadContent()
         {
             base.UnloadContent();
@@ -71,7 +85,10 @@ namespace Pacman
             layer.UnloadContent();
             collision.UnloadContent();
         }
-
+        /// <summary>
+        /// Calls the draw function of the map,in-game highscore,enemies and player
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public override void Draw(SpriteBatch spriteBatch)
         {
             layer.Draw(spriteBatch);
@@ -80,5 +97,6 @@ namespace Pacman
                 enemy[i].Draw(spriteBatch);
             player.Draw(spriteBatch);
         }
+        #endregion
     }
 }
