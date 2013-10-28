@@ -106,7 +106,6 @@
     <Compile Include="Layers.cs" />
     <Compile Include="MainGame.cs" />
     <Compile Include="MainMenu.cs" />
-    <Compile Include="Map.cs" />
     <Compile Include="MenuManager.cs" />
     <Compile Include="PathFinding.cs" />
     <Compile Include="Player.cs" />
