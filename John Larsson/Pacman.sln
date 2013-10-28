@@ -3,20 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacman", "Pacman\Pacman\Pacman.csproj", "{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PacmanContent", "Pacman\PacmanContent\PacmanContent.contentproj", "{E66C1A4B-540D-4C8A-B08C-7FE62792AC21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacmanContent", "Pacman\PacmanContent\PacmanContent.contentproj", "{E66C1A4B-540D-4C8A-B08C-7FE62792AC21}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Pac-SetUp", "Pac-SetUp\Pac-SetUp.isproj", "{4A2B5D73-C745-4E98-B108-148DF6031FE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|x86 = CD_ROM|x86
 		Debug|x86 = Debug|x86
+		DVD-5|x86 = DVD-5|x86
 		Release|x86 = Release|x86
+		SingleImage|x86 = SingleImage|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.CD_ROM|x86.ActiveCfg = Release|x86
+		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.CD_ROM|x86.Build.0 = Release|x86
 		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.Debug|x86.ActiveCfg = Debug|x86
 		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.Debug|x86.Build.0 = Debug|x86
+		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.DVD-5|x86.ActiveCfg = Debug|x86
+		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.DVD-5|x86.Build.0 = Debug|x86
 		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.Release|x86.ActiveCfg = Release|x86
 		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.Release|x86.Build.0 = Release|x86
+		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.SingleImage|x86.ActiveCfg = Release|x86
+		{0A1B79DB-8571-4463-9AF1-DCEAE3B64A4B}.SingleImage|x86.Build.0 = Release|x86
+		{E66C1A4B-540D-4C8A-B08C-7FE62792AC21}.CD_ROM|x86.ActiveCfg = Release|x86
 		{E66C1A4B-540D-4C8A-B08C-7FE62792AC21}.Debug|x86.ActiveCfg = Debug|x86
+		{E66C1A4B-540D-4C8A-B08C-7FE62792AC21}.DVD-5|x86.ActiveCfg = Debug|x86
 		{E66C1A4B-540D-4C8A-B08C-7FE62792AC21}.Release|x86.ActiveCfg = Release|x86
+		{E66C1A4B-540D-4C8A-B08C-7FE62792AC21}.SingleImage|x86.ActiveCfg = Release|x86
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.CD_ROM|x86.ActiveCfg = CD_ROM
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.CD_ROM|x86.Build.0 = CD_ROM
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.Debug|x86.ActiveCfg = DVD-5
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.Debug|x86.Build.0 = DVD-5
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.DVD-5|x86.ActiveCfg = DVD-5
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.DVD-5|x86.Build.0 = DVD-5
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.Release|x86.ActiveCfg = SingleImage
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.Release|x86.Build.0 = SingleImage
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.SingleImage|x86.ActiveCfg = SingleImage
+		{4A2B5D73-C745-4E98-B108-148DF6031FE4}.SingleImage|x86.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
