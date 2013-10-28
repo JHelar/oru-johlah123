@@ -9,9 +9,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Pacman
 {
+    /// <summary>
+    /// A fade animation class that fades in and out a image or text, usable for screentransitions
+    /// </summary>
     public class FadeAnimation : ScreenAnimation
     {
-        #region Variabler
+        #region Variables
         bool increase;
         float fadeSpeed;
         TimeSpan defaultTime, timer;
@@ -68,7 +71,16 @@ namespace Pacman
 
         #endregion
 
-        #region Huvudmetoder
+        #region Public methods
+        /// <summary>
+        /// Loads in a image, a text string the position in which we want these elements to be drawn on, and the font for the text.
+        /// sets the default timespan variable to 1 milisecond
+        /// </summary>
+        /// <param name="Content"></param>
+        /// <param name="image"></param>
+        /// <param name="text"></param>
+        /// <param name="position"></param>
+        /// <param name="fontID"></param>
         public override void LoadContent(ContentManager Content, Texture2D image, string text, Vector2 position,string fontID)
         {
             base.LoadContent(Content, image, text, position,fontID);
@@ -80,7 +92,10 @@ namespace Pacman
             stopUpdating = false;
             defaultAlpha = alpha;
         }
-
+        /// <summary>
+        /// Changes the alpha channel value, the value that determines transparency. Fades in or out depending on the increase boolean value.
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
             if (active)

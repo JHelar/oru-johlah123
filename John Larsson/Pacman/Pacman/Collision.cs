@@ -13,13 +13,18 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Pacman
 {
+    /// <summary>
+    /// Colliation class for tile collision
+    /// </summary>
     public class Collision
     {
+        #region Variables
         FileManager fileManager;
         List<List<string>> attributes, contents;
         List<Vector2> row,foodRow;
         List<List<Vector2>> collisionMap,foodCollisionMap;
-
+        #endregion
+        #region Properties
         public List<List<string>> Contents
         {
             get { return contents; }
@@ -33,7 +38,14 @@ namespace Pacman
         {
             get { return foodCollisionMap; }
         }
-
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Loads in the tile map from the collision text file. Sets the coordiantes for foodtiles and walls.
+        /// Everything is loaded into their own two dimensional lists.
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="mapID"></param>
         public void LoadContent(ContentManager content, string mapID) 
         {
             fileManager = new FileManager();
@@ -67,7 +79,9 @@ namespace Pacman
                 row = new List<Vector2>();
             }
         }
-
+        /// <summary>
+        /// Clears the lists, called when a new screen has been added
+        /// </summary>
         public void UnloadContent() 
         {
             attributes.Clear();
@@ -77,5 +91,6 @@ namespace Pacman
             collisionMap.Clear();
             foodCollisionMap.Clear();
         }
+        #endregion
     }
 }

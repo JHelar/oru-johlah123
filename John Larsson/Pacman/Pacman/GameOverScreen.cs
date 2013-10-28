@@ -10,8 +10,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Pacman
 {
+    /// <summary>
+    /// The screen that appears when you lost or won the game
+    /// </summary>
     class GameOverScreen : GameScreen
     {
+        #region Variables
         SpriteFont font,bigFont;
         String inputText;
         FadeAnimation textFade;
@@ -19,12 +23,20 @@ namespace Pacman
         HighScore highScore;
 
         KeyboardState keyState, oldKeyState;
-
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Constructor that gets the current highscore class
+        /// </summary>
+        /// <param name="highScore"></param>
         public GameOverScreen(HighScore highScore) 
         {
             this.highScore = highScore;
         }
-
+        /// <summary>
+        /// Loads in all the fonts, sets the textfade animation to true,and initializes all the variables.
+        /// </summary>
+        /// <param name="Content"></param>
         public override void LoadContent(ContentManager Content)
         {
             base.LoadContent(Content);
@@ -38,13 +50,19 @@ namespace Pacman
             textFade.Active = true;
 
         }
-
+        /// <summary>
+        /// Unloads the highscore class and the base class, called when a new screen is added
+        /// </summary>
         public override void UnloadContent()
         {
             base.UnloadContent();
             highScore.UnloadContent();
         }
-
+        /// <summary>
+        /// Gets the keyboard input for the player name text input dialog, saves the highscore when eneter is press, 
+        /// the user then also is taken back to the mainmenu by adding a new MainMenu screen.
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
             oldKeyState = keyState;
@@ -86,7 +104,10 @@ namespace Pacman
             }
             textFade.Update(gameTime);
         }
-
+        /// <summary>
+        /// Draws the different texts and inputtext also the textfade animation draw function is called.
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.DrawString(bigFont, "GAME OVER!", new Vector2(200, 10), Color.White);
@@ -95,5 +116,6 @@ namespace Pacman
             spriteBatch.DrawString(font, inputText, new Vector2(170, 66), Color.White);
             textFade.Draw(spriteBatch);
         }
+        #endregion
     }
 }

@@ -11,15 +11,20 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Pacman
 {
+    /// <summary>
+    /// Animation class, for any kind of animation of a spritesheet.
+    /// </summary>
     public class Animation
     {
-        int frameCounter, switchFrame;
+        #region Variables
+        int frameCounter, switchFrame,animationSpeed;
 
         bool active;
         Vector2 position, amountOfFrames, currentFrame;
         Texture2D animationImage;
         Rectangle sourcRect;
-
+        #endregion
+        #region Properties
         public bool Active 
         {
             get { return active; }
@@ -53,23 +58,40 @@ namespace Pacman
             set { animationImage = value; }
         }
 
+        public int AnimationSpeed 
+        {
+            set { animationSpeed = value; }
+        }
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Sets the start position,and the amount of frames the spritesheet has.
+        /// </summary>
+        /// <param name="position"></param>
+        /// <param name="amountOfFrames"></param>
         public void Init(Vector2 position,Vector2 amountOfFrames)
         {
             active = false;
             this.position = position;
             this.amountOfFrames = amountOfFrames;
+            animationSpeed = 80;
         }
-
+        /// <summary>
+        /// Unloads the class, called when a new screen in added
+        /// </summary>
         public void UnloadContent() 
         {
             position = amountOfFrames = currentFrame = Vector2.Zero;
             animationImage = null;
             sourcRect = Rectangle.Empty;
         }
-
+        /// <summary>
+        /// Sets when to switch frame, depends on the set animationspeed. Puts the framecounter back to 0 when a new frame is set. 
+        /// </summary>
+        /// <param name="gameTime"></param>
         public void Update(GameTime gameTime) 
         {
-            switchFrame = 80;
+            switchFrame = animationSpeed;
             if(this.active)
                 frameCounter += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
             else if(!this.active)
@@ -84,10 +106,14 @@ namespace Pacman
             }
             sourcRect = new Rectangle((int)currentFrame.X, (int)currentFrame.Y * FrameHeight, FrameWidth, FrameHeight);
         }
-
+        /// <summary>
+        /// Draws the current frame of the animation
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public void Draw(SpriteBatch spriteBatch) 
         {
             spriteBatch.Draw(animationImage, position, sourcRect, Color.White);
         }
+        #endregion
     }
 }

@@ -8,16 +8,31 @@ using System.IO;
 
 namespace Pacman
 {
+    /// <summary>
+    /// A filemanager class that helps reading and writing elements to/from a file to the program.
+    /// Uses both normal text files and XML files
+    /// </summary>
     public class FileManager
     {
-        enum LoadType { Attributes, Contents, Name, Score };
+        #region Variables
+        enum LoadType { Attributes, Contents };
 
         LoadType type;
 
         List<string> tempAttributes, tempContents;
 
         bool identifierFound = false;
-
+        #endregion
+        #region Public methods
+        /// <summary>
+        /// Reads everything from a specified text file, the file has to be formatted for the specific function or it will not be read properly.
+        /// Puts in the read data onto the two, two dimensional Lists.
+        /// Attributes is the identifyer telling what type of data that is being loaded in.
+        /// Contents is the actual data.
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="attributes"></param>
+        /// <param name="contents"></param>
         public void LoadContent(string filename, List<List<string>> attributes, List<List<string>> contents)
         {
             using (StreamReader reader = new StreamReader(filename))
@@ -59,7 +74,14 @@ namespace Pacman
                 }
             }
         }
-
+        /// <summary>
+        /// An overloaded version of the LoadContent that starts to read when the identifier requirments are met and stops reading when told to.
+        /// Other then that it does the same as the first LoadContent.
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="attributes"></param>
+        /// <param name="contents"></param>
+        /// <param name="identifier"></param>
         public void LoadContent(string filename, List<List<string>> attributes, List<List<string>> contents, string identifier)
         {
             using (StreamReader reader = new StreamReader(filename))
@@ -114,7 +136,12 @@ namespace Pacman
                 }
             }
         }
-
+        /// <summary>
+        /// Reads the score from a XML file, puts the name and score in their respective list.
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="score"></param>
+        /// <param name="playerName"></param>
         public void ReadScore(string fileName, List<int> score, List<string> playerName) 
         {
             using (XmlReader reader = XmlReader.Create(fileName)) 
@@ -140,7 +167,12 @@ namespace Pacman
                 }
             }
         }
-
+        /// <summary>
+        /// Appends the score and name to a XML file 
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="playerScore"></param>
+        /// <param name="playerName"></param>
         public void WriteScore(string fileName,int playerScore, string playerName) 
         {
             XmlDocument doc = new XmlDocument();
@@ -155,5 +187,6 @@ namespace Pacman
             doc.DocumentElement.AppendChild(PacScore);
             doc.Save(fileName);
         }
+        #endregion
     }
 }

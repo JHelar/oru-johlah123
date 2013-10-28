@@ -33,7 +33,9 @@ namespace Pacman
         {
             this.UnloadContent();
         }
-
+        /// <summary>
+        /// Initializes the ScreenManager, sets the dimensions of the game window
+        /// </summary>
         protected override void Initialize()
         {
             ScreenManager.Instance.Init();
@@ -43,7 +45,9 @@ namespace Pacman
             graphics.ApplyChanges();
             base.Initialize();
         }
-
+        /// <summary>
+        /// Gives the ScreenManager class it's own Contentmanager
+        /// </summary>
         protected override void LoadContent()
         {
             ScreenManager.Instance.LoadContent(Content);
@@ -56,7 +60,10 @@ namespace Pacman
             
             this.Exit();
         }
-
+        /// <summary>
+        /// Checks to see if we want to exit if not then update the current screen
+        /// </summary>
+        /// <param name="gameTime"></param>
         protected override void Update(GameTime gameTime)
         {
             bool exit = false;
@@ -69,7 +76,10 @@ namespace Pacman
             }
             base.Update(gameTime);
         }
-
+        /// <summary>
+        /// Draw the current screen
+        /// </summary>
+        /// <param name="gameTime"></param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
