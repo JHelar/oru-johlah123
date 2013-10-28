@@ -1,0 +1,162 @@
+\hypertarget{class_pacman_1_1_screen_animation}{\section{Pacman.\-Screen\-Animation Class Reference}
+\label{class_pacman_1_1_screen_animation}\index{Pacman.\-Screen\-Animation@{Pacman.\-Screen\-Animation}}
+}
+
+
+A base class for every screens animation  
+
+
+Inheritance diagram for Pacman.\-Screen\-Animation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pacman_1_1_screen_animation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_pacman_1_1_screen_animation_a566ecb3dca9f82c4eb51f4e3a4019550}{Load\-Content} (Content\-Manager Content, Texture2\-D image, string text, Vector2 position, string font\-I\-D)
+\begin{DoxyCompactList}\small\item\em Loads in an image if it's given or a string of text if it is given with the font given \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_pacman_1_1_screen_animation_ad9bf49699b6905423cc17047e36e9a1c}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Virtual function that unloads the variables, called when a new screen has been added \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_pacman_1_1_screen_animation_af381913622005dfb6b759f7495b37ded}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em Virtual update method \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_screen_animation_aab67af6395aea7e03c7d4d4f6eff9977}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draws the string and or image \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_ac33fed9de162fb2f159f1ad15d3a4d94}{Texture2\-D {\bfseries image}}\label{class_pacman_1_1_screen_animation_ac33fed9de162fb2f159f1ad15d3a4d94}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_ab4c0b055eeb0919cf3e30db19d8f15bb}{string {\bfseries text}}\label{class_pacman_1_1_screen_animation_ab4c0b055eeb0919cf3e30db19d8f15bb}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_ae014c883301c9f42e00eafcdd513e0d1}{Sprite\-Font {\bfseries font}}\label{class_pacman_1_1_screen_animation_ae014c883301c9f42e00eafcdd513e0d1}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_a5a7a6cb6955a0625d6a4ea34fa04166b}{Color {\bfseries color}}\label{class_pacman_1_1_screen_animation_a5a7a6cb6955a0625d6a4ea34fa04166b}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_a79065b7a8f285c5f8d67e758ea0f2745}{Rectangle {\bfseries source\-Rect}}\label{class_pacman_1_1_screen_animation_a79065b7a8f285c5f8d67e758ea0f2745}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_abef49f89085550929de700f913b22344}{Content\-Manager {\bfseries content}}\label{class_pacman_1_1_screen_animation_abef49f89085550929de700f913b22344}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_a9c13f7f141cd083413f2d710aee04b66}{bool {\bfseries active}}\label{class_pacman_1_1_screen_animation_a9c13f7f141cd083413f2d710aee04b66}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_a86b87e39731428e90158eabc64a29a60}{float {\bfseries rotation}}\label{class_pacman_1_1_screen_animation_a86b87e39731428e90158eabc64a29a60}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_acdac56ee31eec0dc6021ed135b403bf1}{Vector2 {\bfseries origin}}\label{class_pacman_1_1_screen_animation_acdac56ee31eec0dc6021ed135b403bf1}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_a33d8bebcfb554857c41a0701e3f05f83}{float {\bfseries alpha}}\label{class_pacman_1_1_screen_animation_a33d8bebcfb554857c41a0701e3f05f83}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_a7b643f454b3e1f0faed8959ccd52d4ec}{virtual float {\bfseries Alpha}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_screen_animation_a7b643f454b3e1f0faed8959ccd52d4ec}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_a5d941d20b56fa63c1c289cbcf2b37aec}{bool {\bfseries Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_screen_animation_a5d941d20b56fa63c1c289cbcf2b37aec}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_animation_a2a9783313a2891196b9ac1738c00acc4}{float {\bfseries Scale}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}}\label{class_pacman_1_1_screen_animation_a2a9783313a2891196b9ac1738c00acc4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A base class for every screens animation 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_screen_animation_aab67af6395aea7e03c7d4d4f6eff9977}{\index{Pacman\-::\-Screen\-Animation@{Pacman\-::\-Screen\-Animation}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::ScreenAnimation@{Pacman\-::\-Screen\-Animation}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Screen\-Animation.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_screen_animation_aab67af6395aea7e03c7d4d4f6eff9977}
+
+
+Draws the string and or image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_screen_animation_a566ecb3dca9f82c4eb51f4e3a4019550}{\index{Pacman\-::\-Screen\-Animation@{Pacman\-::\-Screen\-Animation}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::ScreenAnimation@{Pacman\-::\-Screen\-Animation}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pacman.\-Screen\-Animation.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content, }
+\item[{Texture2\-D}]{image, }
+\item[{string}]{text, }
+\item[{Vector2}]{position, }
+\item[{string}]{font\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_screen_animation_a566ecb3dca9f82c4eb51f4e3a4019550}
+
+
+Loads in an image if it's given or a string of text if it is given with the font given 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+{\em image} & \\
+\hline
+{\em text} & \\
+\hline
+{\em position} & \\
+\hline
+{\em font\-I\-D} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_pacman_1_1_fade_animation_a6abddfcfb03a31152da73b6766e99a9d}{Pacman.\-Fade\-Animation}.
+
+\hypertarget{class_pacman_1_1_screen_animation_ad9bf49699b6905423cc17047e36e9a1c}{\index{Pacman\-::\-Screen\-Animation@{Pacman\-::\-Screen\-Animation}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::ScreenAnimation@{Pacman\-::\-Screen\-Animation}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pacman.\-Screen\-Animation.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_screen_animation_ad9bf49699b6905423cc17047e36e9a1c}
+
+
+Virtual function that unloads the variables, called when a new screen has been added 
+
+\hypertarget{class_pacman_1_1_screen_animation_af381913622005dfb6b759f7495b37ded}{\index{Pacman\-::\-Screen\-Animation@{Pacman\-::\-Screen\-Animation}!Update@{Update}}
+\index{Update@{Update}!Pacman::ScreenAnimation@{Pacman\-::\-Screen\-Animation}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pacman.\-Screen\-Animation.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_screen_animation_af381913622005dfb6b759f7495b37ded}
+
+
+Virtual update method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_pacman_1_1_fade_animation_ac6d7c4a5845a19f47dd2501271ecee7a}{Pacman.\-Fade\-Animation}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Screen\-Animation.\-cs\end{DoxyCompactItemize}

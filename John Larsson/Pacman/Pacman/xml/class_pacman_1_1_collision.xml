@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_collision" kind="class" prot="public">
+    <compoundname>Pacman::Collision</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_collision_1aa9260407158ec037d23c5be4a905f6b0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_file_manager" kindref="compound">FileManager</ref></type>
+        <definition>FileManager Pacman.Collision.fileManager</definition>
+        <argsstring></argsstring>
+        <name>fileManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_collision_1a3eb977bc122ff13c1b4a0395d6a37825" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; string &gt; &gt;</type>
+        <definition>List&lt;List&lt;string&gt; &gt; Pacman.Collision.attributes</definition>
+        <argsstring></argsstring>
+        <name>attributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_collision_1aba29e44937d0d59058305c2aa473705a" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; string &gt; &gt;</type>
+        <definition>List&lt;List&lt;string&gt; &gt; Pacman.Collision.contents</definition>
+        <argsstring></argsstring>
+        <name>contents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_collision_1a4852bac5a96956104e000c880fb9a604" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; Pacman.Collision.row</definition>
+        <argsstring></argsstring>
+        <name>row</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="24" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_collision_1a8d7bf8f21f0acde4860380e6ba0bb4d3" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; Pacman.Collision.foodRow</definition>
+        <argsstring></argsstring>
+        <name>foodRow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="24" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_collision_1a62810cf1955e6f02e8be089c4bf75634" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; Vector2 &gt; &gt;</type>
+        <definition>List&lt;List&lt;Vector2&gt; &gt; Pacman.Collision.collisionMap</definition>
+        <argsstring></argsstring>
+        <name>collisionMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_collision_1a1e77f0890f77cc0924bd17cc1cf2827d" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; Vector2 &gt; &gt;</type>
+        <definition>List&lt;List&lt;Vector2&gt; &gt; Pacman.Collision.foodCollisionMap</definition>
+        <argsstring></argsstring>
+        <name>foodCollisionMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_collision_1a23673582569806fea95a422f6cf347e2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>List&lt; List&lt; string &gt; &gt;</type>
+        <definition>List&lt;List&lt;string&gt; &gt; Pacman.Collision.Contents</definition>
+        <argsstring></argsstring>
+        <name>Contents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_collision_1a9971714d68aa3936cbf7b1ceb6e608ad" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>List&lt; List&lt; Vector2 &gt; &gt;</type>
+        <definition>List&lt;List&lt;Vector2&gt; &gt; Pacman.Collision.CollisionMap</definition>
+        <argsstring></argsstring>
+        <name>CollisionMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="32" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_collision_1a2b876db84e06b93316fbccec5c338ea6" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>List&lt; List&lt; Vector2 &gt; &gt;</type>
+        <definition>List&lt;List&lt;Vector2&gt; &gt; Pacman.Collision.FoodCollisionMap</definition>
+        <argsstring></argsstring>
+        <name>FoodCollisionMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="37" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_collision_1a7612e258761f4f2b1e35eb782813baaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Collision.LoadContent</definition>
+        <argsstring>(ContentManager content, string mapID)</argsstring>
+        <name>LoadContent</name>
+        <param>
+          <type>ContentManager</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mapID</declname>
+        </param>
+        <briefdescription>
+<para>Loads in the tile map from the collision text file. Sets the coordiantes for foodtiles and walls. Everything is loaded into their own two dimensional lists. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mapID</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="49" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="49" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_collision_1a321cf26905ad06ac98f9fac0009db02c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Collision.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Clears the lists, called when a new screen has been added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="85" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="85" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Colliation class for tile collision </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Collision.cs" bodystart="19" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_collision_1a3eb977bc122ff13c1b4a0395d6a37825" prot="private" virt="non-virtual"><scope>Pacman::Collision</scope><name>attributes</name></member>
+      <member refid="class_pacman_1_1_collision_1a9971714d68aa3936cbf7b1ceb6e608ad" prot="public" virt="non-virtual"><scope>Pacman::Collision</scope><name>CollisionMap</name></member>
+      <member refid="class_pacman_1_1_collision_1a62810cf1955e6f02e8be089c4bf75634" prot="private" virt="non-virtual"><scope>Pacman::Collision</scope><name>collisionMap</name></member>
+      <member refid="class_pacman_1_1_collision_1a23673582569806fea95a422f6cf347e2" prot="public" virt="non-virtual"><scope>Pacman::Collision</scope><name>Contents</name></member>
+      <member refid="class_pacman_1_1_collision_1aba29e44937d0d59058305c2aa473705a" prot="private" virt="non-virtual"><scope>Pacman::Collision</scope><name>contents</name></member>
+      <member refid="class_pacman_1_1_collision_1aa9260407158ec037d23c5be4a905f6b0" prot="private" virt="non-virtual"><scope>Pacman::Collision</scope><name>fileManager</name></member>
+      <member refid="class_pacman_1_1_collision_1a2b876db84e06b93316fbccec5c338ea6" prot="public" virt="non-virtual"><scope>Pacman::Collision</scope><name>FoodCollisionMap</name></member>
+      <member refid="class_pacman_1_1_collision_1a1e77f0890f77cc0924bd17cc1cf2827d" prot="private" virt="non-virtual"><scope>Pacman::Collision</scope><name>foodCollisionMap</name></member>
+      <member refid="class_pacman_1_1_collision_1a8d7bf8f21f0acde4860380e6ba0bb4d3" prot="private" virt="non-virtual"><scope>Pacman::Collision</scope><name>foodRow</name></member>
+      <member refid="class_pacman_1_1_collision_1a7612e258761f4f2b1e35eb782813baaf" prot="public" virt="non-virtual"><scope>Pacman::Collision</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_collision_1a4852bac5a96956104e000c880fb9a604" prot="private" virt="non-virtual"><scope>Pacman::Collision</scope><name>row</name></member>
+      <member refid="class_pacman_1_1_collision_1a321cf26905ad06ac98f9fac0009db02c" prot="public" virt="non-virtual"><scope>Pacman::Collision</scope><name>UnloadContent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

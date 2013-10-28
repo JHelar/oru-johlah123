@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_high_score" kind="class" prot="public">
+    <compoundname>Pacman::HighScore</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_1a58145195eaf19ed308bdd3177ed1c3be" prot="private" static="no" mutable="no">
+        <type>List&lt; int &gt;</type>
+        <definition>List&lt;int&gt; Pacman.HighScore.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_1a50cac552c9d9ca51ef31176667535166" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Pacman.HighScore.playerName</definition>
+        <argsstring></argsstring>
+        <name>playerName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="18" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_1afd919c7ab2a54ae36001a3caccda8af6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.HighScore.currScore</definition>
+        <argsstring></argsstring>
+        <name>currScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_1aa00bcee6c6536456a585ab5fdbe94b19" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Pacman.HighScore.currName</definition>
+        <argsstring></argsstring>
+        <name>currName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_1aae0c6be50309cc5535bab0da6c5f36aa" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_file_manager" kindref="compound">FileManager</ref></type>
+        <definition>FileManager Pacman.HighScore.filemanager</definition>
+        <argsstring></argsstring>
+        <name>filemanager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_1a6f7f2ba4bd86a7b0f09694dcf62337bb" prot="private" static="no" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Pacman.HighScore.PacFont</definition>
+        <argsstring></argsstring>
+        <name>PacFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_high_score_1a736e02a65f0e70e1acb09974ddc153c7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Pacman.HighScore.PlayerName</definition>
+        <argsstring></argsstring>
+        <name>PlayerName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="26" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_high_score_1a8c4c44992f91dc85d0eeeb2e21cc8aff" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; int &gt;</type>
+        <definition>List&lt;int&gt; Pacman.HighScore.Score</definition>
+        <argsstring></argsstring>
+        <name>Score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="32" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_high_score_1af3465470096fe8a05609c64a4676392e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Pacman.HighScore.CurrName</definition>
+        <argsstring></argsstring>
+        <name>CurrName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="38" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_high_score_1abcbe644064af64df05ea2c394311ed5c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>int</type>
+        <definition>int Pacman.HighScore.CurrScore</definition>
+        <argsstring></argsstring>
+        <name>CurrScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="44" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_high_score_1a68a80a79321c05de0e9dbd444afed288" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.HighScore.Init</definition>
+        <argsstring>(ContentManager content)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>ContentManager</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Loads the font and initializes the lists. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="55" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_1a9151601a735d2494e9bcd297950e19fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.HighScore.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Clears the lists, called when a new screen has been added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="65" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_1aa5e6b11999cbdc295e51a0f86bb9242f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.HighScore.addScore</definition>
+        <argsstring>(int score)</argsstring>
+        <name>addScore</name>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+<para>adds a score to the score list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>score</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="74" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_1acac831b7a03643163018119010051ca4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.HighScore.addPlayer</definition>
+        <argsstring>(string name)</argsstring>
+        <name>addPlayer</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>adds a playername to the playername list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="82" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_1a145a1e9c272af287fef1a67a618ce2ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.HighScore.LoadScore</definition>
+        <argsstring>(string mapID, ContentManager content)</argsstring>
+        <name>LoadScore</name>
+        <param>
+          <type>string</type>
+          <declname>mapID</declname>
+        </param>
+        <param>
+          <type>ContentManager</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Loads in the highscore list from a XML file, adds the scores and player names to the two lists. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mapID</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="91" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_1ab31998069c068d94db02af5828c67485" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.HighScore.saveScore</definition>
+        <argsstring>()</argsstring>
+        <name>saveScore</name>
+        <briefdescription>
+<para>Saves and adds a score and playername to the highscore XML file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="98" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_1a10c6f491c388a5d9f9f66586903212a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.HighScore.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Draws the highscore list on the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="107" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="107" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_1a3aa42396b5a3a86f25e0accb55d6f462" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.HighScore.DrawGameScore</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>DrawGameScore</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Draws the current sessions score to the game screen </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="118" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="118" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A highscore class that loads and saves the highscore </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="15" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="14" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_high_score_1acac831b7a03643163018119010051ca4" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>addPlayer</name></member>
+      <member refid="class_pacman_1_1_high_score_1aa5e6b11999cbdc295e51a0f86bb9242f" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>addScore</name></member>
+      <member refid="class_pacman_1_1_high_score_1af3465470096fe8a05609c64a4676392e" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>CurrName</name></member>
+      <member refid="class_pacman_1_1_high_score_1aa00bcee6c6536456a585ab5fdbe94b19" prot="private" virt="non-virtual"><scope>Pacman::HighScore</scope><name>currName</name></member>
+      <member refid="class_pacman_1_1_high_score_1afd919c7ab2a54ae36001a3caccda8af6" prot="private" virt="non-virtual"><scope>Pacman::HighScore</scope><name>currScore</name></member>
+      <member refid="class_pacman_1_1_high_score_1abcbe644064af64df05ea2c394311ed5c" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>CurrScore</name></member>
+      <member refid="class_pacman_1_1_high_score_1a10c6f491c388a5d9f9f66586903212a1" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_high_score_1a3aa42396b5a3a86f25e0accb55d6f462" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>DrawGameScore</name></member>
+      <member refid="class_pacman_1_1_high_score_1aae0c6be50309cc5535bab0da6c5f36aa" prot="private" virt="non-virtual"><scope>Pacman::HighScore</scope><name>filemanager</name></member>
+      <member refid="class_pacman_1_1_high_score_1a68a80a79321c05de0e9dbd444afed288" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>Init</name></member>
+      <member refid="class_pacman_1_1_high_score_1a145a1e9c272af287fef1a67a618ce2ca" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>LoadScore</name></member>
+      <member refid="class_pacman_1_1_high_score_1a6f7f2ba4bd86a7b0f09694dcf62337bb" prot="private" virt="non-virtual"><scope>Pacman::HighScore</scope><name>PacFont</name></member>
+      <member refid="class_pacman_1_1_high_score_1a50cac552c9d9ca51ef31176667535166" prot="private" virt="non-virtual"><scope>Pacman::HighScore</scope><name>playerName</name></member>
+      <member refid="class_pacman_1_1_high_score_1a736e02a65f0e70e1acb09974ddc153c7" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>PlayerName</name></member>
+      <member refid="class_pacman_1_1_high_score_1ab31998069c068d94db02af5828c67485" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>saveScore</name></member>
+      <member refid="class_pacman_1_1_high_score_1a58145195eaf19ed308bdd3177ed1c3be" prot="private" virt="non-virtual"><scope>Pacman::HighScore</scope><name>score</name></member>
+      <member refid="class_pacman_1_1_high_score_1a8c4c44992f91dc85d0eeeb2e21cc8aff" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>Score</name></member>
+      <member refid="class_pacman_1_1_high_score_1a9151601a735d2494e9bcd297950e19fc" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>UnloadContent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

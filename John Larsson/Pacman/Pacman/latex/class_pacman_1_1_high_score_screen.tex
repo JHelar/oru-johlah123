@@ -1,0 +1,114 @@
+\hypertarget{class_pacman_1_1_high_score_screen}{\section{Pacman.\-High\-Score\-Screen Class Reference}
+\label{class_pacman_1_1_high_score_screen}\index{Pacman.\-High\-Score\-Screen@{Pacman.\-High\-Score\-Screen}}
+}
+
+
+A screen class that displays the highscore list  
+
+
+Inheritance diagram for Pacman.\-High\-Score\-Screen\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pacman_1_1_high_score_screen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_pacman_1_1_high_score_screen_a2f9c7bd488af9db87c5e74c5e4d21a4e}{Load\-Content} (Content\-Manager Content)
+\begin{DoxyCompactList}\small\item\em Initializes the variables and loads the text to be fade-\/animated, loads the highscore from the highscore X\-M\-L file \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_high_score_screen_a9486bf7d1079734d5cf842b53c8f4ade}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Unloads the highscore class and fadeanimation class, called when a new screen is added \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_high_score_screen_a049329dc007241790cdf1603b0ef69d6}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em checks to see if the user has pressed the Enter key, if so change the screen to a Main menu screen \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_high_score_screen_ad785f3290cea4ce2483d89dd651bee76}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draws the highscore list and text fade animation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A screen class that displays the highscore list 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_high_score_screen_ad785f3290cea4ce2483d89dd651bee76}{\index{Pacman\-::\-High\-Score\-Screen@{Pacman\-::\-High\-Score\-Screen}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::HighScoreScreen@{Pacman\-::\-High\-Score\-Screen}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-High\-Score\-Screen.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_high_score_screen_ad785f3290cea4ce2483d89dd651bee76}
+
+
+Draws the highscore list and text fade animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_ab7d62816f246e29e70d352d094c36b04}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_high_score_screen_a2f9c7bd488af9db87c5e74c5e4d21a4e}{\index{Pacman\-::\-High\-Score\-Screen@{Pacman\-::\-High\-Score\-Screen}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::HighScoreScreen@{Pacman\-::\-High\-Score\-Screen}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-High\-Score\-Screen.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_high_score_screen_a2f9c7bd488af9db87c5e74c5e4d21a4e}
+
+
+Initializes the variables and loads the text to be fade-\/animated, loads the highscore from the highscore X\-M\-L file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_a33dbdc943439ae7728aff62b5152aa53}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_high_score_screen_a9486bf7d1079734d5cf842b53c8f4ade}{\index{Pacman\-::\-High\-Score\-Screen@{Pacman\-::\-High\-Score\-Screen}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::HighScoreScreen@{Pacman\-::\-High\-Score\-Screen}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-High\-Score\-Screen.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_high_score_screen_a9486bf7d1079734d5cf842b53c8f4ade}
+
+
+Unloads the highscore class and fadeanimation class, called when a new screen is added 
+
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_aa33ba4650a38762eca4bd059fb803942}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_high_score_screen_a049329dc007241790cdf1603b0ef69d6}{\index{Pacman\-::\-High\-Score\-Screen@{Pacman\-::\-High\-Score\-Screen}!Update@{Update}}
+\index{Update@{Update}!Pacman::HighScoreScreen@{Pacman\-::\-High\-Score\-Screen}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-High\-Score\-Screen.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_high_score_screen_a049329dc007241790cdf1603b0ef69d6}
+
+
+checks to see if the user has pressed the Enter key, if so change the screen to a Main menu screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_a768b26cbc3ed823d0dcba5055ae9a8b4}{Pacman.\-Game\-Screen}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+High\-Score\-Screen.\-cs\end{DoxyCompactItemize}

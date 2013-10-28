@@ -1,0 +1,118 @@
+\hypertarget{class_pacman_1_1_animation}{\section{Pacman.\-Animation Class Reference}
+\label{class_pacman_1_1_animation}\index{Pacman.\-Animation@{Pacman.\-Animation}}
+}
+
+
+\hyperlink{class_pacman_1_1_animation}{Animation} class, for any kind of animation of a spritesheet.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pacman_1_1_animation_a647ddbbc60c46ba27cf6fe424e576fe3}{Init} (Vector2 position, Vector2 amount\-Of\-Frames)
+\begin{DoxyCompactList}\small\item\em Sets the start position,and the amount of frames the spritesheet has. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_animation_ab665843c3b44bdc41148856c73626b0b}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Unloads the class, called when a new screen in added \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_animation_a610e195f160dcb4bf850debc61b1454d}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em Sets when to switch frame, depends on the set animationspeed. Puts the framecounter back to 0 when a new frame is set. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_animation_abcf15386a6a54dc98bc07ec5a82d96ad}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draws the current frame of the animation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_animation_acf74cd296d09153cb9a44c749522fcce}{bool {\bfseries Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_animation_acf74cd296d09153cb9a44c749522fcce}
+
+\item 
+\hypertarget{class_pacman_1_1_animation_a47fa1009378311964886d9230a0b0661}{Vector2 {\bfseries Current\-Frame}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_animation_a47fa1009378311964886d9230a0b0661}
+
+\item 
+\hypertarget{class_pacman_1_1_animation_a0370e81ae3bafa3075eb55792c1800c4}{Vector2 {\bfseries Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_animation_a0370e81ae3bafa3075eb55792c1800c4}
+
+\item 
+\hypertarget{class_pacman_1_1_animation_acdd307f9acdecf0590cf8de005283323}{int {\bfseries Frame\-Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_pacman_1_1_animation_acdd307f9acdecf0590cf8de005283323}
+
+\item 
+\hypertarget{class_pacman_1_1_animation_a9d9c7cd96767f85786942b55639cd4fe}{int {\bfseries Frame\-Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_pacman_1_1_animation_a9d9c7cd96767f85786942b55639cd4fe}
+
+\item 
+\hypertarget{class_pacman_1_1_animation_a0ebfaa2d2dfda8371deeaab7d263f058}{Texture2\-D {\bfseries Animation\-Image}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}}\label{class_pacman_1_1_animation_a0ebfaa2d2dfda8371deeaab7d263f058}
+
+\item 
+\hypertarget{class_pacman_1_1_animation_a7ee5ffc750d07137d7740dfcee31dfe4}{int {\bfseries Animation\-Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}}\label{class_pacman_1_1_animation_a7ee5ffc750d07137d7740dfcee31dfe4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_pacman_1_1_animation}{Animation} class, for any kind of animation of a spritesheet. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_animation_abcf15386a6a54dc98bc07ec5a82d96ad}{\index{Pacman\-::\-Animation@{Pacman\-::\-Animation}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::Animation@{Pacman\-::\-Animation}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Animation.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_animation_abcf15386a6a54dc98bc07ec5a82d96ad}
+
+
+Draws the current frame of the animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_animation_a647ddbbc60c46ba27cf6fe424e576fe3}{\index{Pacman\-::\-Animation@{Pacman\-::\-Animation}!Init@{Init}}
+\index{Init@{Init}!Pacman::Animation@{Pacman\-::\-Animation}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Animation.\-Init (
+\begin{DoxyParamCaption}
+\item[{Vector2}]{position, }
+\item[{Vector2}]{amount\-Of\-Frames}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_animation_a647ddbbc60c46ba27cf6fe424e576fe3}
+
+
+Sets the start position,and the amount of frames the spritesheet has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+{\em amount\-Of\-Frames} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_animation_ab665843c3b44bdc41148856c73626b0b}{\index{Pacman\-::\-Animation@{Pacman\-::\-Animation}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::Animation@{Pacman\-::\-Animation}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Animation.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_animation_ab665843c3b44bdc41148856c73626b0b}
+
+
+Unloads the class, called when a new screen in added 
+
+\hypertarget{class_pacman_1_1_animation_a610e195f160dcb4bf850debc61b1454d}{\index{Pacman\-::\-Animation@{Pacman\-::\-Animation}!Update@{Update}}
+\index{Update@{Update}!Pacman::Animation@{Pacman\-::\-Animation}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Animation.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_animation_a610e195f160dcb4bf850debc61b1454d}
+
+
+Sets when to switch frame, depends on the set animationspeed. Puts the framecounter back to 0 when a new frame is set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Animation.\-cs\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{class_pacman_1_1_fade_animation}{\section{Pacman.\-Fade\-Animation Class Reference}
+\label{class_pacman_1_1_fade_animation}\index{Pacman.\-Fade\-Animation@{Pacman.\-Fade\-Animation}}
+}
+
+
+A fade animation class that fades in and out a image or text, usable for screentransitions  
+
+
+Inheritance diagram for Pacman.\-Fade\-Animation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pacman_1_1_fade_animation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_pacman_1_1_fade_animation_a6abddfcfb03a31152da73b6766e99a9d}{Load\-Content} (Content\-Manager Content, Texture2\-D image, string text, Vector2 position, string font\-I\-D)
+\begin{DoxyCompactList}\small\item\em Loads in a image, a text string the position in which we want these elements to be drawn on, and the font for the text. sets the default timespan variable to 1 milisecond \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_fade_animation_ac6d7c4a5845a19f47dd2501271ecee7a}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em Changes the alpha channel value, the value that determines transparency. Fades in or out depending on the increase boolean value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Time\-Span \hyperlink{class_pacman_1_1_fade_animation_aa161d233c498500c1abc81b15206a53f}{Timer}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_pacman_1_1_fade_animation}{Fade\-Animation} properties \end{DoxyCompactList}\item 
+\hypertarget{class_pacman_1_1_fade_animation_a80295aab2269c152236429d7c210536e}{float {\bfseries Fade\-Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_fade_animation_a80295aab2269c152236429d7c210536e}
+
+\item 
+\hypertarget{class_pacman_1_1_fade_animation_a45fb930d0fb229056d7c534c54b8af86}{override float {\bfseries Alpha}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_fade_animation_a45fb930d0fb229056d7c534c54b8af86}
+
+\item 
+\hypertarget{class_pacman_1_1_fade_animation_a48ffd9f40659312bd0e0de0c3d87b5eb}{float {\bfseries Activate\-Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_fade_animation_a48ffd9f40659312bd0e0de0c3d87b5eb}
+
+\item 
+\hypertarget{class_pacman_1_1_fade_animation_a5a828671b9aae1da7d331d995244891f}{bool {\bfseries Increase}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}}\label{class_pacman_1_1_fade_animation_a5a828671b9aae1da7d331d995244891f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A fade animation class that fades in and out a image or text, usable for screentransitions 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_fade_animation_a6abddfcfb03a31152da73b6766e99a9d}{\index{Pacman\-::\-Fade\-Animation@{Pacman\-::\-Fade\-Animation}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::FadeAnimation@{Pacman\-::\-Fade\-Animation}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Fade\-Animation.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content, }
+\item[{Texture2\-D}]{image, }
+\item[{string}]{text, }
+\item[{Vector2}]{position, }
+\item[{string}]{font\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_fade_animation_a6abddfcfb03a31152da73b6766e99a9d}
+
+
+Loads in a image, a text string the position in which we want these elements to be drawn on, and the font for the text. sets the default timespan variable to 1 milisecond 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+{\em image} & \\
+\hline
+{\em text} & \\
+\hline
+{\em position} & \\
+\hline
+{\em font\-I\-D} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_screen_animation_a566ecb3dca9f82c4eb51f4e3a4019550}{Pacman.\-Screen\-Animation}.
+
+\hypertarget{class_pacman_1_1_fade_animation_ac6d7c4a5845a19f47dd2501271ecee7a}{\index{Pacman\-::\-Fade\-Animation@{Pacman\-::\-Fade\-Animation}!Update@{Update}}
+\index{Update@{Update}!Pacman::FadeAnimation@{Pacman\-::\-Fade\-Animation}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Fade\-Animation.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_fade_animation_ac6d7c4a5845a19f47dd2501271ecee7a}
+
+
+Changes the alpha channel value, the value that determines transparency. Fades in or out depending on the increase boolean value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_screen_animation_af381913622005dfb6b759f7495b37ded}{Pacman.\-Screen\-Animation}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_pacman_1_1_fade_animation_aa161d233c498500c1abc81b15206a53f}{\index{Pacman\-::\-Fade\-Animation@{Pacman\-::\-Fade\-Animation}!Timer@{Timer}}
+\index{Timer@{Timer}!Pacman::FadeAnimation@{Pacman\-::\-Fade\-Animation}}
+\subsubsection[{Timer}]{\setlength{\rightskip}{0pt plus 5cm}Time\-Span Pacman.\-Fade\-Animation.\-Timer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_pacman_1_1_fade_animation_aa161d233c498500c1abc81b15206a53f}
+
+
+\hyperlink{class_pacman_1_1_fade_animation}{Fade\-Animation} properties 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Fade\-Animation.\-cs\end{DoxyCompactItemize}

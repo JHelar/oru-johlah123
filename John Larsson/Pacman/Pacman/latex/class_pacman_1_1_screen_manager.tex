@@ -1,0 +1,155 @@
+\hypertarget{class_pacman_1_1_screen_manager}{\section{Pacman.\-Screen\-Manager Class Reference}
+\label{class_pacman_1_1_screen_manager}\index{Pacman.\-Screen\-Manager@{Pacman.\-Screen\-Manager}}
+}
+
+
+Screen manager that takes care of loading,unloading,updating and drawing of all the screens  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pacman_1_1_screen_manager_a310cc24307ddb1a45dd88e3abc6eafbf}{Add\-Screen} (\hyperlink{class_pacman_1_1_game_screen}{Game\-Screen} screen)
+\begin{DoxyCompactList}\small\item\em Sets transision to a new screen. Adds a screen to new\-Screen \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_screen_manager_ae53ab14c72d98db3b0a92775a24d0cb0}{Add\-Screen} (\hyperlink{class_pacman_1_1_game_screen}{Game\-Screen} screen, float alpha)
+\begin{DoxyCompactList}\small\item\em Overloaded version, changes the alpha so it will fade back instead of just switching a screen back instantly, usable when you want a smooth transition between screens. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_screen_manager_ababbf590c315370355a1c76e57e61552}{Init} ()
+\begin{DoxyCompactList}\small\item\em When the game starts the splash screen will show and a new fade animation will be initialized \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_screen_manager_ad20ca7f52ff926b637c26d19865f585c}{Load\-Content} (Content\-Manager Content)
+\begin{DoxyCompactList}\small\item\em Loads in the contentmanager and fade transistion animation. Calls the loadcontent function of the current screen. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pacman_1_1_screen_manager_a1ec7dc1ef0d31e3d8db362644ae0351b}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em calls the update function of the current screen, check and return the value from the exit function of the current screen. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_screen_manager_ae9477d036da420ac6754c75603f38d08}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Calls the unloadcontent functions for the current screen and clears the screen stack, unloads the fade animation. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_screen_manager_ae5011a30dc8765de4dd061cba48c7f89}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Calls the drawfunction of the current screen. and calls the draw function if we are transitioning between screens \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_screen_manager_a6632eccad8f05e37af385c0c2b230250}{static \hyperlink{class_pacman_1_1_screen_manager}{Screen\-Manager} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_pacman_1_1_screen_manager_a6632eccad8f05e37af385c0c2b230250}
+
+\item 
+\hypertarget{class_pacman_1_1_screen_manager_aa830efd676bbf0af192ac4a0c70b9dfb}{Vector2 {\bfseries Dimensions}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_screen_manager_aa830efd676bbf0af192ac4a0c70b9dfb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Screen manager that takes care of loading,unloading,updating and drawing of all the screens 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_screen_manager_a310cc24307ddb1a45dd88e3abc6eafbf}{\index{Pacman\-::\-Screen\-Manager@{Pacman\-::\-Screen\-Manager}!Add\-Screen@{Add\-Screen}}
+\index{Add\-Screen@{Add\-Screen}!Pacman::ScreenManager@{Pacman\-::\-Screen\-Manager}}
+\subsubsection[{Add\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Screen\-Manager.\-Add\-Screen (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\-Screen}}]{screen}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_screen_manager_a310cc24307ddb1a45dd88e3abc6eafbf}
+
+
+Sets transision to a new screen. Adds a screen to new\-Screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_screen_manager_ae53ab14c72d98db3b0a92775a24d0cb0}{\index{Pacman\-::\-Screen\-Manager@{Pacman\-::\-Screen\-Manager}!Add\-Screen@{Add\-Screen}}
+\index{Add\-Screen@{Add\-Screen}!Pacman::ScreenManager@{Pacman\-::\-Screen\-Manager}}
+\subsubsection[{Add\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Screen\-Manager.\-Add\-Screen (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\-Screen}}]{screen, }
+\item[{float}]{alpha}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_screen_manager_ae53ab14c72d98db3b0a92775a24d0cb0}
+
+
+Overloaded version, changes the alpha so it will fade back instead of just switching a screen back instantly, usable when you want a smooth transition between screens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em alpha} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_screen_manager_ae5011a30dc8765de4dd061cba48c7f89}{\index{Pacman\-::\-Screen\-Manager@{Pacman\-::\-Screen\-Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::ScreenManager@{Pacman\-::\-Screen\-Manager}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Screen\-Manager.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_screen_manager_ae5011a30dc8765de4dd061cba48c7f89}
+
+
+Calls the drawfunction of the current screen. and calls the draw function if we are transitioning between screens 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_screen_manager_ababbf590c315370355a1c76e57e61552}{\index{Pacman\-::\-Screen\-Manager@{Pacman\-::\-Screen\-Manager}!Init@{Init}}
+\index{Init@{Init}!Pacman::ScreenManager@{Pacman\-::\-Screen\-Manager}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Screen\-Manager.\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_screen_manager_ababbf590c315370355a1c76e57e61552}
+
+
+When the game starts the splash screen will show and a new fade animation will be initialized 
+
+\hypertarget{class_pacman_1_1_screen_manager_ad20ca7f52ff926b637c26d19865f585c}{\index{Pacman\-::\-Screen\-Manager@{Pacman\-::\-Screen\-Manager}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::ScreenManager@{Pacman\-::\-Screen\-Manager}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Screen\-Manager.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_screen_manager_ad20ca7f52ff926b637c26d19865f585c}
+
+
+Loads in the contentmanager and fade transistion animation. Calls the loadcontent function of the current screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_screen_manager_ae9477d036da420ac6754c75603f38d08}{\index{Pacman\-::\-Screen\-Manager@{Pacman\-::\-Screen\-Manager}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::ScreenManager@{Pacman\-::\-Screen\-Manager}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Screen\-Manager.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_screen_manager_ae9477d036da420ac6754c75603f38d08}
+
+
+Calls the unloadcontent functions for the current screen and clears the screen stack, unloads the fade animation. 
+
+\hypertarget{class_pacman_1_1_screen_manager_a1ec7dc1ef0d31e3d8db362644ae0351b}{\index{Pacman\-::\-Screen\-Manager@{Pacman\-::\-Screen\-Manager}!Update@{Update}}
+\index{Update@{Update}!Pacman::ScreenManager@{Pacman\-::\-Screen\-Manager}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}bool Pacman.\-Screen\-Manager.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_screen_manager_a1ec7dc1ef0d31e3d8db362644ae0351b}
+
+
+calls the update function of the current screen, check and return the value from the exit function of the current screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Screen\-Manager.\-cs\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_pacman_1_1_path_finding_1_1_position" kind="struct" prot="public">
+    <compoundname>Pacman::PathFinding::Position</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_pacman_1_1_path_finding_1_1_position_1a3ba72b69e0c2b9a9e1298f0696f95c27" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.PathFinding.Position.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="83" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pacman_1_1_path_finding_1_1_position_1aede85751ad51b3d8e4a5788332898d7b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.PathFinding.Position.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="84" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_pacman_1_1_path_finding_1_1_position_1a27ad3ace449adbbf211deebff53c7133" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Pacman.PathFinding.Position.Position</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Position</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="86" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="86" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="82" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="81" bodyend="91"/>
+    <listofallmembers>
+      <member refid="struct_pacman_1_1_path_finding_1_1_position_1a27ad3ace449adbbf211deebff53c7133" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Position</scope><name>Position</name></member>
+      <member refid="struct_pacman_1_1_path_finding_1_1_position_1a3ba72b69e0c2b9a9e1298f0696f95c27" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Position</scope><name>x</name></member>
+      <member refid="struct_pacman_1_1_path_finding_1_1_position_1aede85751ad51b3d8e4a5788332898d7b" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Position</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

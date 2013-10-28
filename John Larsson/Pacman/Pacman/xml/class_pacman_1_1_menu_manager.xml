@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_menu_manager" kind="class" prot="public">
+    <compoundname>Pacman::MenuManager</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a3405bfce42180b132c44c758ebcee6ca" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Pacman.MenuManager.menuItems</definition>
+        <argsstring></argsstring>
+        <name>menuItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1ab31b21206ee24e84fcfff17b108038e7" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Pacman.MenuManager.animationTypes</definition>
+        <argsstring></argsstring>
+        <name>animationTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1abc9a1133344336621d268248f6b2cfa1" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Pacman.MenuManager.linkType</definition>
+        <argsstring></argsstring>
+        <name>linkType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1ad93674b1de85702b578c02daa1f18cf9" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Pacman.MenuManager.linkID</definition>
+        <argsstring></argsstring>
+        <name>linkID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a7d25f12a08e7babbed5faefdc5cea5fe" prot="private" static="no" mutable="no">
+        <type>List&lt; Texture2D &gt;</type>
+        <definition>List&lt;Texture2D&gt; Pacman.MenuManager.menuImages</definition>
+        <argsstring></argsstring>
+        <name>menuImages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a4702a030ea60221486c49b2602595670" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; <ref refid="class_pacman_1_1_screen_animation" kindref="compound">ScreenAnimation</ref> &gt; &gt;</type>
+        <definition>List&lt;List&lt;ScreenAnimation&gt; &gt; Pacman.MenuManager.screenAnimation</definition>
+        <argsstring></argsstring>
+        <name>screenAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="21" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1ad0e78f97daf206ddd5976b18a6b994cf" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; string &gt; &gt;</type>
+        <definition>List&lt;List&lt;string&gt; &gt; Pacman.MenuManager.attributes</definition>
+        <argsstring></argsstring>
+        <name>attributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a5a5f1fcdb931af9c20baf38e077d1190" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; string &gt; &gt;</type>
+        <definition>List&lt;List&lt;string&gt; &gt; Pacman.MenuManager.contents</definition>
+        <argsstring></argsstring>
+        <name>contents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a1e3e66dd3aea4706bf618a4d2cb26c7b" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_pacman_1_1_screen_animation" kindref="compound">ScreenAnimation</ref> &gt;</type>
+        <definition>List&lt;ScreenAnimation&gt; Pacman.MenuManager.tempAnimation</definition>
+        <argsstring></argsstring>
+        <name>tempAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a9b6f3d59ec42a6596f2d3349ac689ab6" prot="private" static="no" mutable="no">
+        <type>ContentManager</type>
+        <definition>ContentManager Pacman.MenuManager.content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1afe048c9b844da20d7d369349cfff2996" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_file_manager" kindref="compound">FileManager</ref></type>
+        <definition>FileManager Pacman.MenuManager.fileManager</definition>
+        <argsstring></argsstring>
+        <name>fileManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="27" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1af91409f73378a39f48e603385f41beaf" prot="private" static="no" mutable="no">
+        <type>KeyboardState</type>
+        <definition>KeyboardState Pacman.MenuManager.keyState</definition>
+        <argsstring></argsstring>
+        <name>keyState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1abb060e2d52ce8e27bdd0d6a85a991790" prot="private" static="no" mutable="no">
+        <type>KeyboardState</type>
+        <definition>KeyboardState Pacman.MenuManager.oldKeyState</definition>
+        <argsstring></argsstring>
+        <name>oldKeyState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1aafe5f87106241a391df271b72c850317" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.MenuManager.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="30" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a1439e820d12799c5e805ad53279d4c56" prot="private" static="no" mutable="no">
+        <type>Rectangle</type>
+        <definition>Rectangle Pacman.MenuManager.source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="31" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1ac14f49c757edfecbf212f31ecfd90650" prot="private" static="no" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Pacman.MenuManager.font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="32" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a32ae34a04bd5d72585334909bef8d5ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.MenuManager.axis</definition>
+        <argsstring></argsstring>
+        <name>axis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="34" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a8dc1124d91cc645344ba091be98aeff8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.MenuManager.itemNumber</definition>
+        <argsstring></argsstring>
+        <name>itemNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="34" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_menu_manager_1a1758b8fc15e470c2574458af7b1b5828" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Pacman.MenuManager.align</definition>
+        <argsstring></argsstring>
+        <name>align</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="35" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pacman_1_1_menu_manager_1a15148cd60f0a65627f0501c8f8d8a09e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.MenuManager.SetMenuItems</definition>
+        <argsstring>()</argsstring>
+        <name>SetMenuItems</name>
+        <briefdescription>
+<para>Sets the menu items and a null item </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="41" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_menu_manager_1a473e502d8ec34d26ad6fb98bc89e874a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.MenuManager.SetAnimations</definition>
+        <argsstring>()</argsstring>
+        <name>SetAnimations</name>
+        <briefdescription>
+<para>Checks to see what animation to use for the current element (only one animation in this game so far) sets the position and loads the animation and sets the axis for the elements. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="53" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="53" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_menu_manager_1af7008f3b4b1865fc3550336bcccb2bea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.MenuManager.LoadContent</definition>
+        <argsstring>(ContentManager content, string id)</argsstring>
+        <name>LoadContent</name>
+        <param>
+          <type>ContentManager</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>initializes and loads in the attributes and contents from the menu text file to the manager. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="93" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="93" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_menu_manager_1ab48258dd7d618e8e9dbd50229e5da01e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.MenuManager.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Clears all the lists and unloads the current contentmanager, called when a new screen has been added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="159" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="159" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_menu_manager_1a72d787f7a1545e1b6af8c70cd70e5e95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.MenuManager.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Gets user input for the menu, and Activates a new instance for a new screen depending on what the user wanted. And transitions to that specific screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="174" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="174" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_menu_manager_1a08d0a81648d1d326553435266a5eb488" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.MenuManager.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Draws the screen animations </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="230" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="230" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A menu manager that is as dynamic as possible </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/MenuManager.cs" bodystart="16" bodyend="241"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_menu_manager_1a1758b8fc15e470c2574458af7b1b5828" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>align</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1ab31b21206ee24e84fcfff17b108038e7" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>animationTypes</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1ad0e78f97daf206ddd5976b18a6b994cf" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>attributes</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a32ae34a04bd5d72585334909bef8d5ae" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>axis</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a9b6f3d59ec42a6596f2d3349ac689ab6" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>content</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a5a5f1fcdb931af9c20baf38e077d1190" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>contents</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a08d0a81648d1d326553435266a5eb488" prot="public" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1afe048c9b844da20d7d369349cfff2996" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>fileManager</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1ac14f49c757edfecbf212f31ecfd90650" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>font</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a8dc1124d91cc645344ba091be98aeff8" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>itemNumber</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1af91409f73378a39f48e603385f41beaf" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>keyState</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1ad93674b1de85702b578c02daa1f18cf9" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>linkID</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1abc9a1133344336621d268248f6b2cfa1" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>linkType</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1af7008f3b4b1865fc3550336bcccb2bea" prot="public" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a7d25f12a08e7babbed5faefdc5cea5fe" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>menuImages</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a3405bfce42180b132c44c758ebcee6ca" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>menuItems</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1abb060e2d52ce8e27bdd0d6a85a991790" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>oldKeyState</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1aafe5f87106241a391df271b72c850317" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>position</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a4702a030ea60221486c49b2602595670" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>screenAnimation</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a473e502d8ec34d26ad6fb98bc89e874a" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>SetAnimations</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a15148cd60f0a65627f0501c8f8d8a09e" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>SetMenuItems</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a1439e820d12799c5e805ad53279d4c56" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>source</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a1e3e66dd3aea4706bf618a4d2cb26c7b" prot="private" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>tempAnimation</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1ab48258dd7d618e8e9dbd50229e5da01e" prot="public" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_menu_manager_1a72d787f7a1545e1b6af8c70cd70e5e95" prot="public" virt="non-virtual"><scope>Pacman::MenuManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+\hypertarget{class_pacman_1_1_enemy}{\section{Pacman.\-Enemy Class Reference}
+\label{class_pacman_1_1_enemy}\index{Pacman.\-Enemy@{Pacman.\-Enemy}}
+}
+
+
+\hyperlink{class_pacman_1_1_enemy}{Enemy} calss, with pathfinding A\-I  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pacman_1_1_enemy_a2a2ec352b4ead599d21f2e6cc14286a4}{Init} (\hyperlink{class_pacman_1_1_collision}{Collision} col, \hyperlink{class_pacman_1_1_player}{Player} player, Vector2 position, int re\-Calculate)
+\begin{DoxyCompactList}\small\item\em Gets the current posisiton of the player, the start position of the enemy, and a value that will determine when the enemy should recalculate the path to the player. Also Initializes the pathfinding for the enemy. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_enemy_a0e536519c29079058f97a1e61140dd40}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Unloads the enemy class, called when a new screen has been added \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_enemy_adba93972a25a4b42270e73903701e394}{set\-Path} (Queue$<$ Vector2 $>$ paths)
+\begin{DoxyCompactList}\small\item\em Sets the path given from the pathfinding class. Forces a recalculation if the queue returns empty. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_enemy_a48f4d1d34ca4de8480f5b2a27aa7eb4e}{Load\-Content} (Content\-Manager content)
+\begin{DoxyCompactList}\small\item\em Loads the enemy texture and enemy animation. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_enemy_ae18c341fda06015c85cf1ce112bdc62b}{Update} (\hyperlink{class_pacman_1_1_player}{Player} player, \hyperlink{class_pacman_1_1_collision}{Collision} col, \hyperlink{class_pacman_1_1_layers}{Layers} layer, Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em Recalculates a new pathfinding path and sets it, calculates it's movement in the right direction and updates it's position and gives that to the enemy animation. Dequeues a waypoint if the enemy has reached it. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_enemy_ae30d7de2c9966fd540ca8ab92f36c7dc}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Calls the draw function from the animation class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_enemy_ab7bc744525f9eebd36900fdeada135bb}{Vector2 {\bfseries Enemy\-Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_pacman_1_1_enemy_ab7bc744525f9eebd36900fdeada135bb}
+
+\item 
+\hypertarget{class_pacman_1_1_enemy_a2263aadbd1d78ead404e84f41bada49b}{float {\bfseries distance\-To\-Destination}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_pacman_1_1_enemy_a2263aadbd1d78ead404e84f41bada49b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_pacman_1_1_enemy}{Enemy} calss, with pathfinding A\-I 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_enemy_ae30d7de2c9966fd540ca8ab92f36c7dc}{\index{Pacman\-::\-Enemy@{Pacman\-::\-Enemy}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::Enemy@{Pacman\-::\-Enemy}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Enemy.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_enemy_ae30d7de2c9966fd540ca8ab92f36c7dc}
+
+
+Calls the draw function from the animation class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_enemy_a2a2ec352b4ead599d21f2e6cc14286a4}{\index{Pacman\-::\-Enemy@{Pacman\-::\-Enemy}!Init@{Init}}
+\index{Init@{Init}!Pacman::Enemy@{Pacman\-::\-Enemy}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Enemy.\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Collision}}]{col, }
+\item[{{\bf Player}}]{player, }
+\item[{Vector2}]{position, }
+\item[{int}]{re\-Calculate}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_enemy_a2a2ec352b4ead599d21f2e6cc14286a4}
+
+
+Gets the current posisiton of the player, the start position of the enemy, and a value that will determine when the enemy should recalculate the path to the player. Also Initializes the pathfinding for the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & \\
+\hline
+{\em player} & \\
+\hline
+{\em position} & \\
+\hline
+{\em re\-Calculate} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_enemy_a48f4d1d34ca4de8480f5b2a27aa7eb4e}{\index{Pacman\-::\-Enemy@{Pacman\-::\-Enemy}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::Enemy@{Pacman\-::\-Enemy}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Enemy.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{content}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_enemy_a48f4d1d34ca4de8480f5b2a27aa7eb4e}
+
+
+Loads the enemy texture and enemy animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_enemy_adba93972a25a4b42270e73903701e394}{\index{Pacman\-::\-Enemy@{Pacman\-::\-Enemy}!set\-Path@{set\-Path}}
+\index{set\-Path@{set\-Path}!Pacman::Enemy@{Pacman\-::\-Enemy}}
+\subsubsection[{set\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Enemy.\-set\-Path (
+\begin{DoxyParamCaption}
+\item[{Queue$<$ Vector2 $>$}]{paths}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_enemy_adba93972a25a4b42270e73903701e394}
+
+
+Sets the path given from the pathfinding class. Forces a recalculation if the queue returns empty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em paths} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_enemy_a0e536519c29079058f97a1e61140dd40}{\index{Pacman\-::\-Enemy@{Pacman\-::\-Enemy}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::Enemy@{Pacman\-::\-Enemy}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Enemy.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_enemy_a0e536519c29079058f97a1e61140dd40}
+
+
+Unloads the enemy class, called when a new screen has been added 
+
+\hypertarget{class_pacman_1_1_enemy_ae18c341fda06015c85cf1ce112bdc62b}{\index{Pacman\-::\-Enemy@{Pacman\-::\-Enemy}!Update@{Update}}
+\index{Update@{Update}!Pacman::Enemy@{Pacman\-::\-Enemy}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Enemy.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{player, }
+\item[{{\bf Collision}}]{col, }
+\item[{{\bf Layers}}]{layer, }
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_enemy_ae18c341fda06015c85cf1ce112bdc62b}
+
+
+Recalculates a new pathfinding path and sets it, calculates it's movement in the right direction and updates it's position and gives that to the enemy animation. Dequeues a waypoint if the enemy has reached it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+{\em col} & \\
+\hline
+{\em layer} & \\
+\hline
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Enemy.\-cs\end{DoxyCompactItemize}

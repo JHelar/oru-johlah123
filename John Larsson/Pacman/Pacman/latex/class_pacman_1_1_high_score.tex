@@ -1,0 +1,176 @@
+\hypertarget{class_pacman_1_1_high_score}{\section{Pacman.\-High\-Score Class Reference}
+\label{class_pacman_1_1_high_score}\index{Pacman.\-High\-Score@{Pacman.\-High\-Score}}
+}
+
+
+A highscore class that loads and saves the highscore  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pacman_1_1_high_score_a68a80a79321c05de0e9dbd444afed288}{Init} (Content\-Manager content)
+\begin{DoxyCompactList}\small\item\em Loads the font and initializes the lists. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_high_score_a9151601a735d2494e9bcd297950e19fc}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Clears the lists, called when a new screen has been added \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_high_score_aa5e6b11999cbdc295e51a0f86bb9242f}{add\-Score} (int score)
+\begin{DoxyCompactList}\small\item\em adds a score to the score list \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_high_score_acac831b7a03643163018119010051ca4}{add\-Player} (string name)
+\begin{DoxyCompactList}\small\item\em adds a playername to the playername list \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_high_score_a145a1e9c272af287fef1a67a618ce2ca}{Load\-Score} (string map\-I\-D, Content\-Manager content)
+\begin{DoxyCompactList}\small\item\em Loads in the highscore list from a X\-M\-L file, adds the scores and player names to the two lists. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_high_score_ab31998069c068d94db02af5828c67485}{save\-Score} ()
+\begin{DoxyCompactList}\small\item\em Saves and adds a score and playername to the highscore X\-M\-L file \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_high_score_a10c6f491c388a5d9f9f66586903212a1}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draws the highscore list on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_high_score_a3aa42396b5a3a86f25e0accb55d6f462}{Draw\-Game\-Score} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draws the current sessions score to the game screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_high_score_a736e02a65f0e70e1acb09974ddc153c7}{List$<$ string $>$ {\bfseries Player\-Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_high_score_a736e02a65f0e70e1acb09974ddc153c7}
+
+\item 
+\hypertarget{class_pacman_1_1_high_score_a8c4c44992f91dc85d0eeeb2e21cc8aff}{List$<$ int $>$ {\bfseries Score}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_high_score_a8c4c44992f91dc85d0eeeb2e21cc8aff}
+
+\item 
+\hypertarget{class_pacman_1_1_high_score_af3465470096fe8a05609c64a4676392e}{string {\bfseries Curr\-Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_high_score_af3465470096fe8a05609c64a4676392e}
+
+\item 
+\hypertarget{class_pacman_1_1_high_score_abcbe644064af64df05ea2c394311ed5c}{int {\bfseries Curr\-Score}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_high_score_abcbe644064af64df05ea2c394311ed5c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A highscore class that loads and saves the highscore 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_high_score_acac831b7a03643163018119010051ca4}{\index{Pacman\-::\-High\-Score@{Pacman\-::\-High\-Score}!add\-Player@{add\-Player}}
+\index{add\-Player@{add\-Player}!Pacman::HighScore@{Pacman\-::\-High\-Score}}
+\subsubsection[{add\-Player}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-High\-Score.\-add\-Player (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_high_score_acac831b7a03643163018119010051ca4}
+
+
+adds a playername to the playername list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_high_score_aa5e6b11999cbdc295e51a0f86bb9242f}{\index{Pacman\-::\-High\-Score@{Pacman\-::\-High\-Score}!add\-Score@{add\-Score}}
+\index{add\-Score@{add\-Score}!Pacman::HighScore@{Pacman\-::\-High\-Score}}
+\subsubsection[{add\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-High\-Score.\-add\-Score (
+\begin{DoxyParamCaption}
+\item[{int}]{score}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_high_score_aa5e6b11999cbdc295e51a0f86bb9242f}
+
+
+adds a score to the score list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_high_score_a10c6f491c388a5d9f9f66586903212a1}{\index{Pacman\-::\-High\-Score@{Pacman\-::\-High\-Score}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::HighScore@{Pacman\-::\-High\-Score}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-High\-Score.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_high_score_a10c6f491c388a5d9f9f66586903212a1}
+
+
+Draws the highscore list on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_high_score_a3aa42396b5a3a86f25e0accb55d6f462}{\index{Pacman\-::\-High\-Score@{Pacman\-::\-High\-Score}!Draw\-Game\-Score@{Draw\-Game\-Score}}
+\index{Draw\-Game\-Score@{Draw\-Game\-Score}!Pacman::HighScore@{Pacman\-::\-High\-Score}}
+\subsubsection[{Draw\-Game\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-High\-Score.\-Draw\-Game\-Score (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_high_score_a3aa42396b5a3a86f25e0accb55d6f462}
+
+
+Draws the current sessions score to the game screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_high_score_a68a80a79321c05de0e9dbd444afed288}{\index{Pacman\-::\-High\-Score@{Pacman\-::\-High\-Score}!Init@{Init}}
+\index{Init@{Init}!Pacman::HighScore@{Pacman\-::\-High\-Score}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-High\-Score.\-Init (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{content}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_high_score_a68a80a79321c05de0e9dbd444afed288}
+
+
+Loads the font and initializes the lists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_high_score_a145a1e9c272af287fef1a67a618ce2ca}{\index{Pacman\-::\-High\-Score@{Pacman\-::\-High\-Score}!Load\-Score@{Load\-Score}}
+\index{Load\-Score@{Load\-Score}!Pacman::HighScore@{Pacman\-::\-High\-Score}}
+\subsubsection[{Load\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-High\-Score.\-Load\-Score (
+\begin{DoxyParamCaption}
+\item[{string}]{map\-I\-D, }
+\item[{Content\-Manager}]{content}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_high_score_a145a1e9c272af287fef1a67a618ce2ca}
+
+
+Loads in the highscore list from a X\-M\-L file, adds the scores and player names to the two lists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\-I\-D} & \\
+\hline
+{\em content} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_high_score_ab31998069c068d94db02af5828c67485}{\index{Pacman\-::\-High\-Score@{Pacman\-::\-High\-Score}!save\-Score@{save\-Score}}
+\index{save\-Score@{save\-Score}!Pacman::HighScore@{Pacman\-::\-High\-Score}}
+\subsubsection[{save\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-High\-Score.\-save\-Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_high_score_ab31998069c068d94db02af5828c67485}
+
+
+Saves and adds a score and playername to the highscore X\-M\-L file 
+
+\hypertarget{class_pacman_1_1_high_score_a9151601a735d2494e9bcd297950e19fc}{\index{Pacman\-::\-High\-Score@{Pacman\-::\-High\-Score}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::HighScore@{Pacman\-::\-High\-Score}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-High\-Score.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_high_score_a9151601a735d2494e9bcd297950e19fc}
+
+
+Clears the lists, called when a new screen has been added 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+High\-Score.\-cs\end{DoxyCompactItemize}

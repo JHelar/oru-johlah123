@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_player" kind="class" prot="public">
+    <compoundname>Pacman::Player</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_player_1a6fe9f3422b8432b6f401dd274a7b38f7" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Pacman.Player.playerImage</definition>
+        <argsstring></argsstring>
+        <name>playerImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_player_1a87985e052615fb7a210b9cba519457c4" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Player.playerPosition</definition>
+        <argsstring></argsstring>
+        <name>playerPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_player_1ae193566a71188464731b31581705d6fe" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Player.tempCurrentFrame</definition>
+        <argsstring></argsstring>
+        <name>tempCurrentFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_player_1a3c760263b173f2ae493d3c39974c4755" prot="private" static="no" mutable="no">
+        <type>KeyboardState</type>
+        <definition>KeyboardState Pacman.Player.keyState</definition>
+        <argsstring></argsstring>
+        <name>keyState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_player_1a63aaf04a1d72f3d1f79da9e08948944e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.Player.moveSpeed</definition>
+        <argsstring></argsstring>
+        <name>moveSpeed</name>
+        <initializer>= 100f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_player_1a8bf4d6bfba8c6665a29958b198e2507d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_animation" kindref="compound">Animation</ref></type>
+        <definition>Animation Pacman.Player.playerAnimation</definition>
+        <argsstring></argsstring>
+        <name>playerAnimation</name>
+        <initializer>= new <ref refid="class_pacman_1_1_animation" kindref="compound">Animation</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_player_1a74070b3c73f60735f178d96abf05cc7f" prot="private" static="no" mutable="no">
+        <type>Rectangle</type>
+        <definition>Rectangle Pacman.Player.tempRect</definition>
+        <argsstring></argsstring>
+        <name>tempRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="27" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_player_1a8232bf193888ded34408ebcb350bae8f" prot="private" static="no" mutable="no">
+        <type>Rectangle</type>
+        <definition>Rectangle Pacman.Player.playerTempRect</definition>
+        <argsstring></argsstring>
+        <name>playerTempRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="27" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_player_1a1f0b9092b8260c31d00835b8cec8540f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Player.PlayerPosition</definition>
+        <argsstring></argsstring>
+        <name>PlayerPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="30" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_player_1aba5e30a8301ffc0ab664300d95ab9743" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Player.Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+<para>Sets the start position of the player. Sets the amount of frames the player animation have. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="39" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_player_1ab8c4719d16a15c9574a8013807602465" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Player.LoadContent</definition>
+        <argsstring>(ContentManager Content)</argsstring>
+        <name>LoadContent</name>
+        <param>
+          <type>ContentManager</type>
+          <declname>Content</declname>
+        </param>
+        <briefdescription>
+<para>Loads in the animation image and the position of the animation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="49" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_player_1a68af2a48b6d3f9512ee28aaa30a71f48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Player.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Unloads the variables, called when a new screen has been added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="58" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_player_1af638b60bf7a47f1f31d5ce8b49574d49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Player.Update</definition>
+        <argsstring>(GameTime gameTime, Collision col, Layers layer, HighScore highScore)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_collision" kindref="compound">Collision</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_layers" kindref="compound">Layers</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_high_score" kindref="compound">HighScore</ref></type>
+          <declname>highScore</declname>
+        </param>
+        <briefdescription>
+<para>Moves the player depending on player input direction, checks collision with walls and food. Increases the highscore by 10 for eatch food eaten. Sets what animation direction that should be drawn. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>highScore</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="76" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="76" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_player_1a5b1cc5c97a3a5a1288b8612bd640e9f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Player.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Draws the player animation </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="157" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="157" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The player class </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Player.cs" bodystart="16" bodyend="162"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_player_1a5b1cc5c97a3a5a1288b8612bd640e9f7" prot="public" virt="non-virtual"><scope>Pacman::Player</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_player_1aba5e30a8301ffc0ab664300d95ab9743" prot="public" virt="non-virtual"><scope>Pacman::Player</scope><name>Init</name></member>
+      <member refid="class_pacman_1_1_player_1a3c760263b173f2ae493d3c39974c4755" prot="private" virt="non-virtual"><scope>Pacman::Player</scope><name>keyState</name></member>
+      <member refid="class_pacman_1_1_player_1ab8c4719d16a15c9574a8013807602465" prot="public" virt="non-virtual"><scope>Pacman::Player</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_player_1a63aaf04a1d72f3d1f79da9e08948944e" prot="private" virt="non-virtual"><scope>Pacman::Player</scope><name>moveSpeed</name></member>
+      <member refid="class_pacman_1_1_player_1a8bf4d6bfba8c6665a29958b198e2507d" prot="private" virt="non-virtual"><scope>Pacman::Player</scope><name>playerAnimation</name></member>
+      <member refid="class_pacman_1_1_player_1a6fe9f3422b8432b6f401dd274a7b38f7" prot="private" virt="non-virtual"><scope>Pacman::Player</scope><name>playerImage</name></member>
+      <member refid="class_pacman_1_1_player_1a1f0b9092b8260c31d00835b8cec8540f" prot="public" virt="non-virtual"><scope>Pacman::Player</scope><name>PlayerPosition</name></member>
+      <member refid="class_pacman_1_1_player_1a87985e052615fb7a210b9cba519457c4" prot="private" virt="non-virtual"><scope>Pacman::Player</scope><name>playerPosition</name></member>
+      <member refid="class_pacman_1_1_player_1a8232bf193888ded34408ebcb350bae8f" prot="private" virt="non-virtual"><scope>Pacman::Player</scope><name>playerTempRect</name></member>
+      <member refid="class_pacman_1_1_player_1ae193566a71188464731b31581705d6fe" prot="private" virt="non-virtual"><scope>Pacman::Player</scope><name>tempCurrentFrame</name></member>
+      <member refid="class_pacman_1_1_player_1a74070b3c73f60735f178d96abf05cc7f" prot="private" virt="non-virtual"><scope>Pacman::Player</scope><name>tempRect</name></member>
+      <member refid="class_pacman_1_1_player_1a68af2a48b6d3f9512ee28aaa30a71f48" prot="public" virt="non-virtual"><scope>Pacman::Player</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_player_1af638b60bf7a47f1f31d5ce8b49574d49" prot="public" virt="non-virtual"><scope>Pacman::Player</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+\hypertarget{class_pacman_1_1_game_screen}{\section{Pacman.\-Game\-Screen Class Reference}
+\label{class_pacman_1_1_game_screen}\index{Pacman.\-Game\-Screen@{Pacman.\-Game\-Screen}}
+}
+
+
+The base class of all the different screens  
+
+
+Inheritance diagram for Pacman.\-Game\-Screen\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.935673cm]{class_pacman_1_1_game_screen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_pacman_1_1_game_screen_aa33ba4650a38762eca4bd059fb803942}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Unloads the contentmanager \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_pacman_1_1_game_screen_a33dbdc943439ae7728aff62b5152aa53}{Load\-Content} (Content\-Manager Content)
+\begin{DoxyCompactList}\small\item\em Loads the contentmanager to the one that \hyperlink{class_pacman_1_1_game1}{Game1} is using. initializes the lists \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_pacman_1_1_game_screen_a768b26cbc3ed823d0dcba5055ae9a8b4}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em Generic update funcion \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_pacman_1_1_game_screen_ab7d62816f246e29e70d352d094c36b04}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Generic draw function \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_pacman_1_1_game_screen_a23069d276b1952ecf9fed07d0424e771}{Exit} ()
+\begin{DoxyCompactList}\small\item\em Allways returns false except when changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_game_screen_a89f510b4d354e6b1eb68b41b108e3ffd}{Content\-Manager {\bfseries content}}\label{class_pacman_1_1_game_screen_a89f510b4d354e6b1eb68b41b108e3ffd}
+
+\item 
+\hypertarget{class_pacman_1_1_game_screen_aae34556caa8e4fd97aa4f639f08785c4}{List$<$ List$<$ string $>$ $>$ {\bfseries attributes}}\label{class_pacman_1_1_game_screen_aae34556caa8e4fd97aa4f639f08785c4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The base class of all the different screens 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_game_screen_ab7d62816f246e29e70d352d094c36b04}{\index{Pacman\-::\-Game\-Screen@{Pacman\-::\-Game\-Screen}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::GameScreen@{Pacman\-::\-Game\-Screen}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pacman.\-Game\-Screen.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_screen_ab7d62816f246e29e70d352d094c36b04}
+
+
+Generic draw function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_pacman_1_1_game_over_screen_ae8e0cb7c8d8f836483c2e0e776e939ef}{Pacman.\-Game\-Over\-Screen}, \hyperlink{class_pacman_1_1_splash_screen_a669ad3120d15e6eea2636e44d74cdc31}{Pacman.\-Splash\-Screen}, \hyperlink{class_pacman_1_1_main_game_ae0723e8c7fcc6fe57383774b84bc5c91}{Pacman.\-Main\-Game}, \hyperlink{class_pacman_1_1_titel_screen_ae86c21742cdd405fd4467b67b509bc6d}{Pacman.\-Titel\-Screen}, \hyperlink{class_pacman_1_1_high_score_screen_ad785f3290cea4ce2483d89dd651bee76}{Pacman.\-High\-Score\-Screen}, and \hyperlink{class_pacman_1_1_main_menu_aa1ea98563a955497e06808b440a65712}{Pacman.\-Main\-Menu}.
+
+\hypertarget{class_pacman_1_1_game_screen_a23069d276b1952ecf9fed07d0424e771}{\index{Pacman\-::\-Game\-Screen@{Pacman\-::\-Game\-Screen}!Exit@{Exit}}
+\index{Exit@{Exit}!Pacman::GameScreen@{Pacman\-::\-Game\-Screen}}
+\subsubsection[{Exit}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Pacman.\-Game\-Screen.\-Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_screen_a23069d276b1952ecf9fed07d0424e771}
+
+
+Allways returns false except when changed. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_pacman_1_1_exit_screen_a4177058f3accaa1a45c4ca9599952b16}{Pacman.\-Exit\-Screen}.
+
+\hypertarget{class_pacman_1_1_game_screen_a33dbdc943439ae7728aff62b5152aa53}{\index{Pacman\-::\-Game\-Screen@{Pacman\-::\-Game\-Screen}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::GameScreen@{Pacman\-::\-Game\-Screen}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pacman.\-Game\-Screen.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_screen_a33dbdc943439ae7728aff62b5152aa53}
+
+
+Loads the contentmanager to the one that \hyperlink{class_pacman_1_1_game1}{Game1} is using. initializes the lists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_pacman_1_1_game_over_screen_a43eaf6170505796fcfb0bdb73560c744}{Pacman.\-Game\-Over\-Screen}, \hyperlink{class_pacman_1_1_splash_screen_a05a5f91c7e0ded6cb4893da9eeb0ded1}{Pacman.\-Splash\-Screen}, \hyperlink{class_pacman_1_1_main_game_a8d51b2ec6cc93f142309ea6fe36b2b30}{Pacman.\-Main\-Game}, \hyperlink{class_pacman_1_1_titel_screen_aaeeb7b4a31657e20e6d37926d38e5c31}{Pacman.\-Titel\-Screen}, \hyperlink{class_pacman_1_1_high_score_screen_a2f9c7bd488af9db87c5e74c5e4d21a4e}{Pacman.\-High\-Score\-Screen}, and \hyperlink{class_pacman_1_1_main_menu_afe334b467dd04341970f6a37521afbd5}{Pacman.\-Main\-Menu}.
+
+\hypertarget{class_pacman_1_1_game_screen_aa33ba4650a38762eca4bd059fb803942}{\index{Pacman\-::\-Game\-Screen@{Pacman\-::\-Game\-Screen}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::GameScreen@{Pacman\-::\-Game\-Screen}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pacman.\-Game\-Screen.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_screen_aa33ba4650a38762eca4bd059fb803942}
+
+
+Unloads the contentmanager 
+
+
+
+Reimplemented in \hyperlink{class_pacman_1_1_main_game_a7858b061a1db731df54381e03f71b7e0}{Pacman.\-Main\-Game}, \hyperlink{class_pacman_1_1_splash_screen_ac72328daa3003fa228218c65660c8d6c}{Pacman.\-Splash\-Screen}, \hyperlink{class_pacman_1_1_game_over_screen_a70173a7767450e66a6deeb00bc4a5844}{Pacman.\-Game\-Over\-Screen}, \hyperlink{class_pacman_1_1_titel_screen_ae9feed8a91c5fe3da560994fe4258fb2}{Pacman.\-Titel\-Screen}, \hyperlink{class_pacman_1_1_high_score_screen_a9486bf7d1079734d5cf842b53c8f4ade}{Pacman.\-High\-Score\-Screen}, and \hyperlink{class_pacman_1_1_main_menu_a5081e962db4976366a69d7e762680edd}{Pacman.\-Main\-Menu}.
+
+\hypertarget{class_pacman_1_1_game_screen_a768b26cbc3ed823d0dcba5055ae9a8b4}{\index{Pacman\-::\-Game\-Screen@{Pacman\-::\-Game\-Screen}!Update@{Update}}
+\index{Update@{Update}!Pacman::GameScreen@{Pacman\-::\-Game\-Screen}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pacman.\-Game\-Screen.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_screen_a768b26cbc3ed823d0dcba5055ae9a8b4}
+
+
+Generic update funcion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_pacman_1_1_splash_screen_af64e74cca5e74b0104f9fe74a21e52ae}{Pacman.\-Splash\-Screen}, \hyperlink{class_pacman_1_1_game_over_screen_abfdcd8b539aa5020bf9e34a86072ae81}{Pacman.\-Game\-Over\-Screen}, \hyperlink{class_pacman_1_1_titel_screen_a287b7f099f4336dbc7b4e232d062441a}{Pacman.\-Titel\-Screen}, \hyperlink{class_pacman_1_1_main_game_abb1d5e7608fa0d9752c0c434cb103e6b}{Pacman.\-Main\-Game}, \hyperlink{class_pacman_1_1_high_score_screen_a049329dc007241790cdf1603b0ef69d6}{Pacman.\-High\-Score\-Screen}, and \hyperlink{class_pacman_1_1_main_menu_aa93dfb885cc86654e2596168690e44c4}{Pacman.\-Main\-Menu}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Game\-Screen.\-cs\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{class_pacman_1_1_main_game}{\section{Pacman.\-Main\-Game Class Reference}
+\label{class_pacman_1_1_main_game}\index{Pacman.\-Main\-Game@{Pacman.\-Main\-Game}}
+}
+
+
+The main game screen  
+
+
+Inheritance diagram for Pacman.\-Main\-Game\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pacman_1_1_main_game}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_pacman_1_1_main_game_a8d51b2ec6cc93f142309ea6fe36b2b30}{Load\-Content} (Content\-Manager Content)
+\begin{DoxyCompactList}\small\item\em Loads and initializes all the variables, adds three enemies with different \char`\"{}smart levels\char`\"{} \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_main_game_abb1d5e7608fa0d9752c0c434cb103e6b}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em Updates the enemy and player, checks if the gameover criteria is met, if it is then add the score to the highscore and transition to the gameover screen \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_main_game_a7858b061a1db731df54381e03f71b7e0}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Unloads everything, called when a new screen is added \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_main_game_ae0723e8c7fcc6fe57383774b84bc5c91}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Calls the draw function of the map,in-\/game highscore,enemies and player \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The main game screen 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_main_game_ae0723e8c7fcc6fe57383774b84bc5c91}{\index{Pacman\-::\-Main\-Game@{Pacman\-::\-Main\-Game}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::MainGame@{Pacman\-::\-Main\-Game}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Main\-Game.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_main_game_ae0723e8c7fcc6fe57383774b84bc5c91}
+
+
+Calls the draw function of the map,in-\/game highscore,enemies and player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_ab7d62816f246e29e70d352d094c36b04}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_main_game_a8d51b2ec6cc93f142309ea6fe36b2b30}{\index{Pacman\-::\-Main\-Game@{Pacman\-::\-Main\-Game}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::MainGame@{Pacman\-::\-Main\-Game}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Main\-Game.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_main_game_a8d51b2ec6cc93f142309ea6fe36b2b30}
+
+
+Loads and initializes all the variables, adds three enemies with different \char`\"{}smart levels\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_a33dbdc943439ae7728aff62b5152aa53}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_main_game_a7858b061a1db731df54381e03f71b7e0}{\index{Pacman\-::\-Main\-Game@{Pacman\-::\-Main\-Game}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::MainGame@{Pacman\-::\-Main\-Game}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Main\-Game.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_main_game_a7858b061a1db731df54381e03f71b7e0}
+
+
+Unloads everything, called when a new screen is added 
+
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_aa33ba4650a38762eca4bd059fb803942}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_main_game_abb1d5e7608fa0d9752c0c434cb103e6b}{\index{Pacman\-::\-Main\-Game@{Pacman\-::\-Main\-Game}!Update@{Update}}
+\index{Update@{Update}!Pacman::MainGame@{Pacman\-::\-Main\-Game}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Main\-Game.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_main_game_abb1d5e7608fa0d9752c0c434cb103e6b}
+
+
+Updates the enemy and player, checks if the gameover criteria is met, if it is then add the score to the highscore and transition to the gameover screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_a768b26cbc3ed823d0dcba5055ae9a8b4}{Pacman.\-Game\-Screen}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Main\-Game.\-cs\end{DoxyCompactItemize}

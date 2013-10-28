@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_ghost" kind="class" prot="public">
+    <compoundname>Pacman::Ghost</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_ghost_1ac974f0fae982b856db0fd867a6f13b42" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.Ghost.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="11" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_ghost_1a883ef3bd64b2394ed6af063c78beb4d1" prot="protected" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Ghost.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="12" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_ghost_1a296bd2980df30f337d53613059c7c340" prot="protected" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Ghost.veloctity</definition>
+        <argsstring></argsstring>
+        <name>veloctity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="13" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_ghost_1a4506a967db350b5d35abf2f78c71c3ad" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Ghost.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="15" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_ghost_1a8b0593cfd4b82661f34d89843eb98074" prot="private" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Pacman.Ghost.DistanceToWaypoint</definition>
+        <argsstring></argsstring>
+        <name>DistanceToWaypoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="37" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_ghost_1ac9bbfd18bc31595eb0e1c07e3208d585" prot="private" static="no" mutable="no">
+        <type>Queue&lt; Vector2 &gt;</type>
+        <definition>Queue&lt;Vector2&gt; Pacman.Ghost.waypoints</definition>
+        <argsstring></argsstring>
+        <name>waypoints</name>
+        <initializer>= new Queue&lt;Vector2&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="27" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_ghost_1a3177d340a3c9174cbeaada595135b81f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Pacman.Ghost.Ghost</definition>
+        <argsstring>(Vector2 position, float speed)</argsstring>
+        <name>Ghost</name>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_ghost_1adb07de4397c5686fa6d7025cdb0b9503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Ghost.SetWaypoints</definition>
+        <argsstring>(Queue&lt; Vector2 &gt; waypoints)</argsstring>
+        <name>SetWaypoints</name>
+        <param>
+          <type>Queue&lt; Vector2 &gt;</type>
+          <declname>waypoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="29" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_ghost_1aca4585cda07d2c78c54378d96501c2f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Ghost.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="42" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="42" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" line="10" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Ghost.cs" bodystart="9" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_ghost_1a8b0593cfd4b82661f34d89843eb98074" prot="private" virt="non-virtual"><scope>Pacman::Ghost</scope><name>DistanceToWaypoint</name></member>
+      <member refid="class_pacman_1_1_ghost_1a3177d340a3c9174cbeaada595135b81f" prot="public" virt="non-virtual"><scope>Pacman::Ghost</scope><name>Ghost</name></member>
+      <member refid="class_pacman_1_1_ghost_1a4506a967db350b5d35abf2f78c71c3ad" prot="public" virt="non-virtual"><scope>Pacman::Ghost</scope><name>Position</name></member>
+      <member refid="class_pacman_1_1_ghost_1a883ef3bd64b2394ed6af063c78beb4d1" prot="protected" virt="non-virtual"><scope>Pacman::Ghost</scope><name>position</name></member>
+      <member refid="class_pacman_1_1_ghost_1adb07de4397c5686fa6d7025cdb0b9503" prot="public" virt="non-virtual"><scope>Pacman::Ghost</scope><name>SetWaypoints</name></member>
+      <member refid="class_pacman_1_1_ghost_1ac974f0fae982b856db0fd867a6f13b42" prot="protected" virt="non-virtual"><scope>Pacman::Ghost</scope><name>speed</name></member>
+      <member refid="class_pacman_1_1_ghost_1aca4585cda07d2c78c54378d96501c2f0" prot="public" virt="non-virtual"><scope>Pacman::Ghost</scope><name>Update</name></member>
+      <member refid="class_pacman_1_1_ghost_1a296bd2980df30f337d53613059c7c340" prot="protected" virt="non-virtual"><scope>Pacman::Ghost</scope><name>veloctity</name></member>
+      <member refid="class_pacman_1_1_ghost_1ac9bbfd18bc31595eb0e1c07e3208d585" prot="private" virt="non-virtual"><scope>Pacman::Ghost</scope><name>waypoints</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_screen_manager" kind="class" prot="public">
+    <compoundname>Pacman::ScreenManager</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1a60fd62476df48f3d65d088675c965146" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_game_screen" kindref="compound">GameScreen</ref></type>
+        <definition>GameScreen Pacman.ScreenManager.currentScreen</definition>
+        <argsstring></argsstring>
+        <name>currentScreen</name>
+        <briefdescription>
+<para>The current screen </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1adf76d934ef7e8bcc5819ad75eebd2997" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_game_screen" kindref="compound">GameScreen</ref></type>
+        <definition>GameScreen Pacman.ScreenManager.newScreen</definition>
+        <argsstring></argsstring>
+        <name>newScreen</name>
+        <briefdescription>
+<para>The new screen that will replace the old one </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1a731857cc51345487499794fbd874bbdb" prot="private" static="no" mutable="no">
+        <type>ContentManager</type>
+        <definition>ContentManager Pacman.ScreenManager.content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+<para>creates a new contentmanager </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="34" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1a32287dfdbcc93c6f02d1dc5da9e6f3bd" prot="private" static="no" mutable="no">
+        <type>Stack&lt; <ref refid="class_pacman_1_1_game_screen" kindref="compound">GameScreen</ref> &gt;</type>
+        <definition>Stack&lt;GameScreen&gt; Pacman.ScreenManager.screenStack</definition>
+        <argsstring></argsstring>
+        <name>screenStack</name>
+        <initializer>= new Stack&lt;<ref refid="class_pacman_1_1_game_screen" kindref="compound">GameScreen</ref>&gt;()</initializer>
+        <briefdescription>
+<para>A stack of all the screens </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="46" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1aea67d5a52cc21144aa8664f839c0e70d" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.ScreenManager.dimensions</definition>
+        <argsstring></argsstring>
+        <name>dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="48" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1a588a3ef79c6cb35af10d99458126def0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pacman.ScreenManager.transition</definition>
+        <argsstring></argsstring>
+        <name>transition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="50" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1ae3ebae7038008c52f748438bc61a74d0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_fade_animation" kindref="compound">FadeAnimation</ref></type>
+        <definition>FadeAnimation Pacman.ScreenManager.fade</definition>
+        <argsstring></argsstring>
+        <name>fade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="52" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1a877c2ad2b5d7bdd2944db1e349a05320" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Pacman.ScreenManager.fadeTexture</definition>
+        <argsstring></argsstring>
+        <name>fadeTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="54" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_screen_manager_1a4a151b9b6a878d7afc18882801cb3bf2" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_pacman_1_1_screen_manager" kindref="compound">ScreenManager</ref></type>
+        <definition>ScreenManager Pacman.ScreenManager.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <briefdescription>
+<para><ref refid="class_pacman_1_1_screen_manager" kindref="compound">ScreenManager</ref> instance </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="40" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_screen_manager_1a6632eccad8f05e37af385c0c2b230250" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_pacman_1_1_screen_manager" kindref="compound">ScreenManager</ref></type>
+        <definition>ScreenManager Pacman.ScreenManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="59" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_screen_manager_1aa830efd676bbf0af192ac4a0c70b9dfb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.ScreenManager.Dimensions</definition>
+        <argsstring></argsstring>
+        <name>Dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="69" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_screen_manager_1a310cc24307ddb1a45dd88e3abc6eafbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.ScreenManager.AddScreen</definition>
+        <argsstring>(GameScreen screen)</argsstring>
+        <name>AddScreen</name>
+        <param>
+          <type><ref refid="class_pacman_1_1_game_screen" kindref="compound">GameScreen</ref></type>
+          <declname>screen</declname>
+        </param>
+        <briefdescription>
+<para>Sets transision to a new screen. Adds a screen to newScreen </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screen</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="81" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="81" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_manager_1ae53ab14c72d98db3b0a92775a24d0cb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.ScreenManager.AddScreen</definition>
+        <argsstring>(GameScreen screen, float alpha)</argsstring>
+        <name>AddScreen</name>
+        <param>
+          <type><ref refid="class_pacman_1_1_game_screen" kindref="compound">GameScreen</ref></type>
+          <declname>screen</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Overloaded version, changes the alpha so it will fade back instead of just switching a screen back instantly, usable when you want a smooth transition between screens. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screen</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="95" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="95" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_manager_1ababbf590c315370355a1c76e57e61552" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.ScreenManager.Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+<para>When the game starts the splash screen will show and a new fade animation will be initialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="110" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_manager_1ad20ca7f52ff926b637c26d19865f585c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.ScreenManager.LoadContent</definition>
+        <argsstring>(ContentManager Content)</argsstring>
+        <name>LoadContent</name>
+        <param>
+          <type>ContentManager</type>
+          <declname>Content</declname>
+        </param>
+        <briefdescription>
+<para>Loads in the contentmanager and fade transistion animation. Calls the loadcontent function of the current screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="120" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="120" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_manager_1a1ec7dc1ef0d31e3d8db362644ae0351b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pacman.ScreenManager.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>calls the update function of the current screen, check and return the value from the exit function of the current screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="134" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="134" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_manager_1ae9477d036da420ac6754c75603f38d08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.ScreenManager.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Calls the unloadcontent functions for the current screen and clears the screen stack, unloads the fade animation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="151" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="151" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_manager_1ae5011a30dc8765de4dd061cba48c7f89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.ScreenManager.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Calls the drawfunction of the current screen. and calls the draw function if we are transitioning between screens </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="162" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="162" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pacman_1_1_screen_manager_1afdc9ce222bc57bae3394528862b7d95a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.ScreenManager.Transition</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Transition</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Updates the fade animation, transition and switches between the old and new screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="175" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="175" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Screen manager that takes care of loading,unloading,updating and drawing of all the screens </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenManager.cs" bodystart="15" bodyend="192"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_screen_manager_1a310cc24307ddb1a45dd88e3abc6eafbf" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>AddScreen</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1ae53ab14c72d98db3b0a92775a24d0cb0" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>AddScreen</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1a731857cc51345487499794fbd874bbdb" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>content</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1a60fd62476df48f3d65d088675c965146" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>currentScreen</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1aa830efd676bbf0af192ac4a0c70b9dfb" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>Dimensions</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1aea67d5a52cc21144aa8664f839c0e70d" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>dimensions</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1ae5011a30dc8765de4dd061cba48c7f89" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1ae3ebae7038008c52f748438bc61a74d0" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>fade</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1a877c2ad2b5d7bdd2944db1e349a05320" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>fadeTexture</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1ababbf590c315370355a1c76e57e61552" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>Init</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1a4a151b9b6a878d7afc18882801cb3bf2" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>instance</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1a6632eccad8f05e37af385c0c2b230250" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>Instance</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1ad20ca7f52ff926b637c26d19865f585c" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1adf76d934ef7e8bcc5819ad75eebd2997" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>newScreen</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1a32287dfdbcc93c6f02d1dc5da9e6f3bd" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>screenStack</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1afdc9ce222bc57bae3394528862b7d95a" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>Transition</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1a588a3ef79c6cb35af10d99458126def0" prot="private" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>transition</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1ae9477d036da420ac6754c75603f38d08" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_screen_manager_1a1ec7dc1ef0d31e3d8db362644ae0351b" prot="public" virt="non-virtual"><scope>Pacman::ScreenManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

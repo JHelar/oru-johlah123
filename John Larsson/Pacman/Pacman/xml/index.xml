@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.5">
+  <compound refid="class_pacman_1_1_animation" kind="class"><name>Pacman::Animation</name>
+    <member refid="class_pacman_1_1_animation_1ab56e7b59bc890452cde381e4f1cd446e" kind="variable"><name>frameCounter</name></member>
+    <member refid="class_pacman_1_1_animation_1a66f14aca4521e68dc2c7f0d92ef1d1a7" kind="variable"><name>switchFrame</name></member>
+    <member refid="class_pacman_1_1_animation_1a29c73dd0a6e5d7d98508588def0eacfb" kind="variable"><name>animationSpeed</name></member>
+    <member refid="class_pacman_1_1_animation_1a1bc340e48e639924e68ca4671805eaf5" kind="variable"><name>active</name></member>
+    <member refid="class_pacman_1_1_animation_1a2544516b9efeb6785074c333b6344b71" kind="variable"><name>position</name></member>
+    <member refid="class_pacman_1_1_animation_1ae6d8169cf12e9e9ec2e4f4943e1223c0" kind="variable"><name>amountOfFrames</name></member>
+    <member refid="class_pacman_1_1_animation_1ab955eb3f6bb454793994d3fb860ee3f8" kind="variable"><name>currentFrame</name></member>
+    <member refid="class_pacman_1_1_animation_1aeb144cfe77fca5467ab0745dfb0af310" kind="variable"><name>animationImage</name></member>
+    <member refid="class_pacman_1_1_animation_1a1257a0d179ece979ea35609e05e72d2c" kind="variable"><name>sourcRect</name></member>
+    <member refid="class_pacman_1_1_animation_1acf74cd296d09153cb9a44c749522fcce" kind="property"><name>Active</name></member>
+    <member refid="class_pacman_1_1_animation_1a47fa1009378311964886d9230a0b0661" kind="property"><name>CurrentFrame</name></member>
+    <member refid="class_pacman_1_1_animation_1a0370e81ae3bafa3075eb55792c1800c4" kind="property"><name>Position</name></member>
+    <member refid="class_pacman_1_1_animation_1acdd307f9acdecf0590cf8de005283323" kind="property"><name>FrameWidth</name></member>
+    <member refid="class_pacman_1_1_animation_1a9d9c7cd96767f85786942b55639cd4fe" kind="property"><name>FrameHeight</name></member>
+    <member refid="class_pacman_1_1_animation_1a0ebfaa2d2dfda8371deeaab7d263f058" kind="property"><name>AnimationImage</name></member>
+    <member refid="class_pacman_1_1_animation_1a7ee5ffc750d07137d7740dfcee31dfe4" kind="property"><name>AnimationSpeed</name></member>
+    <member refid="class_pacman_1_1_animation_1a647ddbbc60c46ba27cf6fe424e576fe3" kind="function"><name>Init</name></member>
+    <member refid="class_pacman_1_1_animation_1ab665843c3b44bdc41148856c73626b0b" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_animation_1a610e195f160dcb4bf850debc61b1454d" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_animation_1abcf15386a6a54dc98bc07ec5a82d96ad" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_collision" kind="class"><name>Pacman::Collision</name>
+    <member refid="class_pacman_1_1_collision_1aa9260407158ec037d23c5be4a905f6b0" kind="variable"><name>fileManager</name></member>
+    <member refid="class_pacman_1_1_collision_1a3eb977bc122ff13c1b4a0395d6a37825" kind="variable"><name>attributes</name></member>
+    <member refid="class_pacman_1_1_collision_1aba29e44937d0d59058305c2aa473705a" kind="variable"><name>contents</name></member>
+    <member refid="class_pacman_1_1_collision_1a4852bac5a96956104e000c880fb9a604" kind="variable"><name>row</name></member>
+    <member refid="class_pacman_1_1_collision_1a8d7bf8f21f0acde4860380e6ba0bb4d3" kind="variable"><name>foodRow</name></member>
+    <member refid="class_pacman_1_1_collision_1a62810cf1955e6f02e8be089c4bf75634" kind="variable"><name>collisionMap</name></member>
+    <member refid="class_pacman_1_1_collision_1a1e77f0890f77cc0924bd17cc1cf2827d" kind="variable"><name>foodCollisionMap</name></member>
+    <member refid="class_pacman_1_1_collision_1a23673582569806fea95a422f6cf347e2" kind="property"><name>Contents</name></member>
+    <member refid="class_pacman_1_1_collision_1a9971714d68aa3936cbf7b1ceb6e608ad" kind="property"><name>CollisionMap</name></member>
+    <member refid="class_pacman_1_1_collision_1a2b876db84e06b93316fbccec5c338ea6" kind="property"><name>FoodCollisionMap</name></member>
+    <member refid="class_pacman_1_1_collision_1a7612e258761f4f2b1e35eb782813baaf" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_collision_1a321cf26905ad06ac98f9fac0009db02c" kind="function"><name>UnloadContent</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_enemy" kind="class"><name>Pacman::Enemy</name>
+    <member refid="class_pacman_1_1_enemy_1ae34f1c49dc09011a206645e24f28217d" kind="variable"><name>enemyImage</name></member>
+    <member refid="class_pacman_1_1_enemy_1ab5fe4cbfa11339d60950f004b713a96c" kind="variable"><name>position</name></member>
+    <member refid="class_pacman_1_1_enemy_1ace8f256b963fb795135010ba5d11b61a" kind="variable"><name>tempCurrentFrame</name></member>
+    <member refid="class_pacman_1_1_enemy_1a2cc8610665024b8fd5b500bd552bf5ae" kind="variable"><name>paths</name></member>
+    <member refid="class_pacman_1_1_enemy_1af918bef2b216a5bb53d59404a67efc5e" kind="variable"><name>pathFinding</name></member>
+    <member refid="class_pacman_1_1_enemy_1a16688b699de255814c61c854109184c1" kind="variable"><name>enemyAnimation</name></member>
+    <member refid="class_pacman_1_1_enemy_1a91d68224cb2396724bfa1cde43cd9067" kind="variable"><name>moveSpeed</name></member>
+    <member refid="class_pacman_1_1_enemy_1a68c4aebc9faa44ae9e3b6299fcb0cd0c" kind="variable"><name>newPath</name></member>
+    <member refid="class_pacman_1_1_enemy_1a9958fce3328ddd0e67a46d0938ed5a1f" kind="variable"><name>velocity</name></member>
+    <member refid="class_pacman_1_1_enemy_1a5320258f2dcd69105ea4e7f1e708d835" kind="variable"><name>reCalculate</name></member>
+    <member refid="class_pacman_1_1_enemy_1ae52d5759b671afb0512b42ad3801167a" kind="variable"><name>reCalculateValue</name></member>
+    <member refid="class_pacman_1_1_enemy_1ab7bc744525f9eebd36900fdeada135bb" kind="property"><name>EnemyPosition</name></member>
+    <member refid="class_pacman_1_1_enemy_1a2263aadbd1d78ead404e84f41bada49b" kind="property"><name>distanceToDestination</name></member>
+    <member refid="class_pacman_1_1_enemy_1a2a2ec352b4ead599d21f2e6cc14286a4" kind="function"><name>Init</name></member>
+    <member refid="class_pacman_1_1_enemy_1a0e536519c29079058f97a1e61140dd40" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_enemy_1adba93972a25a4b42270e73903701e394" kind="function"><name>setPath</name></member>
+    <member refid="class_pacman_1_1_enemy_1a48f4d1d34ca4de8480f5b2a27aa7eb4e" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_enemy_1ae18c341fda06015c85cf1ce112bdc62b" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_enemy_1ae30d7de2c9966fd540ca8ab92f36c7dc" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_exit_screen" kind="class"><name>Pacman::ExitScreen</name>
+    <member refid="class_pacman_1_1_exit_screen_1a4177058f3accaa1a45c4ca9599952b16" kind="function"><name>Exit</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_fade_animation" kind="class"><name>Pacman::FadeAnimation</name>
+    <member refid="class_pacman_1_1_fade_animation_1adb0fb4716bf7fbb982fe28ca765757b0" kind="variable"><name>increase</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a5377ee376d9e667483123e3ef38f9387" kind="variable"><name>fadeSpeed</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a1334b00a3ca13fa5e18b0e2a50254f53" kind="variable"><name>defaultTime</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a9504ca64de4019a80ea63bb099d16ed6" kind="variable"><name>timer</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a6447815ec5bceece11b1990db12db749" kind="variable"><name>activateValue</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a6fb0d382f0cd435f71574e8f493aac85" kind="variable"><name>stopUpdating</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a01773598bd30f1341978f6c82ae2ae86" kind="variable"><name>defaultAlpha</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1aa161d233c498500c1abc81b15206a53f" kind="property"><name>Timer</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a80295aab2269c152236429d7c210536e" kind="property"><name>FadeSpeed</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a45fb930d0fb229056d7c534c54b8af86" kind="property"><name>Alpha</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a48ffd9f40659312bd0e0de0c3d87b5eb" kind="property"><name>ActivateValue</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a5a828671b9aae1da7d331d995244891f" kind="property"><name>Increase</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1a6abddfcfb03a31152da73b6766e99a9d" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_fade_animation_1ac6d7c4a5845a19f47dd2501271ecee7a" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_file_manager" kind="class"><name>Pacman::FileManager</name>
+    <member refid="class_pacman_1_1_file_manager_1aacc7964057b86c617cb1504498e938d4" kind="enum"><name>LoadType</name></member>
+    <member refid="class_pacman_1_1_file_manager_1aacc7964057b86c617cb1504498e938d4a287234a1ff35a314b5b6bc4e5828e745" kind="enumvalue"><name>Attributes</name></member>
+    <member refid="class_pacman_1_1_file_manager_1aacc7964057b86c617cb1504498e938d4ac1df1da7a1ce305a3b60af9d5733ac1d" kind="enumvalue"><name>Contents</name></member>
+    <member refid="class_pacman_1_1_file_manager_1a40065e9df0885e500d92432c5c7ac5ef" kind="variable"><name>type</name></member>
+    <member refid="class_pacman_1_1_file_manager_1a1436b560f58e07a884aec1cc7e177158" kind="variable"><name>tempAttributes</name></member>
+    <member refid="class_pacman_1_1_file_manager_1a626544badd05149d714aad0bb9bb77a3" kind="variable"><name>tempContents</name></member>
+    <member refid="class_pacman_1_1_file_manager_1a673661adc0cbc2b897ad898eb8fd9800" kind="variable"><name>identifierFound</name></member>
+    <member refid="class_pacman_1_1_file_manager_1a4a5be095e8de90a583f3f99ac89300ff" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_file_manager_1af3b152657eefb8f967dbdd2edca6c7dd" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_file_manager_1a00288173f2ae8a7957797c553b00d760" kind="function"><name>ReadScore</name></member>
+    <member refid="class_pacman_1_1_file_manager_1aedf31e50cc3f1f7aba5566e324d139ef" kind="function"><name>WriteScore</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_game1" kind="class"><name>Pacman::Game1</name>
+    <member refid="class_pacman_1_1_game1_1ae1c4f0fe2a59cca10e014fa24ca213a9" kind="variable"><name>graphics</name></member>
+    <member refid="class_pacman_1_1_game1_1adb143b2d05548d37abf73ab1145c398c" kind="variable"><name>spriteBatch</name></member>
+    <member refid="class_pacman_1_1_game1_1a8ba07abd58af0654647b3fb243acbeb4" kind="variable"><name>exit</name></member>
+    <member refid="class_pacman_1_1_game1_1aafd365b94b28e3b5ae500f6532ecced0" kind="function"><name>Game1</name></member>
+    <member refid="class_pacman_1_1_game1_1a06dfb68d52150fb8f15f7d739947b7ac" kind="function"><name>Game1</name></member>
+    <member refid="class_pacman_1_1_game1_1a55a2bc52a62f5813f20860d10d7614f5" kind="function"><name>Initialize</name></member>
+    <member refid="class_pacman_1_1_game1_1a9c5fd4623bf1d9d6b1ea2cb37e5f2b3a" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_game1_1a5742bbddb5003b69c5068dd9ea632a78" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_game1_1a8d7c660a92475d021af8e2da33f0af1b" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_game1_1aa296bdd57b2e540aebc8ab81c9f166a4" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_game_over" kind="class"><name>Pacman::GameOver</name>
+    <member refid="class_pacman_1_1_game_over_1a8c6e6a54940e95d859ee8fe53deb5d00" kind="function"><name>CheckGameState</name></member>
+    <member refid="class_pacman_1_1_game_over_1a7ef6b7eba2eadd29d9204dbeb072a11e" kind="function"><name>CheckEnemyPlayerCollision</name></member>
+    <member refid="class_pacman_1_1_game_over_1a6d00069155b9a86a636a8d8c04d2a3bd" kind="function"><name>CheckIfFoodEaten</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_game_over_screen" kind="class"><name>Pacman::GameOverScreen</name>
+    <member refid="class_pacman_1_1_game_over_screen_1a75a84b801b4e0e8bbbfd4e643ec1dd82" kind="variable"><name>font</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a16bada3a7ab0ac17bdc5f0a49ac771ad" kind="variable"><name>bigFont</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a3c2800326469a59f97441ec5205f5e6b" kind="variable"><name>inputText</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a46630409629bad843bf564e3761bda04" kind="variable"><name>textFade</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a536e91eb54948861a5e1b62c821fdbb3" kind="variable"><name>highScore</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a89da3bfd87d4f312e88bd09219630153" kind="variable"><name>keyState</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a2ae237f8ecdacd1dff769e172ea49d12" kind="variable"><name>oldKeyState</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a7d97bf9092aecb4d9de8cd93e444f4f1" kind="function"><name>GameOverScreen</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a43eaf6170505796fcfb0bdb73560c744" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1a70173a7767450e66a6deeb00bc4a5844" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1abfdcd8b539aa5020bf9e34a86072ae81" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_game_over_screen_1ae8e0cb7c8d8f836483c2e0e776e939ef" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_game_screen" kind="class"><name>Pacman::GameScreen</name>
+    <member refid="class_pacman_1_1_game_screen_1a89f510b4d354e6b1eb68b41b108e3ffd" kind="variable"><name>content</name></member>
+    <member refid="class_pacman_1_1_game_screen_1aae34556caa8e4fd97aa4f639f08785c4" kind="variable"><name>attributes</name></member>
+    <member refid="class_pacman_1_1_game_screen_1a4ac32be0a5f202149a414df0e6b82eab" kind="variable"><name>contents</name></member>
+    <member refid="class_pacman_1_1_game_screen_1aa33ba4650a38762eca4bd059fb803942" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_game_screen_1a33dbdc943439ae7728aff62b5152aa53" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_game_screen_1a768b26cbc3ed823d0dcba5055ae9a8b4" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_game_screen_1ab7d62816f246e29e70d352d094c36b04" kind="function"><name>Draw</name></member>
+    <member refid="class_pacman_1_1_game_screen_1a23069d276b1952ecf9fed07d0424e771" kind="function"><name>Exit</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_ghost" kind="class"><name>Pacman::Ghost</name>
+    <member refid="class_pacman_1_1_ghost_1ac974f0fae982b856db0fd867a6f13b42" kind="variable"><name>speed</name></member>
+    <member refid="class_pacman_1_1_ghost_1a883ef3bd64b2394ed6af063c78beb4d1" kind="variable"><name>position</name></member>
+    <member refid="class_pacman_1_1_ghost_1a296bd2980df30f337d53613059c7c340" kind="variable"><name>veloctity</name></member>
+    <member refid="class_pacman_1_1_ghost_1a4506a967db350b5d35abf2f78c71c3ad" kind="property"><name>Position</name></member>
+    <member refid="class_pacman_1_1_ghost_1a8b0593cfd4b82661f34d89843eb98074" kind="property"><name>DistanceToWaypoint</name></member>
+    <member refid="class_pacman_1_1_ghost_1ac9bbfd18bc31595eb0e1c07e3208d585" kind="variable"><name>waypoints</name></member>
+    <member refid="class_pacman_1_1_ghost_1a3177d340a3c9174cbeaada595135b81f" kind="function"><name>Ghost</name></member>
+    <member refid="class_pacman_1_1_ghost_1adb07de4397c5686fa6d7025cdb0b9503" kind="function"><name>SetWaypoints</name></member>
+    <member refid="class_pacman_1_1_ghost_1aca4585cda07d2c78c54378d96501c2f0" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_high_score" kind="class"><name>Pacman::HighScore</name>
+    <member refid="class_pacman_1_1_high_score_1a58145195eaf19ed308bdd3177ed1c3be" kind="variable"><name>score</name></member>
+    <member refid="class_pacman_1_1_high_score_1a50cac552c9d9ca51ef31176667535166" kind="variable"><name>playerName</name></member>
+    <member refid="class_pacman_1_1_high_score_1afd919c7ab2a54ae36001a3caccda8af6" kind="variable"><name>currScore</name></member>
+    <member refid="class_pacman_1_1_high_score_1aa00bcee6c6536456a585ab5fdbe94b19" kind="variable"><name>currName</name></member>
+    <member refid="class_pacman_1_1_high_score_1aae0c6be50309cc5535bab0da6c5f36aa" kind="variable"><name>filemanager</name></member>
+    <member refid="class_pacman_1_1_high_score_1a6f7f2ba4bd86a7b0f09694dcf62337bb" kind="variable"><name>PacFont</name></member>
+    <member refid="class_pacman_1_1_high_score_1a736e02a65f0e70e1acb09974ddc153c7" kind="property"><name>PlayerName</name></member>
+    <member refid="class_pacman_1_1_high_score_1a8c4c44992f91dc85d0eeeb2e21cc8aff" kind="property"><name>Score</name></member>
+    <member refid="class_pacman_1_1_high_score_1af3465470096fe8a05609c64a4676392e" kind="property"><name>CurrName</name></member>
+    <member refid="class_pacman_1_1_high_score_1abcbe644064af64df05ea2c394311ed5c" kind="property"><name>CurrScore</name></member>
+    <member refid="class_pacman_1_1_high_score_1a68a80a79321c05de0e9dbd444afed288" kind="function"><name>Init</name></member>
+    <member refid="class_pacman_1_1_high_score_1a9151601a735d2494e9bcd297950e19fc" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_high_score_1aa5e6b11999cbdc295e51a0f86bb9242f" kind="function"><name>addScore</name></member>
+    <member refid="class_pacman_1_1_high_score_1acac831b7a03643163018119010051ca4" kind="function"><name>addPlayer</name></member>
+    <member refid="class_pacman_1_1_high_score_1a145a1e9c272af287fef1a67a618ce2ca" kind="function"><name>LoadScore</name></member>
+    <member refid="class_pacman_1_1_high_score_1ab31998069c068d94db02af5828c67485" kind="function"><name>saveScore</name></member>
+    <member refid="class_pacman_1_1_high_score_1a10c6f491c388a5d9f9f66586903212a1" kind="function"><name>Draw</name></member>
+    <member refid="class_pacman_1_1_high_score_1a3aa42396b5a3a86f25e0accb55d6f462" kind="function"><name>DrawGameScore</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_high_score_screen" kind="class"><name>Pacman::HighScoreScreen</name>
+    <member refid="class_pacman_1_1_high_score_screen_1a38336c0f21596aee3127586572ee7651" kind="variable"><name>highScore</name></member>
+    <member refid="class_pacman_1_1_high_score_screen_1a41cd3c69eb80b701ed4296aca4a4a946" kind="variable"><name>keyState</name></member>
+    <member refid="class_pacman_1_1_high_score_screen_1aaf472baf54510c5d00e83871fc10f257" kind="variable"><name>textFade</name></member>
+    <member refid="class_pacman_1_1_high_score_screen_1a2f9c7bd488af9db87c5e74c5e4d21a4e" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_high_score_screen_1a9486bf7d1079734d5cf842b53c8f4ade" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_high_score_screen_1a049329dc007241790cdf1603b0ef69d6" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_high_score_screen_1ad785f3290cea4ce2483d89dd651bee76" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_layers" kind="class"><name>Pacman::Layers</name>
+    <member refid="class_pacman_1_1_layers_1ababc8c99b6ef2fb97efd4086c478e96d" kind="variable"><name>tileMap</name></member>
+    <member refid="class_pacman_1_1_layers_1a1fb415616f6413f219a51a58c5a0e88a" kind="variable"><name>layer</name></member>
+    <member refid="class_pacman_1_1_layers_1ad9ce4c7ee06cc351d1fe96d0b1f68720" kind="variable"><name>tile</name></member>
+    <member refid="class_pacman_1_1_layers_1a7a6e3ab14a7e3ba8377e97de94c04a71" kind="variable"><name>fileManager</name></member>
+    <member refid="class_pacman_1_1_layers_1a36a9e6bde8d8a5b5444ae4a90726adf8" kind="variable"><name>tileSet</name></member>
+    <member refid="class_pacman_1_1_layers_1a856d740c5c247dc9f4fb1cea886d6336" kind="variable"><name>tileDimensions</name></member>
+    <member refid="class_pacman_1_1_layers_1ac60965bb0556ccd62e0a31b65404f562" kind="variable"><name>layerNumber</name></member>
+    <member refid="class_pacman_1_1_layers_1a3ec6f9881da505a73ee72877ab2e70e2" kind="variable"><name>attributes</name></member>
+    <member refid="class_pacman_1_1_layers_1aabdd5ffb2e3e1aa7bffcff37c62c5ac6" kind="variable"><name>contents</name></member>
+    <member refid="class_pacman_1_1_layers_1ad6033d11075ecc2fb07f2366b430c507" kind="property"><name>LayerNumber</name></member>
+    <member refid="class_pacman_1_1_layers_1a91d226bdcd4fbde5658b523d547ada8e" kind="property"><name>TileDimensions</name></member>
+    <member refid="class_pacman_1_1_layers_1af5e3f6ed7cb7ea5a26b5d96930fffb8d" kind="property"><name>TileMap</name></member>
+    <member refid="class_pacman_1_1_layers_1ae2f8d76ad9fe571a7e0ead57165b402e" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_layers_1a721d7d396fb04ab363d485d8474f51a2" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_layers_1a3b799c4834f790a0de8dfdbec02d4974" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_main_game" kind="class"><name>Pacman::MainGame</name>
+    <member refid="class_pacman_1_1_main_game_1abee56b8907b8ac8bfeebdae93a5b0ee7" kind="variable"><name>player</name></member>
+    <member refid="class_pacman_1_1_main_game_1a1a65c1962b496a81b7cf9b97c4b0b5f6" kind="variable"><name>enemy</name></member>
+    <member refid="class_pacman_1_1_main_game_1a98d7d5e99fa4b9f5fb412a3bcab3b6cf" kind="variable"><name>tempEnemy</name></member>
+    <member refid="class_pacman_1_1_main_game_1a40f838fe3cb20186c1ee3964a0a801ac" kind="variable"><name>layer</name></member>
+    <member refid="class_pacman_1_1_main_game_1ac4e65ba3dae2017d196cf3bcb41d4bb6" kind="variable"><name>collision</name></member>
+    <member refid="class_pacman_1_1_main_game_1a57e0bc98b12c4e5bf57653bc56f0b38e" kind="variable"><name>highScore</name></member>
+    <member refid="class_pacman_1_1_main_game_1abf36c0ba75254c70472435327bdb1ae6" kind="variable"><name>gameOver</name></member>
+    <member refid="class_pacman_1_1_main_game_1a8d51b2ec6cc93f142309ea6fe36b2b30" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_main_game_1abb1d5e7608fa0d9752c0c434cb103e6b" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_main_game_1a7858b061a1db731df54381e03f71b7e0" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_main_game_1ae0723e8c7fcc6fe57383774b84bc5c91" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_main_menu" kind="class"><name>Pacman::MainMenu</name>
+    <member refid="class_pacman_1_1_main_menu_1a190205b8cd9977e60b37a55f94907c49" kind="variable"><name>menu</name></member>
+    <member refid="class_pacman_1_1_main_menu_1afe334b467dd04341970f6a37521afbd5" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_main_menu_1a5081e962db4976366a69d7e762680edd" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_main_menu_1aa93dfb885cc86654e2596168690e44c4" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_main_menu_1aa1ea98563a955497e06808b440a65712" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_menu_manager" kind="class"><name>Pacman::MenuManager</name>
+    <member refid="class_pacman_1_1_menu_manager_1a3405bfce42180b132c44c758ebcee6ca" kind="variable"><name>menuItems</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1ab31b21206ee24e84fcfff17b108038e7" kind="variable"><name>animationTypes</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1abc9a1133344336621d268248f6b2cfa1" kind="variable"><name>linkType</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1ad93674b1de85702b578c02daa1f18cf9" kind="variable"><name>linkID</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a7d25f12a08e7babbed5faefdc5cea5fe" kind="variable"><name>menuImages</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a4702a030ea60221486c49b2602595670" kind="variable"><name>screenAnimation</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1ad0e78f97daf206ddd5976b18a6b994cf" kind="variable"><name>attributes</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a5a5f1fcdb931af9c20baf38e077d1190" kind="variable"><name>contents</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a1e3e66dd3aea4706bf618a4d2cb26c7b" kind="variable"><name>tempAnimation</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a9b6f3d59ec42a6596f2d3349ac689ab6" kind="variable"><name>content</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1afe048c9b844da20d7d369349cfff2996" kind="variable"><name>fileManager</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1af91409f73378a39f48e603385f41beaf" kind="variable"><name>keyState</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1abb060e2d52ce8e27bdd0d6a85a991790" kind="variable"><name>oldKeyState</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1aafe5f87106241a391df271b72c850317" kind="variable"><name>position</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a1439e820d12799c5e805ad53279d4c56" kind="variable"><name>source</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1ac14f49c757edfecbf212f31ecfd90650" kind="variable"><name>font</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a32ae34a04bd5d72585334909bef8d5ae" kind="variable"><name>axis</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a8dc1124d91cc645344ba091be98aeff8" kind="variable"><name>itemNumber</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a1758b8fc15e470c2574458af7b1b5828" kind="variable"><name>align</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a15148cd60f0a65627f0501c8f8d8a09e" kind="function"><name>SetMenuItems</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a473e502d8ec34d26ad6fb98bc89e874a" kind="function"><name>SetAnimations</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1af7008f3b4b1865fc3550336bcccb2bea" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1ab48258dd7d618e8e9dbd50229e5da01e" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a72d787f7a1545e1b6af8c70cd70e5e95" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_menu_manager_1a08d0a81648d1d326553435266a5eb488" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="struct_pacman_1_1_path_finding_1_1_node" kind="struct"><name>Pacman::PathFinding::Node</name>
+    <member refid="struct_pacman_1_1_path_finding_1_1_node_1a984787c7a12094c294a009addd283d3c" kind="variable"><name>State</name></member>
+    <member refid="struct_pacman_1_1_path_finding_1_1_node_1a7cf4681e38de8676a6b22af9a0b2c2f6" kind="variable"><name>wall</name></member>
+    <member refid="struct_pacman_1_1_path_finding_1_1_node_1a3c12ada96c69a8368a78a196bdabddf1" kind="variable"><name>Parent</name></member>
+    <member refid="struct_pacman_1_1_path_finding_1_1_node_1a5e8fb44081d6fda396e0939372489c60" kind="variable"><name>gValue</name></member>
+    <member refid="struct_pacman_1_1_path_finding_1_1_node_1a12375ab3593ca39fb8229cc17f017aa3" kind="variable"><name>hValue</name></member>
+    <member refid="struct_pacman_1_1_path_finding_1_1_node_1acea93c5cdc25fea4649cb0051db4f991" kind="property"><name>fValue</name></member>
+    <member refid="struct_pacman_1_1_path_finding_1_1_node_1a997f021baab5100b2b7848ea005b5bb8" kind="function"><name>Init</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_path_finding" kind="class"><name>Pacman::PathFinding</name>
+    <member refid="class_pacman_1_1_path_finding_1a296aaf55dbe2e25e6e1f4f5b88545dba" kind="enum"><name>NodeState</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a296aaf55dbe2e25e6e1f4f5b88545dbaa78ec7ceb08471eb2a6b80fde134b0aec" kind="enumvalue"><name>NotVisited</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a296aaf55dbe2e25e6e1f4f5b88545dbaac3bf447eabe632720a3aa1a7ce401274" kind="enumvalue"><name>Open</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a296aaf55dbe2e25e6e1f4f5b88545dbaa03f4a47830f97377a35321051685071e" kind="enumvalue"><name>Closed</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a296aaf55dbe2e25e6e1f4f5b88545dbaaa6122a65eaa676f700ae68d393054a37" kind="enumvalue"><name>Start</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a296aaf55dbe2e25e6e1f4f5b88545dbaa12c74214cb4c18cf36d885303d6aa2e1" kind="enumvalue"><name>Goal</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a296aaf55dbe2e25e6e1f4f5b88545dbaa94e8a499539d1a472f3b5dbbb85508c0" kind="enumvalue"><name>Wall</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a296aaf55dbe2e25e6e1f4f5b88545dbaa705c63bc8e66f5635c9a362197b0141d" kind="enumvalue"><name>PathToGoalNodeFound</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a6774de39a766791eb6210d6da4740073" kind="enum"><name>Direction</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a6774de39a766791eb6210d6da4740073a6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a6774de39a766791eb6210d6da4740073a263d7b2cf53802c9ed127b718c0bf9fd" kind="enumvalue"><name>South</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a6774de39a766791eb6210d6da4740073a601560b94fbb188919dd1d36c8ab70a4" kind="enumvalue"><name>North</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a6774de39a766791eb6210d6da4740073abf495fc048d8d44b7f32536df5cf3930" kind="enumvalue"><name>West</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a6774de39a766791eb6210d6da4740073aa99dc62d017d04cf67266593f9c3761e" kind="enumvalue"><name>East</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a066d74ab04ad613e8253bc8ad36d911d" kind="variable"><name>openList</name></member>
+    <member refid="class_pacman_1_1_path_finding_1aa802c2a8667d318c23119489f7c4997e" kind="variable"><name>closedList</name></member>
+    <member refid="class_pacman_1_1_path_finding_1ab61c90b233d601b0e02c41ca04729e95" kind="variable"><name>gridPathList</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a140f4d1c0da35ab9c49aade324dc43ad" kind="variable"><name>mapPathQueue</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a43f0e8f2cbfff691f8e1e9119c8520b4" kind="variable"><name>rows</name></member>
+    <member refid="class_pacman_1_1_path_finding_1aaa4a7ca487ec41fa479f3831bdab159e" kind="variable"><name>collumns</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a739b0e110465c157c4c802fe9b481069" kind="variable"><name>map</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a8c41602ec09efcc2232a27b89c41dadd" kind="variable"><name>startPosition</name></member>
+    <member refid="class_pacman_1_1_path_finding_1ac9990969ccf1ab74098303aa2c472550" kind="variable"><name>goalPosition</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a6bec1388af69849568d16a5050174ca5" kind="property"><name>Path</name></member>
+    <member refid="class_pacman_1_1_path_finding_1ab8d7e426f26863d649aba98fbb6ca3d9" kind="function"><name>Init</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a9e27351b57793d85d58bb5f9743cd780" kind="function"><name>ClearPath</name></member>
+    <member refid="class_pacman_1_1_path_finding_1ad971d9340e21fa692108e23a30b3cef7" kind="function"><name>PathFinder</name></member>
+    <member refid="class_pacman_1_1_path_finding_1aff5cef225414a175fc55139a5b908ef4" kind="function"><name>PathFindStep</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a8ca9a4cf80b3b7cf7b345d193a540c3a" kind="function"><name>ParentDirection</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a1aa5a9d3a5ac6cf29a71999c67314e0e" kind="function"><name>calculatePath</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a95ee6c73b348b3668911861e137c3e4b" kind="function"><name>resetMap</name></member>
+    <member refid="class_pacman_1_1_path_finding_1aaedb94a66553b8fa94770a9adb474289" kind="function"><name>setHvalue</name></member>
+    <member refid="class_pacman_1_1_path_finding_1aa4213cfa20f6b30d5a15e2d5b4b5835b" kind="function"><name>findLowestF</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a06c78f955bfb3c0f0a14ee8f6b33512e" kind="function"><name>startPathFinding</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a090e0b7ddd4de3b8d091cd9d855634ce" kind="function"><name>visitNode</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a024ccb34d6a3ca4c232c5548b03bc88c" kind="function"><name>PathFindCostG</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a8893cb1debbcd3705ba403359d839bb0" kind="function"><name>PathFindCostH</name></member>
+    <member refid="class_pacman_1_1_path_finding_1a800cdf563e23d522aa45f104ffd91a88" kind="function"><name>createMapPath</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_player" kind="class"><name>Pacman::Player</name>
+    <member refid="class_pacman_1_1_player_1a6fe9f3422b8432b6f401dd274a7b38f7" kind="variable"><name>playerImage</name></member>
+    <member refid="class_pacman_1_1_player_1a87985e052615fb7a210b9cba519457c4" kind="variable"><name>playerPosition</name></member>
+    <member refid="class_pacman_1_1_player_1ae193566a71188464731b31581705d6fe" kind="variable"><name>tempCurrentFrame</name></member>
+    <member refid="class_pacman_1_1_player_1a3c760263b173f2ae493d3c39974c4755" kind="variable"><name>keyState</name></member>
+    <member refid="class_pacman_1_1_player_1a63aaf04a1d72f3d1f79da9e08948944e" kind="variable"><name>moveSpeed</name></member>
+    <member refid="class_pacman_1_1_player_1a8bf4d6bfba8c6665a29958b198e2507d" kind="variable"><name>playerAnimation</name></member>
+    <member refid="class_pacman_1_1_player_1a74070b3c73f60735f178d96abf05cc7f" kind="variable"><name>tempRect</name></member>
+    <member refid="class_pacman_1_1_player_1a8232bf193888ded34408ebcb350bae8f" kind="variable"><name>playerTempRect</name></member>
+    <member refid="class_pacman_1_1_player_1a1f0b9092b8260c31d00835b8cec8540f" kind="property"><name>PlayerPosition</name></member>
+    <member refid="class_pacman_1_1_player_1aba5e30a8301ffc0ab664300d95ab9743" kind="function"><name>Init</name></member>
+    <member refid="class_pacman_1_1_player_1ab8c4719d16a15c9574a8013807602465" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_player_1a68af2a48b6d3f9512ee28aaa30a71f48" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_player_1af638b60bf7a47f1f31d5ce8b49574d49" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_player_1a5b1cc5c97a3a5a1288b8612bd640e9f7" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="struct_pacman_1_1_path_finding_1_1_position" kind="struct"><name>Pacman::PathFinding::Position</name>
+    <member refid="struct_pacman_1_1_path_finding_1_1_position_1a3ba72b69e0c2b9a9e1298f0696f95c27" kind="variable"><name>x</name></member>
+    <member refid="struct_pacman_1_1_path_finding_1_1_position_1aede85751ad51b3d8e4a5788332898d7b" kind="variable"><name>y</name></member>
+    <member refid="struct_pacman_1_1_path_finding_1_1_position_1a27ad3ace449adbbf211deebff53c7133" kind="function"><name>Position</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_screen_animation" kind="class"><name>Pacman::ScreenAnimation</name>
+    <member refid="class_pacman_1_1_screen_animation_1ac33fed9de162fb2f159f1ad15d3a4d94" kind="variable"><name>image</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1ab4c0b055eeb0919cf3e30db19d8f15bb" kind="variable"><name>text</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1ae014c883301c9f42e00eafcdd513e0d1" kind="variable"><name>font</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a5a7a6cb6955a0625d6a4ea34fa04166b" kind="variable"><name>color</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a79065b7a8f285c5f8d67e758ea0f2745" kind="variable"><name>sourceRect</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1abef49f89085550929de700f913b22344" kind="variable"><name>content</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a9c13f7f141cd083413f2d710aee04b66" kind="variable"><name>active</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a86b87e39731428e90158eabc64a29a60" kind="variable"><name>rotation</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1acdac56ee31eec0dc6021ed135b403bf1" kind="variable"><name>origin</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a33d8bebcfb554857c41a0701e3f05f83" kind="variable"><name>alpha</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a8458e14ef6cf1b94c5f4eb7ced432b71" kind="variable"><name>scale</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a1105fde50b38c4113052cb36ce9c186a" kind="variable"><name>axis</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a67b019b86944b0b5e2784da89bca63ba" kind="variable"><name>position</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a7b643f454b3e1f0faed8959ccd52d4ec" kind="property"><name>Alpha</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a5d941d20b56fa63c1c289cbcf2b37aec" kind="property"><name>Active</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a2a9783313a2891196b9ac1738c00acc4" kind="property"><name>Scale</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1a566ecb3dca9f82c4eb51f4e3a4019550" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1ad9bf49699b6905423cc17047e36e9a1c" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1af381913622005dfb6b759f7495b37ded" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_screen_animation_1aab67af6395aea7e03c7d4d4f6eff9977" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_screen_manager" kind="class"><name>Pacman::ScreenManager</name>
+    <member refid="class_pacman_1_1_screen_manager_1a60fd62476df48f3d65d088675c965146" kind="variable"><name>currentScreen</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1adf76d934ef7e8bcc5819ad75eebd2997" kind="variable"><name>newScreen</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1a731857cc51345487499794fbd874bbdb" kind="variable"><name>content</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1a32287dfdbcc93c6f02d1dc5da9e6f3bd" kind="variable"><name>screenStack</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1aea67d5a52cc21144aa8664f839c0e70d" kind="variable"><name>dimensions</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1a588a3ef79c6cb35af10d99458126def0" kind="variable"><name>transition</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1ae3ebae7038008c52f748438bc61a74d0" kind="variable"><name>fade</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1a877c2ad2b5d7bdd2944db1e349a05320" kind="variable"><name>fadeTexture</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1a4a151b9b6a878d7afc18882801cb3bf2" kind="variable"><name>instance</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1a6632eccad8f05e37af385c0c2b230250" kind="property"><name>Instance</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1aa830efd676bbf0af192ac4a0c70b9dfb" kind="property"><name>Dimensions</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1a310cc24307ddb1a45dd88e3abc6eafbf" kind="function"><name>AddScreen</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1ae53ab14c72d98db3b0a92775a24d0cb0" kind="function"><name>AddScreen</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1ababbf590c315370355a1c76e57e61552" kind="function"><name>Init</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1ad20ca7f52ff926b637c26d19865f585c" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1a1ec7dc1ef0d31e3d8db362644ae0351b" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1ae9477d036da420ac6754c75603f38d08" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1ae5011a30dc8765de4dd061cba48c7f89" kind="function"><name>Draw</name></member>
+    <member refid="class_pacman_1_1_screen_manager_1afdc9ce222bc57bae3394528862b7d95a" kind="function"><name>Transition</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_splash_screen" kind="class"><name>Pacman::SplashScreen</name>
+    <member refid="class_pacman_1_1_splash_screen_1acbe52bd3cc6b78fac7661dc716447486" kind="variable"><name>keyState</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1a705d5a550a9c3899b4e9194de007d8ee" kind="variable"><name>font</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1a1b4ff02a679dd37cbc6b24db0309e7d1" kind="variable"><name>fade</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1a8be71dafd805fe41bc05aeb7b3025eae" kind="variable"><name>images</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1a3716e234490c826011201b8b4b8a4dbe" kind="variable"><name>fileManager</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1a1fa8d83e0fa7c230c288f19f4c77caf8" kind="variable"><name>imageNumber</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1a05a5f91c7e0ded6cb4893da9eeb0ded1" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1ac72328daa3003fa228218c65660c8d6c" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1af64e74cca5e74b0104f9fe74a21e52ae" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_splash_screen_1a669ad3120d15e6eea2636e44d74cdc31" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_pacman_1_1_titel_screen" kind="class"><name>Pacman::TitelScreen</name>
+    <member refid="class_pacman_1_1_titel_screen_1a8c654eb83d0510bba6c5549c8569afe8" kind="variable"><name>keyState</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1a4165812879d901f4603a08fd8cc871d1" kind="variable"><name>animation</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1a1e2b3be8cc06a2314f97dbb1d6d5663e" kind="variable"><name>fade</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1ac7b2d122e2562be27567a839ffc2d1e6" kind="variable"><name>textFade</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1ab296d5d2c73e1a9a66e74555b98fe4ca" kind="variable"><name>image</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1a22b6428bb04beb48779fcc6ad9949c0d" kind="variable"><name>animationPosition</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1aaeeb7b4a31657e20e6d37926d38e5c31" kind="function"><name>LoadContent</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1ae9feed8a91c5fe3da560994fe4258fb2" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1a287b7f099f4336dbc7b4e232d062441a" kind="function"><name>Update</name></member>
+    <member refid="class_pacman_1_1_titel_screen_1ae86c21742cdd405fd4467b67b509bc6d" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework" kind="namespace"><name>Microsoft::Xna::Framework</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_audio" kind="namespace"><name>Microsoft::Xna::Framework::Audio</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_content" kind="namespace"><name>Microsoft::Xna::Framework::Content</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_gamer_services" kind="namespace"><name>Microsoft::Xna::Framework::GamerServices</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_graphics" kind="namespace"><name>Microsoft::Xna::Framework::Graphics</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_input" kind="namespace"><name>Microsoft::Xna::Framework::Input</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_media" kind="namespace"><name>Microsoft::Xna::Framework::Media</name>
+  </compound>
+  <compound refid="namespace_pacman" kind="namespace"><name>Pacman</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml" kind="namespace"><name>System::Xml</name>
+  </compound>
+  <compound refid="_animation_8cs" kind="file"><name>Animation.cs</name>
+  </compound>
+  <compound refid="_collision_8cs" kind="file"><name>Collision.cs</name>
+  </compound>
+  <compound refid="_enemy_8cs" kind="file"><name>Enemy.cs</name>
+  </compound>
+  <compound refid="_exit_screen_8cs" kind="file"><name>ExitScreen.cs</name>
+  </compound>
+  <compound refid="_fade_animation_8cs" kind="file"><name>FadeAnimation.cs</name>
+  </compound>
+  <compound refid="_file_manager_8cs" kind="file"><name>FileManager.cs</name>
+  </compound>
+  <compound refid="_game1_8cs" kind="file"><name>Game1.cs</name>
+  </compound>
+  <compound refid="_game_over_8cs" kind="file"><name>GameOver.cs</name>
+  </compound>
+  <compound refid="_game_over_screen_8cs" kind="file"><name>GameOverScreen.cs</name>
+  </compound>
+  <compound refid="_game_screen_8cs" kind="file"><name>GameScreen.cs</name>
+  </compound>
+  <compound refid="_ghost_8cs" kind="file"><name>Ghost.cs</name>
+  </compound>
+  <compound refid="_high_score_8cs" kind="file"><name>HighScore.cs</name>
+  </compound>
+  <compound refid="_high_score_screen_8cs" kind="file"><name>HighScoreScreen.cs</name>
+  </compound>
+  <compound refid="_layers_8cs" kind="file"><name>Layers.cs</name>
+  </compound>
+  <compound refid="_main_game_8cs" kind="file"><name>MainGame.cs</name>
+  </compound>
+  <compound refid="_main_menu_8cs" kind="file"><name>MainMenu.cs</name>
+  </compound>
+  <compound refid="_menu_manager_8cs" kind="file"><name>MenuManager.cs</name>
+  </compound>
+  <compound refid="_path_finding_8cs" kind="file"><name>PathFinding.cs</name>
+  </compound>
+  <compound refid="_player_8cs" kind="file"><name>Player.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_screen_animation_8cs" kind="file"><name>ScreenAnimation.cs</name>
+  </compound>
+  <compound refid="_screen_manager_8cs" kind="file"><name>ScreenManager.cs</name>
+  </compound>
+  <compound refid="_splash_screen_8cs" kind="file"><name>SplashScreen.cs</name>
+  </compound>
+  <compound refid="_titel_screen_8cs" kind="file"><name>TitelScreen.cs</name>
+  </compound>
+</doxygenindex>

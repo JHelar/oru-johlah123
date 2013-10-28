@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_high_score_screen" kind="class" prot="public">
+    <compoundname>Pacman::HighScoreScreen</compoundname>
+    <basecompoundref refid="class_pacman_1_1_game_screen" prot="public" virt="non-virtual">Pacman.GameScreen</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_screen_1a38336c0f21596aee3127586572ee7651" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_high_score" kindref="compound">HighScore</ref></type>
+        <definition>HighScore Pacman.HighScoreScreen.highScore</definition>
+        <argsstring></argsstring>
+        <name>highScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_screen_1a41cd3c69eb80b701ed4296aca4a4a946" prot="private" static="no" mutable="no">
+        <type>KeyboardState</type>
+        <definition>KeyboardState Pacman.HighScoreScreen.keyState</definition>
+        <argsstring></argsstring>
+        <name>keyState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_high_score_screen_1aaf472baf54510c5d00e83871fc10f257" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_fade_animation" kindref="compound">FadeAnimation</ref></type>
+        <definition>FadeAnimation Pacman.HighScoreScreen.textFade</definition>
+        <argsstring></argsstring>
+        <name>textFade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="21" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_high_score_screen_1a2f9c7bd488af9db87c5e74c5e4d21a4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Pacman.HighScoreScreen.LoadContent</definition>
+        <argsstring>(ContentManager Content)</argsstring>
+        <name>LoadContent</name>
+        <reimplements refid="class_pacman_1_1_game_screen_1a33dbdc943439ae7728aff62b5152aa53">LoadContent</reimplements>
+        <param>
+          <type>ContentManager</type>
+          <declname>Content</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the variables and loads the text to be fade-animated, loads the highscore from the highscore XML file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="28" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_screen_1a9486bf7d1079734d5cf842b53c8f4ade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Pacman.HighScoreScreen.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <reimplements refid="class_pacman_1_1_game_screen_1aa33ba4650a38762eca4bd059fb803942">UnloadContent</reimplements>
+        <briefdescription>
+<para>Unloads the highscore class and fadeanimation class, called when a new screen is added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="44" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_screen_1a049329dc007241790cdf1603b0ef69d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Pacman.HighScoreScreen.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_pacman_1_1_game_screen_1a768b26cbc3ed823d0dcba5055ae9a8b4">Update</reimplements>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>checks to see if the user has pressed the Enter key, if so change the screen to a Main menu screen </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="54" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_high_score_screen_1ad785f3290cea4ce2483d89dd651bee76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Pacman.HighScoreScreen.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <reimplements refid="class_pacman_1_1_game_screen_1ab7d62816f246e29e70d352d094c36b04">Draw</reimplements>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Draws the highscore list and text fade animation </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="65" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="65" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A screen class that displays the highscore list </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="39">
+        <label>Pacman.HighScoreScreen</label>
+        <link refid="class_pacman_1_1_high_score_screen"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>GameScreen</label>
+        <link refid="class_pacman_1_1_game_screen"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="41">
+        <label>Pacman.HighScoreScreen</label>
+        <link refid="class_pacman_1_1_high_score_screen"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>GameScreen</label>
+        <link refid="class_pacman_1_1_game_screen"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="16" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_game_screen_1aae34556caa8e4fd97aa4f639f08785c4" prot="protected" virt="non-virtual"><scope>Pacman::HighScoreScreen</scope><name>attributes</name></member>
+      <member refid="class_pacman_1_1_game_screen_1a89f510b4d354e6b1eb68b41b108e3ffd" prot="protected" virt="non-virtual"><scope>Pacman::HighScoreScreen</scope><name>content</name></member>
+      <member refid="class_pacman_1_1_high_score_screen_1ad785f3290cea4ce2483d89dd651bee76" prot="public" virt="virtual"><scope>Pacman::HighScoreScreen</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_game_screen_1a23069d276b1952ecf9fed07d0424e771" prot="public" virt="virtual"><scope>Pacman::HighScoreScreen</scope><name>Exit</name></member>
+      <member refid="class_pacman_1_1_high_score_screen_1a38336c0f21596aee3127586572ee7651" prot="private" virt="non-virtual"><scope>Pacman::HighScoreScreen</scope><name>highScore</name></member>
+      <member refid="class_pacman_1_1_high_score_screen_1a41cd3c69eb80b701ed4296aca4a4a946" prot="private" virt="non-virtual"><scope>Pacman::HighScoreScreen</scope><name>keyState</name></member>
+      <member refid="class_pacman_1_1_high_score_screen_1a2f9c7bd488af9db87c5e74c5e4d21a4e" prot="public" virt="virtual"><scope>Pacman::HighScoreScreen</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_high_score_screen_1aaf472baf54510c5d00e83871fc10f257" prot="private" virt="non-virtual"><scope>Pacman::HighScoreScreen</scope><name>textFade</name></member>
+      <member refid="class_pacman_1_1_high_score_screen_1a9486bf7d1079734d5cf842b53c8f4ade" prot="public" virt="virtual"><scope>Pacman::HighScoreScreen</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_high_score_screen_1a049329dc007241790cdf1603b0ef69d6" prot="public" virt="virtual"><scope>Pacman::HighScoreScreen</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,123 @@
+\hypertarget{class_pacman_1_1_file_manager}{\section{Pacman.\-File\-Manager Class Reference}
+\label{class_pacman_1_1_file_manager}\index{Pacman.\-File\-Manager@{Pacman.\-File\-Manager}}
+}
+
+
+A filemanager class that helps reading and writing elements to/from a file to the program. Uses both normal text files and X\-M\-L files  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pacman_1_1_file_manager_a4a5be095e8de90a583f3f99ac89300ff}{Load\-Content} (string filename, List$<$ List$<$ string $>$$>$ attributes, List$<$ List$<$ string $>$$>$ contents)
+\begin{DoxyCompactList}\small\item\em Reads everything from a specified text file, the file has to be formatted for the specific function or it will not be read properly. Puts in the read data onto the two, two dimensional Lists. Attributes is the identifyer telling what type of data that is being loaded in. Contents is the actual data. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_file_manager_af3b152657eefb8f967dbdd2edca6c7dd}{Load\-Content} (string filename, List$<$ List$<$ string $>$$>$ attributes, List$<$ List$<$ string $>$$>$ contents, string identifier)
+\begin{DoxyCompactList}\small\item\em An overloaded version of the Load\-Content that starts to read when the identifier requirments are met and stops reading when told to. Other then that it does the same as the first Load\-Content. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_file_manager_a00288173f2ae8a7957797c553b00d760}{Read\-Score} (string file\-Name, List$<$ int $>$ score, List$<$ string $>$ player\-Name)
+\begin{DoxyCompactList}\small\item\em Reads the score from a X\-M\-L file, puts the name and score in their respective list. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_file_manager_aedf31e50cc3f1f7aba5566e324d139ef}{Write\-Score} (string file\-Name, int player\-Score, string player\-Name)
+\begin{DoxyCompactList}\small\item\em Appends the score and name to a X\-M\-L file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A filemanager class that helps reading and writing elements to/from a file to the program. Uses both normal text files and X\-M\-L files 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_file_manager_a4a5be095e8de90a583f3f99ac89300ff}{\index{Pacman\-::\-File\-Manager@{Pacman\-::\-File\-Manager}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::FileManager@{Pacman\-::\-File\-Manager}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-File\-Manager.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{string}]{filename, }
+\item[{List$<$ List$<$ string $>$$>$}]{attributes, }
+\item[{List$<$ List$<$ string $>$$>$}]{contents}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_file_manager_a4a5be095e8de90a583f3f99ac89300ff}
+
+
+Reads everything from a specified text file, the file has to be formatted for the specific function or it will not be read properly. Puts in the read data onto the two, two dimensional Lists. Attributes is the identifyer telling what type of data that is being loaded in. Contents is the actual data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+{\em attributes} & \\
+\hline
+{\em contents} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_file_manager_af3b152657eefb8f967dbdd2edca6c7dd}{\index{Pacman\-::\-File\-Manager@{Pacman\-::\-File\-Manager}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::FileManager@{Pacman\-::\-File\-Manager}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-File\-Manager.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{string}]{filename, }
+\item[{List$<$ List$<$ string $>$$>$}]{attributes, }
+\item[{List$<$ List$<$ string $>$$>$}]{contents, }
+\item[{string}]{identifier}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_file_manager_af3b152657eefb8f967dbdd2edca6c7dd}
+
+
+An overloaded version of the Load\-Content that starts to read when the identifier requirments are met and stops reading when told to. Other then that it does the same as the first Load\-Content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+{\em attributes} & \\
+\hline
+{\em contents} & \\
+\hline
+{\em identifier} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_file_manager_a00288173f2ae8a7957797c553b00d760}{\index{Pacman\-::\-File\-Manager@{Pacman\-::\-File\-Manager}!Read\-Score@{Read\-Score}}
+\index{Read\-Score@{Read\-Score}!Pacman::FileManager@{Pacman\-::\-File\-Manager}}
+\subsubsection[{Read\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-File\-Manager.\-Read\-Score (
+\begin{DoxyParamCaption}
+\item[{string}]{file\-Name, }
+\item[{List$<$ int $>$}]{score, }
+\item[{List$<$ string $>$}]{player\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_file_manager_a00288173f2ae8a7957797c553b00d760}
+
+
+Reads the score from a X\-M\-L file, puts the name and score in their respective list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & \\
+\hline
+{\em score} & \\
+\hline
+{\em player\-Name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_file_manager_aedf31e50cc3f1f7aba5566e324d139ef}{\index{Pacman\-::\-File\-Manager@{Pacman\-::\-File\-Manager}!Write\-Score@{Write\-Score}}
+\index{Write\-Score@{Write\-Score}!Pacman::FileManager@{Pacman\-::\-File\-Manager}}
+\subsubsection[{Write\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-File\-Manager.\-Write\-Score (
+\begin{DoxyParamCaption}
+\item[{string}]{file\-Name, }
+\item[{int}]{player\-Score, }
+\item[{string}]{player\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_file_manager_aedf31e50cc3f1f7aba5566e324d139ef}
+
+
+Appends the score and name to a X\-M\-L file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & \\
+\hline
+{\em player\-Score} & \\
+\hline
+{\em player\-Name} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+File\-Manager.\-cs\end{DoxyCompactItemize}

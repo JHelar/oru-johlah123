@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_fade_animation" kind="class" prot="public">
+    <compoundname>Pacman::FadeAnimation</compoundname>
+    <basecompoundref refid="class_pacman_1_1_screen_animation" prot="public" virt="non-virtual">Pacman.ScreenAnimation</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_fade_animation_1adb0fb4716bf7fbb982fe28ca765757b0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pacman.FadeAnimation.increase</definition>
+        <argsstring></argsstring>
+        <name>increase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="18" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_fade_animation_1a5377ee376d9e667483123e3ef38f9387" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.FadeAnimation.fadeSpeed</definition>
+        <argsstring></argsstring>
+        <name>fadeSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_fade_animation_1a1334b00a3ca13fa5e18b0e2a50254f53" prot="private" static="no" mutable="no">
+        <type>TimeSpan</type>
+        <definition>TimeSpan Pacman.FadeAnimation.defaultTime</definition>
+        <argsstring></argsstring>
+        <name>defaultTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_fade_animation_1a9504ca64de4019a80ea63bb099d16ed6" prot="private" static="no" mutable="no">
+        <type>TimeSpan</type>
+        <definition>TimeSpan Pacman.FadeAnimation.timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_fade_animation_1a6447815ec5bceece11b1990db12db749" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.FadeAnimation.activateValue</definition>
+        <argsstring></argsstring>
+        <name>activateValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="21" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_fade_animation_1a6fb0d382f0cd435f71574e8f493aac85" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pacman.FadeAnimation.stopUpdating</definition>
+        <argsstring></argsstring>
+        <name>stopUpdating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_fade_animation_1a01773598bd30f1341978f6c82ae2ae86" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.FadeAnimation.defaultAlpha</definition>
+        <argsstring></argsstring>
+        <name>defaultAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_fade_animation_1aa161d233c498500c1abc81b15206a53f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>TimeSpan</type>
+        <definition>TimeSpan Pacman.FadeAnimation.Timer</definition>
+        <argsstring></argsstring>
+        <name>Timer</name>
+        <briefdescription>
+<para><ref refid="class_pacman_1_1_fade_animation" kindref="compound">FadeAnimation</ref> properties </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="32" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_fade_animation_1a80295aab2269c152236429d7c210536e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float Pacman.FadeAnimation.FadeSpeed</definition>
+        <argsstring></argsstring>
+        <name>FadeSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="38" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_fade_animation_1a45fb930d0fb229056d7c534c54b8af86" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>override float</type>
+        <definition>override float Pacman.FadeAnimation.Alpha</definition>
+        <argsstring></argsstring>
+        <name>Alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="44" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_fade_animation_1a48ffd9f40659312bd0e0de0c3d87b5eb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float Pacman.FadeAnimation.ActivateValue</definition>
+        <argsstring></argsstring>
+        <name>ActivateValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="61" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_fade_animation_1a5a828671b9aae1da7d331d995244891f" prot="public" static="no" readable="no" writable="no" gettable="no" settable="yes">
+        <type>bool</type>
+        <definition>bool Pacman.FadeAnimation.Increase</definition>
+        <argsstring></argsstring>
+        <name>Increase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="67" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_fade_animation_1a6abddfcfb03a31152da73b6766e99a9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Pacman.FadeAnimation.LoadContent</definition>
+        <argsstring>(ContentManager Content, Texture2D image, string text, Vector2 position, string fontID)</argsstring>
+        <name>LoadContent</name>
+        <reimplements refid="class_pacman_1_1_screen_animation_1a566ecb3dca9f82c4eb51f4e3a4019550">LoadContent</reimplements>
+        <param>
+          <type>ContentManager</type>
+          <declname>Content</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fontID</declname>
+        </param>
+        <briefdescription>
+<para>Loads in a image, a text string the position in which we want these elements to be drawn on, and the font for the text. sets the default timespan variable to 1 milisecond </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fontID</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="84" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="84" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_fade_animation_1ac6d7c4a5845a19f47dd2501271ecee7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Pacman.FadeAnimation.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_pacman_1_1_screen_animation_1af381913622005dfb6b759f7495b37ded">Update</reimplements>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Changes the alpha channel value, the value that determines transparency. Fades in or out depending on the increase boolean value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="99" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="99" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A fade animation class that fades in and out a image or text, usable for screentransitions </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>Pacman.FadeAnimation</label>
+        <link refid="class_pacman_1_1_fade_animation"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ScreenAnimation</label>
+        <link refid="class_pacman_1_1_screen_animation"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>Pacman.FadeAnimation</label>
+        <link refid="class_pacman_1_1_fade_animation"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ScreenAnimation</label>
+        <link refid="class_pacman_1_1_screen_animation"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FadeAnimation.cs" bodystart="15" bodyend="138"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_fade_animation_1a6447815ec5bceece11b1990db12db749" prot="private" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>activateValue</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a48ffd9f40659312bd0e0de0c3d87b5eb" prot="public" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>ActivateValue</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a9c13f7f141cd083413f2d710aee04b66" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>active</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a5d941d20b56fa63c1c289cbcf2b37aec" prot="public" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>Active</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a45fb930d0fb229056d7c534c54b8af86" prot="public" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>Alpha</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a33d8bebcfb554857c41a0701e3f05f83" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>alpha</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a5a7a6cb6955a0625d6a4ea34fa04166b" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>color</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1abef49f89085550929de700f913b22344" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>content</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a01773598bd30f1341978f6c82ae2ae86" prot="private" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>defaultAlpha</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a1334b00a3ca13fa5e18b0e2a50254f53" prot="private" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>defaultTime</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1aab67af6395aea7e03c7d4d4f6eff9977" prot="public" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a80295aab2269c152236429d7c210536e" prot="public" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>FadeSpeed</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a5377ee376d9e667483123e3ef38f9387" prot="private" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>fadeSpeed</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1ae014c883301c9f42e00eafcdd513e0d1" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>font</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1ac33fed9de162fb2f159f1ad15d3a4d94" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>image</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1adb0fb4716bf7fbb982fe28ca765757b0" prot="private" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>increase</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a5a828671b9aae1da7d331d995244891f" prot="public" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>Increase</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a6abddfcfb03a31152da73b6766e99a9d" prot="public" virt="virtual"><scope>Pacman::FadeAnimation</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1acdac56ee31eec0dc6021ed135b403bf1" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>origin</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a86b87e39731428e90158eabc64a29a60" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>rotation</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a2a9783313a2891196b9ac1738c00acc4" prot="public" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>Scale</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a79065b7a8f285c5f8d67e758ea0f2745" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>sourceRect</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a6fb0d382f0cd435f71574e8f493aac85" prot="private" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>stopUpdating</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1ab4c0b055eeb0919cf3e30db19d8f15bb" prot="protected" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>text</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1aa161d233c498500c1abc81b15206a53f" prot="public" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>Timer</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1a9504ca64de4019a80ea63bb099d16ed6" prot="private" virt="non-virtual"><scope>Pacman::FadeAnimation</scope><name>timer</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1ad9bf49699b6905423cc17047e36e9a1c" prot="public" virt="virtual"><scope>Pacman::FadeAnimation</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_fade_animation_1ac6d7c4a5845a19f47dd2501271ecee7a" prot="public" virt="virtual"><scope>Pacman::FadeAnimation</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

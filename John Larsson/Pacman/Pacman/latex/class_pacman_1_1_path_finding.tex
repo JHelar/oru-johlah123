@@ -1,0 +1,179 @@
+\hypertarget{class_pacman_1_1_path_finding}{\section{Pacman.\-Path\-Finding Class Reference}
+\label{class_pacman_1_1_path_finding}\index{Pacman.\-Path\-Finding@{Pacman.\-Path\-Finding}}
+}
+
+
+A$\ast$ Pathfinding implemented and variable changes, taken from another source.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_pacman_1_1_path_finding_1_1_node}{Node}
+\item 
+struct \hyperlink{struct_pacman_1_1_path_finding_1_1_position}{Position}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Node\-State} \{ \\*
+{\bfseries Not\-Visited} = 0, 
+{\bfseries Open} = 1, 
+{\bfseries Closed} = 2, 
+{\bfseries Start} = 3, 
+\\*
+{\bfseries Goal} = 4, 
+{\bfseries Wall} = 5, 
+{\bfseries Path\-To\-Goal\-Node\-Found} = 6
+ \}
+\item 
+enum {\bfseries Direction} \{ \\*
+{\bfseries None} = 0, 
+{\bfseries South} = 1, 
+{\bfseries North} = 4, 
+{\bfseries West} = 7, 
+\\*
+{\bfseries East} = 8
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pacman_1_1_path_finding_ab8d7e426f26863d649aba98fbb6ca3d9}{Init} (\hyperlink{class_pacman_1_1_collision}{Collision} col, Vector2 goal\-Position, Vector2 start\-Position)
+\begin{DoxyCompactList}\small\item\em Sets the maps rows and collumns, sets the goal and startposition and which nodes have a wall \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_path_finding_a9e27351b57793d85d58bb5f9743cd780}{Clear\-Path} (\hyperlink{class_pacman_1_1_collision}{Collision} col, Vector2 goal\-Position, Vector2 start\-Position)
+\begin{DoxyCompactList}\small\item\em Clears the path \end{DoxyCompactList}\item 
+\hypertarget{class_pacman_1_1_path_finding_ad971d9340e21fa692108e23a30b3cef7}{void {\bfseries Path\-Finder} ()}\label{class_pacman_1_1_path_finding_ad971d9340e21fa692108e23a30b3cef7}
+
+\item 
+bool \hyperlink{class_pacman_1_1_path_finding_aff5cef225414a175fc55139a5b908ef4}{Path\-Find\-Step} ()
+\begin{DoxyCompactList}\small\item\em Searches the horizontal and vertical directions and see if they are not walls, and checks if the current search node is the goal node \end{DoxyCompactList}\item 
+Direction \hyperlink{class_pacman_1_1_path_finding_a8ca9a4cf80b3b7cf7b345d193a540c3a}{Parent\-Direction} (int r, int c)
+\begin{DoxyCompactList}\small\item\em The parent direction \end{DoxyCompactList}\item 
+bool \hyperlink{class_pacman_1_1_path_finding_a1aa5a9d3a5ac6cf29a71999c67314e0e}{calculate\-Path} ()
+\begin{DoxyCompactList}\small\item\em If we found our goal node set the path to it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_path_finding_a739b0e110465c157c4c802fe9b481069}{\hyperlink{struct_pacman_1_1_path_finding_1_1_node}{Node}\mbox{[},\mbox{]} {\bfseries map}}\label{class_pacman_1_1_path_finding_a739b0e110465c157c4c802fe9b481069}
+
+\item 
+\hypertarget{class_pacman_1_1_path_finding_a8c41602ec09efcc2232a27b89c41dadd}{\hyperlink{struct_pacman_1_1_path_finding_1_1_position}{Position} {\bfseries start\-Position}}\label{class_pacman_1_1_path_finding_a8c41602ec09efcc2232a27b89c41dadd}
+
+\item 
+\hypertarget{class_pacman_1_1_path_finding_ac9990969ccf1ab74098303aa2c472550}{\hyperlink{struct_pacman_1_1_path_finding_1_1_position}{Position} {\bfseries goal\-Position}}\label{class_pacman_1_1_path_finding_ac9990969ccf1ab74098303aa2c472550}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_path_finding_a6bec1388af69849568d16a5050174ca5}{Queue$<$ Vector2 $>$ {\bfseries Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_pacman_1_1_path_finding_a6bec1388af69849568d16a5050174ca5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A$\ast$ Pathfinding implemented and variable changes, taken from another source. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_path_finding_a1aa5a9d3a5ac6cf29a71999c67314e0e}{\index{Pacman\-::\-Path\-Finding@{Pacman\-::\-Path\-Finding}!calculate\-Path@{calculate\-Path}}
+\index{calculate\-Path@{calculate\-Path}!Pacman::PathFinding@{Pacman\-::\-Path\-Finding}}
+\subsubsection[{calculate\-Path}]{\setlength{\rightskip}{0pt plus 5cm}bool Pacman.\-Path\-Finding.\-calculate\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_path_finding_a1aa5a9d3a5ac6cf29a71999c67314e0e}
+
+
+If we found our goal node set the path to it 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_pacman_1_1_path_finding_a9e27351b57793d85d58bb5f9743cd780}{\index{Pacman\-::\-Path\-Finding@{Pacman\-::\-Path\-Finding}!Clear\-Path@{Clear\-Path}}
+\index{Clear\-Path@{Clear\-Path}!Pacman::PathFinding@{Pacman\-::\-Path\-Finding}}
+\subsubsection[{Clear\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Path\-Finding.\-Clear\-Path (
+\begin{DoxyParamCaption}
+\item[{{\bf Collision}}]{col, }
+\item[{Vector2}]{goal\-Position, }
+\item[{Vector2}]{start\-Position}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_path_finding_a9e27351b57793d85d58bb5f9743cd780}
+
+
+Clears the path 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & \\
+\hline
+{\em goal\-Position} & \\
+\hline
+{\em start\-Position} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_path_finding_ab8d7e426f26863d649aba98fbb6ca3d9}{\index{Pacman\-::\-Path\-Finding@{Pacman\-::\-Path\-Finding}!Init@{Init}}
+\index{Init@{Init}!Pacman::PathFinding@{Pacman\-::\-Path\-Finding}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Path\-Finding.\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Collision}}]{col, }
+\item[{Vector2}]{goal\-Position, }
+\item[{Vector2}]{start\-Position}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_path_finding_ab8d7e426f26863d649aba98fbb6ca3d9}
+
+
+Sets the maps rows and collumns, sets the goal and startposition and which nodes have a wall 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & \\
+\hline
+{\em goal\-Position} & \\
+\hline
+{\em start\-Position} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_path_finding_a8ca9a4cf80b3b7cf7b345d193a540c3a}{\index{Pacman\-::\-Path\-Finding@{Pacman\-::\-Path\-Finding}!Parent\-Direction@{Parent\-Direction}}
+\index{Parent\-Direction@{Parent\-Direction}!Pacman::PathFinding@{Pacman\-::\-Path\-Finding}}
+\subsubsection[{Parent\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}Direction Pacman.\-Path\-Finding.\-Parent\-Direction (
+\begin{DoxyParamCaption}
+\item[{int}]{r, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_path_finding_a8ca9a4cf80b3b7cf7b345d193a540c3a}
+
+
+The parent direction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_pacman_1_1_path_finding_aff5cef225414a175fc55139a5b908ef4}{\index{Pacman\-::\-Path\-Finding@{Pacman\-::\-Path\-Finding}!Path\-Find\-Step@{Path\-Find\-Step}}
+\index{Path\-Find\-Step@{Path\-Find\-Step}!Pacman::PathFinding@{Pacman\-::\-Path\-Finding}}
+\subsubsection[{Path\-Find\-Step}]{\setlength{\rightskip}{0pt plus 5cm}bool Pacman.\-Path\-Finding.\-Path\-Find\-Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_path_finding_aff5cef225414a175fc55139a5b908ef4}
+
+
+Searches the horizontal and vertical directions and see if they are not walls, and checks if the current search node is the goal node 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Path\-Finding.\-cs\end{DoxyCompactItemize}

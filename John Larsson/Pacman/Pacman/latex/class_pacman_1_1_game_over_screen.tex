@@ -1,0 +1,135 @@
+\hypertarget{class_pacman_1_1_game_over_screen}{\section{Pacman.\-Game\-Over\-Screen Class Reference}
+\label{class_pacman_1_1_game_over_screen}\index{Pacman.\-Game\-Over\-Screen@{Pacman.\-Game\-Over\-Screen}}
+}
+
+
+The screen that appears when you lost or won the game  
+
+
+Inheritance diagram for Pacman.\-Game\-Over\-Screen\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pacman_1_1_game_over_screen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pacman_1_1_game_over_screen_a7d97bf9092aecb4d9de8cd93e444f4f1}{Game\-Over\-Screen} (\hyperlink{class_pacman_1_1_high_score}{High\-Score} high\-Score)
+\begin{DoxyCompactList}\small\item\em Constructor that gets the current highscore class \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_game_over_screen_a43eaf6170505796fcfb0bdb73560c744}{Load\-Content} (Content\-Manager Content)
+\begin{DoxyCompactList}\small\item\em Loads in all the fonts, sets the textfade animation to true,and initializes all the variables. \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_game_over_screen_a70173a7767450e66a6deeb00bc4a5844}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Unloads the highscore class and the base class, called when a new screen is added \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_game_over_screen_abfdcd8b539aa5020bf9e34a86072ae81}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em Gets the keyboard input for the player name text input dialog, saves the highscore when eneter is press, the user then also is taken back to the mainmenu by adding a new \hyperlink{class_pacman_1_1_main_menu}{Main\-Menu} screen. \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_game_over_screen_ae8e0cb7c8d8f836483c2e0e776e939ef}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draws the different texts and inputtext also the textfade animation draw function is called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The screen that appears when you lost or won the game 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_pacman_1_1_game_over_screen_a7d97bf9092aecb4d9de8cd93e444f4f1}{\index{Pacman\-::\-Game\-Over\-Screen@{Pacman\-::\-Game\-Over\-Screen}!Game\-Over\-Screen@{Game\-Over\-Screen}}
+\index{Game\-Over\-Screen@{Game\-Over\-Screen}!Pacman::GameOverScreen@{Pacman\-::\-Game\-Over\-Screen}}
+\subsubsection[{Game\-Over\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}Pacman.\-Game\-Over\-Screen.\-Game\-Over\-Screen (
+\begin{DoxyParamCaption}
+\item[{{\bf High\-Score}}]{high\-Score}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_game_over_screen_a7d97bf9092aecb4d9de8cd93e444f4f1}
+
+
+Constructor that gets the current highscore class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em high\-Score} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_game_over_screen_ae8e0cb7c8d8f836483c2e0e776e939ef}{\index{Pacman\-::\-Game\-Over\-Screen@{Pacman\-::\-Game\-Over\-Screen}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::GameOverScreen@{Pacman\-::\-Game\-Over\-Screen}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Game\-Over\-Screen.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_over_screen_ae8e0cb7c8d8f836483c2e0e776e939ef}
+
+
+Draws the different texts and inputtext also the textfade animation draw function is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_ab7d62816f246e29e70d352d094c36b04}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_game_over_screen_a43eaf6170505796fcfb0bdb73560c744}{\index{Pacman\-::\-Game\-Over\-Screen@{Pacman\-::\-Game\-Over\-Screen}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::GameOverScreen@{Pacman\-::\-Game\-Over\-Screen}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Game\-Over\-Screen.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_over_screen_a43eaf6170505796fcfb0bdb73560c744}
+
+
+Loads in all the fonts, sets the textfade animation to true,and initializes all the variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_a33dbdc943439ae7728aff62b5152aa53}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_game_over_screen_a70173a7767450e66a6deeb00bc4a5844}{\index{Pacman\-::\-Game\-Over\-Screen@{Pacman\-::\-Game\-Over\-Screen}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::GameOverScreen@{Pacman\-::\-Game\-Over\-Screen}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Game\-Over\-Screen.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_over_screen_a70173a7767450e66a6deeb00bc4a5844}
+
+
+Unloads the highscore class and the base class, called when a new screen is added 
+
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_aa33ba4650a38762eca4bd059fb803942}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_game_over_screen_abfdcd8b539aa5020bf9e34a86072ae81}{\index{Pacman\-::\-Game\-Over\-Screen@{Pacman\-::\-Game\-Over\-Screen}!Update@{Update}}
+\index{Update@{Update}!Pacman::GameOverScreen@{Pacman\-::\-Game\-Over\-Screen}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Game\-Over\-Screen.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_game_over_screen_abfdcd8b539aa5020bf9e34a86072ae81}
+
+
+Gets the keyboard input for the player name text input dialog, saves the highscore when eneter is press, the user then also is taken back to the mainmenu by adding a new \hyperlink{class_pacman_1_1_main_menu}{Main\-Menu} screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_a768b26cbc3ed823d0dcba5055ae9a8b4}{Pacman.\-Game\-Screen}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Game\-Over\-Screen.\-cs\end{DoxyCompactItemize}

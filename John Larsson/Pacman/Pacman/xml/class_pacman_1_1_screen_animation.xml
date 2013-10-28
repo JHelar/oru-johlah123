@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_screen_animation" kind="class" prot="public">
+    <compoundname>Pacman::ScreenAnimation</compoundname>
+    <derivedcompoundref refid="class_pacman_1_1_fade_animation" prot="public" virt="non-virtual">Pacman.FadeAnimation</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1ac33fed9de162fb2f159f1ad15d3a4d94" prot="protected" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Pacman.ScreenAnimation.image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="18" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1ab4c0b055eeb0919cf3e30db19d8f15bb" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Pacman.ScreenAnimation.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1ae014c883301c9f42e00eafcdd513e0d1" prot="protected" static="no" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Pacman.ScreenAnimation.font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1a5a7a6cb6955a0625d6a4ea34fa04166b" prot="protected" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color Pacman.ScreenAnimation.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="21" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1a79065b7a8f285c5f8d67e758ea0f2745" prot="protected" static="no" mutable="no">
+        <type>Rectangle</type>
+        <definition>Rectangle Pacman.ScreenAnimation.sourceRect</definition>
+        <argsstring></argsstring>
+        <name>sourceRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1abef49f89085550929de700f913b22344" prot="protected" static="no" mutable="no">
+        <type>ContentManager</type>
+        <definition>ContentManager Pacman.ScreenAnimation.content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1a9c13f7f141cd083413f2d710aee04b66" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pacman.ScreenAnimation.active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="24" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1a86b87e39731428e90158eabc64a29a60" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.ScreenAnimation.rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1acdac56ee31eec0dc6021ed135b403bf1" prot="protected" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.ScreenAnimation.origin</definition>
+        <argsstring></argsstring>
+        <name>origin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="26" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1a33d8bebcfb554857c41a0701e3f05f83" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.ScreenAnimation.alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="27" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1a8458e14ef6cf1b94c5f4eb7ced432b71" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.ScreenAnimation.scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1a1105fde50b38c4113052cb36ce9c186a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.ScreenAnimation.axis</definition>
+        <argsstring></argsstring>
+        <name>axis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_screen_animation_1a67b019b86944b0b5e2784da89bca63ba" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.ScreenAnimation.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="26" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_screen_animation_1a7b643f454b3e1f0faed8959ccd52d4ec" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>virtual float Pacman.ScreenAnimation.Alpha</definition>
+        <argsstring></argsstring>
+        <name>Alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="30" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_screen_animation_1a5d941d20b56fa63c1c289cbcf2b37aec" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Pacman.ScreenAnimation.Active</definition>
+        <argsstring></argsstring>
+        <name>Active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="36" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_screen_animation_1a2a9783313a2891196b9ac1738c00acc4" prot="public" static="no" readable="no" writable="no" gettable="no" settable="yes">
+        <type>float</type>
+        <definition>float Pacman.ScreenAnimation.Scale</definition>
+        <argsstring></argsstring>
+        <name>Scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="42" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_screen_animation_1a566ecb3dca9f82c4eb51f4e3a4019550" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Pacman.ScreenAnimation.LoadContent</definition>
+        <argsstring>(ContentManager Content, Texture2D image, string text, Vector2 position, string fontID)</argsstring>
+        <name>LoadContent</name>
+        <reimplementedby refid="class_pacman_1_1_fade_animation_1a6abddfcfb03a31152da73b6766e99a9d">LoadContent</reimplementedby>
+        <param>
+          <type>ContentManager</type>
+          <declname>Content</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fontID</declname>
+        </param>
+        <briefdescription>
+<para>Loads in an image if it&apos;s given or a string of text if it is given with the font given </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fontID</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="56" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="56" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_animation_1ad9bf49699b6905423cc17047e36e9a1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Pacman.ScreenAnimation.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Virtual function that unloads the variables, called when a new screen has been added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="77" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="77" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_animation_1af381913622005dfb6b759f7495b37ded" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Pacman.ScreenAnimation.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <reimplementedby refid="class_pacman_1_1_fade_animation_1ac6d7c4a5845a19f47dd2501271ecee7a">Update</reimplementedby>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Virtual update method </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="88" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_screen_animation_1aab67af6395aea7e03c7d4d4f6eff9977" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.ScreenAnimation.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Draws the string and or image </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="97" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="97" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A base class for every screens animation </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="67">
+        <label>Pacman.FadeAnimation</label>
+        <link refid="class_pacman_1_1_fade_animation"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>Pacman.ScreenAnimation</label>
+        <link refid="class_pacman_1_1_screen_animation"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ScreenAnimation.cs" bodystart="15" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_screen_animation_1a9c13f7f141cd083413f2d710aee04b66" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>active</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a5d941d20b56fa63c1c289cbcf2b37aec" prot="public" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>Active</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a33d8bebcfb554857c41a0701e3f05f83" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>alpha</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a7b643f454b3e1f0faed8959ccd52d4ec" prot="public" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>Alpha</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a1105fde50b38c4113052cb36ce9c186a" prot="private" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>axis</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a5a7a6cb6955a0625d6a4ea34fa04166b" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>color</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1abef49f89085550929de700f913b22344" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>content</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1aab67af6395aea7e03c7d4d4f6eff9977" prot="public" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1ae014c883301c9f42e00eafcdd513e0d1" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>font</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1ac33fed9de162fb2f159f1ad15d3a4d94" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>image</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a566ecb3dca9f82c4eb51f4e3a4019550" prot="public" virt="virtual"><scope>Pacman::ScreenAnimation</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1acdac56ee31eec0dc6021ed135b403bf1" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>origin</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a67b019b86944b0b5e2784da89bca63ba" prot="private" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>position</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a86b87e39731428e90158eabc64a29a60" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>rotation</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a8458e14ef6cf1b94c5f4eb7ced432b71" prot="private" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>scale</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a2a9783313a2891196b9ac1738c00acc4" prot="public" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>Scale</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1a79065b7a8f285c5f8d67e758ea0f2745" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>sourceRect</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1ab4c0b055eeb0919cf3e30db19d8f15bb" prot="protected" virt="non-virtual"><scope>Pacman::ScreenAnimation</scope><name>text</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1ad9bf49699b6905423cc17047e36e9a1c" prot="public" virt="virtual"><scope>Pacman::ScreenAnimation</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_screen_animation_1af381913622005dfb6b759f7495b37ded" prot="public" virt="virtual"><scope>Pacman::ScreenAnimation</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

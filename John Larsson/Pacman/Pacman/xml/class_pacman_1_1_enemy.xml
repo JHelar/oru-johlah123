@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_enemy" kind="class" prot="public">
+    <compoundname>Pacman::Enemy</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1ae34f1c49dc09011a206645e24f28217d" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Pacman.Enemy.enemyImage</definition>
+        <argsstring></argsstring>
+        <name>enemyImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1ab5fe4cbfa11339d60950f004b713a96c" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Enemy.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1ace8f256b963fb795135010ba5d11b61a" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Enemy.tempCurrentFrame</definition>
+        <argsstring></argsstring>
+        <name>tempCurrentFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1a2cc8610665024b8fd5b500bd552bf5ae" prot="private" static="no" mutable="no">
+        <type>Queue&lt; Vector2 &gt;</type>
+        <definition>Queue&lt;Vector2&gt; Pacman.Enemy.paths</definition>
+        <argsstring></argsstring>
+        <name>paths</name>
+        <initializer>= new Queue&lt;Vector2&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="24" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1af918bef2b216a5bb53d59404a67efc5e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_path_finding" kindref="compound">PathFinding</ref></type>
+        <definition>PathFinding Pacman.Enemy.pathFinding</definition>
+        <argsstring></argsstring>
+        <name>pathFinding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1a16688b699de255814c61c854109184c1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_animation" kindref="compound">Animation</ref></type>
+        <definition>Animation Pacman.Enemy.enemyAnimation</definition>
+        <argsstring></argsstring>
+        <name>enemyAnimation</name>
+        <initializer>= new <ref refid="class_pacman_1_1_animation" kindref="compound">Animation</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="26" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1a91d68224cb2396724bfa1cde43cd9067" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Pacman.Enemy.moveSpeed</definition>
+        <argsstring></argsstring>
+        <name>moveSpeed</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1a68c4aebc9faa44ae9e3b6299fcb0cd0c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pacman.Enemy.newPath</definition>
+        <argsstring></argsstring>
+        <name>newPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="29" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1a9958fce3328ddd0e67a46d0938ed5a1f" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Enemy.velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="30" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1a5320258f2dcd69105ea4e7f1e708d835" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.Enemy.reCalculate</definition>
+        <argsstring></argsstring>
+        <name>reCalculate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="32" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_enemy_1ae52d5759b671afb0512b42ad3801167a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.Enemy.reCalculateValue</definition>
+        <argsstring></argsstring>
+        <name>reCalculateValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="32" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_enemy_1ab7bc744525f9eebd36900fdeada135bb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Enemy.EnemyPosition</definition>
+        <argsstring></argsstring>
+        <name>EnemyPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="35" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_enemy_1a2263aadbd1d78ead404e84f41bada49b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Pacman.Enemy.distanceToDestination</definition>
+        <argsstring></argsstring>
+        <name>distanceToDestination</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="40" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_enemy_1a2a2ec352b4ead599d21f2e6cc14286a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Enemy.Init</definition>
+        <argsstring>(Collision col, Player player, Vector2 position, int reCalculate)</argsstring>
+        <name>Init</name>
+        <param>
+          <type><ref refid="class_pacman_1_1_collision" kindref="compound">Collision</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>reCalculate</declname>
+        </param>
+        <briefdescription>
+<para>Gets the current posisiton of the player, the start position of the enemy, and a value that will determine when the enemy should recalculate the path to the player. Also Initializes the pathfinding for the enemy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reCalculate</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="54" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="54" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_enemy_1a0e536519c29079058f97a1e61140dd40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Enemy.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Unloads the enemy class, called when a new screen has been added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="69" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="69" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_enemy_1adba93972a25a4b42270e73903701e394" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Enemy.setPath</definition>
+        <argsstring>(Queue&lt; Vector2 &gt; paths)</argsstring>
+        <name>setPath</name>
+        <param>
+          <type>Queue&lt; Vector2 &gt;</type>
+          <declname>paths</declname>
+        </param>
+        <briefdescription>
+<para>Sets the path given from the pathfinding class. Forces a recalculation if the queue returns empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>paths</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="83" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="83" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_enemy_1a48f4d1d34ca4de8480f5b2a27aa7eb4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Enemy.LoadContent</definition>
+        <argsstring>(ContentManager content)</argsstring>
+        <name>LoadContent</name>
+        <param>
+          <type>ContentManager</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Loads the enemy texture and enemy animation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="97" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_enemy_1ae18c341fda06015c85cf1ce112bdc62b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Enemy.Update</definition>
+        <argsstring>(Player player, Collision col, Layers layer, GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type><ref refid="class_pacman_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_collision" kindref="compound">Collision</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_layers" kindref="compound">Layers</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Recalculates a new pathfinding path and sets it, calculates it&apos;s movement in the right direction and updates it&apos;s position and gives that to the enemy animation. Dequeues a waypoint if the enemy has reached it. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="111" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="111" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_enemy_1ae30d7de2c9966fd540ca8ab92f36c7dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Enemy.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Calls the draw function from the animation class </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="162" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="162" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_pacman_1_1_enemy" kindref="compound">Enemy</ref> calss, with pathfinding AI </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Enemy.cs" bodystart="19" bodyend="167"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_enemy_1a2263aadbd1d78ead404e84f41bada49b" prot="public" virt="non-virtual"><scope>Pacman::Enemy</scope><name>distanceToDestination</name></member>
+      <member refid="class_pacman_1_1_enemy_1ae30d7de2c9966fd540ca8ab92f36c7dc" prot="public" virt="non-virtual"><scope>Pacman::Enemy</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_enemy_1a16688b699de255814c61c854109184c1" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>enemyAnimation</name></member>
+      <member refid="class_pacman_1_1_enemy_1ae34f1c49dc09011a206645e24f28217d" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>enemyImage</name></member>
+      <member refid="class_pacman_1_1_enemy_1ab7bc744525f9eebd36900fdeada135bb" prot="public" virt="non-virtual"><scope>Pacman::Enemy</scope><name>EnemyPosition</name></member>
+      <member refid="class_pacman_1_1_enemy_1a2a2ec352b4ead599d21f2e6cc14286a4" prot="public" virt="non-virtual"><scope>Pacman::Enemy</scope><name>Init</name></member>
+      <member refid="class_pacman_1_1_enemy_1a48f4d1d34ca4de8480f5b2a27aa7eb4e" prot="public" virt="non-virtual"><scope>Pacman::Enemy</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_enemy_1a91d68224cb2396724bfa1cde43cd9067" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>moveSpeed</name></member>
+      <member refid="class_pacman_1_1_enemy_1a68c4aebc9faa44ae9e3b6299fcb0cd0c" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>newPath</name></member>
+      <member refid="class_pacman_1_1_enemy_1af918bef2b216a5bb53d59404a67efc5e" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>pathFinding</name></member>
+      <member refid="class_pacman_1_1_enemy_1a2cc8610665024b8fd5b500bd552bf5ae" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>paths</name></member>
+      <member refid="class_pacman_1_1_enemy_1ab5fe4cbfa11339d60950f004b713a96c" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>position</name></member>
+      <member refid="class_pacman_1_1_enemy_1a5320258f2dcd69105ea4e7f1e708d835" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>reCalculate</name></member>
+      <member refid="class_pacman_1_1_enemy_1ae52d5759b671afb0512b42ad3801167a" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>reCalculateValue</name></member>
+      <member refid="class_pacman_1_1_enemy_1adba93972a25a4b42270e73903701e394" prot="public" virt="non-virtual"><scope>Pacman::Enemy</scope><name>setPath</name></member>
+      <member refid="class_pacman_1_1_enemy_1ace8f256b963fb795135010ba5d11b61a" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>tempCurrentFrame</name></member>
+      <member refid="class_pacman_1_1_enemy_1a0e536519c29079058f97a1e61140dd40" prot="public" virt="non-virtual"><scope>Pacman::Enemy</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_enemy_1ae18c341fda06015c85cf1ce112bdc62b" prot="public" virt="non-virtual"><scope>Pacman::Enemy</scope><name>Update</name></member>
+      <member refid="class_pacman_1_1_enemy_1a9958fce3328ddd0e67a46d0938ed5a1f" prot="private" virt="non-virtual"><scope>Pacman::Enemy</scope><name>velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

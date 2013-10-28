@@ -1,0 +1,119 @@
+\hypertarget{class_pacman_1_1_player}{\section{Pacman.\-Player Class Reference}
+\label{class_pacman_1_1_player}\index{Pacman.\-Player@{Pacman.\-Player}}
+}
+
+
+The player class  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pacman_1_1_player_aba5e30a8301ffc0ab664300d95ab9743}{Init} ()
+\begin{DoxyCompactList}\small\item\em Sets the start position of the player. Sets the amount of frames the player animation have. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_player_ab8c4719d16a15c9574a8013807602465}{Load\-Content} (Content\-Manager Content)
+\begin{DoxyCompactList}\small\item\em Loads in the animation image and the position of the animation. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_player_a68af2a48b6d3f9512ee28aaa30a71f48}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Unloads the variables, called when a new screen has been added \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_player_af638b60bf7a47f1f31d5ce8b49574d49}{Update} (Game\-Time game\-Time, \hyperlink{class_pacman_1_1_collision}{Collision} col, \hyperlink{class_pacman_1_1_layers}{Layers} layer, \hyperlink{class_pacman_1_1_high_score}{High\-Score} high\-Score)
+\begin{DoxyCompactList}\small\item\em Moves the player depending on player input direction, checks collision with walls and food. Increases the highscore by 10 for eatch food eaten. Sets what animation direction that should be drawn. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_player_a5b1cc5c97a3a5a1288b8612bd640e9f7}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draws the player animation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_player_a1f0b9092b8260c31d00835b8cec8540f}{Vector2 {\bfseries Player\-Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_pacman_1_1_player_a1f0b9092b8260c31d00835b8cec8540f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The player class 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_player_a5b1cc5c97a3a5a1288b8612bd640e9f7}{\index{Pacman\-::\-Player@{Pacman\-::\-Player}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::Player@{Pacman\-::\-Player}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Player.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_player_a5b1cc5c97a3a5a1288b8612bd640e9f7}
+
+
+Draws the player animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_player_aba5e30a8301ffc0ab664300d95ab9743}{\index{Pacman\-::\-Player@{Pacman\-::\-Player}!Init@{Init}}
+\index{Init@{Init}!Pacman::Player@{Pacman\-::\-Player}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Player.\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_player_aba5e30a8301ffc0ab664300d95ab9743}
+
+
+Sets the start position of the player. Sets the amount of frames the player animation have. 
+
+\hypertarget{class_pacman_1_1_player_ab8c4719d16a15c9574a8013807602465}{\index{Pacman\-::\-Player@{Pacman\-::\-Player}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::Player@{Pacman\-::\-Player}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Player.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_player_ab8c4719d16a15c9574a8013807602465}
+
+
+Loads in the animation image and the position of the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_player_a68af2a48b6d3f9512ee28aaa30a71f48}{\index{Pacman\-::\-Player@{Pacman\-::\-Player}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::Player@{Pacman\-::\-Player}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Player.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_player_a68af2a48b6d3f9512ee28aaa30a71f48}
+
+
+Unloads the variables, called when a new screen has been added 
+
+\hypertarget{class_pacman_1_1_player_af638b60bf7a47f1f31d5ce8b49574d49}{\index{Pacman\-::\-Player@{Pacman\-::\-Player}!Update@{Update}}
+\index{Update@{Update}!Pacman::Player@{Pacman\-::\-Player}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Player.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time, }
+\item[{{\bf Collision}}]{col, }
+\item[{{\bf Layers}}]{layer, }
+\item[{{\bf High\-Score}}]{high\-Score}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_player_af638b60bf7a47f1f31d5ce8b49574d49}
+
+
+Moves the player depending on player input direction, checks collision with walls and food. Increases the highscore by 10 for eatch food eaten. Sets what animation direction that should be drawn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+{\em col} & \\
+\hline
+{\em layer} & \\
+\hline
+{\em high\-Score} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Player.\-cs\end{DoxyCompactItemize}

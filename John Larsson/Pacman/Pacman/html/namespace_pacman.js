@@ -1,0 +1,26 @@
+var namespace_pacman =
+[
+    [ "Animation", "class_pacman_1_1_animation.html", "class_pacman_1_1_animation" ],
+    [ "Collision", "class_pacman_1_1_collision.html", "class_pacman_1_1_collision" ],
+    [ "Enemy", "class_pacman_1_1_enemy.html", "class_pacman_1_1_enemy" ],
+    [ "ExitScreen", "class_pacman_1_1_exit_screen.html", "class_pacman_1_1_exit_screen" ],
+    [ "FadeAnimation", "class_pacman_1_1_fade_animation.html", "class_pacman_1_1_fade_animation" ],
+    [ "FileManager", "class_pacman_1_1_file_manager.html", "class_pacman_1_1_file_manager" ],
+    [ "Game1", "class_pacman_1_1_game1.html", "class_pacman_1_1_game1" ],
+    [ "GameOver", "class_pacman_1_1_game_over.html", "class_pacman_1_1_game_over" ],
+    [ "GameOverScreen", "class_pacman_1_1_game_over_screen.html", "class_pacman_1_1_game_over_screen" ],
+    [ "GameScreen", "class_pacman_1_1_game_screen.html", "class_pacman_1_1_game_screen" ],
+    [ "Ghost", "class_pacman_1_1_ghost.html", "class_pacman_1_1_ghost" ],
+    [ "HighScore", "class_pacman_1_1_high_score.html", "class_pacman_1_1_high_score" ],
+    [ "HighScoreScreen", "class_pacman_1_1_high_score_screen.html", "class_pacman_1_1_high_score_screen" ],
+    [ "Layers", "class_pacman_1_1_layers.html", "class_pacman_1_1_layers" ],
+    [ "MainGame", "class_pacman_1_1_main_game.html", "class_pacman_1_1_main_game" ],
+    [ "MainMenu", "class_pacman_1_1_main_menu.html", "class_pacman_1_1_main_menu" ],
+    [ "MenuManager", "class_pacman_1_1_menu_manager.html", "class_pacman_1_1_menu_manager" ],
+    [ "PathFinding", "class_pacman_1_1_path_finding.html", "class_pacman_1_1_path_finding" ],
+    [ "Player", "class_pacman_1_1_player.html", "class_pacman_1_1_player" ],
+    [ "ScreenAnimation", "class_pacman_1_1_screen_animation.html", "class_pacman_1_1_screen_animation" ],
+    [ "ScreenManager", "class_pacman_1_1_screen_manager.html", "class_pacman_1_1_screen_manager" ],
+    [ "SplashScreen", "class_pacman_1_1_splash_screen.html", "class_pacman_1_1_splash_screen" ],
+    [ "TitelScreen", "class_pacman_1_1_titel_screen.html", "class_pacman_1_1_titel_screen" ]
+];

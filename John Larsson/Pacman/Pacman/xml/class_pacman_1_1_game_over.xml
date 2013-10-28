@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_game_over" kind="class" prot="public">
+    <compoundname>Pacman::GameOver</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_game_over_1a8c6e6a54940e95d859ee8fe53deb5d00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pacman.GameOver.CheckGameState</definition>
+        <argsstring>(Player player, Enemy enemy, Layers layer)</argsstring>
+        <name>CheckGameState</name>
+        <param>
+          <type><ref refid="class_pacman_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_enemy" kindref="compound">Enemy</ref></type>
+          <declname>enemy</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_layers" kindref="compound">Layers</ref></type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>calls the two private mathods and return a true if the citeria has been met or false if not </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enemy</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOver.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOver.cs" bodystart="23" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pacman_1_1_game_over_1a7ef6b7eba2eadd29d9204dbeb072a11e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pacman.GameOver.CheckEnemyPlayerCollision</definition>
+        <argsstring>(Player player, Enemy enemy, Layers layer)</argsstring>
+        <name>CheckEnemyPlayerCollision</name>
+        <param>
+          <type><ref refid="class_pacman_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_enemy" kindref="compound">Enemy</ref></type>
+          <declname>enemy</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pacman_1_1_layers" kindref="compound">Layers</ref></type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the player and enemy position checks if the two collides with eatchother </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enemy</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOver.cs" line="37" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOver.cs" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_game_over_1a6d00069155b9a86a636a8d8c04d2a3bd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pacman.GameOver.CheckIfFoodEaten</definition>
+        <argsstring>(Layers layer)</argsstring>
+        <name>CheckIfFoodEaten</name>
+        <param>
+          <type><ref refid="class_pacman_1_1_layers" kindref="compound">Layers</ref></type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Check to see if all the food tiles has been eaten </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOver.cs" line="51" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOver.cs" bodystart="51" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that checks if a gameover criteria has been met. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOver.cs" line="15" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOver.cs" bodystart="14" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_game_over_1a7ef6b7eba2eadd29d9204dbeb072a11e" prot="private" virt="non-virtual"><scope>Pacman::GameOver</scope><name>CheckEnemyPlayerCollision</name></member>
+      <member refid="class_pacman_1_1_game_over_1a8c6e6a54940e95d859ee8fe53deb5d00" prot="public" virt="non-virtual"><scope>Pacman::GameOver</scope><name>CheckGameState</name></member>
+      <member refid="class_pacman_1_1_game_over_1a6d00069155b9a86a636a8d8c04d2a3bd" prot="private" virt="non-virtual"><scope>Pacman::GameOver</scope><name>CheckIfFoodEaten</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

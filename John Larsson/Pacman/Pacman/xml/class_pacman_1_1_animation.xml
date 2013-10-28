@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_animation" kind="class" prot="public">
+    <compoundname>Pacman::Animation</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1ab56e7b59bc890452cde381e4f1cd446e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.Animation.frameCounter</definition>
+        <argsstring></argsstring>
+        <name>frameCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1a66f14aca4521e68dc2c7f0d92ef1d1a7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.Animation.switchFrame</definition>
+        <argsstring></argsstring>
+        <name>switchFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1a29c73dd0a6e5d7d98508588def0eacfb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.Animation.animationSpeed</definition>
+        <argsstring></argsstring>
+        <name>animationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1a1bc340e48e639924e68ca4671805eaf5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pacman.Animation.active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1a2544516b9efeb6785074c333b6344b71" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Animation.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1ae6d8169cf12e9e9ec2e4f4943e1223c0" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Animation.amountOfFrames</definition>
+        <argsstring></argsstring>
+        <name>amountOfFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1ab955eb3f6bb454793994d3fb860ee3f8" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Animation.currentFrame</definition>
+        <argsstring></argsstring>
+        <name>currentFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1aeb144cfe77fca5467ab0745dfb0af310" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Pacman.Animation.animationImage</definition>
+        <argsstring></argsstring>
+        <name>animationImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="24" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_animation_1a1257a0d179ece979ea35609e05e72d2c" prot="private" static="no" mutable="no">
+        <type>Rectangle</type>
+        <definition>Rectangle Pacman.Animation.sourcRect</definition>
+        <argsstring></argsstring>
+        <name>sourcRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_animation_1acf74cd296d09153cb9a44c749522fcce" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Pacman.Animation.Active</definition>
+        <argsstring></argsstring>
+        <name>Active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_animation_1a47fa1009378311964886d9230a0b0661" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Animation.CurrentFrame</definition>
+        <argsstring></argsstring>
+        <name>CurrentFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="34" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_animation_1a0370e81ae3bafa3075eb55792c1800c4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Animation.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="40" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_animation_1acdd307f9acdecf0590cf8de005283323" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Pacman.Animation.FrameWidth</definition>
+        <argsstring></argsstring>
+        <name>FrameWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="46" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_animation_1a9d9c7cd96767f85786942b55639cd4fe" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Pacman.Animation.FrameHeight</definition>
+        <argsstring></argsstring>
+        <name>FrameHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="51" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_animation_1a0ebfaa2d2dfda8371deeaab7d263f058" prot="public" static="no" readable="no" writable="no" gettable="no" settable="yes">
+        <type>Texture2D</type>
+        <definition>Texture2D Pacman.Animation.AnimationImage</definition>
+        <argsstring></argsstring>
+        <name>AnimationImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="56" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_animation_1a7ee5ffc750d07137d7740dfcee31dfe4" prot="public" static="no" readable="no" writable="no" gettable="no" settable="yes">
+        <type>int</type>
+        <definition>int Pacman.Animation.AnimationSpeed</definition>
+        <argsstring></argsstring>
+        <name>AnimationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="61" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_animation_1a647ddbbc60c46ba27cf6fe424e576fe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Animation.Init</definition>
+        <argsstring>(Vector2 position, Vector2 amountOfFrames)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>amountOfFrames</declname>
+        </param>
+        <briefdescription>
+<para>Sets the start position,and the amount of frames the spritesheet has. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amountOfFrames</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="72" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="72" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_animation_1ab665843c3b44bdc41148856c73626b0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Animation.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Unloads the class, called when a new screen in added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="82" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_animation_1a610e195f160dcb4bf850debc61b1454d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Animation.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Sets when to switch frame, depends on the set animationspeed. Puts the framecounter back to 0 when a new frame is set. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="92" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="92" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_animation_1abcf15386a6a54dc98bc07ec5a82d96ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Animation.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Draws the current frame of the animation </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="113" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="113" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_pacman_1_1_animation" kindref="compound">Animation</ref> class, for any kind of animation of a spritesheet. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" line="18" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Animation.cs" bodystart="17" bodyend="118"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_animation_1a1bc340e48e639924e68ca4671805eaf5" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>active</name></member>
+      <member refid="class_pacman_1_1_animation_1acf74cd296d09153cb9a44c749522fcce" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>Active</name></member>
+      <member refid="class_pacman_1_1_animation_1ae6d8169cf12e9e9ec2e4f4943e1223c0" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>amountOfFrames</name></member>
+      <member refid="class_pacman_1_1_animation_1aeb144cfe77fca5467ab0745dfb0af310" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>animationImage</name></member>
+      <member refid="class_pacman_1_1_animation_1a0ebfaa2d2dfda8371deeaab7d263f058" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>AnimationImage</name></member>
+      <member refid="class_pacman_1_1_animation_1a29c73dd0a6e5d7d98508588def0eacfb" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>animationSpeed</name></member>
+      <member refid="class_pacman_1_1_animation_1a7ee5ffc750d07137d7740dfcee31dfe4" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>AnimationSpeed</name></member>
+      <member refid="class_pacman_1_1_animation_1a47fa1009378311964886d9230a0b0661" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>CurrentFrame</name></member>
+      <member refid="class_pacman_1_1_animation_1ab955eb3f6bb454793994d3fb860ee3f8" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>currentFrame</name></member>
+      <member refid="class_pacman_1_1_animation_1abcf15386a6a54dc98bc07ec5a82d96ad" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_animation_1ab56e7b59bc890452cde381e4f1cd446e" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>frameCounter</name></member>
+      <member refid="class_pacman_1_1_animation_1a9d9c7cd96767f85786942b55639cd4fe" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>FrameHeight</name></member>
+      <member refid="class_pacman_1_1_animation_1acdd307f9acdecf0590cf8de005283323" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>FrameWidth</name></member>
+      <member refid="class_pacman_1_1_animation_1a647ddbbc60c46ba27cf6fe424e576fe3" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>Init</name></member>
+      <member refid="class_pacman_1_1_animation_1a0370e81ae3bafa3075eb55792c1800c4" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>Position</name></member>
+      <member refid="class_pacman_1_1_animation_1a2544516b9efeb6785074c333b6344b71" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>position</name></member>
+      <member refid="class_pacman_1_1_animation_1a1257a0d179ece979ea35609e05e72d2c" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>sourcRect</name></member>
+      <member refid="class_pacman_1_1_animation_1a66f14aca4521e68dc2c7f0d92ef1d1a7" prot="private" virt="non-virtual"><scope>Pacman::Animation</scope><name>switchFrame</name></member>
+      <member refid="class_pacman_1_1_animation_1ab665843c3b44bdc41148856c73626b0b" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_animation_1a610e195f160dcb4bf850debc61b1454d" prot="public" virt="non-virtual"><scope>Pacman::Animation</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

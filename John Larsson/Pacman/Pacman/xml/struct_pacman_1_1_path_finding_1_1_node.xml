@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_pacman_1_1_path_finding_1_1_node" kind="struct" prot="public">
+    <compoundname>Pacman::PathFinding::Node</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_pacman_1_1_path_finding_1_1_node_1a984787c7a12094c294a009addd283d3c" prot="public" static="no" mutable="no">
+        <type>NodeState</type>
+        <definition>NodeState Pacman.PathFinding.Node.State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="59" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pacman_1_1_path_finding_1_1_node_1a7cf4681e38de8676a6b22af9a0b2c2f6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pacman.PathFinding.Node.wall</definition>
+        <argsstring></argsstring>
+        <name>wall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="61" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pacman_1_1_path_finding_1_1_node_1a3c12ada96c69a8368a78a196bdabddf1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_pacman_1_1_path_finding_1_1_position" kindref="compound">Position</ref></type>
+        <definition>Position Pacman.PathFinding.Node.Parent</definition>
+        <argsstring></argsstring>
+        <name>Parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="63" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pacman_1_1_path_finding_1_1_node_1a5e8fb44081d6fda396e0939372489c60" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.PathFinding.Node.gValue</definition>
+        <argsstring></argsstring>
+        <name>gValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="67" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pacman_1_1_path_finding_1_1_node_1a12375ab3593ca39fb8229cc17f017aa3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.PathFinding.Node.hValue</definition>
+        <argsstring></argsstring>
+        <name>hValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="69" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_pacman_1_1_path_finding_1_1_node_1acea93c5cdc25fea4649cb0051db4f991" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>int</type>
+        <definition>int Pacman.PathFinding.Node.fValue</definition>
+        <argsstring></argsstring>
+        <name>fValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="65" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_pacman_1_1_path_finding_1_1_node_1a997f021baab5100b2b7848ea005b5bb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.PathFinding.Node.Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="71" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="71" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="56">
+        <label>Pacman.PathFinding.Node</label>
+        <link refid="struct_pacman_1_1_path_finding_1_1_node"/>
+        <childnode refid="57" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Pacman.PathFinding.Position</label>
+        <link refid="struct_pacman_1_1_path_finding_1_1_position"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="58" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="57" bodyend="79"/>
+    <listofallmembers>
+      <member refid="struct_pacman_1_1_path_finding_1_1_node_1acea93c5cdc25fea4649cb0051db4f991" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Node</scope><name>fValue</name></member>
+      <member refid="struct_pacman_1_1_path_finding_1_1_node_1a5e8fb44081d6fda396e0939372489c60" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Node</scope><name>gValue</name></member>
+      <member refid="struct_pacman_1_1_path_finding_1_1_node_1a12375ab3593ca39fb8229cc17f017aa3" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Node</scope><name>hValue</name></member>
+      <member refid="struct_pacman_1_1_path_finding_1_1_node_1a997f021baab5100b2b7848ea005b5bb8" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Node</scope><name>Init</name></member>
+      <member refid="struct_pacman_1_1_path_finding_1_1_node_1a3c12ada96c69a8368a78a196bdabddf1" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Node</scope><name>Parent</name></member>
+      <member refid="struct_pacman_1_1_path_finding_1_1_node_1a984787c7a12094c294a009addd283d3c" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Node</scope><name>State</name></member>
+      <member refid="struct_pacman_1_1_path_finding_1_1_node_1a7cf4681e38de8676a6b22af9a0b2c2f6" prot="public" virt="non-virtual"><scope>Pacman::PathFinding::Node</scope><name>wall</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

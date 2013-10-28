@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_exit_screen" kind="class" prot="public">
+    <compoundname>Pacman::ExitScreen</compoundname>
+    <basecompoundref refid="class_pacman_1_1_game_screen" prot="public" virt="non-virtual">Pacman.GameScreen</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_exit_screen_1a4177058f3accaa1a45c4ca9599952b16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Pacman.ExitScreen.Exit</definition>
+        <argsstring>()</argsstring>
+        <name>Exit</name>
+        <reimplements refid="class_pacman_1_1_game_screen_1a23069d276b1952ecf9fed07d0424e771">Exit</reimplements>
+        <briefdescription>
+<para>Only function, returns a true value since we want to close the program </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ExitScreen.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ExitScreen.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple screen class that is called when we want to close the program </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Pacman.ExitScreen</label>
+        <link refid="class_pacman_1_1_exit_screen"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GameScreen</label>
+        <link refid="class_pacman_1_1_game_screen"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>Pacman.ExitScreen</label>
+        <link refid="class_pacman_1_1_exit_screen"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GameScreen</label>
+        <link refid="class_pacman_1_1_game_screen"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ExitScreen.cs" line="12" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/ExitScreen.cs" bodystart="11" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_game_screen_1aae34556caa8e4fd97aa4f639f08785c4" prot="protected" virt="non-virtual"><scope>Pacman::ExitScreen</scope><name>attributes</name></member>
+      <member refid="class_pacman_1_1_game_screen_1a89f510b4d354e6b1eb68b41b108e3ffd" prot="protected" virt="non-virtual"><scope>Pacman::ExitScreen</scope><name>content</name></member>
+      <member refid="class_pacman_1_1_game_screen_1ab7d62816f246e29e70d352d094c36b04" prot="public" virt="virtual"><scope>Pacman::ExitScreen</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_exit_screen_1a4177058f3accaa1a45c4ca9599952b16" prot="public" virt="virtual"><scope>Pacman::ExitScreen</scope><name>Exit</name></member>
+      <member refid="class_pacman_1_1_game_screen_1a33dbdc943439ae7728aff62b5152aa53" prot="public" virt="virtual"><scope>Pacman::ExitScreen</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_game_screen_1aa33ba4650a38762eca4bd059fb803942" prot="public" virt="virtual"><scope>Pacman::ExitScreen</scope><name>UnloadContent</name></member>
+      <member refid="class_pacman_1_1_game_screen_1a768b26cbc3ed823d0dcba5055ae9a8b4" prot="public" virt="virtual"><scope>Pacman::ExitScreen</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

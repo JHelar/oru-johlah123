@@ -1,0 +1,114 @@
+\hypertarget{class_pacman_1_1_splash_screen}{\section{Pacman.\-Splash\-Screen Class Reference}
+\label{class_pacman_1_1_splash_screen}\index{Pacman.\-Splash\-Screen@{Pacman.\-Splash\-Screen}}
+}
+
+
+A splash screen that is shown before the title screen  
+
+
+Inheritance diagram for Pacman.\-Splash\-Screen\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pacman_1_1_splash_screen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_pacman_1_1_splash_screen_a05a5f91c7e0ded6cb4893da9eeb0ded1}{Load\-Content} (Content\-Manager Content)
+\begin{DoxyCompactList}\small\item\em Loads the Splash screen images that will be transistioned between which are given from the text file. Loads them into their fade animation. \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_splash_screen_ac72328daa3003fa228218c65660c8d6c}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Unloads the content, called when a new screen has been added \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_splash_screen_af64e74cca5e74b0104f9fe74a21e52ae}{Update} (Game\-Time game\-Time)
+\begin{DoxyCompactList}\small\item\em Fades in and out the images until the last screen has been shown then transtition to the Titelscreen \end{DoxyCompactList}\item 
+override void \hyperlink{class_pacman_1_1_splash_screen_a669ad3120d15e6eea2636e44d74cdc31}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draw the splash screen images \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A splash screen that is shown before the title screen 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_splash_screen_a669ad3120d15e6eea2636e44d74cdc31}{\index{Pacman\-::\-Splash\-Screen@{Pacman\-::\-Splash\-Screen}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::SplashScreen@{Pacman\-::\-Splash\-Screen}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Splash\-Screen.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_splash_screen_a669ad3120d15e6eea2636e44d74cdc31}
+
+
+Draw the splash screen images 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_ab7d62816f246e29e70d352d094c36b04}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_splash_screen_a05a5f91c7e0ded6cb4893da9eeb0ded1}{\index{Pacman\-::\-Splash\-Screen@{Pacman\-::\-Splash\-Screen}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::SplashScreen@{Pacman\-::\-Splash\-Screen}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Splash\-Screen.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{Content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_splash_screen_a05a5f91c7e0ded6cb4893da9eeb0ded1}
+
+
+Loads the Splash screen images that will be transistioned between which are given from the text file. Loads them into their fade animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Content} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_a33dbdc943439ae7728aff62b5152aa53}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_splash_screen_ac72328daa3003fa228218c65660c8d6c}{\index{Pacman\-::\-Splash\-Screen@{Pacman\-::\-Splash\-Screen}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::SplashScreen@{Pacman\-::\-Splash\-Screen}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Splash\-Screen.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_splash_screen_ac72328daa3003fa228218c65660c8d6c}
+
+
+Unloads the content, called when a new screen has been added 
+
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_aa33ba4650a38762eca4bd059fb803942}{Pacman.\-Game\-Screen}.
+
+\hypertarget{class_pacman_1_1_splash_screen_af64e74cca5e74b0104f9fe74a21e52ae}{\index{Pacman\-::\-Splash\-Screen@{Pacman\-::\-Splash\-Screen}!Update@{Update}}
+\index{Update@{Update}!Pacman::SplashScreen@{Pacman\-::\-Splash\-Screen}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Pacman.\-Splash\-Screen.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pacman_1_1_splash_screen_af64e74cca5e74b0104f9fe74a21e52ae}
+
+
+Fades in and out the images until the last screen has been shown then transtition to the Titelscreen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_pacman_1_1_game_screen_a768b26cbc3ed823d0dcba5055ae9a8b4}{Pacman.\-Game\-Screen}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Splash\-Screen.\-cs\end{DoxyCompactItemize}

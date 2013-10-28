@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_layers" kind="class" prot="public">
+    <compoundname>Pacman::Layers</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1ababc8c99b6ef2fb97efd4086c478e96d" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; List&lt; Vector2 &gt; &gt; &gt;</type>
+        <definition>List&lt;List&lt;List&lt;Vector2&gt; &gt; &gt; Pacman.Layers.tileMap</definition>
+        <argsstring></argsstring>
+        <name>tileMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="18" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1a1fb415616f6413f219a51a58c5a0e88a" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; Vector2 &gt; &gt;</type>
+        <definition>List&lt;List&lt;Vector2&gt; &gt; Pacman.Layers.layer</definition>
+        <argsstring></argsstring>
+        <name>layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1ad9ce4c7ee06cc351d1fe96d0b1f68720" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; Pacman.Layers.tile</definition>
+        <argsstring></argsstring>
+        <name>tile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1a7a6e3ab14a7e3ba8377e97de94c04a71" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pacman_1_1_file_manager" kindref="compound">FileManager</ref></type>
+        <definition>FileManager Pacman.Layers.fileManager</definition>
+        <argsstring></argsstring>
+        <name>fileManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1a36a9e6bde8d8a5b5444ae4a90726adf8" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Pacman.Layers.tileSet</definition>
+        <argsstring></argsstring>
+        <name>tileSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="24" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1a856d740c5c247dc9f4fb1cea886d6336" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Layers.tileDimensions</definition>
+        <argsstring></argsstring>
+        <name>tileDimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1ac60965bb0556ccd62e0a31b65404f562" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pacman.Layers.layerNumber</definition>
+        <argsstring></argsstring>
+        <name>layerNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="27" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1a3ec6f9881da505a73ee72877ab2e70e2" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; string &gt; &gt;</type>
+        <definition>List&lt;List&lt;string&gt; &gt; Pacman.Layers.attributes</definition>
+        <argsstring></argsstring>
+        <name>attributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="29" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_layers_1aabdd5ffb2e3e1aa7bffcff37c62c5ac6" prot="private" static="no" mutable="no">
+        <type>List&lt; List&lt; string &gt; &gt;</type>
+        <definition>List&lt;List&lt;string&gt; &gt; Pacman.Layers.contents</definition>
+        <argsstring></argsstring>
+        <name>contents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="29" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pacman_1_1_layers_1ad6033d11075ecc2fb07f2366b430c507" prot="public" static="no" readable="no" writable="no" gettable="no" settable="yes">
+        <type>int</type>
+        <definition>int Pacman.Layers.LayerNumber</definition>
+        <argsstring></argsstring>
+        <name>LayerNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="32" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_layers_1a91d226bdcd4fbde5658b523d547ada8e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Pacman.Layers.TileDimensions</definition>
+        <argsstring></argsstring>
+        <name>TileDimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="37" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pacman_1_1_layers_1af5e3f6ed7cb7ea5a26b5d96930fffb8d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; List&lt; List&lt; Vector2 &gt; &gt; &gt;</type>
+        <definition>List&lt;List&lt;List&lt;Vector2&gt; &gt; &gt; Pacman.Layers.TileMap</definition>
+        <argsstring></argsstring>
+        <name>TileMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="42" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_layers_1ae2f8d76ad9fe571a7e0ead57165b402e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Layers.LoadContent</definition>
+        <argsstring>(ContentManager content, string mapID)</argsstring>
+        <name>LoadContent</name>
+        <param>
+          <type>ContentManager</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mapID</declname>
+        </param>
+        <briefdescription>
+<para>Loads the tile map from the tilemap text file, adds the single tiles to a layer in which then is added to the tile map. This adds the abillity to read in multiple maps into a single variable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mapID</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="55" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="55" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_layers_1a721d7d396fb04ab363d485d8474f51a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Layers.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Clears the lists, called when a new screen has been added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="104" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_layers_1a3b799c4834f790a0de8dfdbec02d4974" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.Layers.Draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+<para>Draws out the map tiles to the screen </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spriteBatch</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="117" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="117" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A dynamic tilemap reader </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/Layers.cs" bodystart="15" bodyend="134"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_layers_1a3ec6f9881da505a73ee72877ab2e70e2" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>attributes</name></member>
+      <member refid="class_pacman_1_1_layers_1aabdd5ffb2e3e1aa7bffcff37c62c5ac6" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>contents</name></member>
+      <member refid="class_pacman_1_1_layers_1a3b799c4834f790a0de8dfdbec02d4974" prot="public" virt="non-virtual"><scope>Pacman::Layers</scope><name>Draw</name></member>
+      <member refid="class_pacman_1_1_layers_1a7a6e3ab14a7e3ba8377e97de94c04a71" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>fileManager</name></member>
+      <member refid="class_pacman_1_1_layers_1a1fb415616f6413f219a51a58c5a0e88a" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>layer</name></member>
+      <member refid="class_pacman_1_1_layers_1ad6033d11075ecc2fb07f2366b430c507" prot="public" virt="non-virtual"><scope>Pacman::Layers</scope><name>LayerNumber</name></member>
+      <member refid="class_pacman_1_1_layers_1ac60965bb0556ccd62e0a31b65404f562" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>layerNumber</name></member>
+      <member refid="class_pacman_1_1_layers_1ae2f8d76ad9fe571a7e0ead57165b402e" prot="public" virt="non-virtual"><scope>Pacman::Layers</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_layers_1ad9ce4c7ee06cc351d1fe96d0b1f68720" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>tile</name></member>
+      <member refid="class_pacman_1_1_layers_1a856d740c5c247dc9f4fb1cea886d6336" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>tileDimensions</name></member>
+      <member refid="class_pacman_1_1_layers_1a91d226bdcd4fbde5658b523d547ada8e" prot="public" virt="non-virtual"><scope>Pacman::Layers</scope><name>TileDimensions</name></member>
+      <member refid="class_pacman_1_1_layers_1ababc8c99b6ef2fb97efd4086c478e96d" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>tileMap</name></member>
+      <member refid="class_pacman_1_1_layers_1af5e3f6ed7cb7ea5a26b5d96930fffb8d" prot="public" virt="non-virtual"><scope>Pacman::Layers</scope><name>TileMap</name></member>
+      <member refid="class_pacman_1_1_layers_1a36a9e6bde8d8a5b5444ae4a90726adf8" prot="private" virt="non-virtual"><scope>Pacman::Layers</scope><name>tileSet</name></member>
+      <member refid="class_pacman_1_1_layers_1a721d7d396fb04ab363d485d8474f51a2" prot="public" virt="non-virtual"><scope>Pacman::Layers</scope><name>UnloadContent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+\hypertarget{class_pacman_1_1_layers}{\section{Pacman.\-Layers Class Reference}
+\label{class_pacman_1_1_layers}\index{Pacman.\-Layers@{Pacman.\-Layers}}
+}
+
+
+A dynamic tilemap reader  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pacman_1_1_layers_ae2f8d76ad9fe571a7e0ead57165b402e}{Load\-Content} (Content\-Manager content, string map\-I\-D)
+\begin{DoxyCompactList}\small\item\em Loads the tile map from the tilemap text file, adds the single tiles to a layer in which then is added to the tile map. This adds the abillity to read in multiple maps into a single variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_layers_a721d7d396fb04ab363d485d8474f51a2}{Unload\-Content} ()
+\begin{DoxyCompactList}\small\item\em Clears the lists, called when a new screen has been added \end{DoxyCompactList}\item 
+void \hyperlink{class_pacman_1_1_layers_a3b799c4834f790a0de8dfdbec02d4974}{Draw} (Sprite\-Batch sprite\-Batch)
+\begin{DoxyCompactList}\small\item\em Draws out the map tiles to the screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pacman_1_1_layers_ad6033d11075ecc2fb07f2366b430c507}{int {\bfseries Layer\-Number}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}}\label{class_pacman_1_1_layers_ad6033d11075ecc2fb07f2366b430c507}
+
+\item 
+\hypertarget{class_pacman_1_1_layers_a91d226bdcd4fbde5658b523d547ada8e}{Vector2 {\bfseries Tile\-Dimensions}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_pacman_1_1_layers_a91d226bdcd4fbde5658b523d547ada8e}
+
+\item 
+\hypertarget{class_pacman_1_1_layers_af5e3f6ed7cb7ea5a26b5d96930fffb8d}{List$<$ List$<$ List$<$ Vector2 $>$ $>$ $>$ {\bfseries Tile\-Map}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{class_pacman_1_1_layers_af5e3f6ed7cb7ea5a26b5d96930fffb8d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A dynamic tilemap reader 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pacman_1_1_layers_a3b799c4834f790a0de8dfdbec02d4974}{\index{Pacman\-::\-Layers@{Pacman\-::\-Layers}!Draw@{Draw}}
+\index{Draw@{Draw}!Pacman::Layers@{Pacman\-::\-Layers}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Layers.\-Draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sprite\-Batch}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_layers_a3b799c4834f790a0de8dfdbec02d4974}
+
+
+Draws out the map tiles to the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\-Batch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_layers_ae2f8d76ad9fe571a7e0ead57165b402e}{\index{Pacman\-::\-Layers@{Pacman\-::\-Layers}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Pacman::Layers@{Pacman\-::\-Layers}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Layers.\-Load\-Content (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{content, }
+\item[{string}]{map\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_layers_ae2f8d76ad9fe571a7e0ead57165b402e}
+
+
+Loads the tile map from the tilemap text file, adds the single tiles to a layer in which then is added to the tile map. This adds the abillity to read in multiple maps into a single variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & \\
+\hline
+{\em map\-I\-D} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pacman_1_1_layers_a721d7d396fb04ab363d485d8474f51a2}{\index{Pacman\-::\-Layers@{Pacman\-::\-Layers}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Pacman::Layers@{Pacman\-::\-Layers}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Pacman.\-Layers.\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pacman_1_1_layers_a721d7d396fb04ab363d485d8474f51a2}
+
+
+Clears the lists, called when a new screen has been added 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Layers.\-cs\end{DoxyCompactItemize}

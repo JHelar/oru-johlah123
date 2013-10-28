@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pacman_1_1_file_manager" kind="class" prot="public">
+    <compoundname>Pacman::FileManager</compoundname>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_pacman_1_1_file_manager_1aacc7964057b86c617cb1504498e938d4" prot="private" static="no">
+        <name>LoadType</name>
+        <enumvalue id="class_pacman_1_1_file_manager_1aacc7964057b86c617cb1504498e938d4a287234a1ff35a314b5b6bc4e5828e745" prot="public">
+          <name>Attributes</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_pacman_1_1_file_manager_1aacc7964057b86c617cb1504498e938d4ac1df1da7a1ce305a3b60af9d5733ac1d" prot="public">
+          <name>Contents</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="18" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pacman_1_1_file_manager_1a40065e9df0885e500d92432c5c7ac5ef" prot="private" static="no" mutable="no">
+        <type>LoadType</type>
+        <definition>LoadType Pacman.FileManager.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_file_manager_1a1436b560f58e07a884aec1cc7e177158" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Pacman.FileManager.tempAttributes</definition>
+        <argsstring></argsstring>
+        <name>tempAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_file_manager_1a626544badd05149d714aad0bb9bb77a3" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Pacman.FileManager.tempContents</definition>
+        <argsstring></argsstring>
+        <name>tempContents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pacman_1_1_file_manager_1a673661adc0cbc2b897ad898eb8fd9800" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pacman.FileManager.identifierFound</definition>
+        <argsstring></argsstring>
+        <name>identifierFound</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="24" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pacman_1_1_file_manager_1a4a5be095e8de90a583f3f99ac89300ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.FileManager.LoadContent</definition>
+        <argsstring>(string filename, List&lt; List&lt; string &gt;&gt; attributes, List&lt; List&lt; string &gt;&gt; contents)</argsstring>
+        <name>LoadContent</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>List&lt; List&lt; string &gt;&gt;</type>
+          <declname>attributes</declname>
+        </param>
+        <param>
+          <type>List&lt; List&lt; string &gt;&gt;</type>
+          <declname>contents</declname>
+        </param>
+        <briefdescription>
+<para>Reads everything from a specified text file, the file has to be formatted for the specific function or it will not be read properly. Puts in the read data onto the two, two dimensional Lists. Attributes is the identifyer telling what type of data that is being loaded in. Contents is the actual data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contents</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="36" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="36" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_file_manager_1af3b152657eefb8f967dbdd2edca6c7dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.FileManager.LoadContent</definition>
+        <argsstring>(string filename, List&lt; List&lt; string &gt;&gt; attributes, List&lt; List&lt; string &gt;&gt; contents, string identifier)</argsstring>
+        <name>LoadContent</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>List&lt; List&lt; string &gt;&gt;</type>
+          <declname>attributes</declname>
+        </param>
+        <param>
+          <type>List&lt; List&lt; string &gt;&gt;</type>
+          <declname>contents</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>identifier</declname>
+        </param>
+        <briefdescription>
+<para>An overloaded version of the LoadContent that starts to read when the identifier requirments are met and stops reading when told to. Other then that it does the same as the first LoadContent. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contents</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="85" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="85" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_file_manager_1a00288173f2ae8a7957797c553b00d760" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.FileManager.ReadScore</definition>
+        <argsstring>(string fileName, List&lt; int &gt; score, List&lt; string &gt; playerName)</argsstring>
+        <name>ReadScore</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>List&lt; int &gt;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>List&lt; string &gt;</type>
+          <declname>playerName</declname>
+        </param>
+        <briefdescription>
+<para>Reads the score from a XML file, puts the name and score in their respective list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>score</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>playerName</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="145" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="145" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_file_manager_1aedf31e50cc3f1f7aba5566e324d139ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.FileManager.WriteScore</definition>
+        <argsstring>(string fileName, int playerScore, string playerName)</argsstring>
+        <name>WriteScore</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>playerScore</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>playerName</declname>
+        </param>
+        <briefdescription>
+<para>Appends the score and name to a XML file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>playerScore</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>playerName</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="176" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="176" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A filemanager class that helps reading and writing elements to/from a file to the program. Uses both normal text files and XML files </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="15" bodyend="191"/>
+    <listofallmembers>
+      <member refid="class_pacman_1_1_file_manager_1a673661adc0cbc2b897ad898eb8fd9800" prot="private" virt="non-virtual"><scope>Pacman::FileManager</scope><name>identifierFound</name></member>
+      <member refid="class_pacman_1_1_file_manager_1a4a5be095e8de90a583f3f99ac89300ff" prot="public" virt="non-virtual"><scope>Pacman::FileManager</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_file_manager_1af3b152657eefb8f967dbdd2edca6c7dd" prot="public" virt="non-virtual"><scope>Pacman::FileManager</scope><name>LoadContent</name></member>
+      <member refid="class_pacman_1_1_file_manager_1aacc7964057b86c617cb1504498e938d4" prot="private" virt="non-virtual"><scope>Pacman::FileManager</scope><name>LoadType</name></member>
+      <member refid="class_pacman_1_1_file_manager_1a00288173f2ae8a7957797c553b00d760" prot="public" virt="non-virtual"><scope>Pacman::FileManager</scope><name>ReadScore</name></member>
+      <member refid="class_pacman_1_1_file_manager_1a1436b560f58e07a884aec1cc7e177158" prot="private" virt="non-virtual"><scope>Pacman::FileManager</scope><name>tempAttributes</name></member>
+      <member refid="class_pacman_1_1_file_manager_1a626544badd05149d714aad0bb9bb77a3" prot="private" virt="non-virtual"><scope>Pacman::FileManager</scope><name>tempContents</name></member>
+      <member refid="class_pacman_1_1_file_manager_1a40065e9df0885e500d92432c5c7ac5ef" prot="private" virt="non-virtual"><scope>Pacman::FileManager</scope><name>type</name></member>
+      <member refid="class_pacman_1_1_file_manager_1aedf31e50cc3f1f7aba5566e324d139ef" prot="public" virt="non-virtual"><scope>Pacman::FileManager</scope><name>WriteScore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
