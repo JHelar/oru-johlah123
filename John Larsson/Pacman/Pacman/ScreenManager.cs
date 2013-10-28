@@ -109,7 +109,7 @@ namespace Pacman
         /// </summary>
         public void Init() 
         {
-            currentScreen = new SplashScreen();
+            currentScreen = new MainMenu();
             fade = new FadeAnimation();
         }
         /// <summary>

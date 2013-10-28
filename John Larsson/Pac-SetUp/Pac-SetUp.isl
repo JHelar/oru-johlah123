@@ -343,8 +343,8 @@
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{E12C8DF1-F461-4C7B-AAE4-D2AA8B10482A}</td><td>CONTENT</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{27B7E826-8973-4CC5-92BF-E007226E1D48}</td><td>SPLASHSCREEN</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{9C072158-1986-4BDD-9E29-B9C0E39A0EF6}</td><td>TITELSCREEN</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{353B8D2F-3934-4415-A2C2-76921E0E23D5}</td><td>LOAD</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{04E08760-71E1-454B-9C0C-5159FAB5AC86}</td><td>MAP</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{F70442B6-6B6C-4490-9131-5D82419B5913}</td><td>LOAD</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{DB58FF51-AF27-474F-B93A-B0AC75A3D3B8}</td><td>MAP</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Pacman.exe</td><td>{A4399459-9DC8-46C2-93BD-51746CE974FA}</td><td>INSTALLDIR</td><td>2</td><td/><td>pacman.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
@@ -1895,17 +1895,16 @@
 		<row><td>pacfont.xnb</td><td>ISX_DEFAULTCOMPONENT</td><td>PacFont.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\PacFont.xnb</td><td>1</td><td/></row>
 		<row><td>pacgamefont.xnb</td><td>ISX_DEFAULTCOMPONENT</td><td>PACGAM~1.XNB|PacGameFont.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\PacGameFont.xnb</td><td>1</td><td/></row>
 		<row><td>pacman.exe</td><td>Pacman.exe</td><td>Pacman.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Pacman.exe</td><td>1</td><td/></row>
-		<row><td>pacmap.cme</td><td>ISX_DEFAULTCOMPONENT4</td><td>PacMap.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Load\Map\PacMap.cme</td><td>1</td><td/></row>
-		<row><td>pacmenu.cme</td><td>ISX_DEFAULTCOMPONENT3</td><td>PacMenu.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Load\PacMenu.cme</td><td>1</td><td/></row>
-		<row><td>pacscore.cme</td><td>ISX_DEFAULTCOMPONENT3</td><td>PacScore.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Load\PacScore.cme</td><td>1</td><td/></row>
-		<row><td>pacscore.xml</td><td>ISX_DEFAULTCOMPONENT3</td><td>PacScore.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Load\PacScore.xml</td><td>1</td><td/></row>
+		<row><td>pacmap.cme</td><td>ISX_DEFAULTCOMPONENT4</td><td>PacMap.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\Load\Map\PacMap.cme</td><td>1</td><td/></row>
+		<row><td>pacmenu.cme</td><td>ISX_DEFAULTCOMPONENT3</td><td>PacMenu.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\Load\PacMenu.cme</td><td>1</td><td/></row>
+		<row><td>pacscore.xml</td><td>ISX_DEFAULTCOMPONENT3</td><td>PacScore.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\Load\PacScore.xml</td><td>1</td><td/></row>
 		<row><td>pacsplash1.xnb</td><td>ISX_DEFAULTCOMPONENT1</td><td>PACSPL~1.XNB|PacSplash1.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\SplashScreen\PacSplash1.xnb</td><td>1</td><td/></row>
 		<row><td>pacsplash2.xnb</td><td>ISX_DEFAULTCOMPONENT1</td><td>PACSPL~1.XNB|PacSplash2.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\SplashScreen\PacSplash2.xnb</td><td>1</td><td/></row>
 		<row><td>pactextboxdot.xnb</td><td>ISX_DEFAULTCOMPONENT</td><td>PACTEX~1.XNB|PacTextBoxDot.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\PacTextBoxDot.xnb</td><td>1</td><td/></row>
 		<row><td>pactiles.xnb</td><td>ISX_DEFAULTCOMPONENT</td><td>PacTiles.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\PacTiles.xnb</td><td>1</td><td/></row>
 		<row><td>pactitel.xnb</td><td>ISX_DEFAULTCOMPONENT2</td><td>PacTitel.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\TitelScreen\PacTitel.xnb</td><td>1</td><td/></row>
 		<row><td>screenfade.xnb</td><td>ISX_DEFAULTCOMPONENT</td><td>SCREEN~1.XNB|ScreenFade.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\ScreenFade.xnb</td><td>1</td><td/></row>
-		<row><td>splashscreen.cme</td><td>ISX_DEFAULTCOMPONENT3</td><td>SPLASH~1.CME|SplashScreen.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Load\SplashScreen.cme</td><td>1</td><td/></row>
+		<row><td>splashscreen.cme</td><td>ISX_DEFAULTCOMPONENT3</td><td>SPLASH~1.CME|SplashScreen.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\Load\SplashScreen.cme</td><td>1</td><td/></row>
 		<row><td>titelpacanim.xnb</td><td>ISX_DEFAULTCOMPONENT2</td><td>TITELP~1.XNB|TitelPacAnim.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\TitelScreen\TitelPacAnim.xnb</td><td>1</td><td/></row>
 	</table>
 
@@ -2166,8 +2165,8 @@
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_57A6B10C_6A0C_4037_A0B7_4C81A5786930_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_0890A0F1_8CBD_4459_BA4B_19BAA3F80976_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_7803BBE3_C6C3_444E_810D_F83226D69EEE_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_EB65B5AE_A1E0_43CB_B5FD_CCCCDA496D8D_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_AC241B44_148A_4DAC_A1F1_122C94CF21A3_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_510BD716_9C0D_4FC6_A12F_0FCD27038F8D_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_90874B3C_7597_416B_AD3D_A61738387127_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Pacman.exe</td><td/><td/><td>_1D802469_622D_4763_85BF_03B8D427A78D_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
@@ -2797,7 +2796,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Pac-Man</td><td>0</td><td/><td>-450808334</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Pac-Man</td><td>0</td><td/><td>-450798220</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-450804334</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-450804334</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT</td><td>1033</td><td>Microsoft .NET Framework 4.0 Client Package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-450797806</td></row>
@@ -3904,8 +3903,9 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-450804334</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-450804334</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>-450804334</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>https://github.com/oru-johlah123/oru-johlah123</td><td>0</td><td/><td>-450775566</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>Pac-Man</td><td>0</td><td/><td>-450808334</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>http://www.Pac-Man.com</td><td>0</td><td/><td>-450798220</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>Pac-Man</td><td>0</td><td/><td>-450798220</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>LAUNCH~1.EXE|Launch Pacman.exe</td><td>0</td><td/><td>-450783884</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-450804334</td></row>
 	</table>
 
@@ -4015,9 +4015,9 @@
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
 		<row><td>Pacman.exe1_364DA47930A7456395567DCB246A69A5.exe</td><td/><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\obj\x86\Debug\Pacman.exe</td><td>0</td></row>
+		<row><td>Pacman.exe1_6CEF91B81C744492AEA5B00C02A6485D.exe</td><td/><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Pacman.exe</td><td>0</td></row>
 		<row><td>Pacman.exe_6B63430048DE42038DADE0CC3FAB1252.exe</td><td/><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Pacman.exe</td><td>0</td></row>
 		<row><td>Pacman.exe_77183D73F9B24FE7B124A4F61A28DABE.exe</td><td/><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Pacman.exe</td><td>0</td></row>
-		<row><td>Pacman.exe_D8390B3450304D5E8BA3EEC1219D35F2.exe</td><td/><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Pacman.exe</td><td>0</td></row>
 	</table>
 
 	<table name="IniFile">
@@ -4150,7 +4150,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{9A65B085-E536-473D-9428-D0822CCBE34C}</td></row>
 		<row><td>ISUSSignature</td><td>{F0BA47B1-B3E5-4BB5-9CCC-A3800B9F6E53}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewSetupTypes,viewRealSetupDesign,viewISToday</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewSetupTypes,viewRealSetupDesign,viewISToday,viewAppFiles,viewFeatureFiles,viewXMLConfig,viewEnvironmentVariables,viewFileExtensions</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4602,7 +4602,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>Pacman.exe</td><td>Pacman.exe</td><td/><td>pac_se_1_pac_setup</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4688,7 +4687,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>Pacman.exe</td><td>pac_se_1_pac_setup</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>Pacman.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>Pacman.exe_D8390B3450304D5E8BA3EEC1219D35F2.exe</td><td>1</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>Pacman.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>Pacman.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>Pacman.exe1_6CEF91B81C744492AEA5B00C02A6485D.exe</td><td>1</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

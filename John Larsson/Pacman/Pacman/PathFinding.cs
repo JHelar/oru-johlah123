@@ -153,7 +153,7 @@ namespace Pacman
             {
             }
 
-            if (map[goalPosition.x, goalPosition.y].State == NodeState.PathToGoalNodeFound)
+            if (map[goalPosition.x, goalPosition.y].State == NodeState.PathToGoalNodeFound && goalPosition.x >=0 && goalPosition.x <= 560)
             {
                 if (calculatePath())
                 {
@@ -368,21 +368,22 @@ namespace Pacman
             int r = goalPosition.x;
             int c = goalPosition.y;
             Position p;
-
-            if (map[r, c].State == NodeState.PathToGoalNodeFound)
+            if (r <= rows || c <= collumns || r > 0 || c > 0)
             {
-                gridPathList.Insert(0, new Position(r, c));
-
-                do
+                if (map[r, c].State == NodeState.PathToGoalNodeFound)
                 {
-                    map[r, c].State = NodeState.PathToGoalNodeFound;
-                    p = map[r, c].Parent;
-                    gridPathList.Insert(0, p);
-                    r = p.x; c = p.y;
-                }
-                while (!(r == startPosition.x && c == startPosition.y));
-            }
+                    gridPathList.Insert(0, new Position(r, c));
 
+                    do
+                    {
+                        map[r, c].State = NodeState.PathToGoalNodeFound;
+                        p = map[r, c].Parent;
+                        gridPathList.Insert(0, p);
+                        r = p.x; c = p.y;
+                    }
+                    while (!(r == startPosition.x && c == startPosition.y));
+                }
+            }
             createMapPath();
             return pathExist;
         }

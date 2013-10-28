@@ -142,15 +142,14 @@ namespace Pacman
                 }
             }
             else
+                newPath = true;
+            if (reCalculateValue >= reCalculate)
             {
-                if (reCalculateValue >= reCalculate)
-                {
-                    reCalculateValue = 0;
-                    newPath = true;
-                }
-                else
-                    reCalculateValue++;
+                reCalculateValue = 0;
+                newPath = true;
             }
+            else
+                reCalculateValue++;
             enemyAnimation.CurrentFrame = tempCurrentFrame;
             enemyAnimation.Position = position;
             enemyAnimation.Update(gameTime);

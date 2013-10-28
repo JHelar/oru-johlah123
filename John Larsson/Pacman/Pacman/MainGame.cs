@@ -46,7 +46,7 @@ namespace Pacman
             for(int i = 0; i < 3; i++)
             {
                 tempEnemy = new Enemy();
-                tempEnemy.Init(collision,player,new Vector2(240 +20 *i,300),i*20 + 0);
+                tempEnemy.Init(collision,player,new Vector2(240 +20 *i,300),i*20 + 50);
                 tempEnemy.LoadContent(Content);
                 enemy.Add(tempEnemy);
             }

@@ -108,8 +108,11 @@ namespace Pacman
         {
             for (int i = 0; i < playerName.Count; i++) 
             {
-                spriteBatch.DrawString(PacFont,Convert.ToString(i+1)+". "+playerName[i]+":"+Convert.ToString(score[i]), new Vector2((float)40, (float)i * 12 + 40), Color.White);
+                if (playerName[i] != "Dummy")
+                    spriteBatch.DrawString(PacFont, Convert.ToString(i) + ". " + playerName[i] + ":" + Convert.ToString(score[i]), new Vector2((float)40, (float)i * 12 + 40), Color.White);        
             }
+            if(playerName.Count == 1 && playerName[0] == "Dummy")
+                spriteBatch.DrawString(PacFont, "No score found", new Vector2((float)40, (float)40), Color.White);
         }
         /// <summary>
         /// Draws the current sessions score to the game screen
