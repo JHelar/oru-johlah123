@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['pac_2dman_20index_20page',['Pac-Man Index Page',['../index.html',1,'']]],
   ['pacman',['Pacman',['../namespace_pacman.html',1,'']]],
   ['parentdirection',['ParentDirection',['../class_pacman_1_1_path_finding.html#a8ca9a4cf80b3b7cf7b345d193a540c3a',1,'Pacman::PathFinding']]],
   ['pathfinding',['PathFinding',['../class_pacman_1_1_path_finding.html',1,'Pacman']]],

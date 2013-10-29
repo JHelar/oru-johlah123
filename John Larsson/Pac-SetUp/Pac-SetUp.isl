@@ -52,7 +52,7 @@
 	<summary>
 		<codepage>1252</codepage>
 		<title>Installation Database</title>
-		<subject>Pac-SetUp</subject>
+		<subject>Pac-Man</subject>
 		<author>##ID_STRING3##</author>
 		<keywords>Installer,MSI,Database</keywords>
 		<comments>Contact:  Your local administrator</comments>
@@ -539,7 +539,7 @@
 		<row><td>InstallChangeFolder</td><td>Up</td><td>PushButton</td><td>310</td><td>66</td><td>19</td><td>19</td><td>3670019</td><td/><td/><td>NewFolder</td><td>##IDS__IsBrowseFolderDlg_UpOneLevel##</td><td>0</td><td/><td/><td>NewBinary3</td></row>
 		<row><td>InstallWelcome</td><td>Back</td><td>PushButton</td><td>164</td><td>243</td><td>66</td><td>17</td><td>1</td><td/><td>##IDS_BACK##</td><td>Copyright</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>PushButton</td><td>301</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_CANCEL##</td><td>Back</td><td/><td>0</td><td/><td/><td/></row>
-		<row><td>InstallWelcome</td><td>Copyright</td><td>Text</td><td>135</td><td>144</td><td>228</td><td>73</td><td>65539</td><td/><td>##IDS__IsWelcomeDlg_WarningCopyright##</td><td>Next</td><td/><td>0</td><td/><td/><td/></row>
+		<row><td>InstallWelcome</td><td>Copyright</td><td>Text</td><td>135</td><td>144</td><td>228</td><td>73</td><td>65538</td><td/><td>##IDS__IsWelcomeDlg_WarningCopyright##</td><td>Next</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>DlgLine</td><td>Line</td><td>0</td><td>234</td><td>374</td><td>0</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>Image</td><td>Bitmap</td><td>0</td><td>0</td><td>374</td><td>234</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td>NewBinary5</td></row>
 		<row><td>InstallWelcome</td><td>Next</td><td>PushButton</td><td>230</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_NEXT##</td><td>Cancel</td><td/><td>0</td><td/><td/><td/></row>
@@ -1143,7 +1143,7 @@
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>PAC_SETUP</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>PAC_MAN1</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISMyCompanyDir</td><td>ProgramFilesFolder</td><td>MYCOMP~1|My Company Name</td><td/><td>0</td><td/></row>
 		<row><td>ISMyProductDir</td><td>ISMyCompanyDir</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
@@ -1897,7 +1897,6 @@
 		<row><td>pacman.exe</td><td>Pacman.exe</td><td>Pacman.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Pacman.exe</td><td>1</td><td/></row>
 		<row><td>pacmap.cme</td><td>ISX_DEFAULTCOMPONENT4</td><td>PacMap.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\Load\Map\PacMap.cme</td><td>1</td><td/></row>
 		<row><td>pacmenu.cme</td><td>ISX_DEFAULTCOMPONENT3</td><td>PacMenu.cme</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\Load\PacMenu.cme</td><td>1</td><td/></row>
-		<row><td>pacscore.xml</td><td>ISX_DEFAULTCOMPONENT3</td><td>PacScore.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\Load\PacScore.xml</td><td>1</td><td/></row>
 		<row><td>pacsplash1.xnb</td><td>ISX_DEFAULTCOMPONENT1</td><td>PACSPL~1.XNB|PacSplash1.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\SplashScreen\PacSplash1.xnb</td><td>1</td><td/></row>
 		<row><td>pacsplash2.xnb</td><td>ISX_DEFAULTCOMPONENT1</td><td>PACSPL~1.XNB|PacSplash2.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\SplashScreen\PacSplash2.xnb</td><td>1</td><td/></row>
 		<row><td>pactextboxdot.xnb</td><td>ISX_DEFAULTCOMPONENT</td><td>PACTEX~1.XNB|PacTextBoxDot.xnb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\JohnMS\Documents\GitHub\oru-johlah123\John Larsson\Pacman\Pacman\bin\x86\Debug\Content\PacTextBoxDot.xnb</td><td>1</td><td/></row>
@@ -3613,7 +3612,7 @@
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>LAUNCH~1.EXE|Launch Pacman.exe</td><td>0</td><td/><td>-450773390</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch Pacman.exe</td><td>0</td><td/><td>-450771342</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>Pac-Man.exe</td><td>0</td><td/><td>-450801934</td></row>
-		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch Pacman.exe</td><td>0</td><td/><td>-450821837</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>Pac-Man.exe</td><td>0</td><td/><td>-316576532</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>-450804334</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>-450804334</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>-450804334</td></row>
@@ -4150,7 +4149,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{9A65B085-E536-473D-9428-D0822CCBE34C}</td></row>
 		<row><td>ISUSSignature</td><td>{F0BA47B1-B3E5-4BB5-9CCC-A3800B9F6E53}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewSetupTypes,viewRealSetupDesign,viewISToday,viewAppFiles,viewFeatureFiles,viewXMLConfig,viewEnvironmentVariables,viewFileExtensions</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewSetupTypes,viewRealSetupDesign,viewISToday,viewAppFiles,viewFeatureFiles,viewXMLConfig,viewEnvironmentVariables,viewFileExtensions,viewBillboards,viewUI</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4524,7 +4523,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{F99D6C9F-7D56-42BB-B98F-091B458C82EE}</td><td/></row>
-		<row><td>ProductName</td><td>Pac-SetUp</td><td/></row>
+		<row><td>ProductName</td><td>Pac-Man</td><td/></row>
 		<row><td>ProductVersion</td><td>1.00.0000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>

@@ -61,8 +61,18 @@ namespace Pacman
             if (!gameOver.CheckGameState(player, enemy[0], layer) || gameOver.CheckGameState(player, enemy[1], layer) || gameOver.CheckGameState(player, enemy[2], layer))
             {
                 player.Update(gameTime,collision,layer,highScore);
-                for (int i = 0; i < 3; i++ )
-                    enemy[i].Update(player, collision, layer, gameTime);
+                for (int i = 0; i < 3; i++)
+                {
+                    try
+                    {
+                        enemy[i].Update(player, collision, layer, gameTime);
+                    }
+                    catch (Exception) 
+                    {
+                        highScore.addScore(highScore.CurrScore);
+                        ScreenManager.Instance.AddScreen(new GameOverScreen(highScore));
+                    }
+                }
             }
             else
             {

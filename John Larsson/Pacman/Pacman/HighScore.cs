@@ -85,20 +85,38 @@ namespace Pacman
         }
         /// <summary>
         /// Loads in the highscore list from a XML file, adds the scores and player names to the two lists.
+        /// If the XML score file does not exist, create a new XML score file. 
         /// </summary>
         /// <param name="mapID"></param>
         /// <param name="content"></param>
         public void LoadScore(string mapID, ContentManager content) 
         {
-            filemanager.ReadScore("Load/PacScore.xml", score, playerName);
+            try
+            {
+                filemanager.ReadScore("PacScore.xml", score, playerName);
+            }
+            catch (Exception) 
+            {
+                filemanager.CreateXMLScore();
+                filemanager.ReadScore("PacScore.xml", score, playerName);
+            }
         }
         /// <summary>
         /// Saves and adds a score and playername to the highscore XML file
+        /// If the XML file does not exist, create a new XML score file.
         /// </summary>
         public void saveScore() 
         {
             score.Add(currScore);
-            filemanager.WriteScore("Load/PacScore.xml", currScore, currName);
+            try
+            {
+                filemanager.WriteScore("PacScore.xml", currScore, currName);
+            }
+            catch (Exception) 
+            {
+                filemanager.CreateXMLScore();
+                filemanager.WriteScore("PacScore.xml", currScore, currName);
+            }
         }
         /// <summary>
         /// Draws the highscore list on the screen.

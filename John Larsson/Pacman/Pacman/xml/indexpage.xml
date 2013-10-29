@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Pac-Man Index Page</title>
+    <detaileddescription>
+<sect1 id="index_1intro_sec">
+<title>Introduction</title>
+<para>A Pac-Man game project made in c# XNA.</para><para>Main idea behind this project was that of making the game classes very modular and easy to reuse in other gaming projects. <image type="html" name="screendump.jpg"></image>
+ </para></sect1>
+<sect1 id="index_1install_sec">
+<title>Instructions</title>
+<sect2 id="index_1step1">
+<title>Step 1:</title>
+<para>Either install the game from the installer or build and run the game directly from the source code(note that you have to have the XNA gamestudio installed on your computer in order to compile it). </para></sect2>
+<sect2 id="index_1step2">
+<title>Step 2:</title>
+<para>Run the game. </para></sect2>
+</sect1>
+<sect1 id="index_1Running">
+<title>The game</title>
+<sect2 id="index_1step3">
+<title>Step 1:</title>
+<para>Press the Enter key on the Title screen to get to the main menu </para></sect2>
+<sect2 id="index_1step4">
+<title>Step 2:</title>
+<para>Navigate in the menu by pressing the upp or down arrow key to move the marker (or the w or s key), press the Enter key to continue. </para></sect2>
+<sect2 id="index_1step5">
+<title>Step 3:</title>
+<para>New game starts a new Pac-Man game. Move the character by holding the up,down,right or left arrow key. The goal of the game is to avoid the blue ghosts from hitting you and collect all the yellow dots that are scatered on the map. </para></sect2>
+<sect2 id="index_1step6">
+<title>Step 4:</title>
+<para>When you either get hit by a ghost or have eaten all the dots you get to the game over screen, where you type in your name and the press the Eneter key to continue to the main menu. </para></sect2>
+</sect1>
+<sect1 id="index_1downloads">
+<title>Download Links</title>
+<sect2 id="index_1installer">
+<title>Installer (for windows)</title>
+<para><ulink url="https://www.dropbox.com/sh/60xej135ncpfk4z/J19aQo8Ps-/program%20files/Pac-Man/Pac-SetUp">Link to my dropbox</ulink> </para></sect2>
+<sect2 id="index_1source">
+<title>Source code</title>
+<para><ulink url="https://github.com/oru-johlah123/oru-johlah123">Source code from github</ulink> </para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -239,7 +239,7 @@
           <declname>content</declname>
         </param>
         <briefdescription>
-<para>Loads in the highscore list from a XML file, adds the scores and player names to the two lists. </para>        </briefdescription>
+<para>Loads in the highscore list from a XML file, adds the scores and player names to the two lists. If the XML score file does not exist, create a new XML score file. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -259,7 +259,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="91" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="91" bodyend="94"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="92" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="92" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_high_score_1ab31998069c068d94db02af5828c67485" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -267,12 +267,12 @@
         <argsstring>()</argsstring>
         <name>saveScore</name>
         <briefdescription>
-<para>Saves and adds a score and playername to the highscore XML file </para>        </briefdescription>
+<para>Saves and adds a score and playername to the highscore XML file If the XML file does not exist, create a new XML score file. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="98" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="98" bodyend="102"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="108" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="108" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_high_score_1a10c6f491c388a5d9f9f66586903212a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -297,7 +297,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="107" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="107" bodyend="113"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="125" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="125" bodyend="134"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_high_score_1a3aa42396b5a3a86f25e0accb55d6f462" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -322,14 +322,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="118" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="118" bodyend="122"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="139" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="139" bodyend="143"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>A highscore class that loads and saves the highscore </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="15" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="14" bodyend="124"/>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" line="15" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScore.cs" bodystart="14" bodyend="145"/>
     <listofallmembers>
       <member refid="class_pacman_1_1_high_score_1acac831b7a03643163018119010051ca4" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>addPlayer</name></member>
       <member refid="class_pacman_1_1_high_score_1aa5e6b11999cbdc295e51a0f86bb9242f" prot="public" virt="non-virtual"><scope>Pacman::HighScore</scope><name>addScore</name></member>

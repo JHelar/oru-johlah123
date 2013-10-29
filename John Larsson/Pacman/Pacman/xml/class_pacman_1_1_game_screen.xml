@@ -142,8 +142,8 @@
         <reimplementedby refid="class_pacman_1_1_main_menu_1aa1ea98563a955497e06808b440a65712">Draw</reimplementedby>
         <reimplementedby refid="class_pacman_1_1_high_score_screen_1ad785f3290cea4ce2483d89dd651bee76">Draw</reimplementedby>
         <reimplementedby refid="class_pacman_1_1_titel_screen_1ae86c21742cdd405fd4467b67b509bc6d">Draw</reimplementedby>
-        <reimplementedby refid="class_pacman_1_1_main_game_1ae0723e8c7fcc6fe57383774b84bc5c91">Draw</reimplementedby>
         <reimplementedby refid="class_pacman_1_1_splash_screen_1a669ad3120d15e6eea2636e44d74cdc31">Draw</reimplementedby>
+        <reimplementedby refid="class_pacman_1_1_main_game_1ae0723e8c7fcc6fe57383774b84bc5c91">Draw</reimplementedby>
         <reimplementedby refid="class_pacman_1_1_game_over_screen_1ae8e0cb7c8d8f836483c2e0e776e939ef">Draw</reimplementedby>
         <param>
           <type>SpriteBatch</type>

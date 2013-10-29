@@ -88,6 +88,7 @@
     <member refid="class_pacman_1_1_file_manager_1af3b152657eefb8f967dbdd2edca6c7dd" kind="function"><name>LoadContent</name></member>
     <member refid="class_pacman_1_1_file_manager_1a00288173f2ae8a7957797c553b00d760" kind="function"><name>ReadScore</name></member>
     <member refid="class_pacman_1_1_file_manager_1aedf31e50cc3f1f7aba5566e324d139ef" kind="function"><name>WriteScore</name></member>
+    <member refid="class_pacman_1_1_file_manager_1a75d73052529280cd5cc0029f4dfd1500" kind="function"><name>CreateXMLScore</name></member>
   </compound>
   <compound refid="class_pacman_1_1_game1" kind="class"><name>Pacman::Game1</name>
     <member refid="class_pacman_1_1_game1_1ae1c4f0fe2a59cca10e014fa24ca213a9" kind="variable"><name>graphics</name></member>
@@ -395,6 +396,12 @@
   </compound>
   <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
   </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
   <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
   </compound>
   <compound refid="namespace_system_1_1_xml" kind="namespace"><name>System::Xml</name>
@@ -431,6 +438,8 @@
   </compound>
   <compound refid="_main_menu_8cs" kind="file"><name>MainMenu.cs</name>
   </compound>
+  <compound refid="_mainpage_8txt" kind="file"><name>Mainpage.txt</name>
+  </compound>
   <compound refid="_menu_manager_8cs" kind="file"><name>MenuManager.cs</name>
   </compound>
   <compound refid="_path_finding_8cs" kind="file"><name>PathFinding.cs</name>
@@ -439,6 +448,8 @@
   </compound>
   <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
   </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
   <compound refid="_screen_animation_8cs" kind="file"><name>ScreenAnimation.cs</name>
   </compound>
   <compound refid="_screen_manager_8cs" kind="file"><name>ScreenManager.cs</name>
@@ -446,5 +457,9 @@
   <compound refid="_splash_screen_8cs" kind="file"><name>SplashScreen.cs</name>
   </compound>
   <compound refid="_titel_screen_8cs" kind="file"><name>TitelScreen.cs</name>
+  </compound>
+  <compound refid="dir_d051c76eebdc544d9c3d734575641c72" kind="dir"><name>Properties</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
   </compound>
 </doxygenindex>

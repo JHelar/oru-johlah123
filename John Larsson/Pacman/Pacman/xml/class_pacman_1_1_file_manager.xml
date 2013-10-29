@@ -283,13 +283,27 @@
         </inbodydescription>
         <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="176" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="176" bodyend="189"/>
       </memberdef>
+      <memberdef kind="function" id="class_pacman_1_1_file_manager_1a75d73052529280cd5cc0029f4dfd1500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pacman.FileManager.CreateXMLScore</definition>
+        <argsstring>()</argsstring>
+        <name>CreateXMLScore</name>
+        <briefdescription>
+<para>Creates a XML file with a &quot;dummy&quot; player in it </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="193" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="193" bodyend="209"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>A filemanager class that helps reading and writing elements to/from a file to the program. Uses both normal text files and XML files </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="15" bodyend="191"/>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/FileManager.cs" bodystart="15" bodyend="211"/>
     <listofallmembers>
+      <member refid="class_pacman_1_1_file_manager_1a75d73052529280cd5cc0029f4dfd1500" prot="public" virt="non-virtual"><scope>Pacman::FileManager</scope><name>CreateXMLScore</name></member>
       <member refid="class_pacman_1_1_file_manager_1a673661adc0cbc2b897ad898eb8fd9800" prot="private" virt="non-virtual"><scope>Pacman::FileManager</scope><name>identifierFound</name></member>
       <member refid="class_pacman_1_1_file_manager_1a4a5be095e8de90a583f3f99ac89300ff" prot="public" virt="non-virtual"><scope>Pacman::FileManager</scope><name>LoadContent</name></member>
       <member refid="class_pacman_1_1_file_manager_1af3b152657eefb8f967dbdd2edca6c7dd" prot="public" virt="non-virtual"><scope>Pacman::FileManager</scope><name>LoadContent</name></member>

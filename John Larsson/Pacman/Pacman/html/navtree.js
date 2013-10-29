@@ -1,6 +1,23 @@
 var NAVTREE =
 [
-  [ "Pacman", "index.html", [
+  [ "Pac-Man", "index.html", [
+    [ "Pac-Man Index Page", "index.html", [
+      [ "Introduction", "index.html#intro_sec", null ],
+      [ "Instructions", "index.html#install_sec", [
+        [ "Step 1:", "index.html#step1", null ],
+        [ "Step 2:", "index.html#step2", null ]
+      ] ],
+      [ "The game", "index.html#Running", [
+        [ "Step 1:", "index.html#step3", null ],
+        [ "Step 2:", "index.html#step4", null ],
+        [ "Step 3:", "index.html#step5", null ],
+        [ "Step 4:", "index.html#step6", null ]
+      ] ],
+      [ "Download Links", "index.html#downloads", [
+        [ "Installer (for windows)", "index.html#installer", null ],
+        [ "Source code", "index.html#source", null ]
+      ] ]
+    ] ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],

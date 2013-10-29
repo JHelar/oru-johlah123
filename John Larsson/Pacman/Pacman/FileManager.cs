@@ -144,9 +144,6 @@ namespace Pacman
         /// <param name="playerName"></param>
         public void ReadScore(string fileName, List<int> score, List<string> playerName) 
         {
-            XmlReader fileCheck = XmlReader.Create("PacScore.xml"); // gör en try catch om filen finns eller ej
-            CreateXMLScore();
-            fileName = "PacScore.xml";
             using (XmlReader reader = XmlReader.Create(fileName)) 
             {
                 while (reader.Read()) 
@@ -190,11 +187,10 @@ namespace Pacman
             doc.DocumentElement.AppendChild(PacScore);
             doc.Save(fileName);
         }
-        #endregion
         /// <summary>
-        /// Skapar ett xml document med en dummy i sig.
+        /// Creates a XML file with a "dummy" player in it
         /// </summary>
-        private void CreateXMLScore() 
+        public void CreateXMLScore() 
         {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
@@ -211,5 +207,6 @@ namespace Pacman
             writer.WriteEndElement();
             writer.Close();
         }
+        #endregion
     }
 }

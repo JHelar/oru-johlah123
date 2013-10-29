@@ -115,7 +115,14 @@ namespace Pacman
             if (newPath)
             {
                 pathFinding.ClearPath(col, player.PlayerPosition, position);
-                pathFinding.PathFinder();
+                try
+                {
+                    pathFinding.PathFinder();
+                }
+                catch (Exception)
+                {
+                    pathFinding.PathFinder();
+                }
                 paths.Clear();
                 setPath(pathFinding.Path);
                 newPath = false;

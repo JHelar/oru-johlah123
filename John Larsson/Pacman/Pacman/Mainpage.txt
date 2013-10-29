@@ -1,0 +1,29 @@
+/**
+
+\mainpage Pac-Man Index Page
+\section intro_sec Introduction
+A Pac-Man game project made in c# XNA.
+
+Main idea behind this project was that of making the game classes very modular and easy to reuse in other gaming projects.
+\image html screendump.jpg
+\section install_sec Instructions
+\subsection step1 Step 1: 
+Either install the game from the installer or build and run the game directly from the source code(note that you have to have the XNA gamestudio installed on your computer in order to compile it).
+\subsection step2 Step 2: 
+Run the game.
+\section Running The game
+\subsection step3 Step 1: 
+Press the Enter key on the Title screen to get to the main menu
+\subsection step4 Step 2: 
+Navigate in the menu by pressing the upp or down arrow key to move the marker (or the w or s key), press the Enter key to continue.
+\subsection step5 Step 3: 
+New game starts a new Pac-Man game. Move the character by holding the up,down,right or left arrow key. The goal of the game is to avoid the blue ghosts from hitting you and collect all the yellow dots that are scatered on the map.
+\subsection step6 Step 4: 
+When you either get hit by a ghost or have eaten all the dots you get to the game over screen, where you type in your name and the press the Eneter key to continue to the main menu.
+\section downloads Download Links
+\subsection installer Installer (for windows)
+<a href="https://www.dropbox.com/sh/60xej135ncpfk4z/J19aQo8Ps-/program%20files/Pac-Man/Pac-SetUp">Link to my dropbox</a>
+\subsection source Source code
+<a href="https://github.com/oru-johlah123/oru-johlah123">Source code from github</a>
+
+*/

@@ -429,7 +429,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="362" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="362" bodyend="388"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="362" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="362" bodyend="389"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -596,7 +596,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="394" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="394" bodyend="398"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="395" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="395" bodyend="399"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_path_finding_1a800cdf563e23d522aa45f104ffd91a88" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -609,7 +609,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="402" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="402" bodyend="409"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="403" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="403" bodyend="410"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -640,7 +640,7 @@
         <link refid="struct_pacman_1_1_path_finding_1_1_position"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="15" bodyend="411"/>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" line="16" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/PathFinding.cs" bodystart="15" bodyend="412"/>
     <listofallmembers>
       <member refid="class_pacman_1_1_path_finding_1a1aa5a9d3a5ac6cf29a71999c67314e0e" prot="public" virt="non-virtual"><scope>Pacman::PathFinding</scope><name>calculatePath</name></member>
       <member refid="class_pacman_1_1_path_finding_1a9e27351b57793d85d58bb5f9743cd780" prot="public" virt="non-virtual"><scope>Pacman::PathFinding</scope><name>ClearPath</name></member>
