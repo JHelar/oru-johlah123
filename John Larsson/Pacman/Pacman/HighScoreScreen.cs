@@ -36,7 +36,14 @@ namespace Pacman
             textFade.Active = true;
 
             highScore.Init(Content);
-            highScore.LoadScore("PacScore", Content);
+            try
+            {
+                highScore.LoadScore("PacScore", Content);
+            }
+            catch (Exception) 
+            {
+                ScreenManager.Instance.AddScreen(new MainMenu());
+            }
         }
         /// <summary>
         /// Unloads the highscore class and fadeanimation class, called when a new screen is added

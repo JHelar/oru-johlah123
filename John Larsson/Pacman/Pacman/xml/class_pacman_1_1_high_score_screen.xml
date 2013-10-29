@@ -69,7 +69,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="28" bodyend="40"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="28" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="28" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_high_score_screen_1a9486bf7d1079734d5cf842b53c8f4ade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="44" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="44" bodyend="49"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="51" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="51" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_high_score_screen_1a049329dc007241790cdf1603b0ef69d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -109,7 +109,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="54" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="54" bodyend="60"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="61" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="61" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_high_score_screen_1ad785f3290cea4ce2483d89dd651bee76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -135,7 +135,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="65" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="65" bodyend="69"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="72" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="72" bodyend="76"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -166,7 +166,7 @@
         <link refid="class_pacman_1_1_game_screen"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="16" bodyend="71"/>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/HighScoreScreen.cs" bodystart="16" bodyend="78"/>
     <listofallmembers>
       <member refid="class_pacman_1_1_game_screen_1aae34556caa8e4fd97aa4f639f08785c4" prot="protected" virt="non-virtual"><scope>Pacman::HighScoreScreen</scope><name>attributes</name></member>
       <member refid="class_pacman_1_1_game_screen_1a89f510b4d354e6b1eb68b41b108e3ffd" prot="protected" virt="non-virtual"><scope>Pacman::HighScoreScreen</scope><name>content</name></member>

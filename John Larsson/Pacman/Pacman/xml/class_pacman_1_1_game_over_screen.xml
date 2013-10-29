@@ -186,7 +186,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" line="66" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" bodystart="66" bodyend="106"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" line="66" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" bodystart="66" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_game_over_screen_1ae8e0cb7c8d8f836483c2e0e776e939ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -212,7 +212,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" line="111" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" bodystart="111" bodyend="118"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" line="118" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" bodystart="118" bodyend="125"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -243,7 +243,7 @@
         <link refid="class_pacman_1_1_game_screen"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" bodystart="16" bodyend="120"/>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/GameOverScreen.cs" bodystart="16" bodyend="127"/>
     <listofallmembers>
       <member refid="class_pacman_1_1_game_screen_1aae34556caa8e4fd97aa4f639f08785c4" prot="protected" virt="non-virtual"><scope>Pacman::GameOverScreen</scope><name>attributes</name></member>
       <member refid="class_pacman_1_1_game_over_screen_1a16bada3a7ab0ac17bdc5f0a49ac771ad" prot="private" virt="non-virtual"><scope>Pacman::GameOverScreen</scope><name>bigFont</name></member>

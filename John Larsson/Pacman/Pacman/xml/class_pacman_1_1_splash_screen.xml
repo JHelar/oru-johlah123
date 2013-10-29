@@ -4,19 +4,6 @@
     <compoundname>Pacman::SplashScreen</compoundname>
     <basecompoundref refid="class_pacman_1_1_game_screen" prot="public" virt="non-virtual">Pacman.GameScreen</basecompoundref>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_pacman_1_1_splash_screen_1acbe52bd3cc6b78fac7661dc716447486" prot="private" static="no" mutable="no">
-        <type>KeyboardState</type>
-        <definition>KeyboardState Pacman.SplashScreen.keyState</definition>
-        <argsstring></argsstring>
-        <name>keyState</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="19" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="class_pacman_1_1_splash_screen_1a705d5a550a9c3899b4e9194de007d8ee" prot="private" static="no" mutable="no">
         <type>SpriteFont</type>
         <definition>SpriteFont Pacman.SplashScreen.font</definition>
@@ -28,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="20" bodyend="-1"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="19" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_pacman_1_1_splash_screen_1a1b4ff02a679dd37cbc6b24db0309e7d1" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_pacman_1_1_fade_animation" kindref="compound">FadeAnimation</ref> &gt;</type>
@@ -41,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="21" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="21" bodyend="-1"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="20" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_pacman_1_1_splash_screen_1a8be71dafd805fe41bc05aeb7b3025eae" prot="private" static="no" mutable="no">
         <type>List&lt; Texture2D &gt;</type>
@@ -54,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="22" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="22" bodyend="-1"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="21" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_pacman_1_1_splash_screen_1a3716e234490c826011201b8b4b8a4dbe" prot="private" static="no" mutable="no">
         <type><ref refid="class_pacman_1_1_file_manager" kindref="compound">FileManager</ref></type>
@@ -67,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="24" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="24" bodyend="-1"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="23" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_pacman_1_1_splash_screen_1a1fa8d83e0fa7c230c288f19f4c77caf8" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -80,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="26" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="26" bodyend="-1"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="25" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -108,7 +95,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="34" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="34" bodyend="68"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="33" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="33" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_splash_screen_1ac72328daa3003fa228218c65660c8d6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -122,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="72" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="72" bodyend="76"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="71" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="71" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_splash_screen_1af64e74cca5e74b0104f9fe74a21e52ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -148,7 +135,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="81" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="81" bodyend="90"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="80" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="80" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="class_pacman_1_1_splash_screen_1a669ad3120d15e6eea2636e44d74cdc31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -174,7 +161,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="95" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="95" bodyend="101"/>
+        <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="94" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="94" bodyend="100"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -205,7 +192,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="16" bodyend="103"/>
+    <location file="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" line="17" column="1" bodyfile="C:/Users/JohnMS/Documents/GitHub/oru-johlah123/John Larsson/Pacman/Pacman/SplashScreen.cs" bodystart="16" bodyend="102"/>
     <listofallmembers>
       <member refid="class_pacman_1_1_game_screen_1aae34556caa8e4fd97aa4f639f08785c4" prot="protected" virt="non-virtual"><scope>Pacman::SplashScreen</scope><name>attributes</name></member>
       <member refid="class_pacman_1_1_game_screen_1a89f510b4d354e6b1eb68b41b108e3ffd" prot="protected" virt="non-virtual"><scope>Pacman::SplashScreen</scope><name>content</name></member>
@@ -216,7 +203,6 @@
       <member refid="class_pacman_1_1_splash_screen_1a705d5a550a9c3899b4e9194de007d8ee" prot="private" virt="non-virtual"><scope>Pacman::SplashScreen</scope><name>font</name></member>
       <member refid="class_pacman_1_1_splash_screen_1a1fa8d83e0fa7c230c288f19f4c77caf8" prot="private" virt="non-virtual"><scope>Pacman::SplashScreen</scope><name>imageNumber</name></member>
       <member refid="class_pacman_1_1_splash_screen_1a8be71dafd805fe41bc05aeb7b3025eae" prot="private" virt="non-virtual"><scope>Pacman::SplashScreen</scope><name>images</name></member>
-      <member refid="class_pacman_1_1_splash_screen_1acbe52bd3cc6b78fac7661dc716447486" prot="private" virt="non-virtual"><scope>Pacman::SplashScreen</scope><name>keyState</name></member>
       <member refid="class_pacman_1_1_splash_screen_1a05a5f91c7e0ded6cb4893da9eeb0ded1" prot="public" virt="virtual"><scope>Pacman::SplashScreen</scope><name>LoadContent</name></member>
       <member refid="class_pacman_1_1_splash_screen_1ac72328daa3003fa228218c65660c8d6c" prot="public" virt="virtual"><scope>Pacman::SplashScreen</scope><name>UnloadContent</name></member>
       <member refid="class_pacman_1_1_splash_screen_1af64e74cca5e74b0104f9fe74a21e52ae" prot="public" virt="virtual"><scope>Pacman::SplashScreen</scope><name>Update</name></member>

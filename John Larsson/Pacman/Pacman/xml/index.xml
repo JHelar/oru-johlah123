@@ -93,7 +93,6 @@
   <compound refid="class_pacman_1_1_game1" kind="class"><name>Pacman::Game1</name>
     <member refid="class_pacman_1_1_game1_1ae1c4f0fe2a59cca10e014fa24ca213a9" kind="variable"><name>graphics</name></member>
     <member refid="class_pacman_1_1_game1_1adb143b2d05548d37abf73ab1145c398c" kind="variable"><name>spriteBatch</name></member>
-    <member refid="class_pacman_1_1_game1_1a8ba07abd58af0654647b3fb243acbeb4" kind="variable"><name>exit</name></member>
     <member refid="class_pacman_1_1_game1_1aafd365b94b28e3b5ae500f6532ecced0" kind="function"><name>Game1</name></member>
     <member refid="class_pacman_1_1_game1_1a06dfb68d52150fb8f15f7d739947b7ac" kind="function"><name>Game1</name></member>
     <member refid="class_pacman_1_1_game1_1a55a2bc52a62f5813f20860d10d7614f5" kind="function"><name>Initialize</name></member>
@@ -349,7 +348,6 @@
     <member refid="class_pacman_1_1_screen_manager_1afdc9ce222bc57bae3394528862b7d95a" kind="function"><name>Transition</name></member>
   </compound>
   <compound refid="class_pacman_1_1_splash_screen" kind="class"><name>Pacman::SplashScreen</name>
-    <member refid="class_pacman_1_1_splash_screen_1acbe52bd3cc6b78fac7661dc716447486" kind="variable"><name>keyState</name></member>
     <member refid="class_pacman_1_1_splash_screen_1a705d5a550a9c3899b4e9194de007d8ee" kind="variable"><name>font</name></member>
     <member refid="class_pacman_1_1_splash_screen_1a1b4ff02a679dd37cbc6b24db0309e7d1" kind="variable"><name>fade</name></member>
     <member refid="class_pacman_1_1_splash_screen_1a8be71dafd805fe41bc05aeb7b3025eae" kind="variable"><name>images</name></member>

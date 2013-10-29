@@ -19,8 +19,6 @@ namespace Pacman
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        bool exit;
-
         public Game1()
         {
 

@@ -22,8 +22,8 @@ New game starts a new Pac-Man game. Move the character by holding the up,down,ri
 When you either get hit by a ghost or have eaten all the dots you get to the game over screen, where you type in your name and the press the Eneter key to continue to the main menu.
 \section downloads Download Links
 \subsection installer Installer (for windows)
-<a href="https://www.dropbox.com/sh/60xej135ncpfk4z/J19aQo8Ps-/program%20files/Pac-Man/Pac-SetUp">Link to my dropbox</a>
+<a href="https://www.dropbox.com/sh/r2lzdnb55wclb5p/m2OaMfRnDK">Installer</a>
 \subsection source Source code
-<a href="https://github.com/oru-johlah123/oru-johlah123">Source code from github</a>
+<a href="https://www.dropbox.com/s/w94noe346gfj7fy/Pac-Man.zip">Source code</a>
 
 */

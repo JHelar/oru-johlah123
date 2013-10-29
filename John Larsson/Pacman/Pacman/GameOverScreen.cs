@@ -83,7 +83,14 @@ namespace Pacman
                         {
                             highScore.addPlayer(inputText);
                             highScore.CurrName = inputText;
-                            highScore.saveScore();
+                            try
+                            {
+                                highScore.saveScore();
+                            }
+                            catch (Exception)
+                            {
+                                ScreenManager.Instance.AddScreen(new MainMenu());
+                            }
                             ScreenManager.Instance.AddScreen(new MainMenu());
                         }
                     }

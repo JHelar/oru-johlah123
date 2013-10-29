@@ -16,7 +16,6 @@ namespace Pacman
     public class SplashScreen : GameScreen
     {
         #region Variables
-        KeyboardState keyState;
         SpriteFont font;
         List<FadeAnimation> fade;
         List<Texture2D> images;

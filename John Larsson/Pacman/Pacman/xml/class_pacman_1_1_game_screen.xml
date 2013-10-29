@@ -109,8 +109,8 @@
         <argsstring>(GameTime gameTime)</argsstring>
         <name>Update</name>
         <reimplementedby refid="class_pacman_1_1_main_menu_1aa93dfb885cc86654e2596168690e44c4">Update</reimplementedby>
-        <reimplementedby refid="class_pacman_1_1_high_score_screen_1a049329dc007241790cdf1603b0ef69d6">Update</reimplementedby>
         <reimplementedby refid="class_pacman_1_1_main_game_1abb1d5e7608fa0d9752c0c434cb103e6b">Update</reimplementedby>
+        <reimplementedby refid="class_pacman_1_1_high_score_screen_1a049329dc007241790cdf1603b0ef69d6">Update</reimplementedby>
         <reimplementedby refid="class_pacman_1_1_titel_screen_1a287b7f099f4336dbc7b4e232d062441a">Update</reimplementedby>
         <reimplementedby refid="class_pacman_1_1_game_over_screen_1abfdcd8b539aa5020bf9e34a86072ae81">Update</reimplementedby>
         <reimplementedby refid="class_pacman_1_1_splash_screen_1af64e74cca5e74b0104f9fe74a21e52ae">Update</reimplementedby>
