@@ -12,7 +12,7 @@ int RecStrLenght(char str[])
 
 int main()
 {
-	cout<<"Given string is "<<RecStrLenght("12345678910")<<" letters long";
+	cout<<"Given string 12345678910 is => "<<RecStrLenght("12345678910")<<" letters long";
 	cin.get();
 	return 0;
 }
