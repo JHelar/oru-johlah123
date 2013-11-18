@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ADT för mätvärden", "DOA John Larsson.vcxproj", "{B08937A0-D949-405F-8493-CA4077D10CFE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Faculty", "..\Faculty\Faculty.vcxproj", "{DE310452-89FC-405C-9E7B-62A04E81FDEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fibonacci", "Fibonacci\Fibonacci.vcxproj", "{635E7EB7-C4D5-4C76-8779-1E02F744E454}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Recursive triangel", "..\Recursive triangel\Recursive triangel.vcxproj", "{FF535D1B-A4DA-4013-BA7E-7FF784130C72}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stränglängd", "Stränglängd\Stränglängd.vcxproj", "{044E6E10-9FE3-4278-8724-207B900D1BA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B08937A0-D949-405F-8493-CA4077D10CFE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B08937A0-D949-405F-8493-CA4077D10CFE}.Debug|Win32.Build.0 = Debug|Win32
+		{B08937A0-D949-405F-8493-CA4077D10CFE}.Release|Win32.ActiveCfg = Release|Win32
+		{B08937A0-D949-405F-8493-CA4077D10CFE}.Release|Win32.Build.0 = Release|Win32
+		{DE310452-89FC-405C-9E7B-62A04E81FDEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE310452-89FC-405C-9E7B-62A04E81FDEA}.Debug|Win32.Build.0 = Debug|Win32
+		{DE310452-89FC-405C-9E7B-62A04E81FDEA}.Release|Win32.ActiveCfg = Release|Win32
+		{DE310452-89FC-405C-9E7B-62A04E81FDEA}.Release|Win32.Build.0 = Release|Win32
+		{635E7EB7-C4D5-4C76-8779-1E02F744E454}.Debug|Win32.ActiveCfg = Debug|Win32
+		{635E7EB7-C4D5-4C76-8779-1E02F744E454}.Debug|Win32.Build.0 = Debug|Win32
+		{635E7EB7-C4D5-4C76-8779-1E02F744E454}.Release|Win32.ActiveCfg = Release|Win32
+		{635E7EB7-C4D5-4C76-8779-1E02F744E454}.Release|Win32.Build.0 = Release|Win32
+		{FF535D1B-A4DA-4013-BA7E-7FF784130C72}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF535D1B-A4DA-4013-BA7E-7FF784130C72}.Debug|Win32.Build.0 = Debug|Win32
+		{FF535D1B-A4DA-4013-BA7E-7FF784130C72}.Release|Win32.ActiveCfg = Release|Win32
+		{FF535D1B-A4DA-4013-BA7E-7FF784130C72}.Release|Win32.Build.0 = Release|Win32
+		{044E6E10-9FE3-4278-8724-207B900D1BA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{044E6E10-9FE3-4278-8724-207B900D1BA8}.Debug|Win32.Build.0 = Debug|Win32
+		{044E6E10-9FE3-4278-8724-207B900D1BA8}.Release|Win32.ActiveCfg = Release|Win32
+		{044E6E10-9FE3-4278-8724-207B900D1BA8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
