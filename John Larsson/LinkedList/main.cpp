@@ -13,9 +13,9 @@ int main(void)
 	int amount = 0;
 
 	FM.ReadFile("People.txt");
-	cout<<"The girl list: \n\n";
+	cout<<"The female list: \n\n";
 	cout<<FM.girlList.str();
-	cout<<"\nThe boy list: \n\n";
+	cout<<"\nThe male list: \n\n";
 	cout<<FM.boyList.str();
 	cout<<"Enter the amount of mathing interests: ";
 	cin>>amount;
@@ -23,6 +23,7 @@ int main(void)
 	dejt.setCouples(FM.boyList,FM.girlList,amount);
 	cout<<dejt.PrintCouples();
 
+	cin.get();
 	cin.get();
 	return 0;
 }

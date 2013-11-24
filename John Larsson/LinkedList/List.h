@@ -50,15 +50,18 @@ public:
 
         ~List(void)
         {
+			if(head == nullptr && tail == nullptr)
+			{
                 Node<T> *n = head;
                 Node<T> *d = n;
 
                 while( n != nullptr )
                 {
                         d = n;
-                        n = n->next;
+						n = n->next;
                         delete d;
                 }
+			}
         }
 
         string str()
@@ -161,20 +164,20 @@ public:
 		T pop()
 		{
 			Node<T> *n = this->tail;
-			
-			if  (tail == head)
+			T info = n->info;
+
+			if  (n == head)
 			{
+				delete tail;
 				head = tail = nullptr;
-				return n->info;
 			}
 			else
 			{
+				delete tail;
 				this->tail = NodeBefore(n);
 				this->tail->next = nullptr;
-				return n->info;
 			}
-			
-			
+			return info;
 		}
 
 		int size()
@@ -184,8 +187,8 @@ public:
 			Node<T> *n = head;
 			while(n->next != nullptr)
 			{
-				size ++;
 				n = n->next;
+				size ++;
 			}
 			return size;
 		}

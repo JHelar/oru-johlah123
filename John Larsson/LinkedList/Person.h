@@ -19,9 +19,10 @@ public:
 	{
 	}
 
-	Person(string gender,bool bio, bool dans, bool idrott, bool resor, bool datorspel)
+	Person(string gender, string name, bool bio, bool dans, bool idrott, bool resor, bool datorspel)
 	{
 		this->gender = gender;
+		this->name = name;
 		this->bio = bio;
 		this->dans = dans;
 		this->idrott = idrott;

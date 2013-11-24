@@ -24,7 +24,7 @@ public:
 	{
 		Person girl;
 		Person matchBoy;
-		Person emptyGirl;
+		Person emptyPerson;
 
 		Couple coup;
 
@@ -38,60 +38,33 @@ public:
 		{
 			girl = girls.pop();
 			girlString = girl.getInterests();
+			prevHits = 0;
 
 			for (auto boy = boys.begin(); boy != boys.end(); boy++)
 			{
 				int hits = 0;
-				prevHits = 0;
+				
 
 				boyString = (*boy).info.getInterests();
-				for(int i = 0; i < amount; i++)
+				for(int i = 0; i < 5; i++)
 				{
-					if(boyString[i] == girlString[i])
+					if(boyString[i] == '1' && girlString[i] == '1')
 						hits++;
 				}
 				boyString.clear();
 
-				if(hits > prevHits)
+				if(hits > prevHits && hits <= amount)
 				{
+					matchBoy = emptyPerson;
 					prevHits = hits;
-				}
-
-				if(prevHits == amount)
-				{
 					matchBoy = boy->info;
-					coup.addPartners(girl,boy->info);
-					break;
-				}
-			}
-			if(prevHits != amount){
-				for (auto boy = boys.begin(); boy != boys.end(); boy++)
-				{
-					int tempHits = 0;
-
-					boyString = (*boy).info.getInterests();
-					for(int i = 0; i < amount; i++)
-					{
-						if(boyString[i] == girlString [i])
-							tempHits++;
-					}
-					boyString.clear();
-
-					if(tempHits > prevHits)
-					{
-						tempHits = prevHits;
-					}
-
-					if(tempHits == prevHits)
-					{
-						matchBoy = (*boy).info;
-						coup.addPartners(girl,(*boy).info);
-						break;
-					}
 				}
 			}
 			boys.Remove(boys.Search(matchBoy));
+			coup.addPartners(girl,matchBoy);
 			couples.add(coup);
+			girl = emptyPerson;
+			matchBoy = emptyPerson;
 		}
 	}
 
