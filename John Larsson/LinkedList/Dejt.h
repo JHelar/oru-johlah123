@@ -32,7 +32,7 @@ public:
 		string girlString;
 
 		int prevHits = 0;
-		int size = girls.size() +1;
+		int size = girls.size();
 
 		for(int i = 0; i < size; i++)
 		{
@@ -43,7 +43,6 @@ public:
 			for (auto boy = boys.begin(); boy != boys.end(); boy++)
 			{
 				int hits = 0;
-				
 
 				boyString = (*boy).info.getInterests();
 				for(int i = 0; i < 5; i++)
@@ -61,11 +60,28 @@ public:
 				}
 			}
 			boys.Remove(boys.Search(matchBoy));
-			coup.addPartners(girl,matchBoy);
+			coup.addPartners(matchBoy,girl);
 			couples.add(coup);
 			girl = emptyPerson;
 			matchBoy = emptyPerson;
 		}
+		//CoupleSort();
+	}
+
+	void CoupleSort()
+	{
+		for (auto iter = couples.begin(); iter != couples.end(); iter++)
+			{
+				auto min = iter;
+				for(auto iterB = couples.begin(); iterB != couples.end(); iterB++)
+				{
+					if((*iterB).info < (*iter).info)
+					{
+						min = iterB;
+					}
+				}
+				swap(iter,min);
+			}
 	}
 
 	string PrintCouples()

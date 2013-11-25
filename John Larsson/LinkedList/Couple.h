@@ -33,12 +33,18 @@ public:
 	friend ostream& operator << (ostream &out, Couple coup)
 	{
 		out<<"Match for: \n\n";
-		out<<coup.boy;
-		out<<"Matches with: \n\n";
 		out<<coup.girl;
-		
-
+		out<<"Matches with: \n\n";
+		out<<coup.boy;
 		return out;
+	}
+
+	friend bool operator < (Couple one, Couple another)
+	{
+		if(one.girl < another.girl)
+			return true;
+		else
+			return false;
 	}
 };
 

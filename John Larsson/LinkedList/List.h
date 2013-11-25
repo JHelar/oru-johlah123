@@ -5,7 +5,7 @@
 #include <string>
 
 #include "Node.h"
-
+	
 /**
 *       An implementation of a single-linked list without sorting.
 *       
@@ -109,6 +109,7 @@ public:
         Node<T> * Search(T info)
         {
                 Node<T> *n = head;
+
                 while(n != nullptr)
                 {
                         if(n->info == info)
@@ -161,18 +162,55 @@ public:
                 }
         }
 
+		void swap(Node<T> *one, Node<T> *another)
+		{
+			
+			if(one == head)
+			{
+				Node<T> *anotherB = NodeBefore(another);
+				anotherB->next = one;
+				another = one;
+			}
+
+			else if(another == head)
+			{
+				Node<T> *oneB = NodeBefore(one);
+				oneB->next = another;
+				one = another;
+			}
+
+			else
+			{
+				Node<T> *oneB = NodeBefore(one);
+				Node<T> *anotherB = NodeBefore(another);
+				oneB->next = another;
+				anotherB->next = one;
+			}
+
+			Node<T> *oneN = one->next;
+			Node<T> *anotherN = another->next;
+
+			one->next = anotherN;
+			another->next = oneN;
+		}
+
+		void sort()
+		{
+			
+		}
+
 		T pop()
 		{
-			Node<T> *n = this->tail;
-			T info = n->info;
+			T info = tail->info;
 
-			if  (n == head)
+			if  (tail == head)
 			{
 				delete tail;
 				head = tail = nullptr;
 			}
 			else
 			{
+				Node<T> *n = tail;
 				delete tail;
 				this->tail = NodeBefore(n);
 				this->tail->next = nullptr;
@@ -190,7 +228,7 @@ public:
 				n = n->next;
 				size ++;
 			}
-			return size;
+			return size +1;
 		}
 
         Iterator begin()

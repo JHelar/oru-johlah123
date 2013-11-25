@@ -95,6 +95,14 @@ public:
 		return false;
 	}
 
+	friend bool operator < (Person one, Person another)
+	{
+		if(one.name < another.name)
+			return true;
+		else
+			return false;
+	}
+
 	friend istream& operator >> (istream &in, Person &person)
 	{
 		string dummy;
