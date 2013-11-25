@@ -95,9 +95,9 @@ public:
 		return false;
 	}
 
-	friend bool operator > (Person one, Person another)
+	friend bool operator < (Person one, Person another)
 	{
-		if(one.name > another.name)
+		if(one.name < another.name)
 			return true;
 		else
 			return false;
