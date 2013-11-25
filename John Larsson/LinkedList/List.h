@@ -164,39 +164,30 @@ public:
 
 		void swap(Node<T> *one, Node<T> *another)
 		{
-			
-			if(one == head)
-			{
-				Node<T> *anotherB = NodeBefore(another);
-				anotherB->next = one;
-				another = one;
-			}
+			T oneInfo = one->info;
+			T anotherInfo = another->info;
+			T tempInfo;
 
-			else if(another == head)
-			{
-				Node<T> *oneB = NodeBefore(one);
-				oneB->next = another;
-				one = another;
-			}
-
-			else
-			{
-				Node<T> *oneB = NodeBefore(one);
-				Node<T> *anotherB = NodeBefore(another);
-				oneB->next = another;
-				anotherB->next = one;
-			}
-
-			Node<T> *oneN = one->next;
-			Node<T> *anotherN = another->next;
-
-			one->next = anotherN;
-			another->next = oneN;
+			tempInfo = oneInfo;
+			oneInfo = anotherInfo;
+			anotherInfo = oneInfo;
 		}
 
 		void sort()
 		{
-			
+			for (Node<T> *iter = head; iter != nullptr; iter = iter->next)
+			{
+				Node<T> *min = iter;
+
+				for(Node<T> *iterB = head; iterB != nullptr; iterB = iterB->next)
+				{
+					if(iterB->info < iter->info)
+					{
+						min = iterB;
+					}
+				}
+				swap(iter,min);
+			}
 		}
 
 		T pop()

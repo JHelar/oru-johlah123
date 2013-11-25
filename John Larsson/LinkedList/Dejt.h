@@ -65,23 +65,7 @@ public:
 			girl = emptyPerson;
 			matchBoy = emptyPerson;
 		}
-		//CoupleSort();
-	}
-
-	void CoupleSort()
-	{
-		for (auto iter = couples.begin(); iter != couples.end(); iter++)
-			{
-				auto min = iter;
-				for(auto iterB = couples.begin(); iterB != couples.end(); iterB++)
-				{
-					if((*iterB).info < (*iter).info)
-					{
-						min = iterB;
-					}
-				}
-				swap(iter,min);
-			}
+		couples.sort();
 	}
 
 	string PrintCouples()

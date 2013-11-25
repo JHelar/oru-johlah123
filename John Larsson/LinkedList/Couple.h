@@ -10,6 +10,7 @@ using namespace std;
 class Couple
 {
 private:
+
 	Person boy;
 	Person girl;
 	

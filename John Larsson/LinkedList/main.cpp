@@ -11,7 +11,7 @@ int main(void)
 	FileManager FM;
 
 	int amount = 0;
-
+	
 	FM.ReadFile("People.txt");
 	cout<<"The female list: \n\n";
 	cout<<FM.girlList.str();
